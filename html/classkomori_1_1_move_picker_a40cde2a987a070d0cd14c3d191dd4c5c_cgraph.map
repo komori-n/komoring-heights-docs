@@ -1,8 +1,0 @@
-<map id="komori::MovePicker::MovePicker" name="komori::MovePicker::MovePicker">
-<area shape="rect" id="node1" title="局面 n における合法手を生成する。" alt="" coords="5,75,156,116"/>
-<area shape="rect" id="node2" href="$classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="221,82,398,109"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="687,82,827,109"/>
-<area shape="rect" id="node5" href="$namespacekomori.html#a1b7ffdadd3d71c7adb2f85aa0bead587" title="局面 n の手 move に対するざっくりとした評価値を返す。" alt="" coords="204,32,415,58"/>
-<area shape="rect" id="node3" href="$classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="483,82,618,109"/>
-<area shape="rect" id="node6" href="$classkomori_1_1_node.html#af2b9d2ba13ac5a9536d6aa1b618d2753" title="AND node（玉方）の手番" alt="" coords="463,32,639,58"/>
-</map>

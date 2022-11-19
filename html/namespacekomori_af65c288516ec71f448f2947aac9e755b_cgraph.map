@@ -1,4 +1,0 @@
-<map id="komori::PathKeyBefore" name="komori::PathKeyBefore">
-<area shape="rect" id="node1" title="1手後の path_key と手 move から現在の path_key を計算する。" alt="" coords="5,5,176,32"/>
-<area shape="rect" id="node2" href="$namespacekomori.html#ae0ab7ef1101897b620e05208fc8975ee" title="現在の path_key と手 move から1手後の path_key を計算する。" alt="" coords="224,5,383,32"/>
-</map>

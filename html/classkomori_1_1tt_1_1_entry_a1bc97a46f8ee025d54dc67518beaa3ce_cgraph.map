@@ -1,4 +1,0 @@
-<map id="komori::tt::Entry::UpdateParentCandidate" name="komori::tt::Entry::UpdateParentCandidate">
-<area shape="rect" id="node1" title="hand に対応する親局面を取得する" alt="" coords="5,5,181,47"/>
-<area shape="rect" id="node2" href="$namespacekomori.html#a2b91824ee210b1157a170f0b0dc650cb" title="持ち駒 target に diff_dst &#45; diff_src を加える" alt="" coords="229,13,411,39"/>
-</map>

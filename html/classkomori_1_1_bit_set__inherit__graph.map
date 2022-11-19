@@ -1,6 +1,0 @@
-<map id="komori::BitSet&lt; T &gt;" name="komori::BitSet&lt; T &gt;">
-<area shape="rect" id="node1" title="整数 T を用いたフラグ集合。" alt="" coords="26,200,178,227"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_bit_set.html" title=" " alt="" coords="27,289,177,331"/>
-<area shape="rect" id="node2" href="$structkomori_1_1_define_not_equal_by_equal.html" title=" " alt="" coords="5,109,199,151"/>
-<area shape="rect" id="node3" href="$structkomori_1_1_define_not_equal_by_equal.html" title="operator== から operator!= を自動定義するクラス。" alt="" coords="5,5,199,47"/>
-</map>

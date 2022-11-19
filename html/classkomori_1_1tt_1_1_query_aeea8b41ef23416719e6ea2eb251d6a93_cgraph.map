@@ -1,7 +1,0 @@
-<map id="komori::tt::Query::CreateNewEntry" name="komori::tt::Query::CreateNewEntry">
-<area shape="rect" id="node1" title="クラスタから持ち駒 hand の書き込み用のエントリを1つ選び現局面用に初期化し直す" alt="" coords="5,64,144,105"/>
-<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_entry.html#a936d5ec9eaabcbb89691d774c05151a3" title="探索量" alt="" coords="202,5,337,47"/>
-<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う" alt="" coords="192,71,347,98"/>
-<area shape="rect" id="node5" href="$classkomori_1_1tt_1_1_entry.html#abf1c99385fe87cabfa3063c03470240d" title="エントリが未使用状態かを判定する" alt="" coords="202,123,337,164"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="395,64,544,105"/>
-</map>

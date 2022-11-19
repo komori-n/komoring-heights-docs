@@ -1,7 +1,0 @@
-<map id="komori::tt::detail::TranspositionTableImpl::CollectGarbage" name="komori::tt::detail::TranspositionTableImpl::CollectGarbage">
-<area shape="rect" id="node1" title="ガベージコレクションを実行する" alt="" coords="5,35,184,91"/>
-<area shape="rect" id="node2" href="$classkomori_1_1_repetition_table.html#a07f50e586a35845ddc5668114a2c3c69" title="置換表のうち古くなった部分を削除する。" alt="" coords="233,5,409,47"/>
-<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a930abfba768428a42f92d44a34e8b69a" title="通常テーブルの中で、メモリ使用率が高いクラスタのエントリを間引く" alt="" coords="232,71,411,127"/>
-<area shape="rect" id="node4" href="$namespacekomori_1_1tt_1_1detail.html#a1bbc0b9aecca2528404c4cd1aefe10d8" title="[begin, end) の範囲内で使用中のエントリのうち最も探索量が小さいエントリを返す" alt="" coords="459,79,621,120"/>
-<area shape="rect" id="node5" href="$classkomori_1_1tt_1_1_entry.html#a936d5ec9eaabcbb89691d774c05151a3" title="探索量" alt="" coords="669,79,804,120"/>
-</map>

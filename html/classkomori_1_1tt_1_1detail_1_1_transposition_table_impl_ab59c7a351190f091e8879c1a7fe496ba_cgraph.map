@@ -1,8 +1,0 @@
-<map id="komori::tt::detail::TranspositionTableImpl::BuildQuery" name="komori::tt::detail::TranspositionTableImpl::BuildQuery">
-<area shape="rect" id="node1" title="局面 n のエントリを読み書きするためのクエリを返す" alt="" coords="5,121,184,177"/>
-<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aef979d21363bf4ae327519de391f9319" title="board_key に対応するクラスタを取得する" alt="" coords="239,5,417,61"/>
-<area shape="rect" id="node3" href="$classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="239,85,417,112"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_node.html#a4181d9d06d60b7f11701b8add6a2e69f" title="現在の経路ハッシュ値" alt="" coords="232,136,424,163"/>
-<area shape="rect" id="node5" href="$classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="245,187,411,213"/>
-<area shape="rect" id="node6" href="$classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="472,212,612,239"/>
-</map>

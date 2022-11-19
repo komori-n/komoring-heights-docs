@@ -1,4 +1,0 @@
-<map id="komori::RemoveIfHandGivesOtherChecks" name="komori::RemoveIfHandGivesOtherChecks">
-<area shape="rect" id="node1" title="局面 n の子局面がすべて 反証駒 disproof_hand で不詰であることが既知の場合、もとの局面 n の反証駒を計算する。" alt="" coords="5,5,215,47"/>
-<area shape="rect" id="node2" href="$namespacekomori.html#a48f3fa8cf78887150c3558bf0ebbf47c" title="hand から pr を消す" alt="" coords="263,13,425,39"/>
-</map>

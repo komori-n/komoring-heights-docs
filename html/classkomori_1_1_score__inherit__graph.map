@@ -1,5 +1,0 @@
-<map id="komori::Score" name="komori::Score">
-<area shape="rect" id="node1" title="現在の探索状況に基づく評価値。" alt="" coords="47,200,157,227"/>
-<area shape="rect" id="node2" href="$structkomori_1_1_define_not_equal_by_equal.html" title=" " alt="" coords="5,109,199,151"/>
-<area shape="rect" id="node3" href="$structkomori_1_1_define_not_equal_by_equal.html" title="operator== から operator!= を自動定義するクラス。" alt="" coords="5,5,199,47"/>
-</map>

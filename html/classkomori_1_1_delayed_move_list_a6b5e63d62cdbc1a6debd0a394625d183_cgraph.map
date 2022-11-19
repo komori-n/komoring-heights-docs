@@ -1,8 +1,0 @@
-<map id="komori::DelayedMoveList::DelayedMoveList" name="komori::DelayedMoveList::DelayedMoveList">
-<area shape="rect" id="node1" title="局面 n の遅延展開すべき手を調べる" alt="" coords="5,48,193,89"/>
-<area shape="rect" id="node2" href="$classkomori_1_1_delayed_move_list.html#a2cd5d27132d70b548f67170d3cba166d" title="move が遅延展開すべき手かどうか調べる。" alt="" coords="241,5,429,47"/>
-<area shape="rect" id="node6" href="$classkomori_1_1_delayed_move_list.html#a96d15737c97547c1d4a9677d4b9142a4" title="m1 と m2 が同様の手（片方を遅延展開すべき手）かどうか調べる。" alt="" coords="241,80,429,121"/>
-<area shape="rect" id="node3" href="$classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="477,54,655,81"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="703,54,837,81"/>
-<area shape="rect" id="node5" href="$classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="885,54,1025,81"/>
-</map>
