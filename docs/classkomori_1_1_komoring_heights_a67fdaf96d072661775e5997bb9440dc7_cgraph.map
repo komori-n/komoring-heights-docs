@@ -1,0 +1,16 @@
+<map id="komori::KomoringHeights::PrintIfNeeded" name="komori::KomoringHeights::PrintIfNeeded">
+<area shape="rect" id="node1" title="print_flag_ が立っていたら off にした上で探索情報を出力する" alt="" coords="5,159,192,200"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_komoring_heights.html#a1716f99cbc6053f69973929c21bdd83f" title="現在の探索情報を取得する" alt="" coords="240,129,427,171"/>
+<area shape="rect" id="node12" href="$classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="244,195,423,222"/>
+<area shape="rect" id="node13" href="$classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="263,246,403,273"/>
+<area shape="rect" id="node14" href="$classkomori_1_1detail_1_1_search_monitor.html#ab4df88051b4354971147ea25055e64f1" title="探索局面数を観測する。nps を正しく計算するためには定期的に呼び出しが必要。" alt="" coords="475,5,689,47"/>
+<area shape="rect" id="node3" href="$classkomori_1_1detail_1_1_search_monitor.html#a5c89cae7c5c90289bf237ec54e775762" title="現在の探索情報を UsiInfo に詰めて返す。" alt="" coords="475,71,689,112"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_usi_info.html#a0168968e66135ba7225030c489243e57" title="key に val を設定する。" alt="" coords="769,107,920,134"/>
+<area shape="rect" id="node7" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a90b0f0fc4d7bf66b78f4a9fe83668a2c" title="置換表使用率（千分率）を計算する" alt="" coords="493,187,671,243"/>
+<area shape="rect" id="node11" href="$classkomori_1_1_score.html#a8d4d0c6ccf9d41846b8ebe16be1f7faa" title="現在の評価値を USI 文字列で返す" alt="" coords="497,267,667,294"/>
+<area shape="rect" id="node4" href="$classkomori_1_1detail_1_1_search_monitor.html#afc31d019620df41e7762e5bc9a1d0133" title="現在の探索局面数" alt="" coords="737,41,952,83"/>
+<area shape="rect" id="node6" href="$classkomori_1_1_usi_info.html#ac6b39b3ffe4360857101ab18c44ffffe" title="設定済のオプションの中に key が含まれているかどうか判定する。" alt="" coords="1011,107,1165,134"/>
+<area shape="rect" id="node8" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ae73a3c94b1f48c79a19ca5fe923f3998" title="通常テーブルのメモリ使用率を見積もる。" alt="" coords="745,158,944,214"/>
+<area shape="rect" id="node9" href="$classkomori_1_1_repetition_table.html#a07d63d0c32bd646d5f15431db7436da0" title="置換表のメモリ使用率を求める。" alt="" coords="757,239,933,280"/>
+<area shape="rect" id="node10" href="$classkomori_1_1_repetition_table.html#ad84607a7f85a17ba9c03e9ec3d3f72fa" title="現在置換表に保存されている経路ハッシュ値の個数をカウントする。" alt="" coords="1000,239,1176,280"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="komori::tt::Entry::Init" name="komori::tt::Entry::Init">
+<area shape="rect" id="node1" title="エントリの初期化を行う" alt="" coords="5,13,160,39"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="208,5,357,47"/>
+</map>

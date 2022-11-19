@@ -1,0 +1,19 @@
+<map id="komori::FindKnownAncestor" name="komori::FindKnownAncestor">
+<area shape="rect" id="node1" title="n を move した局面から置換表をたどると n の祖先に行き着くかどうか調べる" alt="" coords="5,241,208,268"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_node.html#ae8e8fe23b128f7ae53c3878437828caa" title="move 後の盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="256,66,469,107"/>
+<area shape="rect" id="node7" href="$classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="781,132,958,159"/>
+<area shape="rect" id="node10" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#abe90236c4f9b745e50082a38cb935b4f" title="生のハッシュ値からクエリを構築する" alt="" coords="273,292,452,348"/>
+<area shape="rect" id="node12" href="$classkomori_1_1_node.html#a518389ecf55b16ebf8f41dcb8c5ff731" title="(board_key, hand) が経路に含まれているかどうか" alt="" coords="517,249,732,276"/>
+<area shape="rect" id="node15" href="$classkomori_1_1_node.html#a1e4f1da48b69fb3356543b7cf37aab12" title="盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="523,183,726,225"/>
+<area shape="rect" id="node16" href="$classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="273,372,452,399"/>
+<area shape="rect" id="node17" href="$classkomori_1_1tt_1_1_query.html#ab73f7666d785f8b6cf94d64579260c22" title="置換表に保存された現局面の親局面を取得する" alt="" coords="293,423,432,465"/>
+<area shape="rect" id="node3" href="$classkomori_1_1_node.html#ab47757b0ecd5c40af2b2246a17477a13" title="move 後の盤面ハッシュ値" alt="" coords="1007,5,1217,32"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_node.html#ac82d1552c36647cc88e62b104b77595d" title="move 後の攻め方の持ち駒" alt="" coords="526,81,723,108"/>
+<area shape="rect" id="node4" href="$classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1265,132,1405,159"/>
+<area shape="rect" id="node6" href="$namespacekomori.html#ae5838f0a6fe258eb2bc0197498cd7358" title="move 後の手駒を返す" alt="" coords="799,31,939,57"/>
+<area shape="rect" id="node9" href="$classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="786,183,953,209"/>
+<area shape="rect" id="node8" href="$classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="1045,132,1179,159"/>
+<area shape="rect" id="node11" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aef979d21363bf4ae327519de391f9319" title="board_key に対応するクラスタを取得する" alt="" coords="535,300,714,356"/>
+<area shape="rect" id="node13" href="$classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="780,233,959,260"/>
+<area shape="rect" id="node14" href="$classkomori_1_1_visit_history.html#a5b2e24143732a4396cc526be6aac0196" title="(board_key, hand) の同一局面が履歴に記録されているか調べる。" alt="" coords="794,285,945,326"/>
+</map>

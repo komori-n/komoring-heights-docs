@@ -1,0 +1,7 @@
+<map id="komori::HandSet::Get" name="komori::HandSet::Get">
+<area shape="rect" id="node1" title="局面 n に対する証明駒 or 反証駒を計算する。" alt="" coords="5,46,167,73"/>
+<area shape="rect" id="node2" href="$namespacekomori.html#abe78bf2e5661e6a5459917ea76c2d560" title="局面 n の子局面がすべて証明駒 proof_hand で詰みであることが既知の場合、もとの局面 n の証明駒を計算する。" alt="" coords="215,5,431,47"/>
+<area shape="rect" id="node5" href="$namespacekomori.html#a2bf7170c2ef58b6054c0ac2c51dab4ba" title="局面 n の子局面がすべて 反証駒 disproof_hand で不詰であることが既知の場合、もとの局面 n の反証駒を計算する。" alt="" coords="218,71,427,112"/>
+<area shape="rect" id="node3" href="$namespacekomori.html#a910cf44bbf31dae9af184770f7ca5dd4" title="2 つの持ち駒を 1 つにまとめる" alt="" coords="485,13,635,39"/>
+<area shape="rect" id="node4" href="$namespacekomori.html#a48f3fa8cf78887150c3558bf0ebbf47c" title="hand から pr を消す" alt="" coords="479,70,641,97"/>
+</map>

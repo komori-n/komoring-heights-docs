@@ -1,0 +1,4 @@
+<map id="komori::LocalExpansion::BestMove" name="komori::LocalExpansion::BestMove">
+<area shape="rect" id="node1" title="現時点の最善手" alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_fixed_size_stack.html#a205c2899942284ebafec8ceb0f0bc330" title="スタックの先頭（最も前に保存した要素）" alt="" coords="229,5,401,47"/>
+</map>

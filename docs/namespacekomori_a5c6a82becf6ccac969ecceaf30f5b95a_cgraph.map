@@ -1,0 +1,9 @@
+<map id="komori::InitialPnDn" name="komori::InitialPnDn">
+<area shape="rect" id="node1" title="初めて訪れた局面の pn/dn 初期値を計算する" alt="" coords="5,129,152,156"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="200,5,379,32"/>
+<area shape="rect" id="node3" href="$namespacekomori_1_1detail.html#a56e953984699bd0e99000f56bc96dcb9" title="df&#45;pn+における AND node の pn/dn 初期値を計算する" alt="" coords="203,57,376,98"/>
+<area shape="rect" id="node4" href="$namespacekomori_1_1detail.html#a7e8c39e028338e1c24e97418bf751772" title="df&#45;pn+における OR node の pn/dn 初期値を計算する" alt="" coords="203,122,376,163"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="201,188,378,215"/>
+<area shape="rect" id="node7" href="$classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="609,213,749,240"/>
+<area shape="rect" id="node6" href="$classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="427,188,561,215"/>
+</map>

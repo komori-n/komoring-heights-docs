@@ -1,0 +1,4 @@
+<map id="komori::Node" name="komori::Node">
+<area shape="rect" id="node1" title="Position をラップして詰将棋特有の判定を追加するクラス。" alt="" coords="26,95,135,121"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_visit_history.html" title="探索履歴を管理し、千日手や優等局面の判定を行うクラス。" alt="" coords="5,5,156,32"/>
+</map>
