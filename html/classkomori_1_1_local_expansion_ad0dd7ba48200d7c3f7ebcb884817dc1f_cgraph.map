@@ -1,0 +1,4 @@
+<map id="komori::LocalExpansion::empty" name="komori::LocalExpansion::empty">
+<area shape="rect" id="node1" title="合法手がないかどうか" alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_fixed_size_stack.html#a0d9c7779d27ccf538345227559b69fd9" title="スタックが空かどうか" alt="" coords="229,5,401,47"/>
+</map>

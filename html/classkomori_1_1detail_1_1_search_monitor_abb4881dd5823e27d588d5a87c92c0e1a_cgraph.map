@@ -1,0 +1,6 @@
+<map id="komori::detail::SearchMonitor::NewSearch" name="komori::detail::SearchMonitor::NewSearch">
+<area shape="rect" id="node1" title="変数を初期化して探索を開始する。" alt="" coords="5,39,220,80"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_circular_array.html#aa62e891f09071eefff29a06498526414" title="全要素をデフォルトコンストラクタで初期化する。" alt="" coords="295,5,455,47"/>
+<area shape="rect" id="node3" href="$classkomori_1_1detail_1_1_search_monitor.html#ae32263995118b2db44e75253598e8ad5" title="次回の GC タイミングを再設定する" alt="" coords="268,71,483,112"/>
+<area shape="rect" id="node4" href="$classkomori_1_1detail_1_1_search_monitor.html#afc31d019620df41e7762e5bc9a1d0133" title="現在の探索局面数" alt="" coords="531,71,745,112"/>
+</map>

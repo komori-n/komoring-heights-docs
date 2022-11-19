@@ -1,0 +1,12 @@
+<map id="komori::KomoringHeights" name="komori::KomoringHeights">
+<area shape="rect" id="node1" title="詰将棋探索の本体" alt="" coords="1147,89,1333,115"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_score.html" title="現在の探索状況に基づく評価値。" alt="" coords="831,13,941,39"/>
+<area shape="rect" id="node3" href="$structkomori_1_1_define_not_equal_by_equal.html" title=" " alt="" coords="461,5,654,47"/>
+<area shape="rect" id="node4" href="$structkomori_1_1_define_not_equal_by_equal.html" title="operator== から operator!= を自動定義するクラス。" alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_expansion_stack.html" title="LocalExpansion をスタックで管理するクラス。" alt="" coords="797,63,975,90"/>
+<area shape="rect" id="node6" href="$structkomori_1_1_engine_option.html" title="エンジンオプションの事前読み込みおよび提供を行うクラス。" alt="" coords="805,114,967,141"/>
+<area shape="rect" id="node7" href="$classkomori_1_1detail_1_1_search_monitor.html" title="探索局面数を観測して nps を計算したり探索中断の判断をしたりするクラス。" alt="" coords="779,165,993,191"/>
+<area shape="rect" id="node8" href="$classkomori_1_1_circular_array.html" title=" " alt="" coords="458,124,657,165"/>
+<area shape="rect" id="node9" href="$classkomori_1_1_circular_array.html" title="長さ kSize 、型 T の循環配列。" alt="" coords="22,161,182,203"/>
+<area shape="rect" id="node10" href="$classkomori_1_1_circular_array.html" title=" " alt="" coords="447,190,668,246"/>
+</map>
