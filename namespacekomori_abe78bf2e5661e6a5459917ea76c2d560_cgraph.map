@@ -1,0 +1,5 @@
+<map id="komori::AddIfHandGivesOtherEvasions" name="komori::AddIfHandGivesOtherEvasions">
+<area shape="rect" id="node1" title="局面 n の子局面がすべて証明駒 proof_hand で詰みであることが既知の場合、もとの局面 n の証明駒を計算する。" alt="" coords="5,23,221,65"/>
+<area shape="rect" id="node2" href="$namespacekomori.html#a910cf44bbf31dae9af184770f7ca5dd4" title="2 つの持ち駒を 1 つにまとめる" alt="" coords="275,5,426,32"/>
+<area shape="rect" id="node3" href="$namespacekomori.html#a48f3fa8cf78887150c3558bf0ebbf47c" title="hand から pr を消す" alt="" coords="269,56,432,83"/>
+</map>

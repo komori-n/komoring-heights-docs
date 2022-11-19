@@ -1,0 +1,4 @@
+<map id="komori::tt::detail::TranspositionTableImpl::NewSearch" name="komori::tt::detail::TranspositionTableImpl::NewSearch">
+<area shape="rect" id="node1" title="新しい探索を始める" alt="" coords="5,5,184,61"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_repetition_table.html#a6e4fe7b548eb8dfad9d8b4d14e2a8520" title="置換表に保存された経路ハッシュ値をすべて削除する。" alt="" coords="232,13,408,54"/>
+</map>

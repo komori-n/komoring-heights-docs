@@ -1,0 +1,8 @@
+<map id="komori::LocalExpansion::ResolveDoubleCountIfBranchRoot" name="komori::LocalExpansion::ResolveDoubleCountIfBranchRoot">
+<area shape="rect" id="node1" title="二重カウントの起点 edge に一致する枝が子に含まれるなら二重カウントを解消する" alt="" coords="5,100,256,141"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_fixed_size_stack.html#a205c2899942284ebafec8ceb0f0bc330" title="スタックの先頭（最も前に保存した要素）" alt="" coords="306,5,478,47"/>
+<area shape="rect" id="node3" href="$classkomori_1_1_local_expansion.html#a9510c937ce218cc0334a5434b555d270" title="δ値の一時変数 sum_delta_except_best_, max_delta_except_best_ を計算し直す" alt="" coords="304,71,480,112"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_bit_set.html#a4d85204891b7f94b52e8e538325a9efd" title="i 番目のフラグを false に設定する。" alt="" coords="313,137,471,163"/>
+<area shape="rect" id="node6" href="$classkomori_1_1_bit_set.html#a63c3eae9e1719a685e24e8ba98a82804" title="i 番目のフラグ状態を取得する。" alt="" coords="318,187,466,214"/>
+<area shape="rect" id="node4" href="$namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="528,78,679,105"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="komori::tt::detail::TranspositionTableImpl::Load" name="komori::tt::detail::TranspositionTableImpl::Load">
+<area shape="rect" id="node1" title="バイナリ入力ストリーム in から置換表エントリを読み込む。" alt="" coords="5,43,224,84"/>
+<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_entry.html#a5430ffd685eb1bc77cf93af169bfa37f" title="盤面ハッシュ値（コンパクション用）" alt="" coords="294,5,429,47"/>
+<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aef979d21363bf4ae327519de391f9319" title="board_key に対応するクラスタを取得する" alt="" coords="272,71,451,127"/>
+</map>

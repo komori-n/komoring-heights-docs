@@ -1,0 +1,11 @@
+<map id="komori::LocalExpansion::FrontPnDnThresholds" name="komori::LocalExpansion::FrontPnDnThresholds">
+<area shape="rect" id="node1" title="最善手の子の探索で用いる pn と dn のしきい値" alt="" coords="5,90,181,131"/>
+<area shape="rect" id="node2" href="$namespacekomori.html#a9b03d373bf7f539b7a9d8d0df9a61669" title="δ値を計算する。現局面が or_node なら dn, そうでないなら pn を返す。" alt="" coords="271,5,381,32"/>
+<area shape="rect" id="node3" href="$classkomori_1_1_local_expansion.html#a43793b72731e05e49095ff2e1183e72a" title="2番目の子の phi 値を計算する" alt="" coords="238,57,414,98"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_local_expansion.html#a3c22346049a444d6065709e5e3140d16" title="現局面の delta しきい値が thdelta のとき、子局面の delta しきい値を計算する" alt="" coords="229,122,423,163"/>
+<area shape="rect" id="node9" href="$namespacekomori.html#a44b8d6f27caaa6caaa22610dcc422328" title="φ値を計算する。現局面が or_node なら pn, そうでないなら dn を返す。" alt="" coords="279,188,373,215"/>
+<area shape="rect" id="node4" href="$classkomori_1_1_fixed_size_stack.html#a5e99daa3af91a53273900789df53aee8" title="スタックに保存されている要素数" alt="" coords="471,57,643,98"/>
+<area shape="rect" id="node6" href="$namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="481,123,632,149"/>
+<area shape="rect" id="node7" href="$namespacekomori.html#a7311d41d5455115265700ac2518036a7" title="T 型の値を足し合わせる。ただし、計算結果が T 型で表現できない場合は上限値で丸める（符号なし型）" alt="" coords="475,173,638,200"/>
+<area shape="rect" id="node8" href="$classkomori_1_1_move_picker.html#a94848cbebf11d7f272a8360cdfc5f1ff" title="現局面の合法手の個数を返す。" alt="" coords="481,225,632,266"/>
+</map>

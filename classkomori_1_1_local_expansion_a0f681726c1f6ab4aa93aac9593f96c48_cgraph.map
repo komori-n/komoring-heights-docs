@@ -1,0 +1,10 @@
+<map id="komori::LocalExpansion::ShouldStopAncestorSearch" name="komori::LocalExpansion::ShouldStopAncestorSearch">
+<area shape="rect" id="node1" title="二重カウント探索をやめるべきかどうか判定する" alt="" coords="5,85,209,127"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_local_expansion.html#af6420e1215e90c8b46af8c7226a32f62" title="最善の子の探索結果を取得する" alt="" coords="481,5,657,47"/>
+<area shape="rect" id="node4" href="$classkomori_1_1_local_expansion.html#aa23d2a359eb761d16275d9d0acf6836c" title="delta 値を計算する" alt="" coords="257,115,433,156"/>
+<area shape="rect" id="node3" href="$classkomori_1_1_fixed_size_stack.html#a205c2899942284ebafec8ceb0f0bc330" title="スタックの先頭（最も前に保存した要素）" alt="" coords="705,35,877,76"/>
+<area shape="rect" id="node5" href="$namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="494,122,645,149"/>
+<area shape="rect" id="node6" href="$classkomori_1_1_fixed_size_stack.html#a0d9c7779d27ccf538345227559b69fd9" title="スタックが空かどうか" alt="" coords="483,173,655,215"/>
+<area shape="rect" id="node7" href="$classkomori_1_1_fixed_size_stack.html#a5e99daa3af91a53273900789df53aee8" title="スタックに保存されている要素数" alt="" coords="483,239,655,280"/>
+<area shape="rect" id="node8" href="$classkomori_1_1_move_picker.html#a94848cbebf11d7f272a8360cdfc5f1ff" title="現局面の合法手の個数を返す。" alt="" coords="494,304,645,345"/>
+</map>

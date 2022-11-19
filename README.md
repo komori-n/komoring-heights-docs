@@ -1,2 +1,0 @@
----
-# komoring-heights-docs

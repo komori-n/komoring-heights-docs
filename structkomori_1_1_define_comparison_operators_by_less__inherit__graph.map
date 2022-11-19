@@ -1,0 +1,9 @@
+<map id="komori::DefineComparisonOperatorsByLess&lt; T &gt;" name="komori::DefineComparisonOperatorsByLess&lt; T &gt;">
+<area shape="rect" id="node1" title="operator&lt; から各種演算子を自動定義するクラス。" alt="" coords="5,77,200,118"/>
+<area shape="rect" id="node2" href="$structkomori_1_1_define_comparison_operators_by_less.html" title=" " alt="" coords="661,5,893,61"/>
+<area shape="rect" id="node4" href="$structkomori_1_1_define_comparison_operators_by_less.html" title=" " alt="" coords="405,69,637,125"/>
+<area shape="rect" id="node7" href="$structkomori_1_1_define_comparison_operators_by_less.html" title=" " alt="" coords="661,132,893,188"/>
+<area shape="rect" id="node3" href="$classkomori_1_1detail_1_1_mate_len_impl.html" title=" " alt="" coords="1324,31,1529,73"/>
+<area shape="rect" id="node5" href="$classkomori_1_1detail_1_1_mate_len_impl.html" title="MateLen と MateLen16 の実装本体。中身はほぼ同じなので一箇所にまとめる。" alt="" coords="917,84,1160,111"/>
+<area shape="rect" id="node6" href="$classkomori_1_1detail_1_1_mate_len_impl.html" title=" " alt="" coords="1324,109,1529,150"/>
+</map>

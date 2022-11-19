@@ -1,0 +1,5 @@
+<map id="komori::BoardKeyHandPair" name="komori::BoardKeyHandPair">
+<area shape="rect" id="node1" title="盤面ハッシュ値と攻め方の持ち駒のペア。これがあれば TT から結果を取得できる。" alt="" coords="12,200,207,227"/>
+<area shape="rect" id="node2" href="$structkomori_1_1_define_not_equal_by_equal.html" title=" " alt="" coords="5,109,213,151"/>
+<area shape="rect" id="node3" href="$structkomori_1_1_define_not_equal_by_equal.html" title="operator== から operator!= を自動定義するクラス。" alt="" coords="13,5,206,47"/>
+</map>
