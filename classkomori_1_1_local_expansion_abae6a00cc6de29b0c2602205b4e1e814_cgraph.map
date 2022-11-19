@@ -1,6 +1,0 @@
-<map id="komori::LocalExpansion::FrontIsFirstVisit" name="komori::LocalExpansion::FrontIsFirstVisit">
-<area shape="rect" id="node1" title="最善手の子ノードが初探索かどうか" alt="" coords="5,39,181,80"/>
-<area shape="rect" id="node2" href="$classkomori_1_1_local_expansion.html#af6420e1215e90c8b46af8c7226a32f62" title="最善の子の探索結果を取得する" alt="" coords="229,5,405,47"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_search_result.html#abfe86f70fc0d0535b1b01057732f6acb" title="Unknown部分の結果。!IsFinal() の場合のみ呼び出し可能。" alt="" coords="237,71,397,112"/>
-<area shape="rect" id="node3" href="$classkomori_1_1_fixed_size_stack.html#a205c2899942284ebafec8ceb0f0bc330" title="スタックの先頭（最も前に保存した要素）" alt="" coords="453,5,625,47"/>
-</map>

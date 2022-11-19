@@ -1,4 +1,0 @@
-<map id="komori::tt::Entry::UpdateProven" name="komori::tt::Entry::UpdateProven">
-<area shape="rect" id="node1" title="探索結果を書き込む（詰み局面）" alt="" coords="5,5,140,47"/>
-<area shape="rect" id="node2" href="$namespacekomori.html#a7311d41d5455115265700ac2518036a7" title="T 型の値を足し合わせる。ただし、計算結果が T 型で表現できない場合は上限値で丸める（符号なし型）" alt="" coords="188,13,351,39"/>
-</map>

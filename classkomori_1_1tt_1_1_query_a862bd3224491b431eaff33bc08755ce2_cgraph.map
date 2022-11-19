@@ -1,7 +1,0 @@
-<map id="komori::tt::Query::LookUp" name="komori::tt::Query::LookUp">
-<area shape="rect" id="node1" title="クラスタから結果を集めてきて返す関数。" alt="" coords="5,104,144,145"/>
-<area shape="rect" id="node2" href="$classkomori_1_1_repetition_table.html#a986592bada0f09af05870e4e226f3077" title="経路ハッシュ値 path_key が保存されているかどうか判定する。" alt="" coords="192,5,368,47"/>
-<area shape="rect" id="node3" href="$classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="205,71,355,112"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_search_result.html#a0d81252fa8281a46c86b05b609434429" title="千日手の探索結果で初期化する" alt="" coords="200,136,360,177"/>
-<area shape="rect" id="node5" href="$classkomori_1_1_search_result.html#abaaf9630729de4deca306d3fa87fec73" title="Unknownな探索結果で初期化する" alt="" coords="200,201,360,243"/>
-</map>

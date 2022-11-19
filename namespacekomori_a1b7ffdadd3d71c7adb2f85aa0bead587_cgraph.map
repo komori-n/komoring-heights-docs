@@ -1,6 +1,0 @@
-<map id="komori::MoveBriefEvaluation" name="komori::MoveBriefEvaluation">
-<area shape="rect" id="node1" title="局面 n の手 move に対するざっくりとした評価値を返す。" alt="" coords="5,56,216,83"/>
-<area shape="rect" id="node2" href="$classkomori_1_1_node.html#af2b9d2ba13ac5a9536d6aa1b618d2753" title="AND node（玉方）の手番" alt="" coords="264,5,440,32"/>
-<area shape="rect" id="node3" href="$classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="488,81,628,108"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="285,107,419,133"/>
-</map>
