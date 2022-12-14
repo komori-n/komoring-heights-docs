@@ -68,8 +68,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="hands_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef KOMORI_PROOF_HAND_HPP_</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define KOMORI_PROOF_HAND_HPP_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef KOMORI_HANDS_HPP_</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define KOMORI_HANDS_HPP_</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
@@ -266,7 +266,7 @@ $(function() {
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;};</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;}  <span class="comment">// namespace komori</span></div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// KOMORI_PROOF_HAND_HPP_</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// KOMORI_HANDS_HPP_</span></div>
 <div class="ttc" id="aclasskomori_1_1_hand_set_html"><div class="ttname"><a href="classkomori_1_1_hand_set.html">komori::HandSet</a></div><div class="ttdoc">子局面の証明駒 or 反証駒をもとに、現局面の証明駒 or 反証駒を求めるクラス。</div><div class="ttdef"><b>Definition:</b> <a href="hands_8hpp_source.html#l00256">hands.hpp:256</a></div></div>
 <div class="ttc" id="aclasskomori_1_1_hand_set_html_a0535e02ef8f7a32319a005d2a29c58eb"><div class="ttname"><a href="classkomori_1_1_hand_set.html#a0535e02ef8f7a32319a005d2a29c58eb">komori::HandSet::HandSet</a></div><div class="ttdeci">HandSet(DisproofHandTag)</div><div class="ttdoc">OR node (DisproofHand計算) 用の初期化関数</div><div class="ttdef"><b>Definition:</b> <a href="hands_8hpp_source.html#l00261">hands.hpp:261</a></div></div>
 <div class="ttc" id="aclasskomori_1_1_hand_set_html_a276403b8dae9491d07c3bb53a07e9072"><div class="ttname"><a href="classkomori_1_1_hand_set.html#a276403b8dae9491d07c3bb53a07e9072">komori::HandSet::val_</a></div><div class="ttdeci">std::array&lt; std::uint32_t, PIECE_HAND_NB &gt; val_</div><div class="ttdoc">現在計算中の証明駒 or 反証駒。計算を高速化するために Hand ではなく手駒の種類ごとに分けて持つ。</div><div class="ttdef"><b>Definition:</b> <a href="hands_8hpp_source.html#l00318">hands.hpp:318</a></div></div>

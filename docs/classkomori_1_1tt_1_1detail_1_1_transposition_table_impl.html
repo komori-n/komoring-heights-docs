@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>KomoringHeights: komori::tt::detail::TranspositionTableImpl&lt; Query &gt; Class Template Reference</title>
+<title>KomoringHeights: komori::tt::detail::TranspositionTableImpl&lt; Query, RegularTable, RepetitionTable &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,11 +69,10 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">komori::tt::detail::TranspositionTableImpl&lt; Query &gt; Class Template Reference</div>  </div>
+<div class="title">komori::tt::detail::TranspositionTableImpl&lt; Query, RegularTable, RepetitionTable &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -82,156 +81,129 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for komori::tt::detail::TranspositionTableImpl&lt; Query &gt;:</div>
+Collaboration diagram for komori::tt::detail::TranspositionTableImpl&lt; Query, RegularTable, RepetitionTable &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl__coll__graph.png" border="0" usemap="#akomori_1_1tt_1_1detail_1_1_transposition_table_impl_3_01_query_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="akomori_1_1tt_1_1detail_1_1_transposition_table_impl_3_01_query_01_4_coll__map" id="akomori_1_1tt_1_1detail_1_1_transposition_table_impl_3_01_query_01_4_coll__map">
-<area shape="rect" title="詰将棋エンジンの置換表本体" alt="" coords="5,95,184,151"/>
-<area shape="rect" href="classkomori_1_1_repetition_table.html" title="千日手手順を記録する置換表" alt="" coords="7,5,183,32"/>
+<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl__coll__graph.png" border="0" usemap="#akomori_1_1tt_1_1detail_1_1_transposition_table_impl_3_01_query_00_01_regular_table_00_01_repetition_table_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="akomori_1_1tt_1_1detail_1_1_transposition_table_impl_3_01_query_00_01_regular_table_00_01_repetition_table_01_4_coll__map" id="akomori_1_1tt_1_1detail_1_1_transposition_table_impl_3_01_query_00_01_regular_table_00_01_repetition_table_01_4_coll__map">
+<area shape="rect" title="詰将棋エンジンの置換表本体" alt="" coords="110,95,289,165"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html" title="経路に依存しない探索結果を記録する置換表。（通常テーブル）" alt="" coords="5,5,183,32"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html" title="千日手手順を記録する置換表" alt="" coords="207,5,402,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab6fad0cbd0b37b0f5b2a7457164efafc"><td class="memItemLeft" align="right" valign="top"><a id="ab6fad0cbd0b37b0f5b2a7457164efafc"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ab6fad0cbd0b37b0f5b2a7457164efafc">TranspositionTableImpl</a> ()=default</td></tr>
-<tr class="memdesc:ab6fad0cbd0b37b0f5b2a7457164efafc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor(default) <br /></td></tr>
-<tr class="separator:ab6fad0cbd0b37b0f5b2a7457164efafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5053d185a0110c8f9daa5e8ecdad48fa"><td class="memItemLeft" align="right" valign="top"><a id="a5053d185a0110c8f9daa5e8ecdad48fa"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a5053d185a0110c8f9daa5e8ecdad48fa">TranspositionTableImpl</a> (const <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;)=delete</td></tr>
-<tr class="memdesc:a5053d185a0110c8f9daa5e8ecdad48fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor(delete) <br /></td></tr>
-<tr class="separator:a5053d185a0110c8f9daa5e8ecdad48fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ad2705c31614afacd11e35a2b2dcf2c"><td class="memItemLeft" align="right" valign="top"><a id="a7ad2705c31614afacd11e35a2b2dcf2c"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a7ad2705c31614afacd11e35a2b2dcf2c">TranspositionTableImpl</a> (<a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;&amp;) noexcept=delete</td></tr>
-<tr class="memdesc:a7ad2705c31614afacd11e35a2b2dcf2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor(default) <br /></td></tr>
-<tr class="separator:a7ad2705c31614afacd11e35a2b2dcf2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37464c8aef25b87faa66faa72418d457"><td class="memItemLeft" align="right" valign="top"><a id="a37464c8aef25b87faa66faa72418d457"></a>
-constexpr <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a37464c8aef25b87faa66faa72418d457">operator=</a> (const <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;)=delete</td></tr>
-<tr class="memdesc:a37464c8aef25b87faa66faa72418d457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assign operator(delete) <br /></td></tr>
-<tr class="separator:a37464c8aef25b87faa66faa72418d457"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a072ffe8d539885ea799824adfbfbcd06"><td class="memItemLeft" align="right" valign="top"><a id="a072ffe8d539885ea799824adfbfbcd06"></a>
-constexpr <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a072ffe8d539885ea799824adfbfbcd06">operator=</a> (<a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;&amp;) noexcept=delete</td></tr>
-<tr class="memdesc:a072ffe8d539885ea799824adfbfbcd06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assign operator(default) <br /></td></tr>
-<tr class="separator:a072ffe8d539885ea799824adfbfbcd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a008752854fb07818fcb0634b23747fba"><td class="memItemLeft" align="right" valign="top"><a id="a008752854fb07818fcb0634b23747fba"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a008752854fb07818fcb0634b23747fba">~TranspositionTableImpl</a> ()=default</td></tr>
-<tr class="memdesc:a008752854fb07818fcb0634b23747fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor(default) <br /></td></tr>
-<tr class="separator:a008752854fb07818fcb0634b23747fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58383bb26907056fd8569caabe1da371"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a58383bb26907056fd8569caabe1da371">Resize</a> (std::uint64_t hash_size_mb)</td></tr>
-<tr class="memdesc:a58383bb26907056fd8569caabe1da371"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表サイズを <code>hash_size_mb</code> に変更し、書かれていた内容をすべて消去する。  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a58383bb26907056fd8569caabe1da371">More...</a><br /></td></tr>
-<tr class="separator:a58383bb26907056fd8569caabe1da371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac09415a6380e61e26e5b45e21eaab209"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ac09415a6380e61e26e5b45e21eaab209">NewSearch</a> ()</td></tr>
-<tr class="memdesc:ac09415a6380e61e26e5b45e21eaab209"><td class="mdescLeft">&#160;</td><td class="mdescRight">新しい探索を始める  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ac09415a6380e61e26e5b45e21eaab209">More...</a><br /></td></tr>
-<tr class="separator:ac09415a6380e61e26e5b45e21eaab209"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a726314af190226efe35363a3d4d7bb31"><td class="memItemLeft" align="right" valign="top"><a id="a726314af190226efe35363a3d4d7bb31"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a726314af190226efe35363a3d4d7bb31">Clear</a> ()</td></tr>
-<tr class="memdesc:a726314af190226efe35363a3d4d7bb31"><td class="mdescLeft">&#160;</td><td class="mdescRight">以前の探索結果をすべて消去する。 <br /></td></tr>
-<tr class="separator:a726314af190226efe35363a3d4d7bb31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab59c7a351190f091e8879c1a7fe496ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ab59c7a351190f091e8879c1a7fe496ba">BuildQuery</a> (const <a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n)</td></tr>
-<tr class="memdesc:ab59c7a351190f091e8879c1a7fe496ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">局面 <code>n</code> のエントリを読み書きするためのクエリを返す  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ab59c7a351190f091e8879c1a7fe496ba">More...</a><br /></td></tr>
-<tr class="separator:ab59c7a351190f091e8879c1a7fe496ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8027d564b18b152d88a0fcb72f8951ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a8027d564b18b152d88a0fcb72f8951ff">BuildChildQuery</a> (const <a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n, Move move)</td></tr>
-<tr class="memdesc:a8027d564b18b152d88a0fcb72f8951ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">局面 <code>n</code> を <code>move</code> で 1 手進めたエントリを読み書きするためのクエリを返す  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a8027d564b18b152d88a0fcb72f8951ff">More...</a><br /></td></tr>
-<tr class="separator:a8027d564b18b152d88a0fcb72f8951ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe90236c4f9b745e50082a38cb935b4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#abe90236c4f9b745e50082a38cb935b4f">BuildQueryByKey</a> (<a class="el" href="structkomori_1_1_board_key_hand_pair.html">BoardKeyHandPair</a> key_hand_pair, Key path_key=<a class="el" href="namespacekomori.html#a69ee19c9520e168d882df693b6566a9b">kNullKey</a>)</td></tr>
-<tr class="memdesc:abe90236c4f9b745e50082a38cb935b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">生のハッシュ値からクエリを構築する  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#abe90236c4f9b745e50082a38cb935b4f">More...</a><br /></td></tr>
-<tr class="separator:abe90236c4f9b745e50082a38cb935b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90b0f0fc4d7bf66b78f4a9fe83668a2c"><td class="memItemLeft" align="right" valign="top">std::int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a90b0f0fc4d7bf66b78f4a9fe83668a2c">Hashfull</a> () const</td></tr>
-<tr class="memdesc:a90b0f0fc4d7bf66b78f4a9fe83668a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表使用率（千分率）を計算する  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a90b0f0fc4d7bf66b78f4a9fe83668a2c">More...</a><br /></td></tr>
-<tr class="separator:a90b0f0fc4d7bf66b78f4a9fe83668a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44b7e98c53567d3edbf1ae56c8346119"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a44b7e98c53567d3edbf1ae56c8346119">CollectGarbage</a> ()</td></tr>
-<tr class="memdesc:a44b7e98c53567d3edbf1ae56c8346119"><td class="mdescLeft">&#160;</td><td class="mdescRight">ガベージコレクションを実行する  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a44b7e98c53567d3edbf1ae56c8346119">More...</a><br /></td></tr>
-<tr class="separator:a44b7e98c53567d3edbf1ae56c8346119"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b6267fc9457b6477a4411d8c9b60e5f"><td class="memItemLeft" align="right" valign="top"><a id="a0b6267fc9457b6477a4411d8c9b60e5f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a0b6267fc9457b6477a4411d8c9b60e5f">CompactEntries</a> ()</td></tr>
-<tr class="memdesc:a0b6267fc9457b6477a4411d8c9b60e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリをできるだけ手前の方に移動させる（コンパクション） <br /></td></tr>
-<tr class="separator:a0b6267fc9457b6477a4411d8c9b60e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71e0e3efb7a03e1357860ced8ade6304"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a71e0e3efb7a03e1357860ced8ade6304">Save</a> (std::ostream &amp;os)</td></tr>
-<tr class="memdesc:a71e0e3efb7a03e1357860ced8ade6304"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表の中身をバイナリ出力ストリーム <code>os</code> へ出力する  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a71e0e3efb7a03e1357860ced8ade6304">More...</a><br /></td></tr>
-<tr class="separator:a71e0e3efb7a03e1357860ced8ade6304"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9f0191c59973fbc2c9bd71bcdc9f397"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ad9f0191c59973fbc2c9bd71bcdc9f397">Load</a> (std::istream &amp;is)</td></tr>
-<tr class="memdesc:ad9f0191c59973fbc2c9bd71bcdc9f397"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリ入力ストリーム <code>in</code> から置換表エントリを読み込む。  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ad9f0191c59973fbc2c9bd71bcdc9f397">More...</a><br /></td></tr>
-<tr class="separator:ad9f0191c59973fbc2c9bd71bcdc9f397"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89ccfd19bc44d5cf65e073ecd9fb6408"><td class="memItemLeft" align="right" valign="top"><a id="a89ccfd19bc44d5cf65e073ecd9fb6408"></a>
-constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a89ccfd19bc44d5cf65e073ecd9fb6408">begin</a> () const noexcept</td></tr>
-<tr class="memdesc:a89ccfd19bc44d5cf65e073ecd9fb6408"><td class="mdescLeft">&#160;</td><td class="mdescRight">通常テーブルの先頭 <br /></td></tr>
-<tr class="separator:a89ccfd19bc44d5cf65e073ecd9fb6408"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac933b2b06b653ad41567110728cc412e"><td class="memItemLeft" align="right" valign="top"><a id="ac933b2b06b653ad41567110728cc412e"></a>
-constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ac933b2b06b653ad41567110728cc412e">end</a> () const noexcept</td></tr>
-<tr class="memdesc:ac933b2b06b653ad41567110728cc412e"><td class="mdescLeft">&#160;</td><td class="mdescRight">通常テーブルの末尾 <br /></td></tr>
-<tr class="separator:ac933b2b06b653ad41567110728cc412e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aef979d21363bf4ae327519de391f9319"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structkomori_1_1tt_1_1_cluster.html">Cluster</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aef979d21363bf4ae327519de391f9319">ClusterOf</a> (Key board_key)</td></tr>
-<tr class="memdesc:aef979d21363bf4ae327519de391f9319"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>board_key</code> に対応するクラスタを取得する  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aef979d21363bf4ae327519de391f9319">More...</a><br /></td></tr>
-<tr class="separator:aef979d21363bf4ae327519de391f9319"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae73a3c94b1f48c79a19ca5fe923f3998"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ae73a3c94b1f48c79a19ca5fe923f3998">GetNormalTableHashRate</a> () const noexcept</td></tr>
-<tr class="memdesc:ae73a3c94b1f48c79a19ca5fe923f3998"><td class="mdescLeft">&#160;</td><td class="mdescRight">通常テーブルのメモリ使用率を見積もる。  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ae73a3c94b1f48c79a19ca5fe923f3998">More...</a><br /></td></tr>
-<tr class="separator:ae73a3c94b1f48c79a19ca5fe923f3998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a930abfba768428a42f92d44a34e8b69a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a930abfba768428a42f92d44a34e8b69a">RemoveUnusedEntries</a> ()</td></tr>
-<tr class="memdesc:a930abfba768428a42f92d44a34e8b69a"><td class="mdescLeft">&#160;</td><td class="mdescRight">通常テーブルの中で、メモリ使用率が高いクラスタのエントリを間引く  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a930abfba768428a42f92d44a34e8b69a">More...</a><br /></td></tr>
-<tr class="separator:a930abfba768428a42f92d44a34e8b69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9976a9b06db61868af55f416c2317cac"><td class="memItemLeft" align="right" valign="top"><a id="a9976a9b06db61868af55f416c2317cac"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a9976a9b06db61868af55f416c2317cac">TranspositionTableImpl</a> ()=default</td></tr>
+<tr class="memdesc:a9976a9b06db61868af55f416c2317cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor(default) <br /></td></tr>
+<tr class="separator:a9976a9b06db61868af55f416c2317cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c24d5dd7a200160900d4241696c9e1e"><td class="memItemLeft" align="right" valign="top"><a id="a0c24d5dd7a200160900d4241696c9e1e"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a0c24d5dd7a200160900d4241696c9e1e">TranspositionTableImpl</a> (const <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a0c24d5dd7a200160900d4241696c9e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor(delete) <br /></td></tr>
+<tr class="separator:a0c24d5dd7a200160900d4241696c9e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0472159b40306cf837a6ed5dc7dd3eb4"><td class="memItemLeft" align="right" valign="top"><a id="a0472159b40306cf837a6ed5dc7dd3eb4"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a0472159b40306cf837a6ed5dc7dd3eb4">TranspositionTableImpl</a> (<a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;&amp;) noexcept=delete</td></tr>
+<tr class="memdesc:a0472159b40306cf837a6ed5dc7dd3eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor(default) <br /></td></tr>
+<tr class="separator:a0472159b40306cf837a6ed5dc7dd3eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd58fa21a626dd2aec61507dc40830a2"><td class="memItemLeft" align="right" valign="top"><a id="acd58fa21a626dd2aec61507dc40830a2"></a>
+constexpr <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#acd58fa21a626dd2aec61507dc40830a2">operator=</a> (const <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;)=delete</td></tr>
+<tr class="memdesc:acd58fa21a626dd2aec61507dc40830a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assign operator(delete) <br /></td></tr>
+<tr class="separator:acd58fa21a626dd2aec61507dc40830a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a272a11c91dee79fc97c8f2ab4056465e"><td class="memItemLeft" align="right" valign="top"><a id="a272a11c91dee79fc97c8f2ab4056465e"></a>
+constexpr <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a272a11c91dee79fc97c8f2ab4056465e">operator=</a> (<a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;&amp;) noexcept=delete</td></tr>
+<tr class="memdesc:a272a11c91dee79fc97c8f2ab4056465e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assign operator(default) <br /></td></tr>
+<tr class="separator:a272a11c91dee79fc97c8f2ab4056465e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e574f79e8c418ac9e58b2a7a9f97ea9"><td class="memItemLeft" align="right" valign="top"><a id="a0e574f79e8c418ac9e58b2a7a9f97ea9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a0e574f79e8c418ac9e58b2a7a9f97ea9">~TranspositionTableImpl</a> ()=default</td></tr>
+<tr class="memdesc:a0e574f79e8c418ac9e58b2a7a9f97ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor(default) <br /></td></tr>
+<tr class="separator:a0e574f79e8c418ac9e58b2a7a9f97ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a315463f0ac29c325849d661a15cdc167"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a315463f0ac29c325849d661a15cdc167">Resize</a> (std::uint64_t hash_size_mb)</td></tr>
+<tr class="memdesc:a315463f0ac29c325849d661a15cdc167"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表サイズを <code>hash_size_mb</code> に変更し、書かれていた内容をすべて消去する。  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a315463f0ac29c325849d661a15cdc167">More...</a><br /></td></tr>
+<tr class="separator:a315463f0ac29c325849d661a15cdc167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ba9bb9c00c85a2475c98b256ab1051"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a60ba9bb9c00c85a2475c98b256ab1051">NewSearch</a> ()</td></tr>
+<tr class="memdesc:a60ba9bb9c00c85a2475c98b256ab1051"><td class="mdescLeft">&#160;</td><td class="mdescRight">新しい探索を始める  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a60ba9bb9c00c85a2475c98b256ab1051">More...</a><br /></td></tr>
+<tr class="separator:a60ba9bb9c00c85a2475c98b256ab1051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af55851a911e7918a6b97947855f2f325"><td class="memItemLeft" align="right" valign="top"><a id="af55851a911e7918a6b97947855f2f325"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#af55851a911e7918a6b97947855f2f325">Clear</a> ()</td></tr>
+<tr class="memdesc:af55851a911e7918a6b97947855f2f325"><td class="mdescLeft">&#160;</td><td class="mdescRight">以前の探索結果をすべて消去する。 <br /></td></tr>
+<tr class="separator:af55851a911e7918a6b97947855f2f325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c4e38870490176e0053914a17c908c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a96c4e38870490176e0053914a17c908c">BuildQuery</a> (const <a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n)</td></tr>
+<tr class="memdesc:a96c4e38870490176e0053914a17c908c"><td class="mdescLeft">&#160;</td><td class="mdescRight">局面 <code>n</code> のエントリを読み書きするためのクエリを返す  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a96c4e38870490176e0053914a17c908c">More...</a><br /></td></tr>
+<tr class="separator:a96c4e38870490176e0053914a17c908c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a0f0621bb26449fdf6d8c00a8600d7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a2a0f0621bb26449fdf6d8c00a8600d7e">BuildChildQuery</a> (const <a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n, Move move)</td></tr>
+<tr class="memdesc:a2a0f0621bb26449fdf6d8c00a8600d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">局面 <code>n</code> を <code>move</code> で 1 手進めたエントリを読み書きするためのクエリを返す  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a2a0f0621bb26449fdf6d8c00a8600d7e">More...</a><br /></td></tr>
+<tr class="separator:a2a0f0621bb26449fdf6d8c00a8600d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d9e65f7b1603b063cd8d3c7252a797"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ad0d9e65f7b1603b063cd8d3c7252a797">BuildQueryByKey</a> (<a class="el" href="structkomori_1_1_board_key_hand_pair.html">BoardKeyHandPair</a> key_hand_pair, Key path_key=<a class="el" href="namespacekomori.html#a69ee19c9520e168d882df693b6566a9b">kNullKey</a>)</td></tr>
+<tr class="memdesc:ad0d9e65f7b1603b063cd8d3c7252a797"><td class="mdescLeft">&#160;</td><td class="mdescRight">生のハッシュ値からクエリを構築する  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ad0d9e65f7b1603b063cd8d3c7252a797">More...</a><br /></td></tr>
+<tr class="separator:ad0d9e65f7b1603b063cd8d3c7252a797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4179ad57f2d4a73ece89f9c380a7751a"><td class="memItemLeft" align="right" valign="top">std::int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a4179ad57f2d4a73ece89f9c380a7751a">Hashfull</a> () const</td></tr>
+<tr class="memdesc:a4179ad57f2d4a73ece89f9c380a7751a"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表使用率（千分率）を計算する  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a4179ad57f2d4a73ece89f9c380a7751a">More...</a><br /></td></tr>
+<tr class="separator:a4179ad57f2d4a73ece89f9c380a7751a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03fe64f10c6759a3d546410a9a5dd97c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a03fe64f10c6759a3d546410a9a5dd97c">CollectGarbage</a> (double gc_removal_ratio)</td></tr>
+<tr class="memdesc:a03fe64f10c6759a3d546410a9a5dd97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ガベージコレクションを実行する  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a03fe64f10c6759a3d546410a9a5dd97c">More...</a><br /></td></tr>
+<tr class="separator:a03fe64f10c6759a3d546410a9a5dd97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e58a8adc4d1f758e77aa32caa4b34ba"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a1e58a8adc4d1f758e77aa32caa4b34ba">Save</a> (std::ostream &amp;os)</td></tr>
+<tr class="memdesc:a1e58a8adc4d1f758e77aa32caa4b34ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表の中身をバイナリ出力ストリーム <code>os</code> へ出力する  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a1e58a8adc4d1f758e77aa32caa4b34ba">More...</a><br /></td></tr>
+<tr class="separator:a1e58a8adc4d1f758e77aa32caa4b34ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38165a8d6b382f5b9454f51c717c90cd"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a38165a8d6b382f5b9454f51c717c90cd">Load</a> (std::istream &amp;is)</td></tr>
+<tr class="memdesc:a38165a8d6b382f5b9454f51c717c90cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリ入力ストリーム <code>in</code> から置換表エントリを読み込む。  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a38165a8d6b382f5b9454f51c717c90cd">More...</a><br /></td></tr>
+<tr class="separator:a38165a8d6b382f5b9454f51c717c90cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a153f8d7584e9c0cb08d8d3f6cf011cb3"><td class="memItemLeft" align="right" valign="top">std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a153f8d7584e9c0cb08d8d3f6cf011cb3">Capacity</a> () const noexcept</td></tr>
+<tr class="memdesc:a153f8d7584e9c0cb08d8d3f6cf011cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表に保存可能な要素数の概算値を取得する。  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a153f8d7584e9c0cb08d8d3f6cf011cb3">More...</a><br /></td></tr>
+<tr class="separator:a153f8d7584e9c0cb08d8d3f6cf011cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8deb6c61bc1c4defdd94beff438e9f03"><td class="memItemLeft" align="right" valign="top"><a id="a8deb6c61bc1c4defdd94beff438e9f03"></a>
+auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a8deb6c61bc1c4defdd94beff438e9f03">GetRegularTable</a> ()</td></tr>
+<tr class="memdesc:a8deb6c61bc1c4defdd94beff438e9f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">通常テーブルを直接取得する <br /></td></tr>
+<tr class="separator:a8deb6c61bc1c4defdd94beff438e9f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc4f6374ace54d567f639223993fb8f"><td class="memItemLeft" align="right" valign="top"><a id="acdc4f6374ace54d567f639223993fb8f"></a>
+auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#acdc4f6374ace54d567f639223993fb8f">GetRepetitionTable</a> ()</td></tr>
+<tr class="memdesc:acdc4f6374ace54d567f639223993fb8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">千日手テーブルを直接取得する <br /></td></tr>
+<tr class="separator:acdc4f6374ace54d567f639223993fb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a164137514dfd04eb3e86dac923943ecb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classkomori_1_1tt_1_1_entry.html">Entry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a164137514dfd04eb3e86dac923943ecb">entries_</a> = std::vector&lt;<a class="el" href="classkomori_1_1tt_1_1_entry.html">Entry</a>&gt;(<a class="el" href="structkomori_1_1tt_1_1_cluster.html#a35c6b2dab0316434687ec604a59e07b4">Cluster::kSize</a> + 1)</td></tr>
-<tr class="memdesc:a164137514dfd04eb3e86dac923943ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">通常エントリの本体。  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a164137514dfd04eb3e86dac923943ecb">More...</a><br /></td></tr>
-<tr class="separator:a164137514dfd04eb3e86dac923943ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a800912b095c8d8de3ff2d96cb2faf350"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a800912b095c8d8de3ff2d96cb2faf350">cluster_head_num_</a> {1}</td></tr>
-<tr class="memdesc:a800912b095c8d8de3ff2d96cb2faf350"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在確保しているエントリにうちクラスタ先頭にできる個数。  <a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a800912b095c8d8de3ff2d96cb2faf350">More...</a><br /></td></tr>
-<tr class="separator:a800912b095c8d8de3ff2d96cb2faf350"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2396b12bee814874dbc3203a1ecafdbe"><td class="memItemLeft" align="right" valign="top"><a id="a2396b12bee814874dbc3203a1ecafdbe"></a>
-<a class="el" href="classkomori_1_1_repetition_table.html">RepetitionTable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a2396b12bee814874dbc3203a1ecafdbe">rep_table_</a> {}</td></tr>
-<tr class="memdesc:a2396b12bee814874dbc3203a1ecafdbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">千日手テーブル <br /></td></tr>
-<tr class="separator:a2396b12bee814874dbc3203a1ecafdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411d029edda10ba1cd8f232990d261e9"><td class="memItemLeft" align="right" valign="top"><a id="a411d029edda10ba1cd8f232990d261e9"></a>
+<a class="el" href="classkomori_1_1tt_1_1_regular_table.html">RegularTable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a411d029edda10ba1cd8f232990d261e9">regular_table_</a> {}</td></tr>
+<tr class="memdesc:a411d029edda10ba1cd8f232990d261e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">通常テーブル <br /></td></tr>
+<tr class="separator:a411d029edda10ba1cd8f232990d261e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa384f1163c18ffaca170180346410460"><td class="memItemLeft" align="right" valign="top"><a id="aa384f1163c18ffaca170180346410460"></a>
+<a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aa384f1163c18ffaca170180346410460">repetition_table_</a> {}</td></tr>
+<tr class="memdesc:aa384f1163c18ffaca170180346410460"><td class="mdescLeft">&#160;</td><td class="mdescRight">千日手テーブル <br /></td></tr>
+<tr class="separator:aa384f1163c18ffaca170180346410460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename Query&gt;<br />
-class komori::tt::detail::TranspositionTableImpl&lt; Query &gt;</h3>
+<div class="textblock"><h3>template&lt;typename Query, typename RegularTable, typename RepetitionTable&gt;<br />
+class komori::tt::detail::TranspositionTableImpl&lt; Query, RegularTable, RepetitionTable &gt;</h3>
 
 <p>詰将棋エンジンの置換表本体 </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname"><a class="el" href="classkomori_1_1tt_1_1_query.html" title="連続する複数エントリを束ねてまとめて読み書きするためのクラス。">Query</a></td><td>クエリクラス。単体テストしやすいように、外部から注入できるようにテンプレートパラメータにする。</td></tr>
+    <tr><td class="paramname"><a class="el" href="classkomori_1_1tt_1_1_query.html" title="連続する複数エントリを束ねてまとめて読み書きするためのクラス。">Query</a></td><td>クエリクラス。単体テストしやすいように、外部から注入できるようにテンプレートパラメータにする。 </td></tr>
+    <tr><td class="paramname"><a class="el" href="classkomori_1_1tt_1_1_regular_table.html" title="経路に依存しない探索結果を記録する置換表。（通常テーブル）">RegularTable</a></td><td>通常テーブル。単体テストしやすいように、外部から注入できるようにテンプレートパラメータにする。 </td></tr>
+    <tr><td class="paramname"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html" title="千日手手順を記録する置換表">RepetitionTable</a></td><td>千日手テーブル。 単体テストしやすいように、外部から注入できるようにテンプレートパラメータにする。</td></tr>
   </table>
   </dd>
 </dl>
-<p>置換表は、大きく分けて通常テーブル（NormalTable）と千日手テーブル（RepetitionTable）に分けられる。 通常テーブルは大部分の探索結果を保存する領域で、探索中局面の pn/dn 値および証明済／反証済局面の 詰み手数を保存する。一方、千日手テーブルはその名の通り千日手局面を覚えておくための専用領域である。通常テーブルは 経路に依存しない探索結果を覚えているのに対し、千日手テーブルは経路依存の値を覚えるという棲み分けである。</p>
-<h2><a class="anchor" id="autotoc_md7"></a>
-実装詳細</h2>
-<p>詰将棋エンジンは、本将棋エンジンと比べ、探索結果 Look Up の際により多くの局面を調べる必要がある。 これは、局面の優等性／劣等性と呼ばれる性質を活かすためで、これがないと探索性能が大きく劣等してしまう。</p>
-<p>通常テーブルの実現方法についてはこれまで様々な方法を試してきたが、現在は「クラスタ」という単位で探索結果エントリを 管理している。以下ではクラスタの実現方法について簡単に説明する。</p>
-<p>まず、通常テーブルは <code>entries_</code> という配列で管理している。この配列の一部を切り出してクラスタを作る。 クラスタは、<code><a class="el" href="structkomori_1_1tt_1_1_cluster.html#a35c6b2dab0316434687ec604a59e07b4" title="Query で参照する Entry の塊（クラスタ）のサイズ。">Cluster::kSize</a></code> （10~30ぐらい） 個の連続領域に保存されたエントリで構成される。 それぞれの局面に対し、盤面ハッシュ値に基づいてクラスタが一意に決まる。（詳しくは <code><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aef979d21363bf4ae327519de391f9319" title="board_key に対応するクラスタを取得する">ClusterOf()</a></code> を参照） 違う局面同士が同じクラスタに割り当てられる可能性があるし、クラスタ間で領域が重複する可能性もある。</p>
-<div class="fragment"><div class="line">         0                                                                     m_clusters_          <a class="code" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a164137514dfd04eb3e86dac923943ecb">entries_</a>.size()</div>
-<div class="line"><a class="code" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a164137514dfd04eb3e86dac923943ecb">entries_</a> |                   |&lt;- overlap -&gt;|                                        |                     |</div>
-<div class="line">                    ^^^^^^^^^^^^^^^^^^^^^^^                                         ^^^^^^^^^^^^^^^^^^^^^^^</div>
-<div class="line">                    |&lt;- <a class="code" href="structkomori_1_1tt_1_1_cluster.html#a35c6b2dab0316434687ec604a59e07b4">Cluster::kSize</a>  -&gt;|                                         |&lt;- <a class="code" href="structkomori_1_1tt_1_1_cluster.html#a35c6b2dab0316434687ec604a59e07b4">Cluster::kSize</a> --&gt;|</div>
-<div class="line">                        cluster <span class="keywordflow">for</span> n1                                                  cluster <span class="keywordflow">for</span> n3</div>
-<div class="line">                             ^^^^^^^^^^^^^^^^^^^^^^^</div>
-<div class="line">                             |&lt;- <a class="code" href="structkomori_1_1tt_1_1_cluster.html#a35c6b2dab0316434687ec604a59e07b4">Cluster::kSize</a>  -&gt;|</div>
-<div class="line">                                cluster <span class="keywordflow">for</span> n2</div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_html_a164137514dfd04eb3e86dac923943ecb"><div class="ttname"><a href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a164137514dfd04eb3e86dac923943ecb">komori::tt::detail::TranspositionTableImpl::entries_</a></div><div class="ttdeci">std::vector&lt; Entry &gt; entries_</div><div class="ttdoc">通常エントリの本体。</div><div class="ttdef"><b>Definition:</b> <a href="transposition__table_8hpp_source.html#l00458">transposition_table.hpp:458</a></div></div>
-<div class="ttc" id="astructkomori_1_1tt_1_1_cluster_html_a35c6b2dab0316434687ec604a59e07b4"><div class="ttname"><a href="structkomori_1_1tt_1_1_cluster.html#a35c6b2dab0316434687ec604a59e07b4">komori::tt::Cluster::kSize</a></div><div class="ttdeci">static constexpr std::size_t kSize</div><div class="ttdoc">Query で参照する Entry の塊（クラスタ）のサイズ。</div><div class="ttdef"><b>Definition:</b> <a href="ttquery_8hpp_source.html#l00041">ttquery.hpp:41</a></div></div>
-</div><!-- fragment --><p>クラスタに対する値の読み書きは、クエリ（Query）クラスにより実現される。クラスタの読み書きに必要な情報は 盤面ハッシュや持ち駒などの探索が進んでも不変な値で構成されているので、クエリを使い回すことで 探索性能を向上させることができる。1回1回のクエリ構築はそれほど重い処理ではないように見えるかもしれないが、 実際には同じエントリに何回も読み書きする必要があるので、有意に高速化できる。</p>
+<p>置換表は、大きく分けて通常テーブル（RegularTable）と千日手テーブル（RepetitionTable）に分けられる。 通常テーブルは大部分の探索結果を保存する領域で、探索中局面の pn/dn 値および証明済／反証済局面の 詰み手数を保存する。一方、千日手テーブルはその名の通り千日手局面を覚えておくための専用領域である。通常テーブルは 経路に依存しない探索結果を覚えているのに対し、千日手テーブルは経路依存の値を覚えるという棲み分けである。</p>
+<p>置換表に対する値の読み書きは、クエリ（Query）クラスにより実現される。置換表の読み書きに必要な情報は （盤面ハッシュや持ち駒など）探索が進んでも不変な値で構成されているので、クエリを使い回すことで 探索性能を向上させることができる。1回1回のクエリ構築はそれほど重い処理ではないように見えるかもしれないが、 実際には同じエントリに何回も読み書きする必要があるので、有意に高速化できる。</p>
 <p>また、置換表読み書きは詰将棋エンジン内で頻繁に呼び出す処理のため、現局面だけでなく1手進めた局面のクエリの 構築することができる。（<code>CreateChildQuery()</code>）</p>
-<p>このクラスでは、<code><a class="el" href="classkomori_1_1tt_1_1_query.html" title="連続する複数エントリを束ねてまとめて読み書きするためのクラス。">Query</a></code> をテンプレートパラメータ化している。これは、単体テスト時に <code><a class="el" href="classkomori_1_1tt_1_1_query.html" title="連続する複数エントリを束ねてまとめて読み書きするためのクラス。">Query</a></code> をモック化して 外部から注入するためのトリックである。本物の <code><a class="el" href="classkomori_1_1tt_1_1_query.html" title="連続する複数エントリを束ねてまとめて読み書きするためのクラス。">Query</a></code> は外部から状態を観測しづらく、Look Up してみなければ 内部変数がどうなっているかが把握できない。単体テストで知りたいのは <code><a class="el" href="classkomori_1_1tt_1_1_query.html" title="連続する複数エントリを束ねてまとめて読み書きするためのクラス。">Query</a></code> のコンストラクト引数だけであるため、 <code><a class="el" href="classkomori_1_1tt_1_1_query.html" title="連続する複数エントリを束ねてまとめて読み書きするためのクラス。">Query</a></code> だけ別物に差し替えて中身をチェックできるようにしている。 </p>
+<p>このクラスでは、Query, <a class="el" href="classkomori_1_1tt_1_1_regular_table.html" title="経路に依存しない探索結果を記録する置換表。（通常テーブル）">RegularTable</a>, <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html" title="千日手手順を記録する置換表">RepetitionTable</a> をテンプレートパラメータ化している。これは、単体テスト時に 外部から注入するためのトリックである。本物のクラスは外部から状態を観測しづらく、Look Up してみなければ 内部変数がどうなっているかが把握できない。単体テストで知りたいのは参照クラスのメンバ関数が正しく呼ばれているかどうか なので、別物に差し替えて中身をチェックできるようにしている。 </p>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00119">119</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00048">48</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8027d564b18b152d88a0fcb72f8951ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8027d564b18b152d88a0fcb72f8951ff">&#9670;&nbsp;</a></span>BuildChildQuery()</h2>
+<a id="a2a0f0621bb26449fdf6d8c00a8600d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a0f0621bb26449fdf6d8c00a8600d7e">&#9670;&nbsp;</a></span>BuildChildQuery()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Query &gt; </div>
+template&lt;typename Query , typename RegularTable , typename RepetitionTable &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> &gt;::BuildChildQuery </td>
+          <td class="memname"><a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>, <a class="el" href="classkomori_1_1tt_1_1_regular_table.html">RegularTable</a>, <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &gt;::BuildChildQuery </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classkomori_1_1_node.html">Node</a> &amp;&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -264,43 +236,43 @@ template&lt;typename Query &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>クエリ</dd></dl>
-<p><code><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ab59c7a351190f091e8879c1a7fe496ba" title="局面 n のエントリを読み書きするためのクエリを返す">BuildQuery()</a></code> と比較して、<code>n.DoMove()</code> により局面を動かさなくてもクエリを構築できるため高速に動作する。 </p>
+<p><code><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a96c4e38870490176e0053914a17c908c" title="局面 n のエントリを読み書きするためのクエリを返す">BuildQuery()</a></code> と比較して、<code>n.DoMove()</code> により局面を動かさなくてもクエリを構築できるため高速に動作する。 </p>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00205">205</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00129">129</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_a8027d564b18b152d88a0fcb72f8951ff_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a8027d564b18b152d88a0fcb72f8951ff_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a8027d564b18b152d88a0fcb72f8951ff_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a8027d564b18b152d88a0fcb72f8951ff_cgraph">
-<area shape="rect" title="局面 n を move で 1 手進めたエントリを読み書きするためのクエリを返す" alt="" coords="5,121,184,177"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aef979d21363bf4ae327519de391f9319" title="board_key に対応するクラスタを取得する" alt="" coords="243,5,421,61"/>
-<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="243,85,421,112"/>
-<area shape="rect" href="classkomori_1_1_node.html#ac82d1552c36647cc88e62b104b77595d" title="move 後の攻め方の持ち駒" alt="" coords="233,136,431,163"/>
-<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="920,136,1060,163"/>
-<area shape="rect" href="classkomori_1_1_node.html#a6dfeb2e63ce33d5b9043010cbb8428c3" title="move 後の経路ハッシュ値" alt="" coords="232,263,432,289"/>
-<area shape="rect" href="namespacekomori.html#ae5838f0a6fe258eb2bc0197498cd7358" title="move 後の手駒を返す" alt="" coords="499,9,639,36"/>
-<area shape="rect" href="classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="480,60,657,87"/>
-<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="705,161,872,188"/>
-<area shape="rect" href="classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="721,60,856,87"/>
-<area shape="rect" href="namespacekomori.html#ae0ab7ef1101897b620e05208fc8975ee" title="現在の path_key と手 move から1手後の path_key を計算する。" alt="" coords="489,263,648,289"/>
+<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_a2a0f0621bb26449fdf6d8c00a8600d7e_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a2a0f0621bb26449fdf6d8c00a8600d7e_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a2a0f0621bb26449fdf6d8c00a8600d7e_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a2a0f0621bb26449fdf6d8c00a8600d7e_cgraph">
+<area shape="rect" title="局面 n を move で 1 手進めたエントリを読み書きするためのクエリを返す" alt="" coords="5,193,184,249"/>
+<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="243,107,421,133"/>
+<area shape="rect" href="classkomori_1_1_node.html#ac82d1552c36647cc88e62b104b77595d" title="move 後の攻め方の持ち駒" alt="" coords="233,157,431,184"/>
+<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="920,132,1060,159"/>
+<area shape="rect" href="classkomori_1_1_node.html#a6dfeb2e63ce33d5b9043010cbb8428c3" title="move 後の経路ハッシュ値" alt="" coords="232,259,432,285"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="243,310,421,351"/>
+<area shape="rect" href="namespacekomori.html#ae5838f0a6fe258eb2bc0197498cd7358" title="move 後の手駒を返す" alt="" coords="499,5,639,32"/>
+<area shape="rect" href="classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="480,56,657,83"/>
+<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="705,157,872,184"/>
+<area shape="rect" href="classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="721,56,856,83"/>
+<area shape="rect" href="namespacekomori.html#ae0ab7ef1101897b620e05208fc8975ee" title="現在の path_key と手 move から1手後の path_key を計算する。" alt="" coords="489,259,648,285"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ab59c7a351190f091e8879c1a7fe496ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab59c7a351190f091e8879c1a7fe496ba">&#9670;&nbsp;</a></span>BuildQuery()</h2>
+<a id="a96c4e38870490176e0053914a17c908c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96c4e38870490176e0053914a17c908c">&#9670;&nbsp;</a></span>BuildQuery()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Query &gt; </div>
+template&lt;typename Query , typename RegularTable , typename RepetitionTable &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> &gt;::BuildQuery </td>
+          <td class="memname"><a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>, <a class="el" href="classkomori_1_1tt_1_1_regular_table.html">RegularTable</a>, <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &gt;::BuildQuery </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classkomori_1_1_node.html">Node</a> &amp;&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
@@ -323,36 +295,36 @@ template&lt;typename Query &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>クエリ </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00187">187</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00111">111</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_ab59c7a351190f091e8879c1a7fe496ba_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_ab59c7a351190f091e8879c1a7fe496ba_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_ab59c7a351190f091e8879c1a7fe496ba_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_ab59c7a351190f091e8879c1a7fe496ba_cgraph">
-<area shape="rect" title="局面 n のエントリを読み書きするためのクエリを返す" alt="" coords="5,121,184,177"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aef979d21363bf4ae327519de391f9319" title="board_key に対応するクラスタを取得する" alt="" coords="239,5,417,61"/>
-<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="239,85,417,112"/>
-<area shape="rect" href="classkomori_1_1_node.html#a4181d9d06d60b7f11701b8add6a2e69f" title="現在の経路ハッシュ値" alt="" coords="232,136,424,163"/>
-<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="245,187,411,213"/>
-<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="472,212,612,239"/>
+<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_a96c4e38870490176e0053914a17c908c_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a96c4e38870490176e0053914a17c908c_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a96c4e38870490176e0053914a17c908c_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a96c4e38870490176e0053914a17c908c_cgraph">
+<area shape="rect" title="局面 n のエントリを読み書きするためのクエリを返す" alt="" coords="5,92,184,148"/>
+<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="239,5,417,32"/>
+<area shape="rect" href="classkomori_1_1_node.html#a4181d9d06d60b7f11701b8add6a2e69f" title="現在の経路ハッシュ値" alt="" coords="232,56,424,83"/>
+<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="245,107,411,133"/>
+<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="472,132,612,159"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="239,209,417,250"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="abe90236c4f9b745e50082a38cb935b4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe90236c4f9b745e50082a38cb935b4f">&#9670;&nbsp;</a></span>BuildQueryByKey()</h2>
+<a id="ad0d9e65f7b1603b063cd8d3c7252a797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0d9e65f7b1603b063cd8d3c7252a797">&#9670;&nbsp;</a></span>BuildQueryByKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Query &gt; </div>
+template&lt;typename Query , typename RegularTable , typename RepetitionTable &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> &gt;::BuildQueryByKey </td>
+          <td class="memname"><a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>, <a class="el" href="classkomori_1_1tt_1_1_regular_table.html">RegularTable</a>, <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &gt;::BuildQueryByKey </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structkomori_1_1_board_key_hand_pair.html">BoardKeyHandPair</a>&#160;</td>
           <td class="paramname"><em>key_hand_pair</em>, </td>
@@ -387,74 +359,76 @@ template&lt;typename Query &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>クエリ </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>二重カウント検出用 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00222">222</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00146">146</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_abe90236c4f9b745e50082a38cb935b4f_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_abe90236c4f9b745e50082a38cb935b4f_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_abe90236c4f9b745e50082a38cb935b4f_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_abe90236c4f9b745e50082a38cb935b4f_cgraph">
+<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_ad0d9e65f7b1603b063cd8d3c7252a797_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_ad0d9e65f7b1603b063cd8d3c7252a797_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_ad0d9e65f7b1603b063cd8d3c7252a797_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_ad0d9e65f7b1603b063cd8d3c7252a797_cgraph">
 <area shape="rect" title="生のハッシュ値からクエリを構築する" alt="" coords="5,5,184,61"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aef979d21363bf4ae327519de391f9319" title="board_key に対応するクラスタを取得する" alt="" coords="232,5,411,61"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="232,13,409,54"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aef979d21363bf4ae327519de391f9319"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef979d21363bf4ae327519de391f9319">&#9670;&nbsp;</a></span>ClusterOf()</h2>
+<a id="a153f8d7584e9c0cb08d8d3f6cf011cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a153f8d7584e9c0cb08d8d3f6cf011cb3">&#9670;&nbsp;</a></span>Capacity()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Query &gt; </div>
+template&lt;typename Query , typename RegularTable , typename RepetitionTable &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structkomori_1_1tt_1_1_cluster.html">Cluster</a> <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> &gt;::ClusterOf </td>
+          <td class="memname">std::uint64_t <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>, <a class="el" href="classkomori_1_1tt_1_1_regular_table.html">RegularTable</a>, <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &gt;::Capacity </td>
           <td>(</td>
-          <td class="paramtype">Key&#160;</td>
-          <td class="paramname"><em>board_key</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p><code>board_key</code> に対応するクラスタを取得する </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">board_key</td><td>盤面ハッシュ </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>board_key</code> に対応するクラスタ</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>クラスタの下位32ビットをもとにクラスタの位置を決定する </dd></dl>
+<p>置換表に保存可能な要素数の概算値を取得する。 </p>
+<dl class="section return"><dt>Returns</dt><dd>置換表に保存可能な要素数（概算値） </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00365">365</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00200">200</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_a153f8d7584e9c0cb08d8d3f6cf011cb3_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a153f8d7584e9c0cb08d8d3f6cf011cb3_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a153f8d7584e9c0cb08d8d3f6cf011cb3_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a153f8d7584e9c0cb08d8d3f6cf011cb3_cgraph">
+<area shape="rect" title="置換表に保存可能な要素数の概算値を取得する。" alt="" coords="5,5,184,61"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#a95d62200a1d7e2346e4b2678eeec31e7" title="通常テーブルに保存可能な要素数。" alt="" coords="232,13,409,54"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="a44b7e98c53567d3edbf1ae56c8346119"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44b7e98c53567d3edbf1ae56c8346119">&#9670;&nbsp;</a></span>CollectGarbage()</h2>
+<a id="a03fe64f10c6759a3d546410a9a5dd97c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03fe64f10c6759a3d546410a9a5dd97c">&#9670;&nbsp;</a></span>CollectGarbage()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Query &gt; </div>
+template&lt;typename Query , typename RegularTable , typename RepetitionTable &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> &gt;::CollectGarbage </td>
+          <td class="memname">void <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>, <a class="el" href="classkomori_1_1tt_1_1_regular_table.html">RegularTable</a>, <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &gt;::CollectGarbage </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>gc_removal_ratio</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -469,69 +443,34 @@ template&lt;typename Query &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>削除されたエントリ数</dd></dl>
 <p>通常テーブルおよび千日手テーブルのうち、必要なさそうなエントリの削除を行う。 </p>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00253">253</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00177">177</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_a44b7e98c53567d3edbf1ae56c8346119_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a44b7e98c53567d3edbf1ae56c8346119_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a44b7e98c53567d3edbf1ae56c8346119_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a44b7e98c53567d3edbf1ae56c8346119_cgraph">
-<area shape="rect" title="ガベージコレクションを実行する" alt="" coords="5,35,184,91"/>
-<area shape="rect" href="classkomori_1_1_repetition_table.html#a07f50e586a35845ddc5668114a2c3c69" title="置換表のうち古くなった部分を削除する。" alt="" coords="233,5,409,47"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a930abfba768428a42f92d44a34e8b69a" title="通常テーブルの中で、メモリ使用率が高いクラスタのエントリを間引く" alt="" coords="232,71,411,127"/>
-<area shape="rect" href="namespacekomori_1_1tt_1_1detail.html#a1bbc0b9aecca2528404c4cd1aefe10d8" title="[begin, end) の範囲内で使用中のエントリのうち最も探索量が小さいエントリを返す" alt="" coords="459,79,621,120"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a936d5ec9eaabcbb89691d774c05151a3" title="探索量" alt="" coords="669,79,804,120"/>
+<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_a03fe64f10c6759a3d546410a9a5dd97c_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a03fe64f10c6759a3d546410a9a5dd97c_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a03fe64f10c6759a3d546410a9a5dd97c_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a03fe64f10c6759a3d546410a9a5dd97c_cgraph">
+<area shape="rect" title="ガベージコレクションを実行する" alt="" coords="5,5,184,61"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#abc27e107c2b787df207bc94082d05e3e" title="通常テーブルの中で、メモリ使用率が高いエントリを間引く" alt="" coords="232,13,409,54"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#afa4c0e9340b321a94d0f21f42fd0ecbb" title="エントリをできるだけ手前の方に移動させる（コンパクション）" alt="" coords="457,13,635,54"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="683,13,860,54"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ae73a3c94b1f48c79a19ca5fe923f3998"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae73a3c94b1f48c79a19ca5fe923f3998">&#9670;&nbsp;</a></span>GetNormalTableHashRate()</h2>
+<a id="a4179ad57f2d4a73ece89f9c380a7751a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4179ad57f2d4a73ece89f9c380a7751a">&#9670;&nbsp;</a></span>Hashfull()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Query &gt; </div>
+template&lt;typename Query , typename RegularTable , typename RepetitionTable &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> &gt;::GetNormalTableHashRate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>通常テーブルのメモリ使用率を見積もる。 </p>
-<dl class="section return"><dt>Returns</dt><dd>メモリ使用率（通常テーブル）</dd></dl>
-<p><code>entries_</code> の中からいくつかのエントリをサンプリングしてメモリ使用率を求める。</p>
-<dl class="section note"><dt>Note</dt><dd><code>entries_</code> の最初と最後の <code><a class="el" href="structkomori_1_1tt_1_1_cluster.html#a35c6b2dab0316434687ec604a59e07b4" title="Query で参照する Entry の塊（クラスタ）のサイズ。">Cluster::kSize</a></code> 個の要素はクラスタ同士のオーバーラップが小さいので、 他の領域と比べて使用される確率が低い。 </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00385">385</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a90b0f0fc4d7bf66b78f4a9fe83668a2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90b0f0fc4d7bf66b78f4a9fe83668a2c">&#9670;&nbsp;</a></span>Hashfull()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Query &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::int32_t <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> &gt;::Hashfull </td>
+          <td class="memname">std::int32_t <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>, <a class="el" href="classkomori_1_1tt_1_1_regular_table.html">RegularTable</a>, <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &gt;::Hashfull </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -549,34 +488,34 @@ template&lt;typename Query &gt; </div>
 <p>置換表全体のメモリ使用率を計算する。置換表は通常テーブルと千日手テーブルに分かれているため、それぞれの メモリ使用率を重み付けして足し合わせることで全体のメモリ使用量を見積もる。</p>
 <p>通常テーブルのメモリ使用率を計算する際、置換表のサンプリングを行う。そのため、結果の計算にはそこそこの 計算コストがかかる。1秒に1回程度なら問題ないが、それ以上の頻度で呼び出すと性能劣化につながるので注意すること。 </p>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00239">239</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00163">163</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_a90b0f0fc4d7bf66b78f4a9fe83668a2c_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a90b0f0fc4d7bf66b78f4a9fe83668a2c_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a90b0f0fc4d7bf66b78f4a9fe83668a2c_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a90b0f0fc4d7bf66b78f4a9fe83668a2c_cgraph">
-<area shape="rect" title="置換表使用率（千分率）を計算する" alt="" coords="5,43,184,99"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ae73a3c94b1f48c79a19ca5fe923f3998" title="通常テーブルのメモリ使用率を見積もる。" alt="" coords="232,5,431,61"/>
-<area shape="rect" href="classkomori_1_1_repetition_table.html#a07d63d0c32bd646d5f15431db7436da0" title="置換表のメモリ使用率を求める。" alt="" coords="243,86,419,127"/>
-<area shape="rect" href="classkomori_1_1_repetition_table.html#ad84607a7f85a17ba9c03e9ec3d3f72fa" title="現在置換表に保存されている経路ハッシュ値の個数をカウントする。" alt="" coords="479,86,655,127"/>
+<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_a4179ad57f2d4a73ece89f9c380a7751a_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a4179ad57f2d4a73ece89f9c380a7751a_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a4179ad57f2d4a73ece89f9c380a7751a_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a4179ad57f2d4a73ece89f9c380a7751a_cgraph">
+<area shape="rect" title="置換表使用率（千分率）を計算する" alt="" coords="5,31,184,87"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#a9d2dd0f37b92f3af3f34b3b412a5c8a8" title="通常テーブルのメモリ使用率を見積もる。" alt="" coords="241,5,418,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a164c681a2c3ac0b306e8807d2d6014cd" title="置換表のメモリ使用率を求める。" alt="" coords="232,71,427,112"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#af6cd61f2f2b434ec7528b7a844a5179b" title="現在置換表に保存されている経路ハッシュ値の個数をカウントする。" alt="" coords="475,71,669,112"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ad9f0191c59973fbc2c9bd71bcdc9f397"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9f0191c59973fbc2c9bd71bcdc9f397">&#9670;&nbsp;</a></span>Load()</h2>
+<a id="a38165a8d6b382f5b9454f51c717c90cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38165a8d6b382f5b9454f51c717c90cd">&#9670;&nbsp;</a></span>Load()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Query &gt; </div>
+template&lt;typename Query , typename RegularTable , typename RepetitionTable &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::istream&amp; <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> &gt;::Load </td>
+          <td class="memname">std::istream&amp; <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>, <a class="el" href="classkomori_1_1tt_1_1_regular_table.html">RegularTable</a>, <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &gt;::Load </td>
           <td>(</td>
           <td class="paramtype">std::istream &amp;&#160;</td>
           <td class="paramname"><em>is</em></td><td>)</td>
@@ -597,37 +536,36 @@ template&lt;typename Query &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>is</code></dd></dl>
-<p><code><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a71e0e3efb7a03e1357860ced8ade6304" title="置換表の中身をバイナリ出力ストリーム os へ出力する">Save()</a></code> で書き出した情報を置換表へ読み込む。ストリームから読み込んだエントリを挿入するイメージであるため、 <code><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a71e0e3efb7a03e1357860ced8ade6304" title="置換表の中身をバイナリ出力ストリーム os へ出力する">Save()</a></code> 時の置換表サイズより現在のサイズが小さくても問題なく動作する。</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a71e0e3efb7a03e1357860ced8ade6304" title="置換表の中身をバイナリ出力ストリーム os へ出力する">Save()</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>is</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00326">326</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00194">194</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_ad9f0191c59973fbc2c9bd71bcdc9f397_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_ad9f0191c59973fbc2c9bd71bcdc9f397_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_ad9f0191c59973fbc2c9bd71bcdc9f397_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_ad9f0191c59973fbc2c9bd71bcdc9f397_cgraph">
-<area shape="rect" title="バイナリ入力ストリーム in から置換表エントリを読み込む。" alt="" coords="5,43,224,84"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a5430ffd685eb1bc77cf93af169bfa37f" title="盤面ハッシュ値（コンパクション用）" alt="" coords="294,5,429,47"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aef979d21363bf4ae327519de391f9319" title="board_key に対応するクラスタを取得する" alt="" coords="272,71,451,127"/>
+<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_a38165a8d6b382f5b9454f51c717c90cd_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a38165a8d6b382f5b9454f51c717c90cd_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a38165a8d6b382f5b9454f51c717c90cd_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a38165a8d6b382f5b9454f51c717c90cd_cgraph">
+<area shape="rect" title="バイナリ入力ストリーム in から置換表エントリを読み込む。" alt="" coords="5,39,224,80"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#a58fb5620ad6be47be76f6b33626ba643" title="バイナリ入力ストリーム in から置換表エントリを読み込む。" alt="" coords="272,39,449,80"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a5430ffd685eb1bc77cf93af169bfa37f" title="盤面ハッシュ値（コンパクション用）" alt="" coords="519,5,653,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="497,71,675,112"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ac09415a6380e61e26e5b45e21eaab209"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac09415a6380e61e26e5b45e21eaab209">&#9670;&nbsp;</a></span>NewSearch()</h2>
+<a id="a60ba9bb9c00c85a2475c98b256ab1051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ba9bb9c00c85a2475c98b256ab1051">&#9670;&nbsp;</a></span>NewSearch()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Query &gt; </div>
+template&lt;typename Query , typename RegularTable , typename RepetitionTable &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> &gt;::NewSearch </td>
+          <td class="memname">void <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>, <a class="el" href="classkomori_1_1tt_1_1_regular_table.html">RegularTable</a>, <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &gt;::NewSearch </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -642,77 +580,35 @@ template&lt;typename Query &gt; </div>
 
 <p>新しい探索を始める </p>
 <p>探索の開始前に必ず呼び出される。千日手テーブルについては、前回の探索結果を流用するのは難しいのですべて 消してしまう。一方、通常探索エントリは削除にも時間がかかるのでそのまま残しておく。</p>
-<p>通常探索エントリを完全に消去したい場合は <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a726314af190226efe35363a3d4d7bb31" title="以前の探索結果をすべて消去する。">Clear()</a> を使うこと。</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a726314af190226efe35363a3d4d7bb31" title="以前の探索結果をすべて消去する。">Clear</a> </dd></dl>
+<p>通常探索エントリを完全に消去したい場合は <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#af55851a911e7918a6b97947855f2f325" title="以前の探索結果をすべて消去する。">Clear()</a> を使うこと。</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#af55851a911e7918a6b97947855f2f325" title="以前の探索結果をすべて消去する。">Clear</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00170">170</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00096">96</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_ac09415a6380e61e26e5b45e21eaab209_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_ac09415a6380e61e26e5b45e21eaab209_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_ac09415a6380e61e26e5b45e21eaab209_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_ac09415a6380e61e26e5b45e21eaab209_cgraph">
+<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_a60ba9bb9c00c85a2475c98b256ab1051_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a60ba9bb9c00c85a2475c98b256ab1051_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a60ba9bb9c00c85a2475c98b256ab1051_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a60ba9bb9c00c85a2475c98b256ab1051_cgraph">
 <area shape="rect" title="新しい探索を始める" alt="" coords="5,5,184,61"/>
-<area shape="rect" href="classkomori_1_1_repetition_table.html#a6e4fe7b548eb8dfad9d8b4d14e2a8520" title="置換表に保存された経路ハッシュ値をすべて削除する。" alt="" coords="232,13,408,54"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a1cf06ccf4ee8c44a6f965ec43f21185a" title="置換表に保存された経路ハッシュ値をすべて削除する。" alt="" coords="232,13,427,54"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a930abfba768428a42f92d44a34e8b69a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a930abfba768428a42f92d44a34e8b69a">&#9670;&nbsp;</a></span>RemoveUnusedEntries()</h2>
+<a id="a315463f0ac29c325849d661a15cdc167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a315463f0ac29c325849d661a15cdc167">&#9670;&nbsp;</a></span>Resize()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Query &gt; </div>
+template&lt;typename Query , typename RegularTable , typename RepetitionTable &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> &gt;::RemoveUnusedEntries </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>通常テーブルの中で、メモリ使用率が高いクラスタのエントリを間引く </p>
-<p><code>kGcThreshold</code> 個以上のエントリが使用中のクラスタに対し、エントリの削除を行う。別の言い方をすると、 この関数呼び出し終了後は、すべてのクラスタの使用中エントリ数は <code>kGcThreshold</code> 個未満にする。 </p>
-
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00413">413</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_a930abfba768428a42f92d44a34e8b69a_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a930abfba768428a42f92d44a34e8b69a_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a930abfba768428a42f92d44a34e8b69a_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a930abfba768428a42f92d44a34e8b69a_cgraph">
-<area shape="rect" title="通常テーブルの中で、メモリ使用率が高いクラスタのエントリを間引く" alt="" coords="5,5,184,61"/>
-<area shape="rect" href="namespacekomori_1_1tt_1_1detail.html#a1bbc0b9aecca2528404c4cd1aefe10d8" title="[begin, end) の範囲内で使用中のエントリのうち最も探索量が小さいエントリを返す" alt="" coords="232,13,395,54"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a936d5ec9eaabcbb89691d774c05151a3" title="探索量" alt="" coords="443,13,577,54"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a58383bb26907056fd8569caabe1da371"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58383bb26907056fd8569caabe1da371">&#9670;&nbsp;</a></span>Resize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Query &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> &gt;::Resize </td>
+          <td class="memname">void <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>, <a class="el" href="classkomori_1_1tt_1_1_regular_table.html">RegularTable</a>, <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &gt;::Resize </td>
           <td>(</td>
           <td class="paramtype">std::uint64_t&#160;</td>
           <td class="paramname"><em>hash_size_mb</em></td><td>)</td>
@@ -734,36 +630,37 @@ template&lt;typename Query &gt; </div>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>hash_size_mb &gt;= 1</code></dd></dl>
-<p>置換表サイズが <code>hash_size_mb</code> 以下になるようにする。置換表は大きく分けて NormalTable と <a class="el" href="classkomori_1_1_repetition_table.html" title="千日手手順を記録する置換表">RepetitionTable</a> に 分けられるが、それらの合計サイズが <code>hash_size_mb</code>[MB] を超えないようにする。 </p>
+<p>置換表サイズが <code>hash_size_mb</code> 以下になるようにする。置換表は大きく分けて <a class="el" href="classkomori_1_1tt_1_1_regular_table.html" title="経路に依存しない探索結果を記録する置換表。（通常テーブル）">RegularTable</a> と <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html" title="千日手手順を記録する置換表">RepetitionTable</a> に 分けられるが、それらの合計サイズが <code>hash_size_mb</code>[MB] を超えないようにする。 </p>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00142">142</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00071">71</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_a58383bb26907056fd8569caabe1da371_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a58383bb26907056fd8569caabe1da371_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a58383bb26907056fd8569caabe1da371_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a58383bb26907056fd8569caabe1da371_cgraph">
-<area shape="rect" title="置換表サイズを hash_size_mb に変更し、書かれていた内容をすべて消去する。" alt="" coords="5,43,184,99"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a726314af190226efe35363a3d4d7bb31" title="以前の探索結果をすべて消去する。" alt="" coords="232,5,411,61"/>
-<area shape="rect" href="classkomori_1_1_repetition_table.html#acea4ddbb9558ad4b2490982e61a3585e" title="置換表に登録できる key の最大個数を設定する。" alt="" coords="233,86,409,127"/>
-<area shape="rect" href="classkomori_1_1_repetition_table.html#a6e4fe7b548eb8dfad9d8b4d14e2a8520" title="置換表に保存された経路ハッシュ値をすべて削除する。" alt="" coords="459,13,635,54"/>
+<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_a315463f0ac29c325849d661a15cdc167_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a315463f0ac29c325849d661a15cdc167_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a315463f0ac29c325849d661a15cdc167_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a315463f0ac29c325849d661a15cdc167_cgraph">
+<area shape="rect" title="置換表サイズを hash_size_mb に変更し、書かれていた内容をすべて消去する。" alt="" coords="5,31,184,87"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#a25ac332dc05bf44ac45e1e3aecd0a0c7" title="要素数が num_entries 個になるようにメモリの確保・解放を行う" alt="" coords="241,5,418,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a7c4e6740cfab83ffb119e184b2b286ed" title="置換表に登録できる key の最大個数を設定する。" alt="" coords="232,71,427,112"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#a0fb34e7a1f84b14f29e014f9bb8b41f6" title="以前の探索結果をすべて消去する。" alt="" coords="483,5,661,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a1cf06ccf4ee8c44a6f965ec43f21185a" title="置換表に保存された経路ハッシュ値をすべて削除する。" alt="" coords="475,71,669,112"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a71e0e3efb7a03e1357860ced8ade6304"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71e0e3efb7a03e1357860ced8ade6304">&#9670;&nbsp;</a></span>Save()</h2>
+<a id="a1e58a8adc4d1f758e77aa32caa4b34ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e58a8adc4d1f758e77aa32caa4b34ba">&#9670;&nbsp;</a></span>Save()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Query &gt; </div>
+template&lt;typename Query , typename RegularTable , typename RepetitionTable &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream&amp; <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> &gt;::Save </td>
+          <td class="memname">std::ostream&amp; <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a>, <a class="el" href="classkomori_1_1tt_1_1_regular_table.html">RegularTable</a>, <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &gt;::Save </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>os</em></td><td>)</td>
@@ -785,75 +682,18 @@ template&lt;typename Query &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>os</code></dd></dl>
-<p>現在の通常探索エントリのうち、探索量が kTTSaveAmountThreshold を超えるものをバイナリ出力ストリームへと書き出す。 探索量の小さなエントリを書き出さないことで、出力サイズを小さくすることができる。</p>
-<p>また、千日手テーブルについては書き出しを行わない。なぜなら、探索開始局面が同一でなければ再利用しづらい情報であり、 多くの詰将棋では千日手テーブルなしでもそれほど時間がかからず詰み手順を復元できるためである。</p>
-<p>書き出す情報は以下のような構造になっている。</p>
-<ul>
-<li>書き出すエントリ数(8 bytes)</li>
-<li>エントリ本体(sizeof(Entry) * n bytes)</li>
-</ul>
-<p>なお、<code>os</code> がバイナリモードではない場合、書き込みを行わないので注意。 </p>
+<p>千日手テーブルについては書き出しを行わない。なぜなら、探索開始局面が同一でなければ再利用しづらい情報であり、 多くの詰将棋では千日手テーブルなしでもそれほど時間がかからず詰み手順を復元できるためである。 </p>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00302">302</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
-
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00187">187</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl_a1e58a8adc4d1f758e77aa32caa4b34ba_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a1e58a8adc4d1f758e77aa32caa4b34ba_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a1e58a8adc4d1f758e77aa32caa4b34ba_cgraph" id="aclasskomori_1_1tt_1_1detail_1_1_transposition_table_impl_a1e58a8adc4d1f758e77aa32caa4b34ba_cgraph">
+<area shape="rect" title="置換表の中身をバイナリ出力ストリーム os へ出力する" alt="" coords="5,5,224,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#ad675f3ae1432dd82b49b1a39b7286766" title="置換表の中身をバイナリ出力ストリーム os へ出力する" alt="" coords="272,5,449,47"/>
+</map>
 </div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a800912b095c8d8de3ff2d96cb2faf350"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a800912b095c8d8de3ff2d96cb2faf350">&#9670;&nbsp;</a></span>cluster_head_num_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Query &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> &gt;::cluster_head_num_ {1}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>現在確保しているエントリにうちクラスタ先頭にできる個数。 </p>
-<p>必ず1以上で、<code>entries_.size() - kSize</code> に一致する。 </p>
-
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00464">464</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a164137514dfd04eb3e86dac923943ecb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a164137514dfd04eb3e86dac923943ecb">&#9670;&nbsp;</a></span>entries_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Query &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classkomori_1_1tt_1_1_entry.html">Entry</a>&gt; <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">komori::tt::detail::TranspositionTableImpl</a>&lt; <a class="el" href="classkomori_1_1tt_1_1_query.html">Query</a> &gt;::entries_ = std::vector&lt;<a class="el" href="classkomori_1_1tt_1_1_entry.html">Entry</a>&gt;(<a class="el" href="structkomori_1_1tt_1_1_cluster.html#a35c6b2dab0316434687ec604a59e07b4">Cluster::kSize</a> + 1)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>通常エントリの本体。 </p>
-<p>クエリの初期化時にクラスタを渡す必要があるため、サイズは必ず <code><a class="el" href="structkomori_1_1tt_1_1_cluster.html#a35c6b2dab0316434687ec604a59e07b4" title="Query で参照する Entry の塊（クラスタ）のサイズ。">Cluster::kSize</a> + 1</code> 以上。 </p>
-
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00458">458</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 
 </div>
 </div>

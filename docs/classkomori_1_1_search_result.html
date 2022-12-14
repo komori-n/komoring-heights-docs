@@ -210,6 +210,9 @@ Friends</h2></td></tr>
 std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_search_result.html#a26d64c5263c9f7028efcc666b0bd73d1">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classkomori_1_1_search_result.html">SearchResult</a> &amp;result)</td></tr>
 <tr class="memdesc:a26d64c5263c9f7028efcc666b0bd73d1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>result</code> を出力ストリームへ出力する。 <br /></td></tr>
 <tr class="separator:a26d64c5263c9f7028efcc666b0bd73d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf87446f4f9bf0ad3e9a8741e964eed"><td class="memItemLeft" align="right" valign="top">constexpr friend void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_search_result.html#abdf87446f4f9bf0ad3e9a8741e964eed">ExtendSearchThreshold</a> (const <a class="el" href="classkomori_1_1_search_result.html">SearchResult</a> &amp;result, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;thpn, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;thdn) noexcept</td></tr>
+<tr class="memdesc:abdf87446f4f9bf0ad3e9a8741e964eed"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>result</code> をもとにしきい値 <code>thpn</code>, <code>thdn</code> を大きくして探索を延長する（TCA）  <a href="classkomori_1_1_search_result.html#abdf87446f4f9bf0ad3e9a8741e964eed">More...</a><br /></td></tr>
+<tr class="separator:abdf87446f4f9bf0ad3e9a8741e964eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>探索結果をやり取りするためのクラス。 </p>
@@ -408,6 +411,62 @@ template&lt;bool kIsProven&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="search__result_8hpp_source.html#l00055">55</a> of file <a class="el" href="search__result_8hpp_source.html">search_result.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="abdf87446f4f9bf0ad3e9a8741e964eed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdf87446f4f9bf0ad3e9a8741e964eed">&#9670;&nbsp;</a></span>ExtendSearchThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr friend void ExtendSearchThreshold </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classkomori_1_1_search_result.html">SearchResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;&#160;</td>
+          <td class="paramname"><em>thpn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;&#160;</td>
+          <td class="paramname"><em>thdn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>result</code> をもとにしきい値 <code>thpn</code>, <code>thdn</code> を大きくして探索を延長する（TCA） </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result[in]</td><td>現在の探索結果 </td></tr>
+    <tr><td class="paramname">thpn[inout]</td><td>pnの探索しきい値 </td></tr>
+    <tr><td class="paramname">thdn[inout]</td><td>dnの探索しきい値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd><code>result.IsFinal() == true</code> ならしきい値を更新しないので注意。 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="search__result_8hpp_source.html#l00143">143</a> of file <a class="el" href="search__result_8hpp_source.html">search_result.hpp</a>.</p>
 
 </div>
 </div>

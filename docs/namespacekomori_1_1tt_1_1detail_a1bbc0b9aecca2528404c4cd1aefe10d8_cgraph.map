@@ -1,4 +1,0 @@
-<map id="komori::tt::detail::GetMinAmountEntry" name="komori::tt::detail::GetMinAmountEntry">
-<area shape="rect" id="node1" title="[begin, end) の範囲内で使用中のエントリのうち最も探索量が小さいエントリを返す" alt="" coords="5,5,168,47"/>
-<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_entry.html#a936d5ec9eaabcbb89691d774c05151a3" title="探索量" alt="" coords="216,5,351,47"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="komori::tt::detail::TranspositionTableImpl::Resize" name="komori::tt::detail::TranspositionTableImpl::Resize">
-<area shape="rect" id="node1" title="置換表サイズを hash_size_mb に変更し、書かれていた内容をすべて消去する。" alt="" coords="5,43,184,99"/>
-<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a726314af190226efe35363a3d4d7bb31" title="以前の探索結果をすべて消去する。" alt="" coords="232,5,411,61"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_repetition_table.html#acea4ddbb9558ad4b2490982e61a3585e" title="置換表に登録できる key の最大個数を設定する。" alt="" coords="233,86,409,127"/>
-<area shape="rect" id="node3" href="$classkomori_1_1_repetition_table.html#a6e4fe7b548eb8dfad9d8b4d14e2a8520" title="置換表に保存された経路ハッシュ値をすべて削除する。" alt="" coords="459,13,635,54"/>
-</map>

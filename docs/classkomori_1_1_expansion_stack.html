@@ -123,7 +123,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 const <a class="el" href="classkomori_1_1_local_expansion.html">LocalExpansion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_expansion_stack.html#af2c0120a43fa31fcea8c1949202678e3">Current</a> () const</td></tr>
 <tr class="memdesc:af2c0120a43fa31fcea8c1949202678e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">スタック先頭要素を返す。 <br /></td></tr>
 <tr class="separator:af2c0120a43fa31fcea8c1949202678e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1bb984f52e71df980b5a105b41f71f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_expansion_stack.html#ad1bb984f52e71df980b5a105b41f71f2">EliminateDoubleCount</a> (<a class="el" href="namespacekomori_1_1tt.html#ae50d49e3ae5dd1f00d60dff82c915a30">tt::TranspositionTable</a> &amp;tt, const <a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n)</td></tr>
+<tr class="memitem:ad1bb984f52e71df980b5a105b41f71f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_expansion_stack.html#ad1bb984f52e71df980b5a105b41f71f2">EliminateDoubleCount</a> (<a class="el" href="namespacekomori_1_1tt.html#ab367c034eba59afd3939578f638b0ffb">tt::TranspositionTable</a> &amp;tt, const <a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n)</td></tr>
 <tr class="memdesc:ad1bb984f52e71df980b5a105b41f71f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面が終点となるの二重カウント解消を試みる  <a href="classkomori_1_1_expansion_stack.html#ad1bb984f52e71df980b5a105b41f71f2">More...</a><br /></td></tr>
 <tr class="separator:ad1bb984f52e71df980b5a105b41f71f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -151,7 +151,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void komori::ExpansionStack::EliminateDoubleCount </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacekomori_1_1tt.html#ae50d49e3ae5dd1f00d60dff82c915a30">tt::TranspositionTable</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacekomori_1_1tt.html#ab367c034eba59afd3939578f638b0ffb">tt::TranspositionTable</a> &amp;&#160;</td>
           <td class="paramname"><em>tt</em>, </td>
         </tr>
         <tr>
@@ -188,25 +188,27 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1_expansion_stack_ad1bb984f52e71df980b5a105b41f71f2_cgraph.png" border="0" usemap="#aclasskomori_1_1_expansion_stack_ad1bb984f52e71df980b5a105b41f71f2_cgraph" alt=""/></div>
 <map name="aclasskomori_1_1_expansion_stack_ad1bb984f52e71df980b5a105b41f71f2_cgraph" id="aclasskomori_1_1_expansion_stack_ad1bb984f52e71df980b5a105b41f71f2_cgraph">
-<area shape="rect" title="現局面が終点となるの二重カウント解消を試みる" alt="" coords="5,205,184,246"/>
-<area shape="rect" href="classkomori_1_1_expansion_stack.html#ae7188bab1b61788cc1cafe1e73384c26" title="スタック先頭要素を返す。" alt="" coords="244,175,423,217"/>
-<area shape="rect" href="namespacekomori.html#aa8a333a0a9dfda36b2fc53731711e1f3" title="n を move した局面から置換表をたどると n の祖先に行き着くかどうか調べる" alt="" coords="232,241,435,268"/>
-<area shape="rect" href="classkomori_1_1_node.html#ae8e8fe23b128f7ae53c3878437828caa" title="move 後の盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="483,66,696,107"/>
-<area shape="rect" href="classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="1007,132,1185,159"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#abe90236c4f9b745e50082a38cb935b4f" title="生のハッシュ値からクエリを構築する" alt="" coords="500,292,679,348"/>
-<area shape="rect" href="classkomori_1_1_node.html#a518389ecf55b16ebf8f41dcb8c5ff731" title="(board_key, hand) が経路に含まれているかどうか" alt="" coords="744,249,959,276"/>
-<area shape="rect" href="classkomori_1_1_node.html#a1e4f1da48b69fb3356543b7cf37aab12" title="盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="750,183,953,225"/>
-<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="500,372,679,399"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_query.html#ab73f7666d785f8b6cf94d64579260c22" title="置換表に保存された現局面の親局面を取得する" alt="" coords="520,423,659,465"/>
+<area shape="rect" title="現局面が終点となるの二重カウント解消を試みる" alt="" coords="5,230,184,271"/>
+<area shape="rect" href="classkomori_1_1_expansion_stack.html#ae7188bab1b61788cc1cafe1e73384c26" title="スタック先頭要素を返す。" alt="" coords="244,201,423,242"/>
+<area shape="rect" href="namespacekomori.html#aa8a333a0a9dfda36b2fc53731711e1f3" title="n を move した局面から置換表をたどると n の祖先に行き着くかどうか調べる" alt="" coords="232,267,435,293"/>
+<area shape="rect" href="classkomori_1_1_node.html#ae8e8fe23b128f7ae53c3878437828caa" title="move 後の盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="483,91,696,133"/>
+<area shape="rect" href="classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="1007,157,1185,184"/>
+<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ad0d9e65f7b1603b063cd8d3c7252a797" title="生のハッシュ値からクエリを構築する" alt="" coords="500,317,679,373"/>
+<area shape="rect" href="classkomori_1_1_node.html#a518389ecf55b16ebf8f41dcb8c5ff731" title="(board_key, hand) が経路に含まれているかどうか" alt="" coords="744,275,959,301"/>
+<area shape="rect" href="classkomori_1_1_node.html#a1e4f1da48b69fb3356543b7cf37aab12" title="盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="750,209,953,250"/>
+<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="500,397,679,424"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_query.html#ab73f7666d785f8b6cf94d64579260c22" title="置換表に保存された現局面の親局面を取得する" alt="" coords="520,449,659,490"/>
 <area shape="rect" href="classkomori_1_1_node.html#ab47757b0ecd5c40af2b2246a17477a13" title="move 後の盤面ハッシュ値" alt="" coords="1233,5,1444,32"/>
-<area shape="rect" href="classkomori_1_1_node.html#ac82d1552c36647cc88e62b104b77595d" title="move 後の攻め方の持ち駒" alt="" coords="753,81,950,108"/>
-<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1492,132,1632,159"/>
-<area shape="rect" href="namespacekomori.html#ae5838f0a6fe258eb2bc0197498cd7358" title="move 後の手駒を返す" alt="" coords="1026,31,1166,57"/>
-<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="1013,183,1179,209"/>
-<area shape="rect" href="classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="1271,132,1406,159"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aef979d21363bf4ae327519de391f9319" title="board_key に対応するクラスタを取得する" alt="" coords="762,300,941,356"/>
-<area shape="rect" href="classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="1007,233,1185,260"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#a5b2e24143732a4396cc526be6aac0196" title="(board_key, hand) の同一局面が履歴に記録されているか調べる。" alt="" coords="1021,285,1171,326"/>
+<area shape="rect" href="classkomori_1_1_node.html#ac82d1552c36647cc88e62b104b77595d" title="move 後の攻め方の持ち駒" alt="" coords="753,107,950,133"/>
+<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1492,157,1632,184"/>
+<area shape="rect" href="namespacekomori.html#ae5838f0a6fe258eb2bc0197498cd7358" title="move 後の手駒を返す" alt="" coords="1026,107,1166,133"/>
+<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="1013,208,1179,235"/>
+<area shape="rect" href="classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="1271,157,1406,184"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="763,326,940,367"/>
+<area shape="rect" href="classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="1007,259,1185,285"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#a5b2e24143732a4396cc526be6aac0196" title="(board_key, hand) の同一局面が履歴に記録されているか調べる。" alt="" coords="1021,310,1171,351"/>
+<area shape="rect" href="namespacekomori.html#a8e1493fa709128d5d926e1809323c633" title="イテレータのペアで range&#45;based for をするためのアダプタ" alt="" coords="1273,317,1405,344"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#abf1c99385fe87cabfa3063c03470240d" title="エントリが未使用状態かを判定する" alt="" coords="784,449,919,490"/>
 </map>
 </div>
 

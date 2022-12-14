@@ -1,14 +1,10 @@
 <map id="komori::tt::Query::SetUnknown" name="komori::tt::Query::SetUnknown">
-<area shape="rect" id="node1" title="探索中の探索結果 result をクラスタに書き込む関数" alt="" coords="5,159,144,200"/>
+<area shape="rect" id="node1" title="探索中の探索結果 result を置換表に書き込む関数" alt="" coords="5,123,144,164"/>
 <area shape="rect" id="node2" href="$classkomori_1_1_search_result.html#af0b32b9f9fff602c03f5ea4ab4e5fff1" title="探索量" alt="" coords="205,5,365,47"/>
-<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_query.html#aeea8b41ef23416719e6ea2eb251d6a93" title="クラスタから持ち駒 hand の書き込み用のエントリを1つ選び現局面用に初期化し直す" alt="" coords="216,71,355,112"/>
-<area shape="rect" id="node8" href="$classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="192,137,379,163"/>
-<area shape="rect" id="node9" href="$classkomori_1_1tt_1_1_query.html#a3c9db541740b8b8a5729c93da5b8bb57" title="クラスタの中から (board_key_, hand) に一致するエントリを探す" alt="" coords="216,188,355,229"/>
-<area shape="rect" id="node11" href="$classkomori_1_1_search_result.html#abfe86f70fc0d0535b1b01057732f6acb" title="Unknown部分の結果。!IsFinal() の場合のみ呼び出し可能。" alt="" coords="205,253,365,295"/>
-<area shape="rect" id="node12" href="$classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="193,319,377,346"/>
-<area shape="rect" id="node4" href="$classkomori_1_1tt_1_1_entry.html#a936d5ec9eaabcbb89691d774c05151a3" title="探索量" alt="" coords="437,8,571,49"/>
-<area shape="rect" id="node5" href="$classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う" alt="" coords="427,74,581,101"/>
-<area shape="rect" id="node7" href="$classkomori_1_1tt_1_1_entry.html#abf1c99385fe87cabfa3063c03470240d" title="エントリが未使用状態かを判定する" alt="" coords="437,125,571,167"/>
-<area shape="rect" id="node6" href="$classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="629,67,779,108"/>
-<area shape="rect" id="node10" href="$classkomori_1_1tt_1_1_entry.html#acccbfa45c2b0e66e0c32bce4473c8723" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="437,191,571,232"/>
+<area shape="rect" id="node3" href="$classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="192,71,379,98"/>
+<area shape="rect" id="node4" href="$classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="216,123,355,164"/>
+<area shape="rect" id="node7" href="$classkomori_1_1_search_result.html#abfe86f70fc0d0535b1b01057732f6acb" title="Unknown部分の結果。!IsFinal() の場合のみ呼び出し可能。" alt="" coords="205,188,365,229"/>
+<area shape="rect" id="node8" href="$classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="193,254,377,281"/>
+<area shape="rect" id="node5" href="$classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う" alt="" coords="427,130,581,157"/>
+<area shape="rect" id="node6" href="$classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="629,123,779,164"/>
 </map>

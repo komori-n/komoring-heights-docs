@@ -98,9 +98,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5698f10ad45eda3404a3651b61854ca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a5698f10ad45eda3404a3651b61854ca5">SetThread</a> (Thread *thread)</td></tr>
 <tr class="memdesc:a5698f10ad45eda3404a3651b61854ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索スレッドを渡す（初期化時に1回だけ必要）  <a href="classkomori_1_1detail_1_1_search_monitor.html#a5698f10ad45eda3404a3651b61854ca5">More...</a><br /></td></tr>
 <tr class="separator:a5698f10ad45eda3404a3651b61854ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb4881dd5823e27d588d5a87c92c0e1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#abb4881dd5823e27d588d5a87c92c0e1a">NewSearch</a> (std::uint64_t gc_interval, std::uint64_t move_limit)</td></tr>
-<tr class="memdesc:abb4881dd5823e27d588d5a87c92c0e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">変数を初期化して探索を開始する。  <a href="classkomori_1_1detail_1_1_search_monitor.html#abb4881dd5823e27d588d5a87c92c0e1a">More...</a><br /></td></tr>
-<tr class="separator:abb4881dd5823e27d588d5a87c92c0e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c6ac2429ca88a1646bdc8ba072e5b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#af8c6ac2429ca88a1646bdc8ba072e5b2">NewSearch</a> (std::uint64_t hashfull_check_interval, std::uint64_t move_limit)</td></tr>
+<tr class="memdesc:af8c6ac2429ca88a1646bdc8ba072e5b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">変数を初期化して探索を開始する。  <a href="classkomori_1_1detail_1_1_search_monitor.html#af8c6ac2429ca88a1646bdc8ba072e5b2">More...</a><br /></td></tr>
+<tr class="separator:af8c6ac2429ca88a1646bdc8ba072e5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0272905cf2ad091e3cf9f25d2f727cf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a0272905cf2ad091e3cf9f25d2f727cf5">Visit</a> (Depth depth)</td></tr>
 <tr class="memdesc:a0272905cf2ad091e3cf9f25d2f727cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">深さ <code>depth</code> の局面に訪れたことを報告する  <a href="classkomori_1_1detail_1_1_search_monitor.html#a0272905cf2ad091e3cf9f25d2f727cf5">More...</a><br /></td></tr>
 <tr class="separator:a0272905cf2ad091e3cf9f25d2f727cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,14 +119,14 @@ std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a8732d41a7d1f887a7059a511c0f0574a">ShouldStop</a> () const</td></tr>
 <tr class="memdesc:a8732d41a7d1f887a7059a511c0f0574a"><td class="mdescLeft">&#160;</td><td class="mdescRight">今すぐ探索をやめるべきなら true <br /></td></tr>
 <tr class="separator:a8732d41a7d1f887a7059a511c0f0574a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4ac5dab3a6f7d490cfcb90829f45bc3"><td class="memItemLeft" align="right" valign="top"><a id="ae4ac5dab3a6f7d490cfcb90829f45bc3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#ae4ac5dab3a6f7d490cfcb90829f45bc3">ShouldGc</a> () const</td></tr>
-<tr class="memdesc:ae4ac5dab3a6f7d490cfcb90829f45bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">今すぐ GC を行うべきなら true <br /></td></tr>
-<tr class="separator:ae4ac5dab3a6f7d490cfcb90829f45bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae32263995118b2db44e75253598e8ad5"><td class="memItemLeft" align="right" valign="top"><a id="ae32263995118b2db44e75253598e8ad5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#ae32263995118b2db44e75253598e8ad5">ResetNextGc</a> ()</td></tr>
-<tr class="memdesc:ae32263995118b2db44e75253598e8ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">次回の GC タイミングを再設定する <br /></td></tr>
-<tr class="separator:ae32263995118b2db44e75253598e8ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769465e6930f15973ab17ac204b1bfe8"><td class="memItemLeft" align="right" valign="top"><a id="a769465e6930f15973ab17ac204b1bfe8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a769465e6930f15973ab17ac204b1bfe8">ShouldCheckHashfull</a> () const</td></tr>
+<tr class="memdesc:a769465e6930f15973ab17ac204b1bfe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">今すぐ置換表使用率をチェックすべきなら true <br /></td></tr>
+<tr class="separator:a769465e6930f15973ab17ac204b1bfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a738a1ed6f0aa22ce3d594c46f40c9c"><td class="memItemLeft" align="right" valign="top"><a id="a4a738a1ed6f0aa22ce3d594c46f40c9c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a4a738a1ed6f0aa22ce3d594c46f40c9c">ResetNextHashfullCheck</a> ()</td></tr>
+<tr class="memdesc:a4a738a1ed6f0aa22ce3d594c46f40c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">次回の置換表使用率チェックタイミングを更新する <br /></td></tr>
+<tr class="separator:a4a738a1ed6f0aa22ce3d594c46f40c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4198bca076beaa3ffc5ad980a6a8a60f"><td class="memItemLeft" align="right" valign="top"><a id="a4198bca076beaa3ffc5ad980a6a8a60f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a4198bca076beaa3ffc5ad980a6a8a60f">SetStop</a> (bool stop=true)</td></tr>
 <tr class="memdesc:a4198bca076beaa3ffc5ad980a6a8a60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">今すぐ探索をやめさせる <br /></td></tr>
@@ -162,14 +162,14 @@ std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a9dfdbf9fa5b6e6b86862aed82548d88c">move_limit_</a></td></tr>
 <tr class="memdesc:a9dfdbf9fa5b6e6b86862aed82548d88c"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索局面数の上限 <br /></td></tr>
 <tr class="separator:a9dfdbf9fa5b6e6b86862aed82548d88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a771772e02a7c325108a2b18bab8885b5"><td class="memItemLeft" align="right" valign="top"><a id="a771772e02a7c325108a2b18bab8885b5"></a>
-std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a771772e02a7c325108a2b18bab8885b5">gc_interval_</a></td></tr>
-<tr class="memdesc:a771772e02a7c325108a2b18bab8885b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">GC 周期（/探索局面数） <br /></td></tr>
-<tr class="separator:a771772e02a7c325108a2b18bab8885b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b194e7009f04972fe314e1a6408a70e"><td class="memItemLeft" align="right" valign="top"><a id="a2b194e7009f04972fe314e1a6408a70e"></a>
-std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a2b194e7009f04972fe314e1a6408a70e">next_gc_count_</a></td></tr>
-<tr class="memdesc:a2b194e7009f04972fe314e1a6408a70e"><td class="mdescLeft">&#160;</td><td class="mdescRight">次回の GC をすべき探索局面数 <br /></td></tr>
-<tr class="separator:a2b194e7009f04972fe314e1a6408a70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e38c06c9834aa0802a14542ae58b9f4"><td class="memItemLeft" align="right" valign="top"><a id="a2e38c06c9834aa0802a14542ae58b9f4"></a>
+std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a2e38c06c9834aa0802a14542ae58b9f4">hashfull_check_interval_</a></td></tr>
+<tr class="memdesc:a2e38c06c9834aa0802a14542ae58b9f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表使用率をチェックする周期[探索局面数] <br /></td></tr>
+<tr class="separator:a2e38c06c9834aa0802a14542ae58b9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0432fc7ab92c9b1d37b84e7d73582c"><td class="memItemLeft" align="right" valign="top"><a id="ade0432fc7ab92c9b1d37b84e7d73582c"></a>
+std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#ade0432fc7ab92c9b1d37b84e7d73582c">next_hashfull_check_</a></td></tr>
+<tr class="memdesc:ade0432fc7ab92c9b1d37b84e7d73582c"><td class="mdescLeft">&#160;</td><td class="mdescRight">次に置換表使用率をチェックするタイミング[探索局面数] <br /></td></tr>
+<tr class="separator:ade0432fc7ab92c9b1d37b84e7d73582c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2333931d98106357d95a68824a0cb567"><td class="memItemLeft" align="right" valign="top"><a id="a2333931d98106357d95a68824a0cb567"></a>
 Thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a2333931d98106357d95a68824a0cb567">thread_</a> {nullptr}</td></tr>
 <tr class="memdesc:a2333931d98106357d95a68824a0cb567"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索に用いるスレッド。探索局面数の取得に用いる。 <br /></td></tr>
@@ -205,7 +205,7 @@ static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom">
 <p>現在の探索情報を <code><a class="el" href="classkomori_1_1_usi_info.html" title="USIプロトコルに従い探索情報（info）を整形するクラス">UsiInfo</a></code> に詰めて返す。 </p>
 <dl class="section return"><dt>Returns</dt><dd>現在の探索情報 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00064">64</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00073">73</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -220,8 +220,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="abb4881dd5823e27d588d5a87c92c0e1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb4881dd5823e27d588d5a87c92c0e1a">&#9670;&nbsp;</a></span>NewSearch()</h2>
+<a id="af8c6ac2429ca88a1646bdc8ba072e5b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8c6ac2429ca88a1646bdc8ba072e5b2">&#9670;&nbsp;</a></span>NewSearch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,7 +230,7 @@ Here is the call graph for this function:</div>
           <td class="memname">void komori::detail::SearchMonitor::NewSearch </td>
           <td>(</td>
           <td class="paramtype">std::uint64_t&#160;</td>
-          <td class="paramname"><em>gc_interval</em>, </td>
+          <td class="paramname"><em>hashfull_check_interval</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -249,20 +249,20 @@ Here is the call graph for this function:</div>
 <p>変数を初期化して探索を開始する。 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">gc_interval</td><td>GC 周期（/探索局面数） </td></tr>
+    <tr><td class="paramname">hashfull_check_interval</td><td>置換表使用率チェック周期（/探索局面数） </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00043">43</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00052">52</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1detail_1_1_search_monitor_abb4881dd5823e27d588d5a87c92c0e1a_cgraph.png" border="0" usemap="#aclasskomori_1_1detail_1_1_search_monitor_abb4881dd5823e27d588d5a87c92c0e1a_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1detail_1_1_search_monitor_abb4881dd5823e27d588d5a87c92c0e1a_cgraph" id="aclasskomori_1_1detail_1_1_search_monitor_abb4881dd5823e27d588d5a87c92c0e1a_cgraph">
+<div class="center"><img src="classkomori_1_1detail_1_1_search_monitor_af8c6ac2429ca88a1646bdc8ba072e5b2_cgraph.png" border="0" usemap="#aclasskomori_1_1detail_1_1_search_monitor_af8c6ac2429ca88a1646bdc8ba072e5b2_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1detail_1_1_search_monitor_af8c6ac2429ca88a1646bdc8ba072e5b2_cgraph" id="aclasskomori_1_1detail_1_1_search_monitor_af8c6ac2429ca88a1646bdc8ba072e5b2_cgraph">
 <area shape="rect" title="変数を初期化して探索を開始する。" alt="" coords="5,39,220,80"/>
 <area shape="rect" href="classkomori_1_1_circular_array.html#aa62e891f09071eefff29a06498526414" title="全要素をデフォルトコンストラクタで初期化する。" alt="" coords="295,5,455,47"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#ae32263995118b2db44e75253598e8ad5" title="次回の GC タイミングを再設定する" alt="" coords="268,71,483,112"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a4a738a1ed6f0aa22ce3d594c46f40c9c" title="次回の置換表使用率チェックタイミングを更新する" alt="" coords="268,71,483,112"/>
 <area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#afc31d019620df41e7762e5bc9a1d0133" title="現在の探索局面数" alt="" coords="531,71,745,112"/>
 </map>
 </div>

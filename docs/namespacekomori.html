@@ -134,11 +134,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html">Node</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>Position</code> をラップして詰将棋特有の判定を追加するクラス。  <a href="classkomori_1_1_node.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_as_range.html">AsRange</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">イテレータのペアで range-based for をするためのアダプタ  <a href="classkomori_1_1_as_range.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_repetition_table.html">RepetitionTable</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">千日手手順を記録する置換表  <a href="classkomori_1_1_repetition_table.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_range.html">Range</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">イテレータの範囲を表す型。  <a href="classkomori_1_1_range.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_score.html">Score</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の探索状況に基づく評価値。  <a href="classkomori_1_1_score.html#details">More...</a><br /></td></tr>
@@ -237,7 +234,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa8a333a0a9dfda36b2fc53731711e1f3"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structkomori_1_1_branch_root_edge.html">BranchRootEdge</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori.html#aa8a333a0a9dfda36b2fc53731711e1f3">FindKnownAncestor</a> (<a class="el" href="namespacekomori_1_1tt.html#ae50d49e3ae5dd1f00d60dff82c915a30">tt::TranspositionTable</a> &amp;tt, const <a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n, Move move)</td></tr>
+<tr class="memitem:aa8a333a0a9dfda36b2fc53731711e1f3"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structkomori_1_1_branch_root_edge.html">BranchRootEdge</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori.html#aa8a333a0a9dfda36b2fc53731711e1f3">FindKnownAncestor</a> (<a class="el" href="namespacekomori_1_1tt.html#ab367c034eba59afd3939578f638b0ffb">tt::TranspositionTable</a> &amp;tt, const <a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n, Move move)</td></tr>
 <tr class="memdesc:aa8a333a0a9dfda36b2fc53731711e1f3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>n</code> を <code>move</code> した局面から置換表をたどると <code>n</code> の祖先に行き着くかどうか調べる  <a href="namespacekomori.html#aa8a333a0a9dfda36b2fc53731711e1f3">More...</a><br /></td></tr>
 <tr class="separator:aa8a333a0a9dfda36b2fc53731711e1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48f3fa8cf78887150c3558bf0ebbf47c"><td class="memItemLeft" align="right" valign="top"><a id="a48f3fa8cf78887150c3558bf0ebbf47c"></a>
@@ -309,11 +306,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 <tr class="memdesc:a0f2d9c64c7921e22678f953901421109"><td class="mdescLeft">&#160;</td><td class="mdescRight">相手に持ち駒 <code>stolen_pr</code> を1枚プレゼントした後の <code>path_key</code> を計算する。  <a href="namespacekomori.html#a0f2d9c64c7921e22678f953901421109">More...</a><br /></td></tr>
 <tr class="separator:a0f2d9c64c7921e22678f953901421109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a592455f5972570f64271d49fa7ffe9ff"><td class="memTemplParams" colspan="2">template&lt;typename IndexType  = std::size_t, typename Range  = std::nullptr_t&gt; </td></tr>
-<tr class="memitem:a592455f5972570f64271d49fa7ffe9ff"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classkomori_1_1detail_1_1_with_index_impl.html">detail::WithIndexImpl</a>&lt; IndexType, Range &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori.html#a592455f5972570f64271d49fa7ffe9ff">WithIndex</a> (Range &amp;&amp;range) noexcept(noexcept(<a class="el" href="classkomori_1_1detail_1_1_with_index_impl.html">detail::WithIndexImpl</a>&lt; IndexType, Range &gt;{std::forward&lt; Range &gt;(range)}))</td></tr>
+<tr class="memitem:a592455f5972570f64271d49fa7ffe9ff"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classkomori_1_1detail_1_1_with_index_impl.html">detail::WithIndexImpl</a>&lt; IndexType, <a class="el" href="classkomori_1_1_range.html">Range</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori.html#a592455f5972570f64271d49fa7ffe9ff">WithIndex</a> (<a class="el" href="classkomori_1_1_range.html">Range</a> &amp;&amp;range) noexcept(noexcept(<a class="el" href="classkomori_1_1detail_1_1_with_index_impl.html">detail::WithIndexImpl</a>&lt; IndexType, <a class="el" href="classkomori_1_1_range.html">Range</a> &gt;{std::forward&lt; <a class="el" href="classkomori_1_1_range.html">Range</a> &gt;(range)}))</td></tr>
 <tr class="memdesc:a592455f5972570f64271d49fa7ffe9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">添字つきのrange-based for 文用オブジェクトを生成する。  <a href="namespacekomori.html#a592455f5972570f64271d49fa7ffe9ff">More...</a><br /></td></tr>
 <tr class="separator:a592455f5972570f64271d49fa7ffe9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e1493fa709128d5d926e1809323c633"><td class="memTemplParams" colspan="2">template&lt;typename Iterator &gt; </td></tr>
+<tr class="memitem:a8e1493fa709128d5d926e1809323c633"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori.html#a8e1493fa709128d5d926e1809323c633">AsRange</a> (const std::pair&lt; Iterator, Iterator &gt; &amp;p) noexcept</td></tr>
+<tr class="memdesc:a8e1493fa709128d5d926e1809323c633"><td class="mdescLeft">&#160;</td><td class="mdescRight">イテレータのペアで range-based for をするためのアダプタ  <a href="namespacekomori.html#a8e1493fa709128d5d926e1809323c633">More...</a><br /></td></tr>
+<tr class="separator:a8e1493fa709128d5d926e1809323c633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e48fe65f82b93b6cd5cbdfc0751f695"><td class="memTemplParams" colspan="2">template&lt;std::size_t kSkip, typename Range &gt; </td></tr>
-<tr class="memitem:a8e48fe65f82b93b6cd5cbdfc0751f695"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori.html#a8e48fe65f82b93b6cd5cbdfc0751f695">Skip</a> (Range &amp;&amp;range) noexcept(noexcept(<a class="el" href="classkomori_1_1detail_1_1_skip_impl.html">detail::SkipImpl</a>&lt; Range, kSkip &gt;{ std::forward&lt; Range &gt;(range)}))</td></tr>
+<tr class="memitem:a8e48fe65f82b93b6cd5cbdfc0751f695"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori.html#a8e48fe65f82b93b6cd5cbdfc0751f695">Skip</a> (<a class="el" href="classkomori_1_1_range.html">Range</a> &amp;&amp;range) noexcept(noexcept(<a class="el" href="classkomori_1_1detail_1_1_skip_impl.html">detail::SkipImpl</a>&lt; <a class="el" href="classkomori_1_1_range.html">Range</a>, kSkip &gt;{ std::forward&lt; <a class="el" href="classkomori_1_1_range.html">Range</a> &gt;(range)}))</td></tr>
 <tr class="memdesc:a8e48fe65f82b93b6cd5cbdfc0751f695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterable の先頭 <code>kSkip</code> 要素をスキップする  <a href="namespacekomori.html#a8e48fe65f82b93b6cd5cbdfc0751f695">More...</a><br /></td></tr>
 <tr class="separator:a8e48fe65f82b93b6cd5cbdfc0751f695"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27ad9df4bbd3b788096fc2b47251524a"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori.html#a27ad9df4bbd3b788096fc2b47251524a">ConsumeValues</a> (std::initializer_list&lt; <a class="el" href="structkomori_1_1detail_1_1_anything.html">detail::Anything</a> &gt;) noexcept</td></tr>
@@ -349,7 +350,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac300cf6ad5859846af0891d87ef8ec8f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori.html#ac300cf6ad5859846af0891d87ef8ec8f">kAncestorSearchThreshold</a> = <a class="el" href="namespacekomori.html#ae827eafdb768dc1d7ee921cf9a345694">kPnDnUnit</a></td></tr>
+<tr class="memitem:ac300cf6ad5859846af0891d87ef8ec8f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori.html#ac300cf6ad5859846af0891d87ef8ec8f">kAncestorSearchThreshold</a> = 2 * <a class="el" href="namespacekomori.html#ae827eafdb768dc1d7ee921cf9a345694">kPnDnUnit</a></td></tr>
 <tr class="memdesc:ac300cf6ad5859846af0891d87ef8ec8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">二重カウント回避のために局面を過去方向へ遡るとき、目をつぶる pn/dn の差  <a href="namespacekomori.html#ac300cf6ad5859846af0891d87ef8ec8f">More...</a><br /></td></tr>
 <tr class="separator:ac300cf6ad5859846af0891d87ef8ec8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6277ec63507731b721341c17c86699ea"><td class="memItemLeft" align="right" valign="top"><a id="a6277ec63507731b721341c17c86699ea"></a>
@@ -788,6 +789,50 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a8e1493fa709128d5d926e1809323c633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1493fa709128d5d926e1809323c633">&#9670;&nbsp;</a></span>AsRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Iterator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto komori::AsRange </td>
+          <td>(</td>
+          <td class="paramtype">const std::pair&lt; Iterator, Iterator &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>イテレータのペアで range-based for をするためのアダプタ </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Iterator</td><td>イテレータ</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><code>std::multimap::equal_range()</code> のように、(begin, end) の形式のイテレータを所持しているとき、range-based for で 要素を取り出すためのアダプタ。</p>
+<div class="fragment"><div class="line">std::unordered_multimap&lt;std::int32_t, std::int32_t&gt; map{ ... };</div>
+<div class="line"><span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [key, value] : <a class="code" href="namespacekomori.html#a8e1493fa709128d5d926e1809323c633">AsRange</a>(map.equal_range(10))) {</div>
+<div class="line">  ...</div>
+<div class="line">}</div>
+<div class="ttc" id="anamespacekomori_html_a8e1493fa709128d5d926e1809323c633"><div class="ttname"><a href="namespacekomori.html#a8e1493fa709128d5d926e1809323c633">komori::AsRange</a></div><div class="ttdeci">auto AsRange(const std::pair&lt; Iterator, Iterator &gt; &amp;p) noexcept</div><div class="ttdoc">イテレータのペアで range-based for をするためのアダプタ</div><div class="ttdef"><b>Definition:</b> <a href="ranges_8hpp_source.html#l00246">ranges.hpp:246</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="ranges_8hpp_source.html#l00246">246</a> of file <a class="el" href="ranges_8hpp_source.html">ranges.hpp</a>.</p>
+
+</div>
+</div>
 <a id="af60b97ffafc4e100347e046e86ef02ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af60b97ffafc4e100347e046e86ef02ac">&#9670;&nbsp;</a></span>CheckMate1Ply()</h2>
 
@@ -824,7 +869,7 @@ Here is the call graph for this function:</div>
 <code>Hand</code> 1手詰があればその証明駒。なければ <code>kNullHand</code>。 </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>攻め方の玉に王手がかかっている等、一部局面では1手詰が見つけられない事がある。 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="node_8hpp_source.html#l00244">244</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8hpp_source.html#l00247">247</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1048,7 +1093,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">std::optional&lt;<a class="el" href="structkomori_1_1_branch_root_edge.html">BranchRootEdge</a>&gt; komori::FindKnownAncestor </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacekomori_1_1tt.html#ae50d49e3ae5dd1f00d60dff82c915a30">tt::TranspositionTable</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacekomori_1_1tt.html#ab367c034eba59afd3939578f638b0ffb">tt::TranspositionTable</a> &amp;&#160;</td>
           <td class="paramname"><em>tt</em>, </td>
         </tr>
         <tr>
@@ -1103,23 +1148,25 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespacekomori_aa8a333a0a9dfda36b2fc53731711e1f3_cgraph.png" border="0" usemap="#anamespacekomori_aa8a333a0a9dfda36b2fc53731711e1f3_cgraph" alt=""/></div>
 <map name="anamespacekomori_aa8a333a0a9dfda36b2fc53731711e1f3_cgraph" id="anamespacekomori_aa8a333a0a9dfda36b2fc53731711e1f3_cgraph">
-<area shape="rect" title="n を move した局面から置換表をたどると n の祖先に行き着くかどうか調べる" alt="" coords="5,241,208,268"/>
-<area shape="rect" href="classkomori_1_1_node.html#ae8e8fe23b128f7ae53c3878437828caa" title="move 後の盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="256,66,469,107"/>
-<area shape="rect" href="classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="781,132,958,159"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#abe90236c4f9b745e50082a38cb935b4f" title="生のハッシュ値からクエリを構築する" alt="" coords="273,292,452,348"/>
-<area shape="rect" href="classkomori_1_1_node.html#a518389ecf55b16ebf8f41dcb8c5ff731" title="(board_key, hand) が経路に含まれているかどうか" alt="" coords="517,249,732,276"/>
-<area shape="rect" href="classkomori_1_1_node.html#a1e4f1da48b69fb3356543b7cf37aab12" title="盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="523,183,726,225"/>
-<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="273,372,452,399"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_query.html#ab73f7666d785f8b6cf94d64579260c22" title="置換表に保存された現局面の親局面を取得する" alt="" coords="293,423,432,465"/>
+<area shape="rect" title="n を move した局面から置換表をたどると n の祖先に行き着くかどうか調べる" alt="" coords="5,267,208,293"/>
+<area shape="rect" href="classkomori_1_1_node.html#ae8e8fe23b128f7ae53c3878437828caa" title="move 後の盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="256,91,469,133"/>
+<area shape="rect" href="classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="781,157,958,184"/>
+<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ad0d9e65f7b1603b063cd8d3c7252a797" title="生のハッシュ値からクエリを構築する" alt="" coords="273,317,452,373"/>
+<area shape="rect" href="classkomori_1_1_node.html#a518389ecf55b16ebf8f41dcb8c5ff731" title="(board_key, hand) が経路に含まれているかどうか" alt="" coords="517,275,732,301"/>
+<area shape="rect" href="classkomori_1_1_node.html#a1e4f1da48b69fb3356543b7cf37aab12" title="盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="523,209,726,250"/>
+<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="273,397,452,424"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_query.html#ab73f7666d785f8b6cf94d64579260c22" title="置換表に保存された現局面の親局面を取得する" alt="" coords="293,449,432,490"/>
 <area shape="rect" href="classkomori_1_1_node.html#ab47757b0ecd5c40af2b2246a17477a13" title="move 後の盤面ハッシュ値" alt="" coords="1007,5,1217,32"/>
-<area shape="rect" href="classkomori_1_1_node.html#ac82d1552c36647cc88e62b104b77595d" title="move 後の攻め方の持ち駒" alt="" coords="526,81,723,108"/>
-<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1265,132,1405,159"/>
-<area shape="rect" href="namespacekomori.html#ae5838f0a6fe258eb2bc0197498cd7358" title="move 後の手駒を返す" alt="" coords="799,31,939,57"/>
-<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="786,183,953,209"/>
-<area shape="rect" href="classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="1045,132,1179,159"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aef979d21363bf4ae327519de391f9319" title="board_key に対応するクラスタを取得する" alt="" coords="535,300,714,356"/>
-<area shape="rect" href="classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="780,233,959,260"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#a5b2e24143732a4396cc526be6aac0196" title="(board_key, hand) の同一局面が履歴に記録されているか調べる。" alt="" coords="794,285,945,326"/>
+<area shape="rect" href="classkomori_1_1_node.html#ac82d1552c36647cc88e62b104b77595d" title="move 後の攻め方の持ち駒" alt="" coords="526,107,723,133"/>
+<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1265,157,1405,184"/>
+<area shape="rect" href="namespacekomori.html#ae5838f0a6fe258eb2bc0197498cd7358" title="move 後の手駒を返す" alt="" coords="799,107,939,133"/>
+<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="786,208,953,235"/>
+<area shape="rect" href="classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="1045,157,1179,184"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="536,326,713,367"/>
+<area shape="rect" href="classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="780,259,959,285"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#a5b2e24143732a4396cc526be6aac0196" title="(board_key, hand) の同一局面が履歴に記録されているか調べる。" alt="" coords="794,310,945,351"/>
+<area shape="rect" href="namespacekomori.html#a8e1493fa709128d5d926e1809323c633" title="イテレータのペアで range&#45;based for をするためのアダプタ" alt="" coords="1046,317,1178,344"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#abf1c99385fe87cabfa3063c03470240d" title="エントリが未使用状態かを判定する" alt="" coords="557,449,692,490"/>
 </map>
 </div>
 
@@ -1228,7 +1275,7 @@ Here is the call graph for this function:</div>
 <dd>
 false move に対するδ値は max で計上すべき </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="initial__estimation_8hpp_source.html#l00163">163</a> of file <a class="el" href="initial__estimation_8hpp_source.html">initial_estimation.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="initial__estimation_8hpp_source.html#l00162">162</a> of file <a class="el" href="initial__estimation_8hpp_source.html">initial_estimation.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1288,9 +1335,10 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="namespacekomori_a1b7ffdadd3d71c7adb2f85aa0bead587_cgraph.png" border="0" usemap="#anamespacekomori_a1b7ffdadd3d71c7adb2f85aa0bead587_cgraph" alt=""/></div>
 <map name="anamespacekomori_a1b7ffdadd3d71c7adb2f85aa0bead587_cgraph" id="anamespacekomori_a1b7ffdadd3d71c7adb2f85aa0bead587_cgraph">
 <area shape="rect" title="局面 n の手 move に対するざっくりとした評価値を返す。" alt="" coords="5,56,216,83"/>
-<area shape="rect" href="classkomori_1_1_node.html#af2b9d2ba13ac5a9536d6aa1b618d2753" title="AND node（玉方）の手番" alt="" coords="264,5,440,32"/>
-<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="488,81,628,108"/>
-<area shape="rect" href="classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="285,107,419,133"/>
+<area shape="rect" href="classkomori_1_1_node.html#ac55fed283b0bf189c42a5e73f3f1bf3c" title="玉の位置" alt="" coords="264,5,455,32"/>
+<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="521,56,661,83"/>
+<area shape="rect" href="classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="292,107,427,133"/>
+<area shape="rect" href="classkomori_1_1_node.html#af2b9d2ba13ac5a9536d6aa1b618d2753" title="AND node（玉方）の手番" alt="" coords="503,5,679,32"/>
 </map>
 </div>
 
@@ -1903,7 +1951,7 @@ template&lt;std::size_t kSkip, typename Range &gt; </div>
         <tr>
           <td class="memname">constexpr auto komori::Skip </td>
           <td>(</td>
-          <td class="paramtype">Range &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classkomori_1_1_range.html">Range</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>range</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1919,7 +1967,7 @@ template&lt;std::size_t kSkip, typename Range &gt; </div>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">kSkip</td><td>スキップする要素数 </td></tr>
-    <tr><td class="paramname">Range</td><td>iterableの型 </td></tr>
+    <tr><td class="paramname"><a class="el" href="classkomori_1_1_range.html" title="イテレータの範囲を表す型。">Range</a></td><td>iterableの型 </td></tr>
   </table>
   </dd>
 </dl>
@@ -1931,7 +1979,7 @@ template&lt;std::size_t kSkip, typename Range &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>range-based for で先頭 <code>kSize</code> 要素を飛ばした要素が取れるような iterable </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ranges_8hpp_source.html#l00284">284</a> of file <a class="el" href="ranges_8hpp_source.html">ranges.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ranges_8hpp_source.html#l00292">292</a> of file <a class="el" href="ranges_8hpp_source.html">ranges.hpp</a>.</p>
 
 </div>
 </div>
@@ -1984,9 +2032,9 @@ template&lt;typename IndexType  = std::size_t, typename Range  = std::nullptr_t&
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classkomori_1_1detail_1_1_with_index_impl.html">detail::WithIndexImpl</a>&lt;IndexType, Range&gt; komori::WithIndex </td>
+          <td class="memname">constexpr <a class="el" href="classkomori_1_1detail_1_1_with_index_impl.html">detail::WithIndexImpl</a>&lt;IndexType, <a class="el" href="classkomori_1_1_range.html">Range</a>&gt; komori::WithIndex </td>
           <td>(</td>
-          <td class="paramtype">Range &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classkomori_1_1_range.html">Range</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>range</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2002,7 +2050,7 @@ template&lt;typename IndexType  = std::size_t, typename Range  = std::nullptr_t&
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">IndexType</td><td>添字の型。デフォルトは <code>std::size_t</code>。 </td></tr>
-    <tr><td class="paramname">Range</td><td>lvalue reference OR nothrow move constructible </td></tr>
+    <tr><td class="paramname"><a class="el" href="classkomori_1_1_range.html" title="イテレータの範囲を表す型。">Range</a></td><td>lvalue reference OR nothrow move constructible </td></tr>
   </table>
   </dd>
 </dl>
@@ -2034,7 +2082,7 @@ template&lt;typename IndexType  = std::size_t, typename Range  = std::nullptr_t&
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> komori::kAncestorSearchThreshold = <a class="el" href="namespacekomori.html#ae827eafdb768dc1d7ee921cf9a345694">kPnDnUnit</a></td>
+          <td class="memname">constexpr <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> komori::kAncestorSearchThreshold = 2 * <a class="el" href="namespacekomori.html#ae827eafdb768dc1d7ee921cf9a345694">kPnDnUnit</a></td>
         </tr>
       </table>
   </td>

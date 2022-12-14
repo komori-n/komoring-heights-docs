@@ -8,5 +8,5 @@ var searchData=
   ['andhand_5',['AndHand',['../classkomori_1_1_node.html#aa5937f4e1ea7d06752752e1d7a015592',1,'komori::Node']]],
   ['anything_6',['Anything',['../structkomori_1_1detail_1_1_anything.html#ad5cf598505e05d0d038149e0f3b6adfc',1,'komori::detail::Anything::Anything()'],['../structkomori_1_1detail_1_1_anything.html',1,'komori::detail::Anything']]],
   ['applydeltahand_7',['ApplyDeltaHand',['../namespacekomori.html#a2b91824ee210b1157a170f0b0dc650cb',1,'komori']]],
-  ['asrange_8',['AsRange',['../classkomori_1_1_as_range.html#ac51a0f37269497e10d3ea95678c6ac6e',1,'komori::AsRange::AsRange()=delete'],['../classkomori_1_1_as_range.html#ab5982d1dd88d2912522efcb438cbfde6',1,'komori::AsRange::AsRange(const std::pair&lt; Iterator, Iterator &gt; &amp;p) noexcept'],['../classkomori_1_1_as_range.html',1,'komori::AsRange&lt; Iterator &gt;']]]
+  ['asrange_8',['AsRange',['../namespacekomori.html#a8e1493fa709128d5d926e1809323c633',1,'komori']]]
 ];

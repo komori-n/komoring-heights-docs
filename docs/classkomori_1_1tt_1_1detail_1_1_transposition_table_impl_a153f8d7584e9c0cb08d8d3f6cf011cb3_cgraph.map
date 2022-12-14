@@ -1,0 +1,4 @@
+<map id="komori::tt::detail::TranspositionTableImpl::Capacity" name="komori::tt::detail::TranspositionTableImpl::Capacity">
+<area shape="rect" id="node1" title="置換表に保存可能な要素数の概算値を取得する。" alt="" coords="5,5,184,61"/>
+<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_regular_table.html#a95d62200a1d7e2346e4b2678eeec31e7" title="通常テーブルに保存可能な要素数。" alt="" coords="232,13,409,54"/>
+</map>

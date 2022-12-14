@@ -91,7 +91,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>MateLen</code> と <code>MateLen16</code> の実装本体。中身はほぼ同じなので一箇所にまとめる。  <a href="classkomori_1_1detail_1_1_mate_len_impl.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkomori_1_1detail_1_1_has_begin_and_end_members.html">HasBeginAndEndMembers</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range が begin と end メンバ関数を持っているかどうか判定するメタ関数  <a href="structkomori_1_1detail_1_1_has_begin_and_end_members.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classkomori_1_1_range.html" title="イテレータの範囲を表す型。">Range</a> が begin と end メンバ関数を持っているかどうか判定するメタ関数  <a href="structkomori_1_1detail_1_1_has_begin_and_end_members.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_with_index_impl.html">WithIndexImpl</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>WithIndex</code> の実装本体  <a href="classkomori_1_1detail_1_1_with_index_impl.html#details">More...</a><br /></td></tr>
@@ -126,18 +126,18 @@ Functions</h2></td></tr>
 <tr class="separator:a730c115105733a5cbffe37428c86ce5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a723abd115e7a47a8c4072b9b1e7f7dd2"><td class="memTemplParams" colspan="2">template&lt;typename Range &gt; </td></tr>
 <tr class="memitem:a723abd115e7a47a8c4072b9b1e7f7dd2"><td class="memTemplItemLeft" align="right" valign="top">std::false_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a723abd115e7a47a8c4072b9b1e7f7dd2">HasBeginAndEndMembersCheck</a> (long)</td></tr>
-<tr class="memdesc:a723abd115e7a47a8c4072b9b1e7f7dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range が begin と end メンバ関数を持っているかどうか判定するダミー関数（never defined）  <a href="namespacekomori_1_1detail.html#a723abd115e7a47a8c4072b9b1e7f7dd2">More...</a><br /></td></tr>
+<tr class="memdesc:a723abd115e7a47a8c4072b9b1e7f7dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classkomori_1_1_range.html" title="イテレータの範囲を表す型。">Range</a> が begin と end メンバ関数を持っているかどうか判定するダミー関数（never defined）  <a href="namespacekomori_1_1detail.html#a723abd115e7a47a8c4072b9b1e7f7dd2">More...</a><br /></td></tr>
 <tr class="separator:a723abd115e7a47a8c4072b9b1e7f7dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abffad50024d3e4e836976c4bdb7dec01"><td class="memTemplParams" colspan="2">template&lt;typename Range , Constraints&lt; decltype(std::declval&lt; Range &gt;().begin()), decltype(std::declval&lt; Range &gt;().end())&gt;  = nullptr&gt; </td></tr>
 <tr class="memitem:abffad50024d3e4e836976c4bdb7dec01"><td class="memTemplItemLeft" align="right" valign="top">std::true_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#abffad50024d3e4e836976c4bdb7dec01">HasBeginAndEndMembersCheck</a> (int)</td></tr>
-<tr class="memdesc:abffad50024d3e4e836976c4bdb7dec01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range が begin と end メンバ関数を持っているかどうか判定するダミー関数（never defined）  <a href="namespacekomori_1_1detail.html#abffad50024d3e4e836976c4bdb7dec01">More...</a><br /></td></tr>
+<tr class="memdesc:abffad50024d3e4e836976c4bdb7dec01"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classkomori_1_1_range.html" title="イテレータの範囲を表す型。">Range</a> が begin と end メンバ関数を持っているかどうか判定するダミー関数（never defined）  <a href="namespacekomori_1_1detail.html#abffad50024d3e4e836976c4bdb7dec01">More...</a><br /></td></tr>
 <tr class="separator:abffad50024d3e4e836976c4bdb7dec01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65bf0cecc656d96fca9addfb4c90816f"><td class="memTemplParams" colspan="2">template&lt;typename Range , Constraints&lt; std::enable_if_t&lt; std::is_array_v&lt; std::remove_reference_t&lt; Range &gt;&gt;&gt;&gt;  = nullptr&gt; </td></tr>
-<tr class="memitem:a65bf0cecc656d96fca9addfb4c90816f"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">call_begin</a> (Range &amp;&amp;range) noexcept(noexcept(std::begin(std::forward&lt; Range &gt;(range))))</td></tr>
+<tr class="memitem:a65bf0cecc656d96fca9addfb4c90816f"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">call_begin</a> (<a class="el" href="classkomori_1_1_range.html">Range</a> &amp;&amp;range) noexcept(noexcept(std::begin(std::forward&lt; <a class="el" href="classkomori_1_1_range.html">Range</a> &gt;(range))))</td></tr>
 <tr class="memdesc:a65bf0cecc656d96fca9addfb4c90816f"><td class="mdescLeft">&#160;</td><td class="mdescRight">range-based for の要件に従って begin をコールする関数（配列版）  <a href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">More...</a><br /></td></tr>
 <tr class="separator:a65bf0cecc656d96fca9addfb4c90816f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a144bd1e9041f7686eede4096fcdfad22"><td class="memTemplParams" colspan="2">template&lt;typename Range , Constraints&lt; std::enable_if_t&lt; std::is_array_v&lt; std::remove_reference_t&lt; Range &gt;&gt;&gt;&gt;  = nullptr&gt; </td></tr>
-<tr class="memitem:a144bd1e9041f7686eede4096fcdfad22"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a> (Range &amp;&amp;range) noexcept(noexcept(std::end(std::forward&lt; Range &gt;(range))))</td></tr>
+<tr class="memitem:a144bd1e9041f7686eede4096fcdfad22"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a> (<a class="el" href="classkomori_1_1_range.html">Range</a> &amp;&amp;range) noexcept(noexcept(std::end(std::forward&lt; <a class="el" href="classkomori_1_1_range.html">Range</a> &gt;(range))))</td></tr>
 <tr class="memdesc:a144bd1e9041f7686eede4096fcdfad22"><td class="mdescLeft">&#160;</td><td class="mdescRight">range-based for の要件に従って end をコールする関数（配列版）  <a href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">More...</a><br /></td></tr>
 <tr class="separator:a144bd1e9041f7686eede4096fcdfad22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -191,7 +191,7 @@ template&lt;typename Range , Constraints&lt; std::enable_if_t&lt; std::is_array_
         <tr>
           <td class="memname">constexpr auto komori::detail::call_begin </td>
           <td>(</td>
-          <td class="paramtype">Range &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classkomori_1_1_range.html">Range</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>range</em></td><td>)</td>
           <td></td>
         </tr>
@@ -233,7 +233,7 @@ template&lt;typename Range , Constraints&lt; std::enable_if_t&lt; std::is_array_
         <tr>
           <td class="memname">constexpr auto komori::detail::call_end </td>
           <td>(</td>
-          <td class="paramtype">Range &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classkomori_1_1_range.html">Range</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>range</em></td><td>)</td>
           <td></td>
         </tr>
@@ -341,10 +341,10 @@ template&lt;typename Range , Constraints&lt; decltype(std::declval&lt; Range &gt
       </table>
 </div><div class="memdoc">
 
-<p>Range が begin と end メンバ関数を持っているかどうか判定するダミー関数（never defined） </p>
+<p><a class="el" href="classkomori_1_1_range.html" title="イテレータの範囲を表す型。">Range</a> が begin と end メンバ関数を持っているかどうか判定するダミー関数（never defined） </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Range</td><td>範囲 </td></tr>
+    <tr><td class="paramname"><a class="el" href="classkomori_1_1_range.html" title="イテレータの範囲を表す型。">Range</a></td><td>範囲 </td></tr>
   </table>
   </dd>
 </dl>
@@ -369,10 +369,10 @@ template&lt;typename Range &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Range が begin と end メンバ関数を持っているかどうか判定するダミー関数（never defined） </p>
+<p><a class="el" href="classkomori_1_1_range.html" title="イテレータの範囲を表す型。">Range</a> が begin と end メンバ関数を持っているかどうか判定するダミー関数（never defined） </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Range</td><td>範囲 </td></tr>
+    <tr><td class="paramname"><a class="el" href="classkomori_1_1_range.html" title="イテレータの範囲を表す型。">Range</a></td><td>範囲 </td></tr>
   </table>
   </dd>
 </dl>

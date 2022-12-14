@@ -1,4 +1,0 @@
-<map id="komori::tt::Query::FindEntry" name="komori::tt::Query::FindEntry">
-<area shape="rect" id="node1" title="クラスタの中から (board_key_, hand) に一致するエントリを探す" alt="" coords="5,5,144,47"/>
-<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_entry.html#acccbfa45c2b0e66e0c32bce4473c8723" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="192,5,327,47"/>
-</map>

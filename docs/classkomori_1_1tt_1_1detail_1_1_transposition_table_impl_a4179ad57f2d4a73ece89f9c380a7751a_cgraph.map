@@ -1,0 +1,6 @@
+<map id="komori::tt::detail::TranspositionTableImpl::Hashfull" name="komori::tt::detail::TranspositionTableImpl::Hashfull">
+<area shape="rect" id="node1" title="置換表使用率（千分率）を計算する" alt="" coords="5,31,184,87"/>
+<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_regular_table.html#a9d2dd0f37b92f3af3f34b3b412a5c8a8" title="通常テーブルのメモリ使用率を見積もる。" alt="" coords="241,5,418,47"/>
+<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_repetition_table.html#a164c681a2c3ac0b306e8807d2d6014cd" title="置換表のメモリ使用率を求める。" alt="" coords="232,71,427,112"/>
+<area shape="rect" id="node4" href="$classkomori_1_1tt_1_1_repetition_table.html#af6cd61f2f2b434ec7528b7a844a5179b" title="現在置換表に保存されている経路ハッシュ値の個数をカウントする。" alt="" coords="475,71,669,112"/>
+</map>

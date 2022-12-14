@@ -169,6 +169,10 @@ constexpr <a class="el" href="namespacekomori.html#a20dc4ee64c842a7caa36c7cf7496
 constexpr Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a5430ffd685eb1bc77cf93af169bfa37f">BoardKey</a> () const noexcept</td></tr>
 <tr class="memdesc:a5430ffd685eb1bc77cf93af169bfa37f"><td class="mdescLeft">&#160;</td><td class="mdescRight">盤面ハッシュ値（コンパクション用） <br /></td></tr>
 <tr class="separator:a5430ffd685eb1bc77cf93af169bfa37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af41ac40e2d1c945c167a2447c597c8"><td class="memItemLeft" align="right" valign="top"><a id="a0af41ac40e2d1c945c167a2447c597c8"></a>
+constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a0af41ac40e2d1c945c167a2447c597c8">CutAmount</a> () noexcept</td></tr>
+<tr class="memdesc:a0af41ac40e2d1c945c167a2447c597c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索量を小さくする。ただし 0 以下にはならない。 <br /></td></tr>
+<tr class="separator:a0af41ac40e2d1c945c167a2447c597c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff17fb59cbf6bc55653f3cd3fb80d291"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#aff17fb59cbf6bc55653f3cd3fb80d291">SetPossibleRepetition</a> () noexcept</td></tr>
 <tr class="memdesc:aff17fb59cbf6bc55653f3cd3fb80d291"><td class="mdescLeft">&#160;</td><td class="mdescRight">千日手の可能性ありフラグの設定および pn/dn の再初期化を行う。  <a href="classkomori_1_1tt_1_1_entry.html#aff17fb59cbf6bc55653f3cd3fb80d291">More...</a><br /></td></tr>
 <tr class="separator:aff17fb59cbf6bc55653f3cd3fb80d291"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,7 +294,7 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <p>1局面の探索結果を置換表に保存する際の単位となるクラス。</p>
 <p>実行速度を高めるために可読性や保守性を犠牲にして1クラスに機能を詰め込んでいる。置換表の Look Up は詰将棋探索において 最もよく使う機能であるため、泥臭く高速化することで全体の性能向上につながる。</p>
 <p>また、実行速度向上と置換表サイズの節約のために 64 バイトに収まるようにデータを詰め込む。</p>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 実装詳細</h2>
 <p>他のクラスよりも可読性を犠牲にしているため、普段よりも仕様を詳細に記す。</p>
 <p><code><a class="el" href="classkomori_1_1tt_1_1_entry.html" title="局面の探索結果を保続するための基本クラス。">Entry</a></code> は以下のように 64 bytes で構成されている。キャッシュで悪さをさせないように、64 バイトにアラインさせる。</p>
@@ -312,21 +316,21 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
 <div class="line">                56 |                       <a class="code" href="classkomori_1_1tt_1_1_entry.html#afc44e63fe5cd5df66660e7e0a170ac65">sum_mask_</a>                       |</div>
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a23de87519db9683666cd76a3b03b9ee4"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a23de87519db9683666cd76a3b03b9ee4">komori::tt::Entry::board_key_</a></div><div class="ttdeci">Key board_key_</div><div class="ttdoc">盤面ハッシュ値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00527">ttentry.hpp:527</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a38048203a3e45de279f64733c1830119"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a38048203a3e45de279f64733c1830119">komori::tt::Entry::pn_</a></div><div class="ttdeci">PnDn pn_</div><div class="ttdoc">pn値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00532">ttentry.hpp:532</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a4fb181b4ee5cc175a792c52d2417e9f9"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a4fb181b4ee5cc175a792c52d2417e9f9">komori::tt::Entry::amount_</a></div><div class="ttdeci">SearchAmount amount_</div><div class="ttdoc">現局面の探索量</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00526">ttentry.hpp:526</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a6ed07741113f8839a56f8b2fedf655cf"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a6ed07741113f8839a56f8b2fedf655cf">komori::tt::Entry::dn_</a></div><div class="ttdeci">PnDn dn_</div><div class="ttdoc">dn値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00533">ttentry.hpp:533</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a7467449eb036b1783d9529287248708c"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a7467449eb036b1783d9529287248708c">komori::tt::Entry::parent_board_key_</a></div><div class="ttdeci">Key parent_board_key_</div><div class="ttdoc">親局面の盤面ハッシュ値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00539">ttentry.hpp:539</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a8b91bd93d2ee938f0a54b8457fe75504"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a8b91bd93d2ee938f0a54b8457fe75504">komori::tt::Entry::hand_</a></div><div class="ttdeci">Hand hand_</div><div class="ttdoc">現局面の持ち駒（コンストラクト時は無効値をセット）</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00525">ttentry.hpp:525</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_aabe391ce30afb4acbcb187149d346cd5"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#aabe391ce30afb4acbcb187149d346cd5">komori::tt::Entry::parent_hand_</a></div><div class="ttdeci">Hand parent_hand_</div><div class="ttdoc">親局面の持ち駒</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00538">ttentry.hpp:538</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_ac979c98462307db37611841ba172c857"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#ac979c98462307db37611841ba172c857">komori::tt::Entry::proven_len_</a></div><div class="ttdeci">MateLen16 proven_len_</div><div class="ttdoc">詰み手数</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00529">ttentry.hpp:529</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_afc44e63fe5cd5df66660e7e0a170ac65"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#afc44e63fe5cd5df66660e7e0a170ac65">komori::tt::Entry::sum_mask_</a></div><div class="ttdeci">BitSet64 sum_mask_</div><div class="ttdoc">δ値を和で計算する子の集合</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00540">ttentry.hpp:540</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_afc83a601ee79496067b5e63cdef440d7"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#afc83a601ee79496067b5e63cdef440d7">komori::tt::Entry::min_depth_</a></div><div class="ttdeci">std::int16_t min_depth_</div><div class="ttdoc">最小探索深さ。LookUp() 中に書き換える可能性があるので mutable。</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00535">ttentry.hpp:535</a></div></div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md9"></a>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a23de87519db9683666cd76a3b03b9ee4"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a23de87519db9683666cd76a3b03b9ee4">komori::tt::Entry::board_key_</a></div><div class="ttdeci">Key board_key_</div><div class="ttdoc">盤面ハッシュ値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00530">ttentry.hpp:530</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a38048203a3e45de279f64733c1830119"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a38048203a3e45de279f64733c1830119">komori::tt::Entry::pn_</a></div><div class="ttdeci">PnDn pn_</div><div class="ttdoc">pn値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00535">ttentry.hpp:535</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a4fb181b4ee5cc175a792c52d2417e9f9"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a4fb181b4ee5cc175a792c52d2417e9f9">komori::tt::Entry::amount_</a></div><div class="ttdeci">SearchAmount amount_</div><div class="ttdoc">現局面の探索量</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00529">ttentry.hpp:529</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a6ed07741113f8839a56f8b2fedf655cf"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a6ed07741113f8839a56f8b2fedf655cf">komori::tt::Entry::dn_</a></div><div class="ttdeci">PnDn dn_</div><div class="ttdoc">dn値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00536">ttentry.hpp:536</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a7467449eb036b1783d9529287248708c"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a7467449eb036b1783d9529287248708c">komori::tt::Entry::parent_board_key_</a></div><div class="ttdeci">Key parent_board_key_</div><div class="ttdoc">親局面の盤面ハッシュ値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00542">ttentry.hpp:542</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a8b91bd93d2ee938f0a54b8457fe75504"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a8b91bd93d2ee938f0a54b8457fe75504">komori::tt::Entry::hand_</a></div><div class="ttdeci">Hand hand_</div><div class="ttdoc">現局面の持ち駒（コンストラクト時は無効値をセット）</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00528">ttentry.hpp:528</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_aabe391ce30afb4acbcb187149d346cd5"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#aabe391ce30afb4acbcb187149d346cd5">komori::tt::Entry::parent_hand_</a></div><div class="ttdeci">Hand parent_hand_</div><div class="ttdoc">親局面の持ち駒</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00541">ttentry.hpp:541</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_ac979c98462307db37611841ba172c857"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#ac979c98462307db37611841ba172c857">komori::tt::Entry::proven_len_</a></div><div class="ttdeci">MateLen16 proven_len_</div><div class="ttdoc">詰み手数</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00532">ttentry.hpp:532</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_afc44e63fe5cd5df66660e7e0a170ac65"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#afc44e63fe5cd5df66660e7e0a170ac65">komori::tt::Entry::sum_mask_</a></div><div class="ttdeci">BitSet64 sum_mask_</div><div class="ttdoc">δ値を和で計算する子の集合</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00543">ttentry.hpp:543</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_afc83a601ee79496067b5e63cdef440d7"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#afc83a601ee79496067b5e63cdef440d7">komori::tt::Entry::min_depth_</a></div><div class="ttdeci">std::int16_t min_depth_</div><div class="ttdoc">最小探索深さ。LookUp() 中に書き換える可能性があるので mutable。</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00538">ttentry.hpp:538</a></div></div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md8"></a>
 初期化</h3>
 <p>配列により一気にメモリ確保したいので、デフォルトコンストラクト可能にする。</p>
 <p>エントリを初めて使う際は、<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う">Init()</a></code> により初期化を行う。これにより、必要なメンバ変数に初期値設定が行われ、 エントリが使える状態になる。エントリがもう必要なくなった場合、<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#adb0178900d1a953bca7be6dd7a3af7fe" title="エントリに無効値を設定する">SetNull()</a></code> により無効値をセットできる。 無効値がセットされたエントリは <code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う">Init()</a></code> によりまた上書きして使用することができる。</p>
-<h3><a class="anchor" id="autotoc_md10"></a>
+<h3><a class="anchor" id="autotoc_md9"></a>
 無効値判定</h3>
 <p>無効値の判定は <code>hand_</code> の値が <code>kNullHand</code> かどうかを調べることにより行う。無効値の判定は TT のガベージコレクションや 空きエントリの探索など、探索中にとても頻繁に行いたいので、先頭アドレスに無効値判定のための情報を置いている。</p>
 <p>以前は <code>board_key_ == kNullKey</code> で判定していたが、1/2^64 の確率で誤検知してしまう欠点があった。 合法局面では <code>hand_</code> が <code>kNullHand</code> と一致することはないので、<code>hand_</code> に無効値を格納する方が優れている。</p>
@@ -338,11 +342,11 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <li>IsFor(key, hand)</li>
 </ul>
 <p>上記以外の関数をコールしたときの挙動は未定義なので注意すること。</p>
-<h3><a class="anchor" id="autotoc_md11"></a>
+<h3><a class="anchor" id="autotoc_md10"></a>
 千日手判定</h3>
 <p>千日手は局面自体ではなく経路（path）に依存する概念なので、Entry 内で直接千日手状態を保存することはない。代わりに、 「千日手の可能性があるか」のフラグを保持する。このフラグの有無により千日手判定の別処理を行うかどうかを決める。</p>
 <p><code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う">Init()</a></code> 直後は「千日手可能性フラグ」は立っていない。明示的に <code><a class="el" href="classkomori_1_1tt_1_1_entry.html#aff17fb59cbf6bc55653f3cd3fb80d291" title="千日手の可能性ありフラグの設定および pn/dn の再初期化を行う。">SetPossibleRepetition()</a></code> をコールすることでのみ 千日手フラグを立てることができる。千日手フラグは <code><a class="el" href="classkomori_1_1tt_1_1_entry.html#abe9e4322a0d2aecbc20d2f0a863c60f6" title="千日手可能性フラグが立っているかどうか判定する。">IsPossibleRepetition()</a></code> により取得できる。</p>
-<h3><a class="anchor" id="autotoc_md12"></a>
+<h3><a class="anchor" id="autotoc_md11"></a>
 詰み／不詰の保存方法</h3>
 <p>余詰探索で「n手詰以下 m手詰み以上」という状態を扱いたいので、詰み、不詰、探索中情報を同時に持てるようにする。 すなわち、単純に pn/dn を持つのに加え、詰みの上界 <code>proven_len_</code> と不詰の下界 <code>disproven_len_</code> を保持する。これは、 例えばn手以下の詰みだと分かっている局面において、さらに探索を延長して n-1 手以下で詰まないことを示す際に用いる。</p>
 <p>整理すると、以下のようになる。</p>
@@ -352,7 +356,7 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <li><code>disproven_len_</code> 手以下：不詰</li>
 </ul>
 <p><code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う">Init()</a></code> 直後は、-1手不詰、+∞手詰みで初期化する。こうすることで、任意の非負有限手に対し不明（探索中）の状態に 設定できる。</p>
-<h3><a class="anchor" id="autotoc_md13"></a>
+<h3><a class="anchor" id="autotoc_md12"></a>
 Look Up</h3>
 <p>探索結果の取得には関数 <code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a7f048fc3d6713a7ba3a8ce187d8f19a3" title="pn, dn などの探索情報を取得する">LookUp()</a></code> を用いる。<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a7f048fc3d6713a7ba3a8ce187d8f19a3" title="pn, dn などの探索情報を取得する">LookUp()</a></code> は優等性や劣等性を生かして pn, dn を取得する関数である。 優等局面や劣等局面に対し、以下の性質が成り立つ。</p>
 <ol type="1">
@@ -363,12 +367,12 @@ Look Up</h3>
 </ol>
 <p>このように、<code>hand_</code> が現局面と一致しない局面の情報から詰み／不詰を導いたり、証明数や反証数の更新をすることができる。</p>
 <p>なお、1, 2 に関しては活用方法しだいで無限ループに陥る可能性があるので注意。</p>
-<h3><a class="anchor" id="autotoc_md14"></a>
+<h3><a class="anchor" id="autotoc_md13"></a>
 探索量</h3>
 <p><a class="el" href="classkomori_1_1tt_1_1_entry.html" title="局面の探索結果を保続するための基本クラス。">Entry</a> には探索量（amount）が格納されている。これは、置換表領域が不足したときに消すエントリを選ぶ際の基準にする。 つまり、複数の削除候補のエントリがある場合、最も探索量の小さいエントリを消すことで削除による情報の損失を抑える。</p>
 <p>古い詰将棋エンジンの Small Tree GC に似ているが、「探索量」は厳密に木のサイズをカウントすることはしない。これは、 木のサイズのカウントを行うと、二重カウント問題が発生したときに探索量がオーバーフローしてしまい正しく不要なエントリを 消せなくなってしまうためである。そのため、「探索量」は実際の木のサイズよりも値が小さくなるよう注意する必要がある。</p>
 <p>また、詰み／不詰局面は他の局面よりも大事なのでなるべく消されづらくしたい。そのため、探索量に 定数（kFinalAmountBonus）を足して実際の探索量よりも大きくなるようにしている。</p>
-<h3><a class="anchor" id="autotoc_md15"></a>
+<h3><a class="anchor" id="autotoc_md14"></a>
 SumMask</h3>
 <p>詰将棋探索では、pn/dn の二重カウントによる発散を防ぐために、δ値の和を取るべき箇所を max で代用したい場面がある。 SumMask は、現局面の子ノードのうちδ値を和で計算すべき子の集合を表す。この値は <a class="el" href="classkomori_1_1tt_1_1_entry.html#a1f1f2e5fad0873f3c9949e99c44e4336" title="探索結果を書き込む（未解決局面）">UpdateUnknown()</a> で更新される。</p>
 <p>SumMask のデフォルト値は <code><a class="el" href="classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。">BitSet64::Full()</a></code> である。すなわち、初期状態はすべての子のδ値を和で計算する。 この値は探索部に依存する値なので、このファイル内で初期化を行っているのは本当は良くない。 </p>
@@ -403,7 +407,7 @@ SumMask</h3>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00520">520</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00523">523</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -578,7 +582,7 @@ Here is the call graph for this function:</div>
 <p>千日手可能性フラグが立っているかどうか判定する。 </p>
 <dl class="section pre"><dt>Precondition</dt><dd><code>!IsNull()</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00230">230</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00233">233</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -655,7 +659,7 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>引数の値が更新されているか <code>IsFor(board_key_, hand_)</code> なエントリが存在すれば <code>true</code> </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>IsFor(board_key)</code> （<code>board_key</code> は現局面の盤面ハッシュ）</dd></dl>
 <p>置換表の肝の部分。本将棋エンジンとは異なり、優等局面、劣等局面の結果をチラ見しながら pn 値と dn 値を取得する。 外側のループ脱出の判断をできるだけ高速にしたいので、引数の値が更新されたときと現局面に一致するエントリを見つけた ときは <code>true</code> を返す。</p>
-<h2><a class="anchor" id="autotoc_md16"></a>
+<h2><a class="anchor" id="autotoc_md15"></a>
 実装詳細</h2>
 <p>探索中にとても頻繁に呼ばれる関数なので限界まで高速化したい。そのため、シンプルな処理ながら関数の実装は 長めになっている。実装の本体は次の3つの関数に分割されている。</p>
 <ul>
@@ -665,7 +669,7 @@ Here is the call graph for this function:</div>
 </ul>
 <p>細かいことを言うと、 現局面とエントリが一致 &lt;=&gt; 現局面が優等局面 ∧ 現局面が劣等局面 が成り立つので LookUpUnknown() はそれほど必要ではないが、実際には優等局面・劣等局面よりも一致局面のほうが 頻繁に現れ、かつ容易に一致局面かどうかの判定ができるため、別処理にしたほうが高速化できる。 </p>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00317">317</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00320">320</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -744,7 +748,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>必ず <code>true</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00424">424</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00427">427</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -812,7 +816,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pn/dn を更新したら <code>true</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00492">492</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00495">495</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -880,7 +884,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pn/dn を更新したら <code>true</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00460">460</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00463">463</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -910,7 +914,7 @@ Here is the call graph for this function:</div>
 <p>千日手の可能性ありフラグの設定および pn/dn の再初期化を行う。 </p>
 <dl class="section pre"><dt>Precondition</dt><dd><code>!IsNull()</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00220">220</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00223">223</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -960,7 +964,7 @@ Here is the call graph for this function:</div>
 <dd>
 <code>len</code> &lt; <code>proven_len_</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00282">282</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00285">285</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1032,7 +1036,7 @@ IsFor(board_key_)</dd></dl>
 <li>少なくとも <code>disproven_len</code> 手で詰まない </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00387">387</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00390">390</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -1100,7 +1104,7 @@ IsFor(board_key_)</dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00351">351</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00354">354</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1159,7 +1163,7 @@ Here is the call graph for this function:</div>
 <dd>
 <code>len</code> &gt; <code>disproven_len_</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00269">269</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00272">272</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1251,7 +1255,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>IsFor(board_key, hand)</code> （<code>board_key</code>, <code>hand</code> は現局面の盤面ハッシュ、持ち駒） </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00245">245</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00248">248</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>

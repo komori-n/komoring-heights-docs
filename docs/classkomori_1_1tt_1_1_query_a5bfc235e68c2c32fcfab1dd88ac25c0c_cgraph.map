@@ -1,13 +1,9 @@
 <map id="komori::tt::Query::SetFinal" name="komori::tt::Query::SetFinal">
-<area shape="rect" id="node1" title="詰みまたは不詰の探索結果 result をクラスタに書き込む" alt="" coords="5,159,144,200"/>
-<area shape="rect" id="node2" href="$classkomori_1_1_search_result.html#af0b32b9f9fff602c03f5ea4ab4e5fff1" title="探索量" alt="" coords="207,28,367,69"/>
-<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_query.html#aeea8b41ef23416719e6ea2eb251d6a93" title="クラスタから持ち駒 hand の書き込み用のエントリを1つ選び現局面用に初期化し直す" alt="" coords="218,93,357,135"/>
-<area shape="rect" id="node8" href="$classkomori_1_1tt_1_1_query.html#a3c9db541740b8b8a5729c93da5b8bb57" title="クラスタの中から (board_key_, hand) に一致するエントリを探す" alt="" coords="218,159,357,200"/>
-<area shape="rect" id="node10" href="$classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="207,224,367,265"/>
-<area shape="rect" id="node11" href="$classkomori_1_1_search_result.html#af353f0cfab41b586a7c994d2507ca699" title="探索時の残り手数" alt="" coords="192,290,383,317"/>
-<area shape="rect" id="node4" href="$classkomori_1_1tt_1_1_entry.html#a936d5ec9eaabcbb89691d774c05151a3" title="探索量" alt="" coords="441,5,575,47"/>
-<area shape="rect" id="node5" href="$classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う" alt="" coords="431,71,585,98"/>
-<area shape="rect" id="node7" href="$classkomori_1_1tt_1_1_entry.html#abf1c99385fe87cabfa3063c03470240d" title="エントリが未使用状態かを判定する" alt="" coords="441,123,575,164"/>
-<area shape="rect" id="node6" href="$classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="633,64,783,105"/>
-<area shape="rect" id="node9" href="$classkomori_1_1tt_1_1_entry.html#acccbfa45c2b0e66e0c32bce4473c8723" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="441,188,575,229"/>
+<area shape="rect" id="node1" title="詰みまたは不詰の探索結果 result を置換表に書き込む" alt="" coords="5,104,144,145"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_search_result.html#af0b32b9f9fff602c03f5ea4ab4e5fff1" title="探索量" alt="" coords="207,5,367,47"/>
+<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="218,71,357,112"/>
+<area shape="rect" id="node6" href="$classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="207,136,367,177"/>
+<area shape="rect" id="node7" href="$classkomori_1_1_search_result.html#af353f0cfab41b586a7c994d2507ca699" title="探索時の残り手数" alt="" coords="192,202,383,229"/>
+<area shape="rect" id="node4" href="$classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う" alt="" coords="431,78,585,105"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="633,71,783,112"/>
 </map>

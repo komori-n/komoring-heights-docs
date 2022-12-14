@@ -1,0 +1,6 @@
+<map id="komori::tt::detail::TranspositionTableImpl::CollectGarbage" name="komori::tt::detail::TranspositionTableImpl::CollectGarbage">
+<area shape="rect" id="node1" title="ガベージコレクションを実行する" alt="" coords="5,5,184,61"/>
+<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_regular_table.html#abc27e107c2b787df207bc94082d05e3e" title="通常テーブルの中で、メモリ使用率が高いエントリを間引く" alt="" coords="232,13,409,54"/>
+<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_regular_table.html#afa4c0e9340b321a94d0f21f42fd0ecbb" title="エントリをできるだけ手前の方に移動させる（コンパクション）" alt="" coords="457,13,635,54"/>
+<area shape="rect" id="node4" href="$classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="683,13,860,54"/>
+</map>

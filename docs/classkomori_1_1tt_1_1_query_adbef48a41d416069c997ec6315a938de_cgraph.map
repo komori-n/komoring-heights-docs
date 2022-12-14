@@ -1,12 +1,8 @@
 <map id="komori::tt::Query::SetRepetition" name="komori::tt::Query::SetRepetition">
-<area shape="rect" id="node1" title="千日手の探索結果 result をクラスタに書き込む関数" alt="" coords="5,192,144,233"/>
-<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_query.html#aeea8b41ef23416719e6ea2eb251d6a93" title="クラスタから持ち駒 hand の書き込み用のエントリを1つ選び現局面用に初期化し直す" alt="" coords="211,93,349,135"/>
-<area shape="rect" id="node7" href="$classkomori_1_1tt_1_1_query.html#a3c9db541740b8b8a5729c93da5b8bb57" title="クラスタの中から (board_key_, hand) に一致するエントリを探す" alt="" coords="211,159,349,200"/>
-<area shape="rect" id="node9" href="$classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="200,224,360,265"/>
-<area shape="rect" id="node10" href="$classkomori_1_1_repetition_table.html#ada51e371a3304361f20e269e463755fe" title="経路ハッシュ値 path_key に千日手判定開始深さ depth を設定する" alt="" coords="192,289,368,331"/>
-<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_entry.html#a936d5ec9eaabcbb89691d774c05151a3" title="探索量" alt="" coords="426,5,561,47"/>
-<area shape="rect" id="node4" href="$classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う" alt="" coords="416,71,571,98"/>
-<area shape="rect" id="node6" href="$classkomori_1_1tt_1_1_entry.html#abf1c99385fe87cabfa3063c03470240d" title="エントリが未使用状態かを判定する" alt="" coords="426,123,561,164"/>
-<area shape="rect" id="node5" href="$classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="619,64,768,105"/>
-<area shape="rect" id="node8" href="$classkomori_1_1tt_1_1_entry.html#acccbfa45c2b0e66e0c32bce4473c8723" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="426,188,561,229"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,144,112"/>
+<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="220,5,359,47"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="209,71,369,112"/>
+<area shape="rect" id="node6" href="$classkomori_1_1tt_1_1_repetition_table.html#a2f9650cc7179964dbacc3df5165cb659" title="経路ハッシュ値 path_key に千日手判定開始深さ depth を設定する" alt="" coords="192,136,387,177"/>
+<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う" alt="" coords="435,13,589,39"/>
+<area shape="rect" id="node4" href="$classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="637,5,787,47"/>
 </map>

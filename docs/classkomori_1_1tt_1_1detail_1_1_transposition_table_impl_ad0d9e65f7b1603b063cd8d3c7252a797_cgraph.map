@@ -1,0 +1,4 @@
+<map id="komori::tt::detail::TranspositionTableImpl::BuildQueryByKey" name="komori::tt::detail::TranspositionTableImpl::BuildQueryByKey">
+<area shape="rect" id="node1" title="生のハッシュ値からクエリを構築する" alt="" coords="5,5,184,61"/>
+<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="232,13,409,54"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="komori::VisitHistory::IsInferior" name="komori::VisitHistory::IsInferior">
+<area shape="rect" id="node1" title="(board_key, hand) の優等局面が履歴に記録されているか調べる。" alt="" coords="5,5,156,47"/>
+<area shape="rect" id="node2" href="$namespacekomori.html#a8e1493fa709128d5d926e1809323c633" title="イテレータのペアで range&#45;based for をするためのアダプタ" alt="" coords="204,13,336,39"/>
+</map>

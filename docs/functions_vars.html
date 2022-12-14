@@ -75,7 +75,10 @@ $(function() {
 
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>begin_itr_
-: <a class="el" href="classkomori_1_1_as_range.html#a0170a7356f107dce69783a2be5f8fa54">komori::AsRange&lt; Iterator &gt;</a>
+: <a class="el" href="classkomori_1_1_range.html#aa5df8dca553eb3d277c22d7d707a8856">komori::Range&lt; Iterator &gt;</a>
+</li>
+<li>begin_ptr_
+: <a class="el" href="classkomori_1_1tt_1_1_circular_entry_pointer.html#ae6c6542dc9b243aa2a6066bcaa94e107">komori::tt::CircularEntryPointer</a>
 </li>
 <li>best_moves_
 : <a class="el" href="classkomori_1_1_komoring_heights.html#ae8e5b63d79c00770185b1e4a01c8256c">komori::KomoringHeights</a>
@@ -100,11 +103,8 @@ $(function() {
 <li>child_key_hand_pair
 : <a class="el" href="structkomori_1_1_branch_root_edge.html#abae66f8896f435f277a367c07b84a7e8">komori::BranchRootEdge</a>
 </li>
-<li>cluster_
-: <a class="el" href="classkomori_1_1tt_1_1_query.html#a7388fe8e6408075b9c7817cc75d38278">komori::tt::Query</a>
-</li>
-<li>cluster_head_num_
-: <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a800912b095c8d8de3ff2d96cb2faf350">komori::tt::detail::TranspositionTableImpl&lt; Query &gt;</a>
+<li>curr_ptr_
+: <a class="el" href="classkomori_1_1tt_1_1_circular_entry_pointer.html#ab4653324840438ffa02a1a43613f2d01">komori::tt::CircularEntryPointer</a>
 </li>
 </ul>
 
@@ -142,10 +142,13 @@ $(function() {
 
 <h3><a id="index_e"></a>- e -</h3><ul>
 <li>end_itr_
-: <a class="el" href="classkomori_1_1_as_range.html#aec1259479f45df3d3414d2626824249f">komori::AsRange&lt; Iterator &gt;</a>
+: <a class="el" href="classkomori_1_1_range.html#aa29ec99d8e4506f465a8514cb9c09f8b">komori::Range&lt; Iterator &gt;</a>
+</li>
+<li>end_ptr_
+: <a class="el" href="classkomori_1_1tt_1_1_circular_entry_pointer.html#a422581db6206c45d5708170d9700e95e">komori::tt::CircularEntryPointer</a>
 </li>
 <li>entries_
-: <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a164137514dfd04eb3e86dac923943ecb">komori::tt::detail::TranspositionTableImpl&lt; Query &gt;</a>
+: <a class="el" href="classkomori_1_1tt_1_1_regular_table.html#aedd5c85b3b2a5793d9bdb518c7a4760c">komori::tt::RegularTable</a>
 </li>
 <li>expansion_list_
 : <a class="el" href="classkomori_1_1_komoring_heights.html#aa1165459160dc3b30bd465b483acfcca">komori::KomoringHeights</a>
@@ -156,13 +159,6 @@ $(function() {
 <h3><a id="index_f"></a>- f -</h3><ul>
 <li>final_data_
 : <a class="el" href="classkomori_1_1_search_result.html#a90ecfe55524f016d0baad6bb86f6dfb4">komori::SearchResult</a>
-</li>
-</ul>
-
-
-<h3><a id="index_g"></a>- g -</h3><ul>
-<li>gc_interval_
-: <a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a771772e02a7c325108a2b18bab8885b5">komori::detail::SearchMonitor</a>
 </li>
 </ul>
 
@@ -179,8 +175,8 @@ $(function() {
 <li>hash_mb
 : <a class="el" href="structkomori_1_1_engine_option.html#a5e587a973124c5e501db891fe06ce331">komori::EngineOption</a>
 </li>
-<li>head_entry
-: <a class="el" href="structkomori_1_1tt_1_1_cluster.html#a2017fa99689e2f7f8c091aaf4ad60243">komori::tt::Cluster</a>
+<li>hashfull_check_interval_
+: <a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a2e38c06c9834aa0802a14542ae58b9f4">komori::detail::SearchMonitor</a>
 </li>
 <li>hist_idx_
 : <a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#af3e40e78c792d03cdcfc6157649c7d33">komori::detail::SearchMonitor</a>
@@ -191,10 +187,13 @@ $(function() {
 <h3><a id="index_i"></a>- i -</h3><ul>
 <li>idx_
 : <a class="el" href="classkomori_1_1_local_expansion.html#af53ce04572548093a1154b3ab0111281">komori::LocalExpansion</a>
-, <a class="el" href="classkomori_1_1_repetition_table.html#ae2a63580e84fe71a1a45cce9d10a0f95">komori::RepetitionTable</a>
+, <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a6a3603f2fa2da2600cf792eacbf0ecc5">komori::tt::RepetitionTable</a>
 </li>
 <li>index_
 : <a class="el" href="classkomori_1_1detail_1_1_with_index_impl_1_1_with_index_iterator.html#a63fd33ec11a29f5472732379681bfa54">komori::detail::WithIndexImpl&lt; IndexType, Range &gt;::WithIndexIterator&lt; Iterator &gt;</a>
+</li>
+<li>initial_entry_pointer_
+: <a class="el" href="classkomori_1_1tt_1_1_query.html#a9da467ec856e68ec9f9a39f61729f392">komori::tt::Query</a>
 </li>
 <li>is_first_visit
 : <a class="el" href="structkomori_1_1_unknown_data.html#a02879ec95166788601a8c2f427de9704">komori::UnknownData</a>
@@ -213,7 +212,7 @@ $(function() {
 : <a class="el" href="classkomori_1_1_local_expansion.html#a437f9b7323c9ef249ff8fc709def66c2">komori::LocalExpansion</a>
 </li>
 <li>keys_
-: <a class="el" href="classkomori_1_1_repetition_table.html#aa23029dace685f907ae97677032bfb97">komori::RepetitionTable</a>
+: <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a4ee9f9edf1d9ea22c50b3a2ccd920aa3">komori::tt::RepetitionTable</a>
 </li>
 <li>kHistLen
 : <a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a8ea05ee06191134b16f4a4cac26716aa">komori::detail::SearchMonitor</a>
@@ -221,11 +220,8 @@ $(function() {
 <li>kind_
 : <a class="el" href="classkomori_1_1_score.html#abad2d13e142567a8a60bdf243d94ef2a">komori::Score</a>
 </li>
-<li>kSize
-: <a class="el" href="structkomori_1_1tt_1_1_cluster.html#a35c6b2dab0316434687ec604a59e07b4">komori::tt::Cluster</a>
-</li>
 <li>kTableLen
-: <a class="el" href="classkomori_1_1_repetition_table.html#ae7b576b4e6c2d50daa758bc2da336d35">komori::RepetitionTable</a>
+: <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#aa36448012af34fb34b85e59459ebfefb">komori::tt::RepetitionTable</a>
 </li>
 </ul>
 
@@ -280,8 +276,8 @@ $(function() {
 <li>next_
 : <a class="el" href="classkomori_1_1_delayed_move_list.html#a2305d9abac67adfdfc78c019c3353195">komori::DelayedMoveList</a>
 </li>
-<li>next_gc_count_
-: <a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a2b194e7009f04972fe314e1a6408a70e">komori::detail::SearchMonitor</a>
+<li>next_hashfull_check_
+: <a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#ade0432fc7ab92c9b1d37b84e7d73582c">komori::detail::SearchMonitor</a>
 </li>
 <li>nodes_limit
 : <a class="el" href="structkomori_1_1_engine_option.html#abf31bb91618823160125b3defe154a5e">komori::EngineOption</a>
@@ -354,15 +350,20 @@ $(function() {
 : <a class="el" href="classkomori_1_1detail_1_1_skip_impl.html#aeee8aed405848b95c7d2f4415adac84d">komori::detail::SkipImpl&lt; Range, kSkip &gt;</a>
 , <a class="el" href="classkomori_1_1detail_1_1_with_index_impl.html#a22868430dc20cbc2471ff2c4d9c4ace0">komori::detail::WithIndexImpl&lt; IndexType, Range &gt;</a>
 </li>
+<li>regular_table_
+: <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a411d029edda10ba1cd8f232990d261e9">komori::tt::detail::TranspositionTableImpl&lt; Query, RegularTable, RepetitionTable &gt;</a>
+</li>
 <li>rep_table_
-: <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a2396b12bee814874dbc3203a1ecafdbe">komori::tt::detail::TranspositionTableImpl&lt; Query &gt;</a>
-, <a class="el" href="classkomori_1_1tt_1_1_query.html#ac2ce313cd7ca354e660f381d6f447e39">komori::tt::Query</a>
+: <a class="el" href="classkomori_1_1tt_1_1_query.html#ac2ce313cd7ca354e660f381d6f447e39">komori::tt::Query</a>
 </li>
 <li>repetition_start
 : <a class="el" href="structkomori_1_1_final_data.html#a14ffd5083d784ea40f290a3f10c17ee9">komori::FinalData</a>
 </li>
 <li>repetition_state_
 : <a class="el" href="classkomori_1_1tt_1_1_entry.html#a82d5f2476820395fef9ebf84f6747047">komori::tt::Entry</a>
+</li>
+<li>repetition_table_
+: <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aa384f1163c18ffaca170180346410460">komori::tt::detail::TranspositionTableImpl&lt; Query, RegularTable, RepetitionTable &gt;</a>
 </li>
 <li>results_
 : <a class="el" href="classkomori_1_1_local_expansion.html#ab28b16455a3cd30d1b67d62bce9242cf">komori::LocalExpansion</a>
@@ -384,7 +385,7 @@ $(function() {
 : <a class="el" href="classkomori_1_1_move_picker.html#aaccac1332b5319608d019d328a200255">komori::MovePicker</a>
 </li>
 <li>size_max_
-: <a class="el" href="classkomori_1_1_repetition_table.html#a29ed95025962ce9084796862ef8a19f9">komori::RepetitionTable</a>
+: <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ad308c72eca34a6a09447690e7b048617">komori::tt::RepetitionTable</a>
 </li>
 <li>st_info_
 : <a class="el" href="classkomori_1_1_node.html#a0b57ad8775549ea2c419972659822ec0">komori::Node</a>

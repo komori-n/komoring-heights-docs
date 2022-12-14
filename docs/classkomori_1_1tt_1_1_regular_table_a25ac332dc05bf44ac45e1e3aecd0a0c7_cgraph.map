@@ -1,0 +1,4 @@
+<map id="komori::tt::RegularTable::Resize" name="komori::tt::RegularTable::Resize">
+<area shape="rect" id="node1" title="要素数が num_entries 個になるようにメモリの確保・解放を行う" alt="" coords="5,5,183,47"/>
+<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_regular_table.html#a0fb34e7a1f84b14f29e014f9bb8b41f6" title="以前の探索結果をすべて消去する。" alt="" coords="231,5,408,47"/>
+</map>
