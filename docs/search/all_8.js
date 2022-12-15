@@ -13,7 +13,7 @@ var searchData=
   ['insert_174',['Insert',['../classkomori_1_1tt_1_1_repetition_table.html#a2f9650cc7179964dbacc3df5165cb659',1,'komori::tt::RepetitionTable']]],
   ['is_5ffirst_5fvisit_175',['is_first_visit',['../structkomori_1_1_unknown_data.html#a02879ec95166788601a8c2f427de9704',1,'komori::UnknownData']]],
   ['isdelayable_176',['IsDelayable',['../classkomori_1_1_delayed_move_list.html#a2cd5d27132d70b548f67170d3cba166d',1,'komori::DelayedMoveList']]],
-  ['isfinal_177',['IsFinal',['../classkomori_1_1_search_result.html#ae03260ca26fcff04cc38cd1fc6bd27c0',1,'komori::SearchResult']]],
+  ['isfinal_177',['IsFinal',['../classkomori_1_1_score.html#a41335f6ec3462b65044abc2e39f845bc',1,'komori::Score::IsFinal()'],['../classkomori_1_1_search_result.html#ae03260ca26fcff04cc38cd1fc6bd27c0',1,'komori::SearchResult::IsFinal()']]],
   ['isfor_178',['IsFor',['../classkomori_1_1tt_1_1_entry.html#acccbfa45c2b0e66e0c32bce4473c8723',1,'komori::tt::Entry::IsFor(Key board_key) const noexcept'],['../classkomori_1_1tt_1_1_entry.html#ab8b03b0eaafa71b6f72c341f588a9a00',1,'komori::tt::Entry::IsFor(Key board_key, Hand hand) const noexcept']]],
   ['isinferior_179',['IsInferior',['../classkomori_1_1_visit_history.html#a2ff15618b56e74ace00b9b57434fec4f',1,'komori::VisitHistory']]],
   ['isnull_180',['IsNull',['../classkomori_1_1tt_1_1_entry.html#abf1c99385fe87cabfa3063c03470240d',1,'komori::tt::Entry']]],

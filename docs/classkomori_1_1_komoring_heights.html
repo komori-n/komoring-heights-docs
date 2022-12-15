@@ -280,7 +280,7 @@ std::vector&lt; Move &gt;&#160;</td><td class="memItemRight" valign="bottom"><a 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>詰み手順 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00337">337</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00339">339</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -430,16 +430,17 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00369">369</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00371">371</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1_komoring_heights_a67fdaf96d072661775e5997bb9440dc7_cgraph.png" border="0" usemap="#aclasskomori_1_1_komoring_heights_a67fdaf96d072661775e5997bb9440dc7_cgraph" alt=""/></div>
 <map name="aclasskomori_1_1_komoring_heights_a67fdaf96d072661775e5997bb9440dc7_cgraph" id="aclasskomori_1_1_komoring_heights_a67fdaf96d072661775e5997bb9440dc7_cgraph">
-<area shape="rect" title="print_flag_ が立っていたら off にした上で探索情報を出力する" alt="" coords="5,159,192,200"/>
+<area shape="rect" title="print_flag_ が立っていたら off にした上で探索情報を出力する" alt="" coords="5,188,192,229"/>
 <area shape="rect" href="classkomori_1_1_komoring_heights.html#a1716f99cbc6053f69973929c21bdd83f" title="現在の探索情報を取得する" alt="" coords="240,129,427,171"/>
 <area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="244,195,423,222"/>
-<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="263,246,403,273"/>
+<area shape="rect" href="classkomori_1_1_score.html#a41335f6ec3462b65044abc2e39f845bc" title="評価値が詰み／不詰かどうか。" alt="" coords="253,246,414,273"/>
+<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="263,297,403,323"/>
 <area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#ab4df88051b4354971147ea25055e64f1" title="探索局面数を観測する。nps を正しく計算するためには定期的に呼び出しが必要。" alt="" coords="475,5,689,47"/>
 <area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a5c89cae7c5c90289bf237ec54e775762" title="現在の探索情報を UsiInfo に詰めて返す。" alt="" coords="475,71,689,112"/>
 <area shape="rect" href="classkomori_1_1_usi_info.html#a0168968e66135ba7225030c489243e57" title="key に val を設定する。" alt="" coords="769,107,920,134"/>
@@ -604,55 +605,55 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classkomori_1_1_komoring_heights_a1d0e3beed5538993268bab3b4b4271f9_cgraph.png" border="0" usemap="#aclasskomori_1_1_komoring_heights_a1d0e3beed5538993268bab3b4b4271f9_cgraph" alt=""/></div>
 <map name="aclasskomori_1_1_komoring_heights_a1d0e3beed5538993268bab3b4b4271f9_cgraph" id="aclasskomori_1_1_komoring_heights_a1d0e3beed5538993268bab3b4b4271f9_cgraph">
 <area shape="rect" title="n が len 手以下で詰むかを探索する" alt="" coords="5,497,192,538"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a96c4e38870490176e0053914a17c908c" title="局面 n のエントリを読み書きするためのクエリを返す" alt="" coords="755,96,934,152"/>
-<area shape="rect" href="namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="258,63,409,89"/>
-<area shape="rect" href="classkomori_1_1_komoring_heights.html#a1716f99cbc6053f69973929c21bdd83f" title="現在の探索情報を取得する" alt="" coords="751,783,938,825"/>
-<area shape="rect" href="classkomori_1_1_expansion_stack.html#a9d4c5f980014a30b3a8cbb44f301c3fd" title="スタックの先頭に LocalExpansion オブジェクトを構築する。" alt="" coords="493,165,671,206"/>
-<area shape="rect" href="classkomori_1_1_node.html#ad8aec0a7fdeb5376090cd1e5c3a833a2" title="開始局面が OR Node かどうか" alt="" coords="741,900,948,927"/>
-<area shape="rect" href="classkomori_1_1_score.html#abde38682068f6f88a2a014aec7efb8bf" title="Score オブジェクトを構築する。" alt="" coords="256,12,411,39"/>
-<area shape="rect" href="classkomori_1_1_expansion_stack.html#a4f790082fd98aae8613d2432881196bd" title="スタック先頭の LocalExpansion オブジェクトを開放する。" alt="" coords="477,231,687,257"/>
-<area shape="rect" href="classkomori_1_1_komoring_heights.html#ae18eeb5dea2a27dbfa7ed60939556170" title="詰め探索の本体。（再帰関数）" alt="" coords="240,607,427,649"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a8732d41a7d1f887a7059a511c0f0574a" title="今すぐ探索をやめるべきなら true" alt="" coords="475,1235,689,1277"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_query.html#add5f4c6c79b8cf305918bd62683a0078" title="探索結果 result を置換表に書き込む" alt="" coords="264,1235,403,1277"/>
-<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="1018,1009,1197,1036"/>
-<area shape="rect" href="classkomori_1_1_node.html#a4181d9d06d60b7f11701b8add6a2e69f" title="現在の経路ハッシュ値" alt="" coords="1011,5,1203,32"/>
-<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="1024,157,1191,184"/>
-<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1553,441,1693,468"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="1281,295,1459,337"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a5c89cae7c5c90289bf237ec54e775762" title="現在の探索情報を UsiInfo に詰めて返す。" alt="" coords="1000,893,1215,934"/>
-<area shape="rect" href="classkomori_1_1_usi_info.html#a0168968e66135ba7225030c489243e57" title="key に val を設定する。" alt="" coords="1295,861,1445,888"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a4179ad57f2d4a73ece89f9c380a7751a" title="置換表使用率（千分率）を計算する" alt="" coords="1018,711,1197,767"/>
-<area shape="rect" href="classkomori_1_1_score.html#a8d4d0c6ccf9d41846b8ebe16be1f7faa" title="現在の評価値を USI 文字列で返す" alt="" coords="1022,791,1193,817"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#afc31d019620df41e7762e5bc9a1d0133" title="現在の探索局面数" alt="" coords="1263,1118,1477,1159"/>
-<area shape="rect" href="classkomori_1_1_usi_info.html#ac6b39b3ffe4360857101ab18c44ffffe" title="設定済のオプションの中に key が含まれているかどうか判定する。" alt="" coords="1545,861,1700,888"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#a9d2dd0f37b92f3af3f34b3b412a5c8a8" title="通常テーブルのメモリ使用率を見積もる。" alt="" coords="1281,714,1459,755"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a164c681a2c3ac0b306e8807d2d6014cd" title="置換表のメモリ使用率を求める。" alt="" coords="1273,779,1467,821"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#af6cd61f2f2b434ec7528b7a844a5179b" title="現在置換表に保存されている経路ハッシュ値の個数をカウントする。" alt="" coords="1525,779,1720,821"/>
-<area shape="rect" href="classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="1019,959,1196,985"/>
-<area shape="rect" href="classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="1303,944,1437,971"/>
-<area shape="rect" href="classkomori_1_1_score.html#a992a9272df730122ff52335e7ef339d1" title="デフォルトコンストラクタ" alt="" coords="505,12,659,39"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a03fe64f10c6759a3d546410a9a5dd97c" title="ガベージコレクションを実行する" alt="" coords="493,383,671,439"/>
-<area shape="rect" href="classkomori_1_1_expansion_stack.html#ae7188bab1b61788cc1cafe1e73384c26" title="スタック先頭要素を返す。" alt="" coords="755,666,934,707"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="489,564,675,591"/>
-<area shape="rect" href="classkomori_1_1_node.html#a082d5d0045420c8978206fda2b518e17" title="move で1手進める" alt="" coords="759,477,930,504"/>
-<area shape="rect" href="classkomori_1_1_expansion_stack.html#ad1bb984f52e71df980b5a105b41f71f2" title="現局面が終点となるの二重カウント解消を試みる" alt="" coords="493,666,671,707"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#a0d81252fa8281a46c86b05b609434429" title="千日手の探索結果で初期化する" alt="" coords="502,731,662,773"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="490,797,674,824"/>
-<area shape="rect" href="classkomori_1_1_komoring_heights.html#a67fdaf96d072661775e5997bb9440dc7" title="print_flag_ が立っていたら off にした上で探索情報を出力する" alt="" coords="489,849,675,890"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a4a738a1ed6f0aa22ce3d594c46f40c9c" title="次回の置換表使用率チェックタイミングを更新する" alt="" coords="737,1183,952,1225"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a769465e6930f15973ab17ac204b1bfe8" title="今すぐ置換表使用率をチェックすべきなら true" alt="" coords="737,1118,952,1159"/>
-<area shape="rect" href="classkomori_1_1_node.html#aad7fe2734b150a1d9645ea72e2fdda83" title="DoMove() で勧めた局面を元に戻す" alt="" coords="751,332,938,359"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a0272905cf2ad091e3cf9f25d2f727cf5" title="深さ depth の局面に訪れたことを報告する" alt="" coords="475,1017,689,1058"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#abc27e107c2b787df207bc94082d05e3e" title="通常テーブルの中で、メモリ使用率が高いエントリを間引く" alt="" coords="756,386,933,427"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#afa4c0e9340b321a94d0f21f42fd0ecbb" title="エントリをできるだけ手前の方に移動させる（コンパクション）" alt="" coords="1019,325,1196,366"/>
-<area shape="rect" href="classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="1018,441,1197,468"/>
-<area shape="rect" href="classkomori_1_1_node.html#a6dfeb2e63ce33d5b9043010cbb8428c3" title="move 後の経路ハッシュ値" alt="" coords="1007,543,1207,569"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#a3ba89e53fbe90e03b07b2c68eea98334" title="(board_key, hand) を履歴に登録する" alt="" coords="1032,594,1183,635"/>
-<area shape="rect" href="namespacekomori.html#ae0ab7ef1101897b620e05208fc8975ee" title="現在の path_key と手 move から1手後の path_key を計算する。" alt="" coords="1291,543,1449,569"/>
-<area shape="rect" href="namespacekomori.html#aa8a333a0a9dfda36b2fc53731711e1f3" title="n を move した局面から置換表をたどると n の祖先に行き着くかどうか調べる" alt="" coords="743,849,946,876"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#ab4df88051b4354971147ea25055e64f1" title="探索局面数を観測する。nps を正しく計算するためには定期的に呼び出しが必要。" alt="" coords="737,1053,952,1094"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#a3af0755f672c9b15c72253aebc682aa5" title="(board_key, hand) を履歴から消す" alt="" coords="1032,259,1183,301"/>
-<area shape="rect" href="classkomori_1_1_node.html#a7f1c13d7f57b6af7f34ac77240342d71" title="move 直前の経路ハッシュ値" alt="" coords="1001,208,1213,235"/>
+<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a96c4e38870490176e0053914a17c908c" title="局面 n のエントリを読み書きするためのクエリを返す" alt="" coords="755,1131,934,1187"/>
+<area shape="rect" href="namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="258,56,409,83"/>
+<area shape="rect" href="classkomori_1_1_komoring_heights.html#a1716f99cbc6053f69973929c21bdd83f" title="現在の探索情報を取得する" alt="" coords="751,225,938,266"/>
+<area shape="rect" href="classkomori_1_1_expansion_stack.html#a9d4c5f980014a30b3a8cbb44f301c3fd" title="スタックの先頭に LocalExpansion オブジェクトを構築する。" alt="" coords="493,158,671,199"/>
+<area shape="rect" href="classkomori_1_1_node.html#ad8aec0a7fdeb5376090cd1e5c3a833a2" title="開始局面が OR Node かどうか" alt="" coords="741,1261,948,1288"/>
+<area shape="rect" href="classkomori_1_1_score.html#abde38682068f6f88a2a014aec7efb8bf" title="Score オブジェクトを構築する。" alt="" coords="256,5,411,32"/>
+<area shape="rect" href="classkomori_1_1_expansion_stack.html#a4f790082fd98aae8613d2432881196bd" title="スタック先頭の LocalExpansion オブジェクトを開放する。" alt="" coords="477,224,687,251"/>
+<area shape="rect" href="classkomori_1_1_komoring_heights.html#ae18eeb5dea2a27dbfa7ed60939556170" title="詰め探索の本体。（再帰関数）" alt="" coords="240,610,427,651"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a8732d41a7d1f887a7059a511c0f0574a" title="今すぐ探索をやめるべきなら true" alt="" coords="475,1010,689,1051"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_query.html#add5f4c6c79b8cf305918bd62683a0078" title="探索結果 result を置換表に書き込む" alt="" coords="264,1295,403,1337"/>
+<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="1018,1063,1197,1089"/>
+<area shape="rect" href="classkomori_1_1_node.html#a4181d9d06d60b7f11701b8add6a2e69f" title="現在の経路ハッシュ値" alt="" coords="1011,1164,1203,1191"/>
+<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="1024,1012,1191,1039"/>
+<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1553,961,1693,988"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="1281,866,1459,907"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a5c89cae7c5c90289bf237ec54e775762" title="現在の探索情報を UsiInfo に詰めて返す。" alt="" coords="1000,189,1215,230"/>
+<area shape="rect" href="classkomori_1_1_usi_info.html#a0168968e66135ba7225030c489243e57" title="key に val を設定する。" alt="" coords="1295,180,1445,207"/>
+<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a4179ad57f2d4a73ece89f9c380a7751a" title="置換表使用率（千分率）を計算する" alt="" coords="1018,57,1197,113"/>
+<area shape="rect" href="classkomori_1_1_score.html#a8d4d0c6ccf9d41846b8ebe16be1f7faa" title="現在の評価値を USI 文字列で返す" alt="" coords="1022,255,1193,281"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#afc31d019620df41e7762e5bc9a1d0133" title="現在の探索局面数" alt="" coords="1263,399,1477,441"/>
+<area shape="rect" href="classkomori_1_1_usi_info.html#ac6b39b3ffe4360857101ab18c44ffffe" title="設定済のオプションの中に key が含まれているかどうか判定する。" alt="" coords="1545,180,1700,207"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#a9d2dd0f37b92f3af3f34b3b412a5c8a8" title="通常テーブルのメモリ使用率を見積もる。" alt="" coords="1281,82,1459,123"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a164c681a2c3ac0b306e8807d2d6014cd" title="置換表のメモリ使用率を求める。" alt="" coords="1273,17,1467,58"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#af6cd61f2f2b434ec7528b7a844a5179b" title="現在置換表に保存されている経路ハッシュ値の個数をカウントする。" alt="" coords="1525,17,1720,58"/>
+<area shape="rect" href="classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="1019,1265,1196,1292"/>
+<area shape="rect" href="classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="1303,1265,1437,1292"/>
+<area shape="rect" href="classkomori_1_1_score.html#a992a9272df730122ff52335e7ef339d1" title="デフォルトコンストラクタ" alt="" coords="505,5,659,32"/>
+<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a03fe64f10c6759a3d546410a9a5dd97c" title="ガベージコレクションを実行する" alt="" coords="493,727,671,783"/>
+<area shape="rect" href="classkomori_1_1_expansion_stack.html#ae7188bab1b61788cc1cafe1e73384c26" title="スタック先頭要素を返す。" alt="" coords="755,1065,934,1106"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="489,857,675,884"/>
+<area shape="rect" href="classkomori_1_1_node.html#a082d5d0045420c8978206fda2b518e17" title="move で1手進める" alt="" coords="759,676,930,703"/>
+<area shape="rect" href="classkomori_1_1_expansion_stack.html#ad1bb984f52e71df980b5a105b41f71f2" title="現局面が終点となるの二重カウント解消を試みる" alt="" coords="493,1127,671,1169"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#a0d81252fa8281a46c86b05b609434429" title="千日手の探索結果で初期化する" alt="" coords="502,442,662,483"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="490,508,674,535"/>
+<area shape="rect" href="classkomori_1_1_komoring_heights.html#a67fdaf96d072661775e5997bb9440dc7" title="print_flag_ が立っていたら off にした上で探索情報を出力する" alt="" coords="489,377,675,418"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a4a738a1ed6f0aa22ce3d594c46f40c9c" title="次回の置換表使用率チェックタイミングを更新する" alt="" coords="737,525,952,566"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a769465e6930f15973ab17ac204b1bfe8" title="今すぐ置換表使用率をチェックすべきなら true" alt="" coords="737,342,952,383"/>
+<area shape="rect" href="classkomori_1_1_node.html#aad7fe2734b150a1d9645ea72e2fdda83" title="DoMove() で勧めた局面を元に戻す" alt="" coords="751,851,938,877"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a0272905cf2ad091e3cf9f25d2f727cf5" title="深さ depth の局面に訪れたことを報告する" alt="" coords="475,610,689,651"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#abc27e107c2b787df207bc94082d05e3e" title="通常テーブルの中で、メモリ使用率が高いエントリを間引く" alt="" coords="756,755,933,797"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#afa4c0e9340b321a94d0f21f42fd0ecbb" title="エントリをできるだけ手前の方に移動させる（コンパクション）" alt="" coords="1019,778,1196,819"/>
+<area shape="rect" href="classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="1018,727,1197,753"/>
+<area shape="rect" href="classkomori_1_1_node.html#a6dfeb2e63ce33d5b9043010cbb8428c3" title="move 後の経路ハッシュ値" alt="" coords="1007,625,1207,652"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#a3ba89e53fbe90e03b07b2c68eea98334" title="(board_key, hand) を履歴に登録する" alt="" coords="1032,559,1183,601"/>
+<area shape="rect" href="namespacekomori.html#aa8a333a0a9dfda36b2fc53731711e1f3" title="n を move した局面から置換表をたどると n の祖先に行き着くかどうか調べる" alt="" coords="743,1211,946,1237"/>
+<area shape="rect" href="classkomori_1_1_score.html#a41335f6ec3462b65044abc2e39f845bc" title="評価値が詰み／不詰かどうか。" alt="" coords="764,473,925,500"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#ab4df88051b4354971147ea25055e64f1" title="探索局面数を観測する。nps を正しく計算するためには定期的に呼び出しが必要。" alt="" coords="737,407,952,449"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#a3af0755f672c9b15c72253aebc682aa5" title="(board_key, hand) を履歴から消す" alt="" coords="1032,895,1183,937"/>
+<area shape="rect" href="classkomori_1_1_node.html#a7f1c13d7f57b6af7f34ac77240342d71" title="move 直前の経路ハッシュ値" alt="" coords="1001,844,1213,871"/>
 </map>
 </div>
 
@@ -722,6 +723,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>探索結果 </dd></dl>
+<p><code>inc_flag</code> の値は探索前より小さくなっているはず</p>
 
 <p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00249">249</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
 <div class="dynheader">
@@ -729,56 +731,56 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1_komoring_heights_ae18eeb5dea2a27dbfa7ed60939556170_cgraph.png" border="0" usemap="#aclasskomori_1_1_komoring_heights_ae18eeb5dea2a27dbfa7ed60939556170_cgraph" alt=""/></div>
 <map name="aclasskomori_1_1_komoring_heights_ae18eeb5dea2a27dbfa7ed60939556170_cgraph" id="aclasskomori_1_1_komoring_heights_ae18eeb5dea2a27dbfa7ed60939556170_cgraph">
-<area shape="rect" title="詰め探索の本体。（再帰関数）" alt="" coords="5,863,192,905"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a03fe64f10c6759a3d546410a9a5dd97c" title="ガベージコレクションを実行する" alt="" coords="258,224,437,280"/>
-<area shape="rect" href="classkomori_1_1_expansion_stack.html#ae7188bab1b61788cc1cafe1e73384c26" title="スタック先頭要素を返す。" alt="" coords="521,523,699,565"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="254,1048,441,1075"/>
-<area shape="rect" href="classkomori_1_1_node.html#a082d5d0045420c8978206fda2b518e17" title="move で1手進める" alt="" coords="1050,173,1221,200"/>
-<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="1313,392,1480,419"/>
-<area shape="rect" href="classkomori_1_1_expansion_stack.html#ad1bb984f52e71df980b5a105b41f71f2" title="現局面が終点となるの二重カウント解消を試みる" alt="" coords="258,582,437,623"/>
-<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="783,707,962,733"/>
-<area shape="rect" href="classkomori_1_1_expansion_stack.html#a9d4c5f980014a30b3a8cbb44f301c3fd" title="スタックの先頭に LocalExpansion オブジェクトを構築する。" alt="" coords="258,1099,437,1141"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a4179ad57f2d4a73ece89f9c380a7751a" title="置換表使用率（千分率）を計算する" alt="" coords="783,976,962,1032"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#a0d81252fa8281a46c86b05b609434429" title="千日手の探索結果で初期化する" alt="" coords="267,1165,427,1206"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="255,1231,439,1257"/>
-<area shape="rect" href="classkomori_1_1_expansion_stack.html#a4f790082fd98aae8613d2432881196bd" title="スタック先頭の LocalExpansion オブジェクトを開放する。" alt="" coords="242,1281,453,1308"/>
-<area shape="rect" href="classkomori_1_1_komoring_heights.html#a67fdaf96d072661775e5997bb9440dc7" title="print_flag_ が立っていたら off にした上で探索情報を出力する" alt="" coords="254,779,441,821"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a4a738a1ed6f0aa22ce3d594c46f40c9c" title="次回の置換表使用率チェックタイミングを更新する" alt="" coords="503,1006,717,1047"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a769465e6930f15973ab17ac204b1bfe8" title="今すぐ置換表使用率をチェックすべきなら true" alt="" coords="503,1091,717,1133"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a8732d41a7d1f887a7059a511c0f0574a" title="今すぐ探索をやめるべきなら true" alt="" coords="503,1162,717,1203"/>
-<area shape="rect" href="classkomori_1_1_node.html#aad7fe2734b150a1d9645ea72e2fdda83" title="DoMove() で勧めた局面を元に戻す" alt="" coords="1042,123,1229,149"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a0272905cf2ad091e3cf9f25d2f727cf5" title="深さ depth の局面に訪れたことを報告する" alt="" coords="240,1333,455,1374"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#abc27e107c2b787df207bc94082d05e3e" title="通常テーブルの中で、メモリ使用率が高いエントリを間引く" alt="" coords="521,234,699,275"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#afa4c0e9340b321a94d0f21f42fd0ecbb" title="エントリをできるだけ手前の方に移動させる（コンパクション）" alt="" coords="784,275,961,317"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="1047,399,1224,441"/>
-<area shape="rect" href="classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="1307,341,1486,368"/>
-<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1819,449,1959,476"/>
-<area shape="rect" href="classkomori_1_1_node.html#a6dfeb2e63ce33d5b9043010cbb8428c3" title="move 後の経路ハッシュ値" alt="" coords="1556,64,1756,91"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#a3ba89e53fbe90e03b07b2c68eea98334" title="(board_key, hand) を履歴に登録する" alt="" coords="1321,225,1472,266"/>
-<area shape="rect" href="namespacekomori.html#ae0ab7ef1101897b620e05208fc8975ee" title="現在の path_key と手 move から1手後の path_key を計算する。" alt="" coords="1809,37,1968,64"/>
-<area shape="rect" href="namespacekomori.html#aa8a333a0a9dfda36b2fc53731711e1f3" title="n を move した局面から置換表をたどると n の祖先に行き着くかどうか調べる" alt="" coords="509,589,711,616"/>
-<area shape="rect" href="classkomori_1_1_node.html#ae8e8fe23b128f7ae53c3878437828caa" title="move 後の盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="766,641,979,682"/>
-<area shape="rect" href="classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="1308,568,1485,595"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ad0d9e65f7b1603b063cd8d3c7252a797" title="生のハッシュ値からクエリを構築する" alt="" coords="783,392,962,448"/>
-<area shape="rect" href="classkomori_1_1_node.html#a518389ecf55b16ebf8f41dcb8c5ff731" title="(board_key, hand) が経路に含まれているかどうか" alt="" coords="1028,465,1243,492"/>
-<area shape="rect" href="classkomori_1_1_node.html#a1e4f1da48b69fb3356543b7cf37aab12" title="盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="1034,334,1237,375"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_query.html#ab73f7666d785f8b6cf94d64579260c22" title="置換表に保存された現局面の親局面を取得する" alt="" coords="803,473,942,514"/>
-<area shape="rect" href="classkomori_1_1_node.html#ab47757b0ecd5c40af2b2246a17477a13" title="move 後の盤面ハッシュ値" alt="" coords="1551,669,1761,696"/>
-<area shape="rect" href="classkomori_1_1_node.html#ac82d1552c36647cc88e62b104b77595d" title="move 後の攻め方の持ち駒" alt="" coords="1037,619,1234,645"/>
-<area shape="rect" href="classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="1589,505,1723,532"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#a5b2e24143732a4396cc526be6aac0196" title="(board_key, hand) の同一局面が履歴に記録されているか調べる。" alt="" coords="1321,458,1472,499"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#a9d2dd0f37b92f3af3f34b3b412a5c8a8" title="通常テーブルのメモリ使用率を見積もる。" alt="" coords="1047,1009,1224,1050"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a164c681a2c3ac0b306e8807d2d6014cd" title="置換表のメモリ使用率を求める。" alt="" coords="1038,943,1233,985"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#af6cd61f2f2b434ec7528b7a844a5179b" title="現在置換表に保存されている経路ハッシュ値の個数をカウントする。" alt="" coords="1299,943,1494,985"/>
-<area shape="rect" href="classkomori_1_1_komoring_heights.html#a1716f99cbc6053f69973929c21bdd83f" title="現在の探索情報を取得する" alt="" coords="517,809,703,850"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#ab4df88051b4354971147ea25055e64f1" title="探索局面数を観測する。nps を正しく計算するためには定期的に呼び出しが必要。" alt="" coords="503,931,717,973"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a5c89cae7c5c90289bf237ec54e775762" title="現在の探索情報を UsiInfo に詰めて返す。" alt="" coords="765,859,980,901"/>
-<area shape="rect" href="classkomori_1_1_usi_info.html#a0168968e66135ba7225030c489243e57" title="key に val を設定する。" alt="" coords="1060,837,1211,864"/>
-<area shape="rect" href="classkomori_1_1_score.html#a8d4d0c6ccf9d41846b8ebe16be1f7faa" title="現在の評価値を USI 文字列で返す" alt="" coords="787,925,958,952"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#afc31d019620df41e7762e5bc9a1d0133" title="現在の探索局面数" alt="" coords="1028,1099,1243,1141"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#a3af0755f672c9b15c72253aebc682aa5" title="(board_key, hand) を履歴から消す" alt="" coords="1321,57,1472,98"/>
-<area shape="rect" href="classkomori_1_1_node.html#a7f1c13d7f57b6af7f34ac77240342d71" title="move 直前の経路ハッシュ値" alt="" coords="1291,5,1503,32"/>
-<area shape="rect" href="namespacekomori.html#af65c288516ec71f448f2947aac9e755b" title="1手後の path_key と手 move から現在の path_key を計算する。" alt="" coords="1571,9,1741,36"/>
+<area shape="rect" title="詰め探索の本体。（再帰関数）" alt="" coords="5,758,192,799"/>
+<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a03fe64f10c6759a3d546410a9a5dd97c" title="ガベージコレクションを実行する" alt="" coords="258,311,437,367"/>
+<area shape="rect" href="classkomori_1_1_expansion_stack.html#ae7188bab1b61788cc1cafe1e73384c26" title="スタック先頭要素を返す。" alt="" coords="521,451,699,493"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="254,947,441,973"/>
+<area shape="rect" href="classkomori_1_1_node.html#a082d5d0045420c8978206fda2b518e17" title="move で1手進める" alt="" coords="1050,96,1221,123"/>
+<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="1313,368,1480,395"/>
+<area shape="rect" href="classkomori_1_1_expansion_stack.html#ad1bb984f52e71df980b5a105b41f71f2" title="現局面が終点となるの二重カウント解消を試みる" alt="" coords="258,510,437,551"/>
+<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="783,675,962,701"/>
+<area shape="rect" href="classkomori_1_1_expansion_stack.html#a9d4c5f980014a30b3a8cbb44f301c3fd" title="スタックの先頭に LocalExpansion オブジェクトを構築する。" alt="" coords="258,998,437,1039"/>
+<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a4179ad57f2d4a73ece89f9c380a7751a" title="置換表使用率（千分率）を計算する" alt="" coords="783,776,962,832"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#a0d81252fa8281a46c86b05b609434429" title="千日手の探索結果で初期化する" alt="" coords="267,1063,427,1105"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="255,1129,439,1156"/>
+<area shape="rect" href="classkomori_1_1_expansion_stack.html#a4f790082fd98aae8613d2432881196bd" title="スタック先頭の LocalExpansion オブジェクトを開放する。" alt="" coords="242,1180,453,1207"/>
+<area shape="rect" href="classkomori_1_1_komoring_heights.html#a67fdaf96d072661775e5997bb9440dc7" title="print_flag_ が立っていたら off にした上で探索情報を出力する" alt="" coords="254,729,441,770"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a4a738a1ed6f0aa22ce3d594c46f40c9c" title="次回の置換表使用率チェックタイミングを更新する" alt="" coords="503,1181,717,1222"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a769465e6930f15973ab17ac204b1bfe8" title="今すぐ置換表使用率をチェックすべきなら true" alt="" coords="503,974,717,1015"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a8732d41a7d1f887a7059a511c0f0574a" title="今すぐ探索をやめるべきなら true" alt="" coords="503,1065,717,1106"/>
+<area shape="rect" href="classkomori_1_1_node.html#aad7fe2734b150a1d9645ea72e2fdda83" title="DoMove() で勧めた局面を元に戻す" alt="" coords="1042,157,1229,184"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a0272905cf2ad091e3cf9f25d2f727cf5" title="深さ depth の局面に訪れたことを報告する" alt="" coords="240,1231,455,1273"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#abc27e107c2b787df207bc94082d05e3e" title="通常テーブルの中で、メモリ使用率が高いエントリを間引く" alt="" coords="521,315,699,357"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#afa4c0e9340b321a94d0f21f42fd0ecbb" title="エントリをできるだけ手前の方に移動させる（コンパクション）" alt="" coords="784,245,961,286"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="1047,277,1224,318"/>
+<area shape="rect" href="classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="1307,317,1486,344"/>
+<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1581,368,1721,395"/>
+<area shape="rect" href="classkomori_1_1_node.html#a6dfeb2e63ce33d5b9043010cbb8428c3" title="move 後の経路ハッシュ値" alt="" coords="1551,28,1751,55"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#a3ba89e53fbe90e03b07b2c68eea98334" title="(board_key, hand) を履歴に登録する" alt="" coords="1321,33,1472,74"/>
+<area shape="rect" href="namespacekomori.html#ae0ab7ef1101897b620e05208fc8975ee" title="現在の path_key と手 move から1手後の path_key を計算する。" alt="" coords="1799,100,1957,127"/>
+<area shape="rect" href="namespacekomori.html#aa8a333a0a9dfda36b2fc53731711e1f3" title="n を move した局面から置換表をたどると n の祖先に行き着くかどうか調べる" alt="" coords="509,517,711,544"/>
+<area shape="rect" href="classkomori_1_1_node.html#ae8e8fe23b128f7ae53c3878437828caa" title="move 後の盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="766,609,979,650"/>
+<area shape="rect" href="classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="1308,492,1485,519"/>
+<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#ad0d9e65f7b1603b063cd8d3c7252a797" title="生のハッシュ値からクエリを構築する" alt="" coords="783,311,962,367"/>
+<area shape="rect" href="classkomori_1_1_node.html#a518389ecf55b16ebf8f41dcb8c5ff731" title="(board_key, hand) が経路に含まれているかどうか" alt="" coords="1028,427,1243,453"/>
+<area shape="rect" href="classkomori_1_1_node.html#a1e4f1da48b69fb3356543b7cf37aab12" title="盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="1034,361,1237,402"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_query.html#ab73f7666d785f8b6cf94d64579260c22" title="置換表に保存された現局面の親局面を取得する" alt="" coords="803,543,942,585"/>
+<area shape="rect" href="classkomori_1_1_node.html#ab47757b0ecd5c40af2b2246a17477a13" title="move 後の盤面ハッシュ値" alt="" coords="1291,599,1502,625"/>
+<area shape="rect" href="classkomori_1_1_node.html#ac82d1552c36647cc88e62b104b77595d" title="move 後の攻め方の持ち駒" alt="" coords="1037,543,1234,569"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#a5b2e24143732a4396cc526be6aac0196" title="(board_key, hand) の同一局面が履歴に記録されているか調べる。" alt="" coords="1321,419,1472,461"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#a9d2dd0f37b92f3af3f34b3b412a5c8a8" title="通常テーブルのメモリ使用率を見積もる。" alt="" coords="1047,779,1224,821"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a164c681a2c3ac0b306e8807d2d6014cd" title="置換表のメモリ使用率を求める。" alt="" coords="1038,845,1233,886"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#af6cd61f2f2b434ec7528b7a844a5179b" title="現在置換表に保存されている経路ハッシュ値の個数をカウントする。" alt="" coords="1299,845,1494,886"/>
+<area shape="rect" href="classkomori_1_1_komoring_heights.html#a1716f99cbc6053f69973929c21bdd83f" title="現在の探索情報を取得する" alt="" coords="517,786,703,827"/>
+<area shape="rect" href="classkomori_1_1_score.html#a41335f6ec3462b65044abc2e39f845bc" title="評価値が詰み／不詰かどうか。" alt="" coords="529,852,691,879"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#ab4df88051b4354971147ea25055e64f1" title="探索局面数を観測する。nps を正しく計算するためには定期的に呼び出しが必要。" alt="" coords="765,1025,980,1066"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a5c89cae7c5c90289bf237ec54e775762" title="現在の探索情報を UsiInfo に詰めて返す。" alt="" coords="765,907,980,949"/>
+<area shape="rect" href="classkomori_1_1_usi_info.html#a0168968e66135ba7225030c489243e57" title="key に val を設定する。" alt="" coords="1060,913,1211,940"/>
+<area shape="rect" href="classkomori_1_1_score.html#a8d4d0c6ccf9d41846b8ebe16be1f7faa" title="現在の評価値を USI 文字列で返す" alt="" coords="787,973,958,1000"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#afc31d019620df41e7762e5bc9a1d0133" title="現在の探索局面数" alt="" coords="1028,1083,1243,1125"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#a3af0755f672c9b15c72253aebc682aa5" title="(board_key, hand) を履歴から消す" alt="" coords="1321,150,1472,191"/>
+<area shape="rect" href="classkomori_1_1_node.html#a7f1c13d7f57b6af7f34ac77240342d71" title="move 直前の経路ハッシュ値" alt="" coords="1291,216,1503,243"/>
+<area shape="rect" href="namespacekomori.html#af65c288516ec71f448f2947aac9e755b" title="1手後の path_key と手 move から現在の path_key を計算する。" alt="" coords="1565,171,1736,197"/>
 </map>
 </div>
 
