@@ -159,9 +159,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a1d0e3beed5538993268bab3b4b4271f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkomori_1_1_search_result.html">SearchResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_komoring_heights.html#a1d0e3beed5538993268bab3b4b4271f9">SearchEntry</a> (<a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n, <a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> len)</td></tr>
 <tr class="memdesc:a1d0e3beed5538993268bab3b4b4271f9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>n</code> が <code>len</code> 手以下で詰むかを探索する  <a href="classkomori_1_1_komoring_heights.html#a1d0e3beed5538993268bab3b4b4271f9">More...</a><br /></td></tr>
 <tr class="separator:a1d0e3beed5538993268bab3b4b4271f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae18eeb5dea2a27dbfa7ed60939556170"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkomori_1_1_search_result.html">SearchResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_komoring_heights.html#ae18eeb5dea2a27dbfa7ed60939556170">SearchImpl</a> (<a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> thpn, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> thdn, <a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> len, std::uint32_t &amp;inc_flag)</td></tr>
-<tr class="memdesc:ae18eeb5dea2a27dbfa7ed60939556170"><td class="mdescLeft">&#160;</td><td class="mdescRight">詰め探索の本体。（再帰関数）  <a href="classkomori_1_1_komoring_heights.html#ae18eeb5dea2a27dbfa7ed60939556170">More...</a><br /></td></tr>
-<tr class="separator:ae18eeb5dea2a27dbfa7ed60939556170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a571903f8c3a0ca55f9427e24504346e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkomori_1_1_search_result.html">SearchResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_komoring_heights.html#a571903f8c3a0ca55f9427e24504346e1">SearchImpl</a> (<a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n, std::uint32_t &amp;inc_flag)</td></tr>
+<tr class="memdesc:a571903f8c3a0ca55f9427e24504346e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">詰め探索の本体。（再帰関数）  <a href="classkomori_1_1_komoring_heights.html#a571903f8c3a0ca55f9427e24504346e1">More...</a><br /></td></tr>
+<tr class="separator:a571903f8c3a0ca55f9427e24504346e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbbb83a9dab145498fae3e4ae05f0793"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Move &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_komoring_heights.html#afbbb83a9dab145498fae3e4ae05f0793">GetMatePath</a> (<a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n, <a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> len)</td></tr>
 <tr class="memdesc:afbbb83a9dab145498fae3e4ae05f0793"><td class="mdescLeft">&#160;</td><td class="mdescRight">現時点の探索結果から詰め手順を取得する  <a href="classkomori_1_1_komoring_heights.html#afbbb83a9dab145498fae3e4ae05f0793">More...</a><br /></td></tr>
 <tr class="separator:afbbb83a9dab145498fae3e4ae05f0793"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,6 +199,14 @@ std::vector&lt; Move &gt;&#160;</td><td class="memItemRight" valign="bottom"><a 
 <a class="el" href="classkomori_1_1_expansion_stack.html">ExpansionStack</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_komoring_heights.html#aa1165459160dc3b30bd465b483acfcca">expansion_list_</a> {}</td></tr>
 <tr class="memdesc:aa1165459160dc3b30bd465b483acfcca"><td class="mdescLeft">&#160;</td><td class="mdescRight">局面展開のための一時領域 <br /></td></tr>
 <tr class="separator:aa1165459160dc3b30bd465b483acfcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af43658cf38e6d084da13cb6a83e3fe75"><td class="memItemLeft" align="right" valign="top"><a id="af43658cf38e6d084da13cb6a83e3fe75"></a>
+std::vector&lt; std::pair&lt; <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a>, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_komoring_heights.html#af43658cf38e6d084da13cb6a83e3fe75">search_thresholds_</a> {}</td></tr>
+<tr class="memdesc:af43658cf38e6d084da13cb6a83e3fe75"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索しきい値一覧。スタックオーバーフローを防ぐためにメンバで持つ <br /></td></tr>
+<tr class="separator:af43658cf38e6d084da13cb6a83e3fe75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe3b705e838387c4a82fa817fbd18f1"><td class="memItemLeft" align="right" valign="top"><a id="aafe3b705e838387c4a82fa817fbd18f1"></a>
+std::vector&lt; std::uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_komoring_heights.html#aafe3b705e838387c4a82fa817fbd18f1">inc_flag_caches_</a> {}</td></tr>
+<tr class="memdesc:aafe3b705e838387c4a82fa817fbd18f1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classkomori_1_1_komoring_heights.html#a571903f8c3a0ca55f9427e24504346e1" title="詰め探索の本体。（再帰関数）">SearchImpl()</a> が呼ばれた際のinc_flag の初期値。スタックオーバーフローを防ぐためにメンバで持つ <br /></td></tr>
+<tr class="separator:aafe3b705e838387c4a82fa817fbd18f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>詰将棋探索の本体 </p>
@@ -280,7 +288,7 @@ std::vector&lt; Move &gt;&#160;</td><td class="memItemRight" valign="bottom"><a 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>詰み手順 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00343">343</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00351">351</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -312,7 +320,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classkomori_1_1_node.html#ad8aec0a7fdeb5376090cd1e5c3a833a2" title="開始局面が OR Node かどうか" alt="" coords="524,608,731,635"/>
 <area shape="rect" href="classkomori_1_1_score.html#abde38682068f6f88a2a014aec7efb8bf" title="Score オブジェクトを構築する。" alt="" coords="550,433,705,460"/>
 <area shape="rect" href="classkomori_1_1_expansion_stack.html#a4f790082fd98aae8613d2432881196bd" title="スタック先頭の LocalExpansion オブジェクトを開放する。" alt="" coords="781,1541,991,1568"/>
-<area shape="rect" href="classkomori_1_1_komoring_heights.html#ae18eeb5dea2a27dbfa7ed60939556170" title="詰め探索の本体。（再帰関数）" alt="" coords="534,958,721,999"/>
+<area shape="rect" href="classkomori_1_1_komoring_heights.html#a571903f8c3a0ca55f9427e24504346e1" title="詰め探索の本体。（再帰関数）" alt="" coords="534,958,721,999"/>
 <area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a8732d41a7d1f887a7059a511c0f0574a" title="今すぐ探索をやめるべきなら true" alt="" coords="779,775,993,817"/>
 <area shape="rect" href="classkomori_1_1tt_1_1_query.html#add5f4c6c79b8cf305918bd62683a0078" title="探索結果 result を置換表に書き込む" alt="" coords="558,542,697,583"/>
 <area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="1058,656,1237,683"/>
@@ -430,7 +438,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00375">375</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00383">383</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -492,7 +500,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>探索結果 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00129">129</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00131">131</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -542,7 +550,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="1053,1011,1204,1037"/>
 <area shape="rect" href="classkomori_1_1_expansion_stack.html#a9d4c5f980014a30b3a8cbb44f301c3fd" title="スタックの先頭に LocalExpansion オブジェクトを構築する。" alt="" coords="1298,755,1477,797"/>
 <area shape="rect" href="classkomori_1_1_expansion_stack.html#a4f790082fd98aae8613d2432881196bd" title="スタック先頭の LocalExpansion オブジェクトを開放する。" alt="" coords="1282,821,1493,848"/>
-<area shape="rect" href="classkomori_1_1_komoring_heights.html#ae18eeb5dea2a27dbfa7ed60939556170" title="詰め探索の本体。（再帰関数）" alt="" coords="1035,697,1222,738"/>
+<area shape="rect" href="classkomori_1_1_komoring_heights.html#a571903f8c3a0ca55f9427e24504346e1" title="詰め探索の本体。（再帰関数）" alt="" coords="1035,697,1222,738"/>
 <area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a8732d41a7d1f887a7059a511c0f0574a" title="今すぐ探索をやめるべきなら true" alt="" coords="1280,638,1495,679"/>
 <area shape="rect" href="classkomori_1_1tt_1_1_query.html#add5f4c6c79b8cf305918bd62683a0078" title="探索結果 result を置換表に書き込む" alt="" coords="1059,865,1198,906"/>
 <area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="1298,1024,1477,1051"/>
@@ -596,9 +604,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>探索結果</dd></dl>
-<p><code><a class="el" href="classkomori_1_1_komoring_heights.html#ae18eeb5dea2a27dbfa7ed60939556170" title="詰め探索の本体。（再帰関数）">SearchImpl()</a></code> による再帰探索のエントリポイント。しきい値をいい感じに変化させることで探索の途中経過を 標準出力に出しながら探索を進めることができる。 </p>
+<p><code><a class="el" href="classkomori_1_1_komoring_heights.html#a571903f8c3a0ca55f9427e24504346e1" title="詰め探索の本体。（再帰関数）">SearchImpl()</a></code> による再帰探索のエントリポイント。しきい値をいい感じに変化させることで探索の途中経過を 標準出力に出しながら探索を進めることができる。 </p>
 
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00220">220</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00222">222</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -612,7 +620,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classkomori_1_1_node.html#ad8aec0a7fdeb5376090cd1e5c3a833a2" title="開始局面が OR Node かどうか" alt="" coords="741,1261,948,1288"/>
 <area shape="rect" href="classkomori_1_1_score.html#abde38682068f6f88a2a014aec7efb8bf" title="Score オブジェクトを構築する。" alt="" coords="256,5,411,32"/>
 <area shape="rect" href="classkomori_1_1_expansion_stack.html#a4f790082fd98aae8613d2432881196bd" title="スタック先頭の LocalExpansion オブジェクトを開放する。" alt="" coords="477,224,687,251"/>
-<area shape="rect" href="classkomori_1_1_komoring_heights.html#ae18eeb5dea2a27dbfa7ed60939556170" title="詰め探索の本体。（再帰関数）" alt="" coords="240,610,427,651"/>
+<area shape="rect" href="classkomori_1_1_komoring_heights.html#a571903f8c3a0ca55f9427e24504346e1" title="詰め探索の本体。（再帰関数）" alt="" coords="240,610,427,651"/>
 <area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a8732d41a7d1f887a7059a511c0f0574a" title="今すぐ探索をやめるべきなら true" alt="" coords="475,1010,689,1051"/>
 <area shape="rect" href="classkomori_1_1tt_1_1_query.html#add5f4c6c79b8cf305918bd62683a0078" title="探索結果 result を置換表に書き込む" alt="" coords="264,1295,403,1337"/>
 <area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="1018,1063,1197,1089"/>
@@ -659,8 +667,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="ae18eeb5dea2a27dbfa7ed60939556170"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae18eeb5dea2a27dbfa7ed60939556170">&#9670;&nbsp;</a></span>SearchImpl()</h2>
+<a id="a571903f8c3a0ca55f9427e24504346e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a571903f8c3a0ca55f9427e24504346e1">&#9670;&nbsp;</a></span>SearchImpl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -673,24 +681,6 @@ Here is the call graph for this function:</div>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classkomori_1_1_node.html">Node</a> &amp;&#160;</td>
           <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a>&#160;</td>
-          <td class="paramname"><em>thpn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a>&#160;</td>
-          <td class="paramname"><em>thdn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a>&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -715,22 +705,20 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>現局面 </td></tr>
-    <tr><td class="paramname">thpn</td><td>pn のしきい値 </td></tr>
-    <tr><td class="paramname">thdn</td><td>dn のしきい値 </td></tr>
-    <tr><td class="paramname">len</td><td>残り手数 </td></tr>
     <tr><td class="paramname">inc_flag</td><td>TCA の探索延長フラグ </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>探索結果 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>探索結果</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>引数をへらすために、pn/dn のしきい値 thpn/thdn は <code>search_thresholds_</code> に持たせる。 </dd></dl>
 <p><code>inc_flag</code> の値は探索前より小さくなっているはず</p>
 
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00253">253</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00257">257</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1_komoring_heights_ae18eeb5dea2a27dbfa7ed60939556170_cgraph.png" border="0" usemap="#aclasskomori_1_1_komoring_heights_ae18eeb5dea2a27dbfa7ed60939556170_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1_komoring_heights_ae18eeb5dea2a27dbfa7ed60939556170_cgraph" id="aclasskomori_1_1_komoring_heights_ae18eeb5dea2a27dbfa7ed60939556170_cgraph">
+<div class="center"><img src="classkomori_1_1_komoring_heights_a571903f8c3a0ca55f9427e24504346e1_cgraph.png" border="0" usemap="#aclasskomori_1_1_komoring_heights_a571903f8c3a0ca55f9427e24504346e1_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1_komoring_heights_a571903f8c3a0ca55f9427e24504346e1_cgraph" id="aclasskomori_1_1_komoring_heights_a571903f8c3a0ca55f9427e24504346e1_cgraph">
 <area shape="rect" title="詰め探索の本体。（再帰関数）" alt="" coords="5,758,192,799"/>
 <area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a03fe64f10c6759a3d546410a9a5dd97c" title="ガベージコレクションを実行する" alt="" coords="258,311,437,367"/>
 <area shape="rect" href="classkomori_1_1_expansion_stack.html#ae7188bab1b61788cc1cafe1e73384c26" title="スタック先頭要素を返す。" alt="" coords="521,451,699,493"/>
@@ -818,9 +806,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>探索結果と詰み手数</dd></dl>
-<p><code><a class="el" href="classkomori_1_1_komoring_heights.html#a1d0e3beed5538993268bab3b4b4271f9" title="n が len 手以下で詰むかを探索する">SearchEntry()</a></code> や <code><a class="el" href="classkomori_1_1_komoring_heights.html#ae18eeb5dea2a27dbfa7ed60939556170" title="詰め探索の本体。（再帰関数）">SearchImpl()</a></code> のような df-pn 探索では「詰みかどうか」の探索は得意だが 「最短の詰み手順かどうか」の判定は難しい。この関数では、詰み手数を変えながら <code><a class="el" href="classkomori_1_1_komoring_heights.html#a1d0e3beed5538993268bab3b4b4271f9" title="n が len 手以下で詰むかを探索する">SearchEntry()</a></code> を 呼ぶことで局面 <code>n</code> の詰み手数の区間を狭めていくことが目的の関数である。 </p>
+<p><code><a class="el" href="classkomori_1_1_komoring_heights.html#a1d0e3beed5538993268bab3b4b4271f9" title="n が len 手以下で詰むかを探索する">SearchEntry()</a></code> や <code><a class="el" href="classkomori_1_1_komoring_heights.html#a571903f8c3a0ca55f9427e24504346e1" title="詰め探索の本体。（再帰関数）">SearchImpl()</a></code> のような df-pn 探索では「詰みかどうか」の探索は得意だが 「最短の詰み手順かどうか」の判定は難しい。この関数では、詰み手数を変えながら <code><a class="el" href="classkomori_1_1_komoring_heights.html#a1d0e3beed5538993268bab3b4b4271f9" title="n が len 手以下で詰むかを探索する">SearchEntry()</a></code> を 呼ぶことで局面 <code>n</code> の詰み手数の区間を狭めていくことが目的の関数である。 </p>
 
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00167">167</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00169">169</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -858,7 +846,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="787,1079,937,1105"/>
 <area shape="rect" href="classkomori_1_1_expansion_stack.html#a9d4c5f980014a30b3a8cbb44f301c3fd" title="スタックの先頭に LocalExpansion オブジェクトを構築する。" alt="" coords="1031,1210,1210,1251"/>
 <area shape="rect" href="classkomori_1_1_expansion_stack.html#a4f790082fd98aae8613d2432881196bd" title="スタック先頭の LocalExpansion オブジェクトを開放する。" alt="" coords="1015,1276,1226,1303"/>
-<area shape="rect" href="classkomori_1_1_komoring_heights.html#ae18eeb5dea2a27dbfa7ed60939556170" title="詰め探索の本体。（再帰関数）" alt="" coords="769,821,955,862"/>
+<area shape="rect" href="classkomori_1_1_komoring_heights.html#a571903f8c3a0ca55f9427e24504346e1" title="詰め探索の本体。（再帰関数）" alt="" coords="769,821,955,862"/>
 <area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a8732d41a7d1f887a7059a511c0f0574a" title="今すぐ探索をやめるべきなら true" alt="" coords="1013,1145,1228,1186"/>
 <area shape="rect" href="classkomori_1_1tt_1_1_query.html#add5f4c6c79b8cf305918bd62683a0078" title="探索結果 result を置換表に書き込む" alt="" coords="793,1333,931,1374"/>
 <area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="1287,701,1465,728"/>
