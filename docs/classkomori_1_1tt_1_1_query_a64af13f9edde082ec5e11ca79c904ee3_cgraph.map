@@ -3,8 +3,9 @@
 <area shape="rect" id="node2" href="$classkomori_1_1_search_result.html#af0b32b9f9fff602c03f5ea4ab4e5fff1" title="探索量" alt="" coords="205,5,365,47"/>
 <area shape="rect" id="node3" href="$classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="192,71,379,98"/>
 <area shape="rect" id="node4" href="$classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="216,123,355,164"/>
-<area shape="rect" id="node7" href="$classkomori_1_1_search_result.html#abfe86f70fc0d0535b1b01057732f6acb" title="Unknown部分の結果。!IsFinal() の場合のみ呼び出し可能。" alt="" coords="205,188,365,229"/>
-<area shape="rect" id="node8" href="$classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="193,254,377,281"/>
-<area shape="rect" id="node5" href="$classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う" alt="" coords="427,130,581,157"/>
-<area shape="rect" id="node6" href="$classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="629,123,779,164"/>
+<area shape="rect" id="node8" href="$classkomori_1_1_search_result.html#abfe86f70fc0d0535b1b01057732f6acb" title="Unknown部分の結果。!IsFinal() の場合のみ呼び出し可能。" alt="" coords="205,188,365,229"/>
+<area shape="rect" id="node9" href="$classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="193,254,377,281"/>
+<area shape="rect" id="node5" href="$classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う" alt="" coords="427,101,581,127"/>
+<area shape="rect" id="node7" href="$classkomori_1_1tt_1_1_entry.html#acccbfa45c2b0e66e0c32bce4473c8723" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="437,152,571,193"/>
+<area shape="rect" id="node6" href="$classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="629,93,779,135"/>
 </map>
