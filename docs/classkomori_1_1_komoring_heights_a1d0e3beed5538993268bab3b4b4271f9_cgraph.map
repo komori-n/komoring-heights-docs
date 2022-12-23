@@ -7,7 +7,7 @@
 <area shape="rect" id="node20" href="$classkomori_1_1_node.html#ad8aec0a7fdeb5376090cd1e5c3a833a2" title="開始局面が OR Node かどうか" alt="" coords="741,1261,948,1288"/>
 <area shape="rect" id="node23" href="$classkomori_1_1_score.html#abde38682068f6f88a2a014aec7efb8bf" title="Score オブジェクトを構築する。" alt="" coords="256,5,411,32"/>
 <area shape="rect" id="node25" href="$classkomori_1_1_expansion_stack.html#a4f790082fd98aae8613d2432881196bd" title="スタック先頭の LocalExpansion オブジェクトを開放する。" alt="" coords="477,224,687,251"/>
-<area shape="rect" id="node26" href="$classkomori_1_1_komoring_heights.html#a571903f8c3a0ca55f9427e24504346e1" title="詰め探索の本体。（再帰関数）" alt="" coords="240,610,427,651"/>
+<area shape="rect" id="node26" href="$classkomori_1_1_komoring_heights.html#ae18eeb5dea2a27dbfa7ed60939556170" title="詰め探索の本体。（再帰関数）" alt="" coords="240,610,427,651"/>
 <area shape="rect" id="node45" href="$classkomori_1_1detail_1_1_search_monitor.html#a8732d41a7d1f887a7059a511c0f0574a" title="今すぐ探索をやめるべきなら true" alt="" coords="475,1010,689,1051"/>
 <area shape="rect" id="node50" href="$classkomori_1_1tt_1_1_query.html#add5f4c6c79b8cf305918bd62683a0078" title="探索結果 result を置換表に書き込む" alt="" coords="264,1295,403,1337"/>
 <area shape="rect" id="node3" href="$classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="1018,1063,1197,1089"/>

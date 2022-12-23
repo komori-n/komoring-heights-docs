@@ -43,7 +43,7 @@
 <area shape="rect" id="node40" href="$namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="1053,1011,1204,1037"/>
 <area shape="rect" id="node41" href="$classkomori_1_1_expansion_stack.html#a9d4c5f980014a30b3a8cbb44f301c3fd" title="スタックの先頭に LocalExpansion オブジェクトを構築する。" alt="" coords="1298,755,1477,797"/>
 <area shape="rect" id="node46" href="$classkomori_1_1_expansion_stack.html#a4f790082fd98aae8613d2432881196bd" title="スタック先頭の LocalExpansion オブジェクトを開放する。" alt="" coords="1282,821,1493,848"/>
-<area shape="rect" id="node47" href="$classkomori_1_1_komoring_heights.html#a571903f8c3a0ca55f9427e24504346e1" title="詰め探索の本体。（再帰関数）" alt="" coords="1035,697,1222,738"/>
+<area shape="rect" id="node47" href="$classkomori_1_1_komoring_heights.html#ae18eeb5dea2a27dbfa7ed60939556170" title="詰め探索の本体。（再帰関数）" alt="" coords="1035,697,1222,738"/>
 <area shape="rect" id="node48" href="$classkomori_1_1detail_1_1_search_monitor.html#a8732d41a7d1f887a7059a511c0f0574a" title="今すぐ探索をやめるべきなら true" alt="" coords="1280,638,1495,679"/>
 <area shape="rect" id="node49" href="$classkomori_1_1tt_1_1_query.html#add5f4c6c79b8cf305918bd62683a0078" title="探索結果 result を置換表に書き込む" alt="" coords="1059,865,1198,906"/>
 <area shape="rect" id="node39" href="$classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="1298,1024,1477,1051"/>
