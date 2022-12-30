@@ -9,7 +9,7 @@ var searchData=
   ['score_5fcaluclation_5foption_400',['score_caluclation_option',['../namespacekomori_1_1detail.html#af96273f392e89ff2fae85a958348299e',1,'komori::detail']]],
   ['score_5fmethod_401',['score_method',['../structkomori_1_1_engine_option.html#aa55487124538713d99a0142eff1c4302',1,'komori::EngineOption']]],
   ['scorecalculationmethod_402',['ScoreCalculationMethod',['../namespacekomori.html#adc4d7ccfd98577a6c7e7d9830b9add11',1,'komori']]],
-  ['scorevalue_403',['ScoreValue',['../classkomori_1_1_score.html#a5e6160215a8382e614db3a456142be3c',1,'komori::Score']]],
+  ['scorevalue_403',['ScoreValue',['../classkomori_1_1_score.html#a72b687d5a373166fcbaf2928857ae3a9',1,'komori::Score']]],
   ['search_404',['Search',['../classkomori_1_1_komoring_heights.html#a46ca7753e4ed402263f06e9bab0dd832',1,'komori::KomoringHeights']]],
   ['search_5fresult_2ehpp_405',['search_result.hpp',['../search__result_8hpp.html',1,'']]],
   ['searchamount_406',['SearchAmount',['../namespacekomori.html#a077cff4c0bde489c0330a39b102a21bf',1,'komori']]],
