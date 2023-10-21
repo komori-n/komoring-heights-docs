@@ -68,7 +68,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classkomori_1_1tt_1_1_repetition_table-members.html">List of all members</a>  </div>
@@ -77,65 +80,228 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>千日手手順を記録する置換表  
+<p>千日手手順（経路ハッシュ値）を記録する置換表  
  <a href="classkomori_1_1tt_1_1_repetition_table.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="repetition__table_8hpp_source.html">repetition_table.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkomori_1_1tt_1_1_repetition_table_1_1_table_entry.html">TableEntry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表に格納するエントリ。16 bits に詰める。  <a href="structkomori_1_1tt_1_1_repetition_table_1_1_table_entry.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac6382cf0b39f6dca885234a4aec70213"><td class="memItemLeft" align="right" valign="top"><a id="ac6382cf0b39f6dca885234a4aec70213"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ac6382cf0b39f6dca885234a4aec70213">Generation</a> = std::uint32_t</td></tr>
+<tr class="memdesc:ac6382cf0b39f6dca885234a4aec70213"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表世代。メモリ量をケチるために32 bitsで持つ。オーバーフローに注意。 <br /></td></tr>
+<tr class="separator:ac6382cf0b39f6dca885234a4aec70213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aebea03c0e20d022bacf33d688c27b610"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#aebea03c0e20d022bacf33d688c27b610">RepetitionTable</a> (std::size_t table_size=1)</td></tr>
+<tr class="memdesc:aebea03c0e20d022bacf33d688c27b610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Repetition Table object.  <a href="classkomori_1_1tt_1_1_repetition_table.html#aebea03c0e20d022bacf33d688c27b610">More...</a><br /></td></tr>
+<tr class="separator:aebea03c0e20d022bacf33d688c27b610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5db29c3fd180441b6f82a4398462584"><td class="memItemLeft" align="right" valign="top"><a id="ac5db29c3fd180441b6f82a4398462584"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ac5db29c3fd180441b6f82a4398462584">RepetitionTable</a> (const <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &amp;)=default</td></tr>
+<tr class="memdesc:ac5db29c3fd180441b6f82a4398462584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor(default) <br /></td></tr>
+<tr class="separator:ac5db29c3fd180441b6f82a4398462584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ef498057fa686cb480d07f8afb1cc1"><td class="memItemLeft" align="right" valign="top"><a id="a36ef498057fa686cb480d07f8afb1cc1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a36ef498057fa686cb480d07f8afb1cc1">RepetitionTable</a> (<a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &amp;&amp;) noexcept=default</td></tr>
+<tr class="memdesc:a36ef498057fa686cb480d07f8afb1cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor(default) <br /></td></tr>
+<tr class="separator:a36ef498057fa686cb480d07f8afb1cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa38233ac33ab08a42ea2b108d52cac70"><td class="memItemLeft" align="right" valign="top"><a id="aa38233ac33ab08a42ea2b108d52cac70"></a>
+<a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#aa38233ac33ab08a42ea2b108d52cac70">operator=</a> (const <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &amp;)=default</td></tr>
+<tr class="memdesc:aa38233ac33ab08a42ea2b108d52cac70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assign operator(default) <br /></td></tr>
+<tr class="separator:aa38233ac33ab08a42ea2b108d52cac70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaaaa9458ab94fbadd9ba2ecb6ea0fd4"><td class="memItemLeft" align="right" valign="top"><a id="afaaaa9458ab94fbadd9ba2ecb6ea0fd4"></a>
+<a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#afaaaa9458ab94fbadd9ba2ecb6ea0fd4">operator=</a> (<a class="el" href="classkomori_1_1tt_1_1_repetition_table.html">RepetitionTable</a> &amp;&amp;) noexcept=default</td></tr>
+<tr class="memdesc:afaaaa9458ab94fbadd9ba2ecb6ea0fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assign operator(default) <br /></td></tr>
+<tr class="separator:afaaaa9458ab94fbadd9ba2ecb6ea0fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76682d0bdb9b47ad17f2c59f6d28f40f"><td class="memItemLeft" align="right" valign="top"><a id="a76682d0bdb9b47ad17f2c59f6d28f40f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a76682d0bdb9b47ad17f2c59f6d28f40f">~RepetitionTable</a> ()=default</td></tr>
+<tr class="memdesc:a76682d0bdb9b47ad17f2c59f6d28f40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor(default) <br /></td></tr>
+<tr class="separator:a76682d0bdb9b47ad17f2c59f6d28f40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cf06ccf4ee8c44a6f965ec43f21185a"><td class="memItemLeft" align="right" valign="top"><a id="a1cf06ccf4ee8c44a6f965ec43f21185a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a1cf06ccf4ee8c44a6f965ec43f21185a">Clear</a> ()</td></tr>
 <tr class="memdesc:a1cf06ccf4ee8c44a6f965ec43f21185a"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表に保存された経路ハッシュ値をすべて削除する。 <br /></td></tr>
 <tr class="separator:a1cf06ccf4ee8c44a6f965ec43f21185a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c4e6740cfab83ffb119e184b2b286ed"><td class="memItemLeft" align="right" valign="top"><a id="a7c4e6740cfab83ffb119e184b2b286ed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a7c4e6740cfab83ffb119e184b2b286ed">SetTableSizeMax</a> (std::size_t size_max)</td></tr>
-<tr class="memdesc:a7c4e6740cfab83ffb119e184b2b286ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表に登録できる key の最大個数を設定する。 <br /></td></tr>
-<tr class="separator:a7c4e6740cfab83ffb119e184b2b286ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0ab73a60dfafe31459ccf8423ca3d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a3d0ab73a60dfafe31459ccf8423ca3d7">Resize</a> (std::size_t table_size)</td></tr>
+<tr class="memdesc:a3d0ab73a60dfafe31459ccf8423ca3d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表サイズを <code>table_size</code> へ変更する。  <a href="classkomori_1_1tt_1_1_repetition_table.html#a3d0ab73a60dfafe31459ccf8423ca3d7">More...</a><br /></td></tr>
+<tr class="separator:a3d0ab73a60dfafe31459ccf8423ca3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f9650cc7179964dbacc3df5165cb659"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a2f9650cc7179964dbacc3df5165cb659">Insert</a> (Key path_key, Depth depth)</td></tr>
 <tr class="memdesc:a2f9650cc7179964dbacc3df5165cb659"><td class="mdescLeft">&#160;</td><td class="mdescRight">経路ハッシュ値 <code>path_key</code> に千日手判定開始深さ <code>depth</code> を設定する  <a href="classkomori_1_1tt_1_1_repetition_table.html#a2f9650cc7179964dbacc3df5165cb659">More...</a><br /></td></tr>
 <tr class="separator:a2f9650cc7179964dbacc3df5165cb659"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9666e90a9343ec8e235d1950ff6b0d1f"><td class="memItemLeft" align="right" valign="top">std::optional&lt; Depth &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a9666e90a9343ec8e235d1950ff6b0d1f">Contains</a> (Key path_key) const</td></tr>
 <tr class="memdesc:a9666e90a9343ec8e235d1950ff6b0d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">経路ハッシュ値 <code>path_key</code> が保存されているかどうか判定する。  <a href="classkomori_1_1tt_1_1_repetition_table.html#a9666e90a9343ec8e235d1950ff6b0d1f">More...</a><br /></td></tr>
 <tr class="separator:a9666e90a9343ec8e235d1950ff6b0d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6cd61f2f2b434ec7528b7a844a5179b"><td class="memItemLeft" align="right" valign="top"><a id="af6cd61f2f2b434ec7528b7a844a5179b"></a>
-constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#af6cd61f2f2b434ec7528b7a844a5179b">Size</a> () const</td></tr>
-<tr class="memdesc:af6cd61f2f2b434ec7528b7a844a5179b"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在置換表に保存されている経路ハッシュ値の個数をカウントする。 <br /></td></tr>
-<tr class="separator:af6cd61f2f2b434ec7528b7a844a5179b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1503dba3c48f42c19e6c4b53256ae22"><td class="memItemLeft" align="right" valign="top"><a id="ae1503dba3c48f42c19e6c4b53256ae22"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Size</b> () const</td></tr>
+<tr class="separator:ae1503dba3c48f42c19e6c4b53256ae22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a164c681a2c3ac0b306e8807d2d6014cd"><td class="memItemLeft" align="right" valign="top"><a id="a164c681a2c3ac0b306e8807d2d6014cd"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a164c681a2c3ac0b306e8807d2d6014cd">HashRate</a> () const</td></tr>
 <tr class="memdesc:a164c681a2c3ac0b306e8807d2d6014cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表のメモリ使用率を求める。 <br /></td></tr>
 <tr class="separator:a164c681a2c3ac0b306e8807d2d6014cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14348e429fd9da3e0669764dee6c6f6"><td class="memItemLeft" align="right" valign="top"><a id="aa14348e429fd9da3e0669764dee6c6f6"></a>
+<a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ac6382cf0b39f6dca885234a4aec70213">Generation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetGeneration</b> () const</td></tr>
+<tr class="separator:aa14348e429fd9da3e0669764dee6c6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ab4064a942f6e30221c09712db99d1d28"><td class="memItemLeft" align="right" valign="top"><a id="ab4064a942f6e30221c09712db99d1d28"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28">StartIndex</a> (Key path_key) const</td></tr>
+<tr class="memdesc:ab4064a942f6e30221c09712db99d1d28"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>path_key</code> に対しる探索開始インデックスを求める。 <br /></td></tr>
+<tr class="separator:ab4064a942f6e30221c09712db99d1d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3aba5ed8a8a18bb8591d38cb0a050ba"><td class="memItemLeft" align="right" valign="top"><a id="ac3aba5ed8a8a18bb8591d38cb0a050ba"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba">Next</a> (std::size_t index) const</td></tr>
+<tr class="memdesc:ac3aba5ed8a8a18bb8591d38cb0a050ba"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>index</code> の次のインデックスを求める。 <br /></td></tr>
+<tr class="separator:ac3aba5ed8a8a18bb8591d38cb0a050ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad14e640283025eb47eb9ee518adc0b51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ad14e640283025eb47eb9ee518adc0b51">CollectGarbage</a> ()</td></tr>
+<tr class="memdesc:ad14e640283025eb47eb9ee518adc0b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">ガベージコレクションを行う  <a href="classkomori_1_1tt_1_1_repetition_table.html#ad14e640283025eb47eb9ee518adc0b51">More...</a><br /></td></tr>
+<tr class="separator:ad14e640283025eb47eb9ee518adc0b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a4ee9f9edf1d9ea22c50b3a2ccd920aa3"><td class="memItemLeft" align="right" valign="top"><a id="a4ee9f9edf1d9ea22c50b3a2ccd920aa3"></a>
-std::array&lt; std::unordered_map&lt; Key, Depth &gt;, <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#aa36448012af34fb34b85e59459ebfefb">kTableLen</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a4ee9f9edf1d9ea22c50b3a2ccd920aa3">keys_</a> {}</td></tr>
-<tr class="memdesc:a4ee9f9edf1d9ea22c50b3a2ccd920aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">経路ハッシュ値置換表の本体 <br /></td></tr>
-<tr class="separator:a4ee9f9edf1d9ea22c50b3a2ccd920aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a3603f2fa2da2600cf792eacbf0ecc5"><td class="memItemLeft" align="right" valign="top"><a id="a6a3603f2fa2da2600cf792eacbf0ecc5"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a6a3603f2fa2da2600cf792eacbf0ecc5">idx_</a> {0}</td></tr>
-<tr class="memdesc:a6a3603f2fa2da2600cf792eacbf0ecc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在アクティブな置換表([0, kTableLen)) <br /></td></tr>
-<tr class="separator:a6a3603f2fa2da2600cf792eacbf0ecc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad308c72eca34a6a09447690e7b048617"><td class="memItemLeft" align="right" valign="top"><a id="ad308c72eca34a6a09447690e7b048617"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ad308c72eca34a6a09447690e7b048617">size_max_</a> {std::numeric_limits&lt;std::size_t&gt;::max()}</td></tr>
-<tr class="memdesc:ad308c72eca34a6a09447690e7b048617"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表内に保存できる経路ハッシュ値の最大個数 <br /></td></tr>
-<tr class="separator:ad308c72eca34a6a09447690e7b048617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5ffd1aa5fa1aef3105213eda5661a98"><td class="memItemLeft" align="right" valign="top"><a id="ae5ffd1aa5fa1aef3105213eda5661a98"></a>
+<a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ac6382cf0b39f6dca885234a4aec70213">Generation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ae5ffd1aa5fa1aef3105213eda5661a98">generation_</a> {}</td></tr>
+<tr class="memdesc:ae5ffd1aa5fa1aef3105213eda5661a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の置換表世代 <br /></td></tr>
+<tr class="separator:ae5ffd1aa5fa1aef3105213eda5661a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3163fca0834cec34cd20eab11c146d3d"><td class="memItemLeft" align="right" valign="top"><a id="a3163fca0834cec34cd20eab11c146d3d"></a>
+std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a3163fca0834cec34cd20eab11c146d3d">entry_count_</a> {}</td></tr>
+<tr class="memdesc:a3163fca0834cec34cd20eab11c146d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在までにInsert()したエントリ数 <br /></td></tr>
+<tr class="separator:a3163fca0834cec34cd20eab11c146d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c3aad42cfc489d9834aabf2f0e3891"><td class="memItemLeft" align="right" valign="top"><a id="a06c3aad42cfc489d9834aabf2f0e3891"></a>
+std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a06c3aad42cfc489d9834aabf2f0e3891">next_generation_update_</a> {}</td></tr>
+<tr class="memdesc:a06c3aad42cfc489d9834aabf2f0e3891"><td class="mdescLeft">&#160;</td><td class="mdescRight">次回generation_をインクリメントするタイミング <br /></td></tr>
+<tr class="separator:a06c3aad42cfc489d9834aabf2f0e3891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb56c4ae672617e079687b43c0c52b21"><td class="memItemLeft" align="right" valign="top"><a id="abb56c4ae672617e079687b43c0c52b21"></a>
+<a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ac6382cf0b39f6dca885234a4aec70213">Generation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#abb56c4ae672617e079687b43c0c52b21">next_gc_</a> {}</td></tr>
+<tr class="memdesc:abb56c4ae672617e079687b43c0c52b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">次回GCを行うGeneration <br /></td></tr>
+<tr class="separator:abb56c4ae672617e079687b43c0c52b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b76d2ab73669012cade8c1e155cd039"><td class="memItemLeft" align="right" valign="top"><a id="a9b76d2ab73669012cade8c1e155cd039"></a>
+std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a9b76d2ab73669012cade8c1e155cd039">entries_per_generation_</a> {}</td></tr>
+<tr class="memdesc:a9b76d2ab73669012cade8c1e155cd039"><td class="mdescLeft">&#160;</td><td class="mdescRight">1 generationあたりのエントリ数 <br /></td></tr>
+<tr class="separator:a9b76d2ab73669012cade8c1e155cd039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb6968c779cbf66a6b79f312d26d18c4"><td class="memItemLeft" align="right" valign="top"><a id="adb6968c779cbf66a6b79f312d26d18c4"></a>
+std::vector&lt; <a class="el" href="structkomori_1_1tt_1_1_repetition_table_1_1_table_entry.html">TableEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#adb6968c779cbf66a6b79f312d26d18c4">hash_table_</a> {}</td></tr>
+<tr class="memdesc:adb6968c779cbf66a6b79f312d26d18c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表本体 <br /></td></tr>
+<tr class="separator:adb6968c779cbf66a6b79f312d26d18c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:aa36448012af34fb34b85e59459ebfefb"><td class="memItemLeft" align="right" valign="top"><a id="aa36448012af34fb34b85e59459ebfefb"></a>
-static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#aa36448012af34fb34b85e59459ebfefb">kTableLen</a> = 2</td></tr>
-<tr class="memdesc:aa36448012af34fb34b85e59459ebfefb"><td class="mdescLeft">&#160;</td><td class="mdescRight">内部で持つ <code>std::unordered_map</code> の個数。あまり多いと LookUp 時間が増大する。 <br /></td></tr>
-<tr class="separator:aa36448012af34fb34b85e59459ebfefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3906740205f4d08045582b8c0cb0680"><td class="memItemLeft" align="right" valign="top"><a id="ae3906740205f4d08045582b8c0cb0680"></a>
+static constexpr std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ae3906740205f4d08045582b8c0cb0680">kGenerationPerTableSize</a> = 20</td></tr>
+<tr class="memdesc:ae3906740205f4d08045582b8c0cb0680"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表全体を何 generation で管理するか <br /></td></tr>
+<tr class="separator:ae3906740205f4d08045582b8c0cb0680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc3f5346adf5d89f29458784c6cc4b2"><td class="memItemLeft" align="right" valign="top"><a id="a2cc3f5346adf5d89f29458784c6cc4b2"></a>
+static constexpr <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ac6382cf0b39f6dca885234a4aec70213">Generation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a2cc3f5346adf5d89f29458784c6cc4b2">kInitialGcDuration</a> = 6</td></tr>
+<tr class="memdesc:a2cc3f5346adf5d89f29458784c6cc4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">初回のGCタイミング <br /></td></tr>
+<tr class="separator:a2cc3f5346adf5d89f29458784c6cc4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c55021edc2a66ac6c3bef8168913a4d"><td class="memItemLeft" align="right" valign="top"><a id="a1c55021edc2a66ac6c3bef8168913a4d"></a>
+static constexpr <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ac6382cf0b39f6dca885234a4aec70213">Generation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a1c55021edc2a66ac6c3bef8168913a4d">kGcDuration</a> = 3</td></tr>
+<tr class="memdesc:a1c55021edc2a66ac6c3bef8168913a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">2回目以降のGCタイミング <br /></td></tr>
+<tr class="separator:a1c55021edc2a66ac6c3bef8168913a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc573ce182b0b4bbdfa28db0e1f7c57"><td class="memItemLeft" align="right" valign="top"><a id="a1cc573ce182b0b4bbdfa28db0e1f7c57"></a>
+static constexpr <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ac6382cf0b39f6dca885234a4aec70213">Generation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a1cc573ce182b0b4bbdfa28db0e1f7c57">kGcKeepGeneration</a> = 3</td></tr>
+<tr class="memdesc:a1cc573ce182b0b4bbdfa28db0e1f7c57"><td class="mdescLeft">&#160;</td><td class="mdescRight">GCで残す置換表世代数 <br /></td></tr>
+<tr class="separator:a1cc573ce182b0b4bbdfa28db0e1f7c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>千日手手順を記録する置換表 </p>
-<p>千日手と判明した経路ハッシュ値を高々 <code>size_max</code> 個記憶する。もし記録している手順数が <code>size_max</code> を超える場合、 古い結果を削除する GC 機能を備えている。</p>
-<dl class="section note"><dt>Note</dt><dd><code>std::unordered_map</code> を複数個持つことでこの GC 機能を実現している。 </dd></dl>
+<div class="textblock"><p>千日手手順（経路ハッシュ値）を記録する置換表 </p>
+<p><code>std::unordered_map&lt;std::pair&lt;Key, Depth&gt;&gt;</code> のような機能を実装するが、内部はただの配列（std::vector）で 実装されている。ハッシュ値が衝突したときは、線形走査により格納するインデックスを求める。</p>
+<p>LookUp速度を高速に保つために、置換表の高々 30% しか要素を格納しない。メモリ使用率が 30% を超えた場合、 Garbage Collectionにより古いエントリを消す。</p>
+<dl class="section note"><dt>Note</dt><dd><code>std::unordered_map</code> を用いるより、<code>std::vector</code> + 線形走査法をしたほうが <code>Containis()</code> の速度が 20% ほど 高速化できる。ただし、<code><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a2f9650cc7179964dbacc3df5165cb659" title="経路ハッシュ値 path_key に千日手判定開始深さ depth を設定する">Insert()</a></code> の速度が 20% ほど遅くなっているので注意。実用上は、 <code><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a2f9650cc7179964dbacc3df5165cb659" title="経路ハッシュ値 path_key に千日手判定開始深さ depth を設定する">Insert()</a></code> の回数よりも <code><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a9666e90a9343ec8e235d1950ff6b0d1f" title="経路ハッシュ値 path_key が保存されているかどうか判定する。">Contains()</a></code> で検索する回数の方が多いと考えられるので、全体としては早くなっているはず。 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="repetition__table_8hpp_source.html#l00023">23</a> of file <a class="el" href="repetition__table_8hpp_source.html">repetition_table.hpp</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="repetition__table_8hpp_source.html#l00027">27</a> of file <a class="el" href="repetition__table_8hpp_source.html">repetition_table.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aebea03c0e20d022bacf33d688c27b610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebea03c0e20d022bacf33d688c27b610">&#9670;&nbsp;</a></span>RepetitionTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">komori::tt::RepetitionTable::RepetitionTable </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>table_size</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new Repetition Table object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table_size</td><td>置換表サイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="repetition__table_8hpp_source.html#l00037">37</a> of file <a class="el" href="repetition__table_8hpp_source.html">repetition_table.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkomori_1_1tt_1_1_repetition_table_aebea03c0e20d022bacf33d688c27b610_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_repetition_table_aebea03c0e20d022bacf33d688c27b610_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1_repetition_table_aebea03c0e20d022bacf33d688c27b610_cgraph" id="aclasskomori_1_1tt_1_1_repetition_table_aebea03c0e20d022bacf33d688c27b610_cgraph">
+<area shape="rect" title="Construct a new Repetition Table object." alt="" coords="5,5,200,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a3d0ab73a60dfafe31459ccf8423ca3d7" title="置換表サイズを table_size へ変更する。" alt="" coords="248,5,443,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a1cf06ccf4ee8c44a6f965ec43f21185a" title="置換表に保存された経路ハッシュ値をすべて削除する。" alt="" coords="491,5,685,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad14e640283025eb47eb9ee518adc0b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad14e640283025eb47eb9ee518adc0b51">&#9670;&nbsp;</a></span>CollectGarbage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void komori::tt::RepetitionTable::CollectGarbage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ガベージコレクションを行う </p>
+<p>現在の置換表世代 <code>generation_</code> から <code>kGcKeepGeneration</code> 世代前のエントリまでを残し、 それより古いエントリを削除する。また、歯抜けエントリがあると線形走査法で正しく探索できなくなるので、 エントリをできるだけ手前に詰める。（コンパクション） </p>
+
+<p class="definition">Definition at line <a class="el" href="repetition__table_8hpp_source.html#l00176">176</a> of file <a class="el" href="repetition__table_8hpp_source.html">repetition_table.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkomori_1_1tt_1_1_repetition_table_ad14e640283025eb47eb9ee518adc0b51_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_repetition_table_ad14e640283025eb47eb9ee518adc0b51_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1_repetition_table_ad14e640283025eb47eb9ee518adc0b51_cgraph" id="aclasskomori_1_1tt_1_1_repetition_table_ad14e640283025eb47eb9ee518adc0b51_cgraph">
+<area shape="rect" title="ガベージコレクションを行う" alt="" coords="5,39,200,80"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="248,5,443,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対しる探索開始インデックスを求める。" alt="" coords="248,71,443,112"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a9666e90a9343ec8e235d1950ff6b0d1f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9666e90a9343ec8e235d1950ff6b0d1f">&#9670;&nbsp;</a></span>Contains()</h2>
 
@@ -169,7 +335,17 @@ static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom">
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>path_key</code> が保存されていればその深さ、なければ <code>std::nullopt</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="repetition__table_8hpp_source.html#l00059">59</a> of file <a class="el" href="repetition__table_8hpp_source.html">repetition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="repetition__table_8hpp_source.html#l00112">112</a> of file <a class="el" href="repetition__table_8hpp_source.html">repetition_table.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkomori_1_1tt_1_1_repetition_table_a9666e90a9343ec8e235d1950ff6b0d1f_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_repetition_table_a9666e90a9343ec8e235d1950ff6b0d1f_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1_repetition_table_a9666e90a9343ec8e235d1950ff6b0d1f_cgraph" id="aclasskomori_1_1tt_1_1_repetition_table_a9666e90a9343ec8e235d1950ff6b0d1f_cgraph">
+<area shape="rect" title="経路ハッシュ値 path_key が保存されているかどうか判定する。" alt="" coords="5,39,200,80"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="248,5,443,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対しる探索開始インデックスを求める。" alt="" coords="248,71,443,112"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -216,7 +392,64 @@ static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom">
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="repetition__table_8hpp_source.html#l00042">42</a> of file <a class="el" href="repetition__table_8hpp_source.html">repetition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="repetition__table_8hpp_source.html#l00084">84</a> of file <a class="el" href="repetition__table_8hpp_source.html">repetition_table.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkomori_1_1tt_1_1_repetition_table_a2f9650cc7179964dbacc3df5165cb659_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_repetition_table_a2f9650cc7179964dbacc3df5165cb659_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1_repetition_table_a2f9650cc7179964dbacc3df5165cb659_cgraph" id="aclasskomori_1_1tt_1_1_repetition_table_a2f9650cc7179964dbacc3df5165cb659_cgraph">
+<area shape="rect" title="経路ハッシュ値 path_key に千日手判定開始深さ depth を設定する" alt="" coords="5,51,200,92"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ad14e640283025eb47eb9ee518adc0b51" title="ガベージコレクションを行う" alt="" coords="248,51,443,92"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="491,5,685,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対しる探索開始インデックスを求める。" alt="" coords="491,84,685,125"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3d0ab73a60dfafe31459ccf8423ca3d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d0ab73a60dfafe31459ccf8423ca3d7">&#9670;&nbsp;</a></span>Resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void komori::tt::RepetitionTable::Resize </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>table_size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>置換表サイズを <code>table_size</code> へ変更する。 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table_size</td><td>置換表サイズ</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>置換表サイズを <code>table_size</code> へと変更する。もし <code>Size() == table_size</code> ならば、何もしない。 <code>Size() != table_size</code> なら置換表のりサイズと <code><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a1cf06ccf4ee8c44a6f965ec43f21185a" title="置換表に保存された経路ハッシュ値をすべて削除する。">Clear()</a></code> を行う。 </p>
+
+<p class="definition">Definition at line <a class="el" href="repetition__table_8hpp_source.html#l00069">69</a> of file <a class="el" href="repetition__table_8hpp_source.html">repetition_table.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classkomori_1_1tt_1_1_repetition_table_a3d0ab73a60dfafe31459ccf8423ca3d7_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_repetition_table_a3d0ab73a60dfafe31459ccf8423ca3d7_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1_repetition_table_a3d0ab73a60dfafe31459ccf8423ca3d7_cgraph" id="aclasskomori_1_1tt_1_1_repetition_table_a3d0ab73a60dfafe31459ccf8423ca3d7_cgraph">
+<area shape="rect" title="置換表サイズを table_size へ変更する。" alt="" coords="5,5,200,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a1cf06ccf4ee8c44a6f965ec43f21185a" title="置換表に保存された経路ハッシュ値をすべて削除する。" alt="" coords="248,5,443,47"/>
+</map>
+</div>
 
 </div>
 </div>

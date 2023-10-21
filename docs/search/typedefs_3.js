@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['matelen_975',['MateLen',['../namespacekomori.html#af2c3856a7c53116227693f8dcca64199',1,'komori']]],
-  ['matelen16_976',['MateLen16',['../namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2',1,'komori']]]
+  ['handdepthpair_999',['HandDepthPair',['../classkomori_1_1_visit_history.html#a1430a6a31c6cb4e22904bbd34015b4d8',1,'komori::VisitHistory']]]
 ];

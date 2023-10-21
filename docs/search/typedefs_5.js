@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['scorevalue_978',['ScoreValue',['../classkomori_1_1_score.html#a72b687d5a373166fcbaf2928857ae3a9',1,'komori::Score']]],
-  ['searchamount_979',['SearchAmount',['../namespacekomori.html#a077cff4c0bde489c0330a39b102a21bf',1,'komori']]]
+  ['pndn_1002',['PnDn',['../namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a',1,'komori']]]
 ];

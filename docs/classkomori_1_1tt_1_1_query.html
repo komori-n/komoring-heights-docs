@@ -100,7 +100,7 @@ Collaboration diagram for komori::tt::Query:</div>
 <area shape="rect" href="structkomori_1_1_define_comparison_operators_by_less.html" title=" " alt="" coords="405,239,637,295"/>
 <area shape="rect" href="classkomori_1_1detail_1_1_mate_len_impl.html" title="MateLen と MateLen16 の実装本体。中身はほぼ同じなので一箇所にまとめる。" alt="" coords="917,181,1160,207"/>
 <area shape="rect" href="classkomori_1_1_bit_set.html" title="整数 T を用いたフラグ集合。" alt="" coords="963,19,1115,46"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html" title="千日手手順を記録する置換表" alt="" coords="1928,219,2123,246"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html" title="千日手手順（経路ハッシュ値）を記録する置換表" alt="" coords="1928,219,2123,246"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -347,9 +347,11 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1tt_1_1_query_a1490858913de0bb4bf028a5f0a4ac96d_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_query_a1490858913de0bb4bf028a5f0a4ac96d_cgraph" alt=""/></div>
 <map name="aclasskomori_1_1tt_1_1_query_a1490858913de0bb4bf028a5f0a4ac96d_cgraph" id="aclasskomori_1_1tt_1_1_query_a1490858913de0bb4bf028a5f0a4ac96d_cgraph">
-<area shape="rect" title="詰み／不詰手数専用の LookUp()" alt="" coords="5,39,144,80"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a9666e90a9343ec8e235d1950ff6b0d1f" title="経路ハッシュ値 path_key が保存されているかどうか判定する。" alt="" coords="192,5,387,47"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#abf1c99385fe87cabfa3063c03470240d" title="エントリが未使用状態かを判定する" alt="" coords="222,71,357,112"/>
+<area shape="rect" title="詰み／不詰手数専用の LookUp()" alt="" coords="5,71,144,112"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a9666e90a9343ec8e235d1950ff6b0d1f" title="経路ハッシュ値 path_key が保存されているかどうか判定する。" alt="" coords="192,37,387,79"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#abf1c99385fe87cabfa3063c03470240d" title="エントリが未使用状態かを判定する" alt="" coords="222,103,357,144"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="435,5,629,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対しる探索開始インデックスを求める。" alt="" coords="435,71,629,112"/>
 </map>
 </div>
 
@@ -471,12 +473,14 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1tt_1_1_query_a862bd3224491b431eaff33bc08755ce2_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_query_a862bd3224491b431eaff33bc08755ce2_cgraph" alt=""/></div>
 <map name="aclasskomori_1_1tt_1_1_query_a862bd3224491b431eaff33bc08755ce2_cgraph" id="aclasskomori_1_1tt_1_1_query_a862bd3224491b431eaff33bc08755ce2_cgraph">
-<area shape="rect" title="置換表から結果を集めてきて返す関数。" alt="" coords="5,136,144,177"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a9666e90a9343ec8e235d1950ff6b0d1f" title="経路ハッシュ値 path_key が保存されているかどうか判定する。" alt="" coords="192,5,387,47"/>
-<area shape="rect" href="classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="215,71,364,112"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#abf1c99385fe87cabfa3063c03470240d" title="エントリが未使用状態かを判定する" alt="" coords="222,136,357,177"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#a0d81252fa8281a46c86b05b609434429" title="千日手の探索結果で初期化する" alt="" coords="209,201,369,243"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#abaaf9630729de4deca306d3fa87fec73" title="Unknownな探索結果で初期化する" alt="" coords="209,267,369,308"/>
+<area shape="rect" title="置換表から結果を集めてきて返す関数。" alt="" coords="5,168,144,209"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a9666e90a9343ec8e235d1950ff6b0d1f" title="経路ハッシュ値 path_key が保存されているかどうか判定する。" alt="" coords="192,37,387,79"/>
+<area shape="rect" href="classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="215,103,364,144"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#abf1c99385fe87cabfa3063c03470240d" title="エントリが未使用状態かを判定する" alt="" coords="222,168,357,209"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#a0d81252fa8281a46c86b05b609434429" title="千日手の探索結果で初期化する" alt="" coords="209,233,369,275"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#abaaf9630729de4deca306d3fa87fec73" title="Unknownな探索結果で初期化する" alt="" coords="209,299,369,340"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="435,5,629,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対しる探索開始インデックスを求める。" alt="" coords="435,71,629,112"/>
 </map>
 </div>
 
@@ -634,13 +638,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1tt_1_1_query_adbef48a41d416069c997ec6315a938de_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_query_adbef48a41d416069c997ec6315a938de_cgraph" alt=""/></div>
 <map name="aclasskomori_1_1tt_1_1_query_adbef48a41d416069c997ec6315a938de_cgraph" id="aclasskomori_1_1tt_1_1_query_adbef48a41d416069c997ec6315a938de_cgraph">
-<area shape="rect" title=" " alt="" coords="5,100,144,141"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="220,35,359,76"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="209,100,369,141"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a2f9650cc7179964dbacc3df5165cb659" title="経路ハッシュ値 path_key に千日手判定開始深さ depth を設定する" alt="" coords="192,165,387,207"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う" alt="" coords="435,13,589,39"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#acccbfa45c2b0e66e0c32bce4473c8723" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="445,64,579,105"/>
-<area shape="rect" href="classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="637,5,787,47"/>
+<area shape="rect" title=" " alt="" coords="5,123,144,164"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="220,57,359,99"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="209,123,369,164"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a2f9650cc7179964dbacc3df5165cb659" title="経路ハッシュ値 path_key に千日手判定開始深さ depth を設定する" alt="" coords="192,188,387,229"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う" alt="" coords="455,13,609,39"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#acccbfa45c2b0e66e0c32bce4473c8723" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="465,64,599,105"/>
+<area shape="rect" href="classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="700,5,849,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ad14e640283025eb47eb9ee518adc0b51" title="ガベージコレクションを行う" alt="" coords="435,188,629,229"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="677,155,872,196"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対しる探索開始インデックスを求める。" alt="" coords="677,233,872,275"/>
 </map>
 </div>
 

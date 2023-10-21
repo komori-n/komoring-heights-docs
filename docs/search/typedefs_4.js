@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pndn_977',['PnDn',['../namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a',1,'komori']]]
+  ['matelen_1000',['MateLen',['../namespacekomori.html#af2c3856a7c53116227693f8dcca64199',1,'komori']]],
+  ['matelen16_1001',['MateLen16',['../namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2',1,'komori']]]
 ];

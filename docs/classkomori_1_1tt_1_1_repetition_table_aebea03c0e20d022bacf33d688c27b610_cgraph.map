@@ -1,0 +1,5 @@
+<map id="komori::tt::RepetitionTable::RepetitionTable" name="komori::tt::RepetitionTable::RepetitionTable">
+<area shape="rect" id="node1" title="Construct a new Repetition Table object." alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_repetition_table.html#a3d0ab73a60dfafe31459ccf8423ca3d7" title="置換表サイズを table_size へ変更する。" alt="" coords="248,5,443,47"/>
+<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_repetition_table.html#a1cf06ccf4ee8c44a6f965ec43f21185a" title="置換表に保存された経路ハッシュ値をすべて削除する。" alt="" coords="491,5,685,47"/>
+</map>

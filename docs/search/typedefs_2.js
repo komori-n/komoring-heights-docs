@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handdepthpair_974',['HandDepthPair',['../classkomori_1_1_visit_history.html#a1430a6a31c6cb4e22904bbd34015b4d8',1,'komori::VisitHistory']]]
+  ['generation_998',['Generation',['../classkomori_1_1tt_1_1_repetition_table.html#ac6382cf0b39f6dca885234a4aec70213',1,'komori::tt::RepetitionTable']]]
 ];
