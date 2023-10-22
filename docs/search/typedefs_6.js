@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['scorevalue_1003',['ScoreValue',['../classkomori_1_1_score.html#a72b687d5a373166fcbaf2928857ae3a9',1,'komori::Score']]],
-  ['searchamount_1004',['SearchAmount',['../namespacekomori.html#a077cff4c0bde489c0330a39b102a21bf',1,'komori']]]
+  ['transpositiontable_1012',['TranspositionTable',['../namespacekomori_1_1tt.html#ab367c034eba59afd3939578f638b0ffb',1,'komori::tt']]],
+  ['type_1013',['type',['../structkomori_1_1_identity.html#ae08a0fa55a486b9c92ca0b8d787d90b1',1,'komori::Identity']]],
+  ['type_1014',['Type',['../structkomori_1_1detail_1_1_constraints_impl.html#acb2daebf73267c39a83d660207141299',1,'komori::detail::ConstraintsImpl']]]
 ];

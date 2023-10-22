@@ -151,7 +151,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ab4064a942f6e30221c09712db99d1d28"><td class="memItemLeft" align="right" valign="top"><a id="ab4064a942f6e30221c09712db99d1d28"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28">StartIndex</a> (Key path_key) const</td></tr>
-<tr class="memdesc:ab4064a942f6e30221c09712db99d1d28"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>path_key</code> に対しる探索開始インデックスを求める。 <br /></td></tr>
+<tr class="memdesc:ab4064a942f6e30221c09712db99d1d28"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>path_key</code> に対する探索開始インデックスを求める。 <br /></td></tr>
 <tr class="separator:ab4064a942f6e30221c09712db99d1d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3aba5ed8a8a18bb8591d38cb0a050ba"><td class="memItemLeft" align="right" valign="top"><a id="ac3aba5ed8a8a18bb8591d38cb0a050ba"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba">Next</a> (std::size_t index) const</td></tr>
@@ -206,6 +206,10 @@ static constexpr <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html
 static constexpr <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#ac6382cf0b39f6dca885234a4aec70213">Generation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a1cc573ce182b0b4bbdfa28db0e1f7c57">kGcKeepGeneration</a> = 3</td></tr>
 <tr class="memdesc:a1cc573ce182b0b4bbdfa28db0e1f7c57"><td class="mdescLeft">&#160;</td><td class="mdescRight">GCで残す置換表世代数 <br /></td></tr>
 <tr class="separator:a1cc573ce182b0b4bbdfa28db0e1f7c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05afd3f5f0aa1af58eef34538b02e33f"><td class="memItemLeft" align="right" valign="top"><a id="a05afd3f5f0aa1af58eef34538b02e33f"></a>
+static constexpr Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a05afd3f5f0aa1af58eef34538b02e33f">kEmptyKey</a> = 0</td></tr>
+<tr class="memdesc:a05afd3f5f0aa1af58eef34538b02e33f"><td class="mdescLeft">&#160;</td><td class="mdescRight">空を表す経路ハッシュ値。<code>kEmptyKey</code> ではなく 0 を用いることで、<code><a class="el" href="classkomori_1_1tt_1_1_repetition_table.html#a1cf06ccf4ee8c44a6f965ec43f21185a" title="置換表に保存された経路ハッシュ値をすべて削除する。">Clear()</a></code> が倍近く高速化できる。 <br /></td></tr>
+<tr class="separator:a05afd3f5f0aa1af58eef34538b02e33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>千日手手順（経路ハッシュ値）を記録する置換表 </p>
@@ -288,7 +292,7 @@ Here is the call graph for this function:</div>
 <p>ガベージコレクションを行う </p>
 <p>現在の置換表世代 <code>generation_</code> から <code>kGcKeepGeneration</code> 世代前のエントリまでを残し、 それより古いエントリを削除する。また、歯抜けエントリがあると線形走査法で正しく探索できなくなるので、 エントリをできるだけ手前に詰める。（コンパクション） </p>
 
-<p class="definition">Definition at line <a class="el" href="repetition__table_8hpp_source.html#l00176">176</a> of file <a class="el" href="repetition__table_8hpp_source.html">repetition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="repetition__table_8hpp_source.html#l00180">180</a> of file <a class="el" href="repetition__table_8hpp_source.html">repetition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -296,7 +300,7 @@ Here is the call graph for this function:</div>
 <map name="aclasskomori_1_1tt_1_1_repetition_table_ad14e640283025eb47eb9ee518adc0b51_cgraph" id="aclasskomori_1_1tt_1_1_repetition_table_ad14e640283025eb47eb9ee518adc0b51_cgraph">
 <area shape="rect" title="ガベージコレクションを行う" alt="" coords="5,39,200,80"/>
 <area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="248,5,443,47"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対しる探索開始インデックスを求める。" alt="" coords="248,71,443,112"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対する探索開始インデックスを求める。" alt="" coords="248,71,443,112"/>
 </map>
 </div>
 
@@ -343,7 +347,7 @@ Here is the call graph for this function:</div>
 <map name="aclasskomori_1_1tt_1_1_repetition_table_a9666e90a9343ec8e235d1950ff6b0d1f_cgraph" id="aclasskomori_1_1tt_1_1_repetition_table_a9666e90a9343ec8e235d1950ff6b0d1f_cgraph">
 <area shape="rect" title="経路ハッシュ値 path_key が保存されているかどうか判定する。" alt="" coords="5,39,200,80"/>
 <area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="248,5,443,47"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対しる探索開始インデックスを求める。" alt="" coords="248,71,443,112"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対する探索開始インデックスを求める。" alt="" coords="248,71,443,112"/>
 </map>
 </div>
 
@@ -401,7 +405,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="経路ハッシュ値 path_key に千日手判定開始深さ depth を設定する" alt="" coords="5,51,200,92"/>
 <area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ad14e640283025eb47eb9ee518adc0b51" title="ガベージコレクションを行う" alt="" coords="248,51,443,92"/>
 <area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="491,5,685,47"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対しる探索開始インデックスを求める。" alt="" coords="491,84,685,125"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対する探索開始インデックスを求める。" alt="" coords="491,84,685,125"/>
 </map>
 </div>
 

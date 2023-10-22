@@ -1,0 +1,5 @@
+<map id="komori::VisitHistory::Leave" name="komori::VisitHistory::Leave">
+<area shape="rect" id="node1" title="(board_key, hand) を履歴から消す" alt="" coords="5,39,156,80"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_visit_history.html#a62769876f5547de5b474300c666cea8a" title="index の次のインデックスを求める" alt="" coords="204,5,355,47"/>
+<area shape="rect" id="node3" href="$classkomori_1_1_visit_history.html#ab3ed82ca4c526f4f34c90c9277ba7d5b" title="board_key に対する探索開始インデックスを求める" alt="" coords="204,71,355,112"/>
+</map>

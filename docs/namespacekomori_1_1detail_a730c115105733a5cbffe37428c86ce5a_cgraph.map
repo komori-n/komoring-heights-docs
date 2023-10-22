@@ -1,17 +1,19 @@
 <map id="komori::detail::CheckObviousFinalOrNode" name="komori::detail::CheckObviousFinalOrNode">
-<area shape="rect" id="node1" title="OR node n を move した局面が自明な詰み／不詰かどうかを判定する。" alt="" coords="5,537,219,578"/>
-<area shape="rect" id="node2" href="$namespacekomori.html#af60b97ffafc4e100347e046e86ef02ac" title="(OR node限定) n が 1 手詰かどうか判定する。" alt="" coords="300,443,476,469"/>
-<area shape="rect" id="node6" href="$classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1082,283,1222,309"/>
-<area shape="rect" id="node15" href="$namespacekomori.html#afa08995342dc8f460d6de738cd457571" title="(OR node限定) n が不詰かどうかを簡易的に調べる。" alt="" coords="267,595,509,621"/>
-<area shape="rect" id="node3" href="$namespacekomori.html#ace83f8e2ffff818bd25b6def2e075904" title="move 後の手駒が after_hand のとき、移動前の持ち駒を返す" alt="" coords="575,493,727,520"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_node.html#a082d5d0045420c8978206fda2b518e17" title="move で1手進める" alt="" coords="565,312,736,339"/>
-<area shape="rect" id="node11" href="$classkomori_1_1_node.html#aad7fe2734b150a1d9645ea72e2fdda83" title="DoMove() で勧めた局面を元に戻す" alt="" coords="557,144,744,171"/>
-<area shape="rect" id="node5" href="$classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="809,224,987,251"/>
-<area shape="rect" id="node7" href="$classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="815,173,981,200"/>
-<area shape="rect" id="node8" href="$classkomori_1_1_node.html#a6dfeb2e63ce33d5b9043010cbb8428c3" title="move 後の経路ハッシュ値" alt="" coords="1052,333,1252,360"/>
-<area shape="rect" id="node10" href="$classkomori_1_1_visit_history.html#a3ba89e53fbe90e03b07b2c68eea98334" title="(board_key, hand) を履歴に登録する" alt="" coords="823,275,973,317"/>
-<area shape="rect" id="node9" href="$namespacekomori.html#ae0ab7ef1101897b620e05208fc8975ee" title="現在の path_key と手 move から1手後の path_key を計算する。" alt="" coords="1300,283,1459,309"/>
-<area shape="rect" id="node12" href="$classkomori_1_1_visit_history.html#a3af0755f672c9b15c72253aebc682aa5" title="(board_key, hand) を履歴から消す" alt="" coords="823,107,973,149"/>
-<area shape="rect" id="node13" href="$classkomori_1_1_node.html#a7f1c13d7f57b6af7f34ac77240342d71" title="move 直前の経路ハッシュ値" alt="" coords="792,5,1004,32"/>
-<area shape="rect" id="node14" href="$namespacekomori.html#af65c288516ec71f448f2947aac9e755b" title="1手後の path_key と手 move から現在の path_key を計算する。" alt="" coords="1067,89,1237,116"/>
+<area shape="rect" id="node1" title="OR node n を move した局面が自明な詰み／不詰かどうかを判定する。" alt="" coords="5,535,219,577"/>
+<area shape="rect" id="node2" href="$namespacekomori.html#af60b97ffafc4e100347e046e86ef02ac" title="(OR node限定) n が 1 手詰かどうか判定する。" alt="" coords="300,441,476,468"/>
+<area shape="rect" id="node6" href="$classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1082,315,1222,341"/>
+<area shape="rect" id="node17" href="$namespacekomori.html#afa08995342dc8f460d6de738cd457571" title="(OR node限定) n が不詰かどうかを簡易的に調べる。" alt="" coords="267,593,509,620"/>
+<area shape="rect" id="node3" href="$namespacekomori.html#ace83f8e2ffff818bd25b6def2e075904" title="move 後の手駒が after_hand のとき、移動前の持ち駒を返す" alt="" coords="575,492,727,519"/>
+<area shape="rect" id="node4" href="$classkomori_1_1_node.html#a082d5d0045420c8978206fda2b518e17" title="move で1手進める" alt="" coords="565,315,736,341"/>
+<area shape="rect" id="node13" href="$classkomori_1_1_node.html#aad7fe2734b150a1d9645ea72e2fdda83" title="DoMove() で勧めた局面を元に戻す" alt="" coords="557,213,744,240"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="809,289,987,316"/>
+<area shape="rect" id="node7" href="$classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="815,239,981,265"/>
+<area shape="rect" id="node8" href="$classkomori_1_1_node.html#a6dfeb2e63ce33d5b9043010cbb8428c3" title="move 後の経路ハッシュ値" alt="" coords="1052,365,1252,392"/>
+<area shape="rect" id="node10" href="$classkomori_1_1_visit_history.html#a3ba89e53fbe90e03b07b2c68eea98334" title="(board_key, hand) を履歴に登録する" alt="" coords="823,122,973,163"/>
+<area shape="rect" id="node9" href="$namespacekomori.html#ae0ab7ef1101897b620e05208fc8975ee" title="現在の path_key と手 move から1手後の path_key を計算する。" alt="" coords="1300,173,1459,200"/>
+<area shape="rect" id="node11" href="$classkomori_1_1_visit_history.html#a62769876f5547de5b474300c666cea8a" title="index の次のインデックスを求める" alt="" coords="1077,57,1227,98"/>
+<area shape="rect" id="node12" href="$classkomori_1_1_visit_history.html#ab3ed82ca4c526f4f34c90c9277ba7d5b" title="board_key に対する探索開始インデックスを求める" alt="" coords="1077,122,1227,163"/>
+<area shape="rect" id="node14" href="$classkomori_1_1_visit_history.html#a3af0755f672c9b15c72253aebc682aa5" title="(board_key, hand) を履歴から消す" alt="" coords="823,57,973,98"/>
+<area shape="rect" id="node15" href="$classkomori_1_1_node.html#a7f1c13d7f57b6af7f34ac77240342d71" title="move 直前の経路ハッシュ値" alt="" coords="792,5,1004,32"/>
+<area shape="rect" id="node16" href="$namespacekomori.html#af65c288516ec71f448f2947aac9e755b" title="1手後の path_key と手 move から現在の path_key を計算する。" alt="" coords="1067,5,1237,32"/>
 </map>

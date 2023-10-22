@@ -1,5 +1,5 @@
 <map id="komori::tt::RepetitionTable::Contains" name="komori::tt::RepetitionTable::Contains">
 <area shape="rect" id="node1" title="経路ハッシュ値 path_key が保存されているかどうか判定する。" alt="" coords="5,39,200,80"/>
 <area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="248,5,443,47"/>
-<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対しる探索開始インデックスを求める。" alt="" coords="248,71,443,112"/>
+<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対する探索開始インデックスを求める。" alt="" coords="248,71,443,112"/>
 </map>
