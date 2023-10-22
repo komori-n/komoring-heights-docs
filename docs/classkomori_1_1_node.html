@@ -86,8 +86,10 @@ Collaboration diagram for komori::Node:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1_node__coll__graph.png" border="0" usemap="#akomori_1_1_node_coll__map" alt="Collaboration graph"/></div>
 <map name="akomori_1_1_node_coll__map" id="akomori_1_1_node_coll__map">
-<area shape="rect" title="Position をラップして詰将棋特有の判定を追加するクラス。" alt="" coords="26,95,135,121"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html" title="探索履歴を管理し、千日手や優等局面の判定を行うクラス。" alt="" coords="5,5,156,32"/>
+<area shape="rect" title="Position をラップして詰将棋特有の判定を追加するクラス。" alt="" coords="147,213,256,240"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html" title=" " alt="" coords="5,109,200,151"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html" title="サイズ固定のスタック。" alt="" coords="17,5,189,47"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html" title="探索履歴を管理し、千日手や優等局面の判定を行うクラス。" alt="" coords="225,117,375,143"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -208,18 +210,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#aad7fe2734b150a1d9645ea72e2fdda83">UndoMove</a> ()</td></tr>
 <tr class="memdesc:aad7fe2734b150a1d9645ea72e2fdda83"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classkomori_1_1_node.html#a082d5d0045420c8978206fda2b518e17" title="move で1手進める">DoMove()</a></code> で勧めた局面を元に戻す <br /></td></tr>
 <tr class="separator:aad7fe2734b150a1d9645ea72e2fdda83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab722a03251870c67b0414bffe79ac35b"><td class="memItemLeft" align="right" valign="top"><a id="ab722a03251870c67b0414bffe79ac35b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#ab722a03251870c67b0414bffe79ac35b">StealCapturedPiece</a> ()</td></tr>
-<tr class="memdesc:ab722a03251870c67b0414bffe79ac35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(not maintained) 直前に相手が取った駒を奪う。<code><a class="el" href="classkomori_1_1_node.html#a601d86ce95c2bbe51b70e88652aed223" title="(not maintained) StealCapturedPiece() で奪った駒を返す">UnstealCapturedPiece()</a></code> をするまでは <code><a class="el" href="classkomori_1_1_node.html#aad7fe2734b150a1d9645ea72e2fdda83" title="DoMove() で勧めた局面を元に戻す">UndoMove()</a></code> してはいけない。 <br /></td></tr>
-<tr class="separator:ab722a03251870c67b0414bffe79ac35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a601d86ce95c2bbe51b70e88652aed223"><td class="memItemLeft" align="right" valign="top"><a id="a601d86ce95c2bbe51b70e88652aed223"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#a601d86ce95c2bbe51b70e88652aed223">UnstealCapturedPiece</a> ()</td></tr>
-<tr class="memdesc:a601d86ce95c2bbe51b70e88652aed223"><td class="mdescLeft">&#160;</td><td class="mdescRight">(not maintained) <code><a class="el" href="classkomori_1_1_node.html#ab722a03251870c67b0414bffe79ac35b" title="(not maintained) 直前に相手が取った駒を奪う。UnstealCapturedPiece() をするまでは UndoMove() してはいけない。">StealCapturedPiece()</a></code> で奪った駒を返す <br /></td></tr>
-<tr class="separator:a601d86ce95c2bbe51b70e88652aed223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70a1bdd7ca7f930994fccccf52a4a26b"><td class="memItemLeft" align="right" valign="top"><a id="a70a1bdd7ca7f930994fccccf52a4a26b"></a>
-Move&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#a70a1bdd7ca7f930994fccccf52a4a26b">ImmediateCapture</a> () const</td></tr>
-<tr class="memdesc:a70a1bdd7ca7f930994fccccf52a4a26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(not maintained) 直前の王手駒をすぐに取り返す手を生成する。もしできなければ <code>MOVE_NONE</code> を返す。 <br /></td></tr>
-<tr class="separator:a70a1bdd7ca7f930994fccccf52a4a26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45d29905697f05269fc87033c0012d6f"><td class="memItemLeft" align="right" valign="top"><a id="a45d29905697f05269fc87033c0012d6f"></a>
 std::optional&lt; Depth &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#a45d29905697f05269fc87033c0012d6f">IsRepetition</a> () const</td></tr>
 <tr class="memdesc:a45d29905697f05269fc87033c0012d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面が千日手かどうか <br /></td></tr>
@@ -274,10 +264,10 @@ Depth&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <a class="el" href="classkomori_1_1_visit_history.html">VisitHistory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#adc2ad58f3df2a1789f14a969d0678df3">visit_history_</a> {}</td></tr>
 <tr class="memdesc:adc2ad58f3df2a1789f14a969d0678df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">千日手・優等局面の一覧 <br /></td></tr>
 <tr class="separator:adc2ad58f3df2a1789f14a969d0678df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b57ad8775549ea2c419972659822ec0"><td class="memItemLeft" align="right" valign="top"><a id="a0b57ad8775549ea2c419972659822ec0"></a>
-std::stack&lt; StateInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#a0b57ad8775549ea2c419972659822ec0">st_info_</a> {}</td></tr>
-<tr class="memdesc:a0b57ad8775549ea2c419972659822ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">do_move で必要な一時領域 <br /></td></tr>
-<tr class="separator:a0b57ad8775549ea2c419972659822ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7644b26783f9bce8599c9effc0c46d1"><td class="memItemLeft" align="right" valign="top"><a id="ad7644b26783f9bce8599c9effc0c46d1"></a>
+<a class="el" href="classkomori_1_1_fixed_size_stack.html">FixedSizeStack</a>&lt; StateInfo, <a class="el" href="namespacekomori.html#ac939d98950f0320e5694ced139d4c8e0">kDepthMax</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#ad7644b26783f9bce8599c9effc0c46d1">st_info_</a> {}</td></tr>
+<tr class="memdesc:ad7644b26783f9bce8599c9effc0c46d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">do_move で必要な一時領域 <br /></td></tr>
+<tr class="separator:ad7644b26783f9bce8599c9effc0c46d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a921bc5091e9b50d471336c92b29ee64a"><td class="memItemLeft" align="right" valign="top"><a id="a921bc5091e9b50d471336c92b29ee64a"></a>
 Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#a921bc5091e9b50d471336c92b29ee64a">path_key_</a> {}</td></tr>
 <tr class="memdesc:a921bc5091e9b50d471336c92b29ee64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">経路ハッシュ値。差分計算により求める。 <br /></td></tr>
@@ -302,7 +292,7 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </ul>
 <dl class="section note"><dt>Note</dt><dd>このクラスでは、<code>Position</code> を参照として保持する。よって、クラス外で <code>Position</code> を書き換えると <code><a class="el" href="classkomori_1_1_node.html" title="Position をラップして詰将棋特有の判定を追加するクラス。">Node</a></code> の内部状態も狂ってしまうので注意すること。 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="node_8hpp_source.html#l00037">37</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8hpp_source.html#l00038">38</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3458bdb5c69b7e277d4ecd6801b93289"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3458bdb5c69b7e277d4ecd6801b93289">&#9670;&nbsp;</a></span>Node()</h2>
@@ -361,7 +351,7 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="node_8hpp_source.html#l00046">46</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8hpp_source.html#l00047">47</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
 
 </div>
 </div>

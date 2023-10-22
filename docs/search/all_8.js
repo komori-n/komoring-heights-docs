@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['identity_172',['Identity',['../structkomori_1_1_identity.html',1,'komori']]],
-  ['idx_5f_173',['idx_',['../classkomori_1_1_local_expansion.html#af53ce04572548093a1154b3ab0111281',1,'komori::LocalExpansion']]],
-  ['immediatecapture_174',['ImmediateCapture',['../classkomori_1_1_node.html#a70a1bdd7ca7f930994fccccf52a4a26b',1,'komori::Node']]],
+  ['identity_173',['Identity',['../structkomori_1_1_identity.html',1,'komori']]],
+  ['idx_5f_174',['idx_',['../classkomori_1_1_local_expansion.html#af53ce04572548093a1154b3ab0111281',1,'komori::LocalExpansion']]],
   ['index_5f_175',['index_',['../classkomori_1_1detail_1_1_with_index_impl_1_1_with_index_iterator.html#a63fd33ec11a29f5472732379681bfa54',1,'komori::detail::WithIndexImpl::WithIndexIterator']]],
   ['init_176',['Init',['../structkomori_1_1_engine_option.html#a4a363b65cb399894efe16efe5893f1d2',1,'komori::EngineOption::Init()'],['../classkomori_1_1_komoring_heights.html#a7089c0f02e512e56c84d9e36b0dc2cf2',1,'komori::KomoringHeights::Init()'],['../classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180',1,'komori::tt::Entry::Init()']]],
   ['initial_5fentry_5fpointer_5f_177',['initial_entry_pointer_',['../classkomori_1_1tt_1_1_query.html#a9da467ec856e68ec9f9a39f61729f392',1,'komori::tt::Query']]],
