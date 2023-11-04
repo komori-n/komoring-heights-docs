@@ -86,10 +86,11 @@ Collaboration diagram for komori::Node:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1_node__coll__graph.png" border="0" usemap="#akomori_1_1_node_coll__map" alt="Collaboration graph"/></div>
 <map name="akomori_1_1_node_coll__map" id="akomori_1_1_node_coll__map">
-<area shape="rect" title="Position をラップして詰将棋特有の判定を追加するクラス。" alt="" coords="147,213,256,240"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html" title=" " alt="" coords="5,109,200,151"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html" title="サイズ固定のスタック。" alt="" coords="17,5,189,47"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html" title="探索履歴を管理し、千日手や優等局面の判定を行うクラス。" alt="" coords="225,117,375,143"/>
+<area shape="rect" title="Position をラップして詰将棋特有の判定を追加するクラス。" alt="" coords="737,78,847,105"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html" title=" " alt="" coords="403,5,597,47"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html" title="サイズ固定のスタック。" alt="" coords="5,39,177,80"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html" title=" " alt="" coords="414,71,586,112"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html" title="探索履歴を管理し、千日手や優等局面の判定を行うクラス。" alt="" coords="425,137,575,163"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -182,6 +183,14 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <a class="el" href="structkomori_1_1_board_key_hand_pair.html">BoardKeyHandPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#a1e4f1da48b69fb3356543b7cf37aab12">GetBoardKeyHandPair</a> () const</td></tr>
 <tr class="memdesc:a1e4f1da48b69fb3356543b7cf37aab12"><td class="mdescLeft">&#160;</td><td class="mdescRight">盤面ハッシュ値と攻め方の持ち駒を同時に取得する <br /></td></tr>
 <tr class="separator:a1e4f1da48b69fb3356543b7cf37aab12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e8450fb527da7cc00f8fc072a474617"><td class="memItemLeft" align="right" valign="top"><a id="a0e8450fb527da7cc00f8fc072a474617"></a>
+std::optional&lt; Move &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#a0e8450fb527da7cc00f8fc072a474617">RootMove</a> () const</td></tr>
+<tr class="memdesc:a0e8450fb527da7cc00f8fc072a474617"><td class="mdescLeft">&#160;</td><td class="mdescRight">開始局面の指し手 <br /></td></tr>
+<tr class="separator:a0e8450fb527da7cc00f8fc072a474617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6cdedb1efb346e60168dadfb24aa980"><td class="memItemLeft" align="right" valign="top"><a id="aa6cdedb1efb346e60168dadfb24aa980"></a>
+const <a class="el" href="classkomori_1_1_fixed_size_stack.html">FixedSizeStack</a>&lt; Move, <a class="el" href="namespacekomori.html#ac939d98950f0320e5694ced139d4c8e0">kDepthMax</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#aa6cdedb1efb346e60168dadfb24aa980">MovesFromStart</a> () const</td></tr>
+<tr class="memdesc:aa6cdedb1efb346e60168dadfb24aa980"><td class="mdescLeft">&#160;</td><td class="mdescRight">開始局面からの指し手 <br /></td></tr>
+<tr class="separator:aa6cdedb1efb346e60168dadfb24aa980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a3584f10f5669262d8264fcbd7acc5"><td class="memItemLeft" align="right" valign="top"><a id="a72a3584f10f5669262d8264fcbd7acc5"></a>
 Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#a72a3584f10f5669262d8264fcbd7acc5">KeyAfter</a> (Move move) const</td></tr>
 <tr class="memdesc:a72a3584f10f5669262d8264fcbd7acc5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>move</code> 後のハッシュ値 <br /></td></tr>
@@ -208,7 +217,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a082d5d0045420c8978206fda2b518e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad7fe2734b150a1d9645ea72e2fdda83"><td class="memItemLeft" align="right" valign="top"><a id="aad7fe2734b150a1d9645ea72e2fdda83"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#aad7fe2734b150a1d9645ea72e2fdda83">UndoMove</a> ()</td></tr>
-<tr class="memdesc:aad7fe2734b150a1d9645ea72e2fdda83"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classkomori_1_1_node.html#a082d5d0045420c8978206fda2b518e17" title="move で1手進める">DoMove()</a></code> で勧めた局面を元に戻す <br /></td></tr>
+<tr class="memdesc:aad7fe2734b150a1d9645ea72e2fdda83"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classkomori_1_1_node.html#a082d5d0045420c8978206fda2b518e17" title="move で1手進める">DoMove()</a></code> で進めた局面を元に戻す <br /></td></tr>
 <tr class="separator:aad7fe2734b150a1d9645ea72e2fdda83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45d29905697f05269fc87033c0012d6f"><td class="memItemLeft" align="right" valign="top"><a id="a45d29905697f05269fc87033c0012d6f"></a>
 std::optional&lt; Depth &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#a45d29905697f05269fc87033c0012d6f">IsRepetition</a> () const</td></tr>
@@ -264,6 +273,10 @@ Depth&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <a class="el" href="classkomori_1_1_visit_history.html">VisitHistory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#adc2ad58f3df2a1789f14a969d0678df3">visit_history_</a> {}</td></tr>
 <tr class="memdesc:adc2ad58f3df2a1789f14a969d0678df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">千日手・優等局面の一覧 <br /></td></tr>
 <tr class="separator:adc2ad58f3df2a1789f14a969d0678df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06a0e4d9210c23e565a9c0d7d5951a13"><td class="memItemLeft" align="right" valign="top"><a id="a06a0e4d9210c23e565a9c0d7d5951a13"></a>
+<a class="el" href="classkomori_1_1_fixed_size_stack.html">FixedSizeStack</a>&lt; Move, <a class="el" href="namespacekomori.html#ac939d98950f0320e5694ced139d4c8e0">kDepthMax</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#a06a0e4d9210c23e565a9c0d7d5951a13">moves_</a> {}</td></tr>
+<tr class="memdesc:a06a0e4d9210c23e565a9c0d7d5951a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">開始局面からの指し手 <br /></td></tr>
+<tr class="separator:a06a0e4d9210c23e565a9c0d7d5951a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7644b26783f9bce8599c9effc0c46d1"><td class="memItemLeft" align="right" valign="top"><a id="ad7644b26783f9bce8599c9effc0c46d1"></a>
 <a class="el" href="classkomori_1_1_fixed_size_stack.html">FixedSizeStack</a>&lt; StateInfo, <a class="el" href="namespacekomori.html#ac939d98950f0320e5694ced139d4c8e0">kDepthMax</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_node.html#ad7644b26783f9bce8599c9effc0c46d1">st_info_</a> {}</td></tr>
 <tr class="memdesc:ad7644b26783f9bce8599c9effc0c46d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">do_move で必要な一時領域 <br /></td></tr>

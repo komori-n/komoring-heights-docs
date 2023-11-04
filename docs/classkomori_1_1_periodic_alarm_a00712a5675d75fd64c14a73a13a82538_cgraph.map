@@ -1,0 +1,4 @@
+<map id="komori::PeriodicAlarm::Start" name="komori::PeriodicAlarm::Start">
+<area shape="rect" id="node1" title="周期タイマーを開始する" alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_periodic_alarm.html#a021fd50396141ea07f6fd8341c1e7693" title="Time Point をミリ秒で取得する" alt="" coords="220,13,423,39"/>
+</map>

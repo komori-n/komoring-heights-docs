@@ -1,5 +1,5 @@
 <map id="komori::tt::RegularTable::Load" name="komori::tt::RegularTable::Load">
 <area shape="rect" id="node1" title="バイナリ入力ストリーム in から置換表エントリを読み込む。" alt="" coords="5,39,183,80"/>
-<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_entry.html#a5430ffd685eb1bc77cf93af169bfa37f" title="盤面ハッシュ値（コンパクション用）" alt="" coords="252,5,387,47"/>
+<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_entry.html#a1d3881f8878d1682512df5cec19df4c9" title="盤面ハッシュ値（コンパクション用）" alt="" coords="252,5,387,47"/>
 <area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="231,71,408,112"/>
 </map>

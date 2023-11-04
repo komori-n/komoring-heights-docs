@@ -84,6 +84,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_default_ordered_map.html">DefaultOrderedMap</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">look up 時にキーが存在しない時はデフォルト値を返す ordered_map。  <a href="classkomori_1_1detail_1_1_default_ordered_map.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkomori_1_1detail_1_1_dfpn_plus_parameters.html">DfpnPlusParameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">df-pn+ で用いるパラメータたち  <a href="structkomori_1_1detail_1_1_dfpn_plus_parameters.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html">SearchMonitor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索局面数を観測して nps を計算したり探索中断の判断をしたりするクラス。  <a href="classkomori_1_1detail_1_1_search_monitor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,6 +102,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_skip_impl.html">SkipImpl</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>Skep</code> の実装本体  <a href="classkomori_1_1detail_1_1_skip_impl.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_take_impl.html">TakeImpl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl.html">ZipImpl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkomori_1_1detail_1_1_constraints_impl.html">ConstraintsImpl</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>Args...</code> を無視して<code>Type</code> に <code>std::nullptr_t</code> を定義するメタ関数  <a href="structkomori_1_1detail_1_1_constraints_impl.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,9 +119,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7a1ee47b3617f7a51661ec137724e0fb"><td class="memTemplItemLeft" align="right" valign="top">OutType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a7a1ee47b3617f7a51661ec137724e0fb">ReadOption</a> (const USI::OptionsMap &amp;o, const std::string &amp;name)</td></tr>
 <tr class="memdesc:a7a1ee47b3617f7a51661ec137724e0fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">オプション <code>o</code> から <code>name</code> の値を読み込む  <a href="namespacekomori_1_1detail.html#a7a1ee47b3617f7a51661ec137724e0fb">More...</a><br /></td></tr>
 <tr class="separator:a7a1ee47b3617f7a51661ec137724e0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7ae04be0fb97c14e7dabbe5137292b7"><td class="memItemLeft" align="right" valign="top">constexpr std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#ac7ae04be0fb97c14e7dabbe5137292b7">MakeInfIfNotPositive</a> (std::uint64_t val)</td></tr>
-<tr class="memdesc:ac7ae04be0fb97c14e7dabbe5137292b7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>val</code> が0以下なら 2^64-1 を返す。  <a href="namespacekomori_1_1detail.html#ac7ae04be0fb97c14e7dabbe5137292b7">More...</a><br /></td></tr>
-<tr class="separator:ac7ae04be0fb97c14e7dabbe5137292b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2c92e509802b03a01e4d018c22d8ea"><td class="memItemLeft" align="right" valign="top">constexpr std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a7b2c92e509802b03a01e4d018c22d8ea">MakeInfIfNotPositive</a> (std::int64_t val)</td></tr>
+<tr class="memdesc:a7b2c92e509802b03a01e4d018c22d8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>val</code> が0以下なら 2^64-1 を返す。  <a href="namespacekomori_1_1detail.html#a7b2c92e509802b03a01e4d018c22d8ea">More...</a><br /></td></tr>
+<tr class="separator:a7b2c92e509802b03a01e4d018c22d8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e8c39e028338e1c24e97418bf751772"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a>, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a7e8c39e028338e1c24e97418bf751772">InitialPnDnPlusOrNode</a> (const Position &amp;n, Move move)</td></tr>
 <tr class="memdesc:a7e8c39e028338e1c24e97418bf751772"><td class="mdescLeft">&#160;</td><td class="mdescRight">df-pn+における OR node の pn/dn 初期値を計算する  <a href="namespacekomori_1_1detail.html#a7e8c39e028338e1c24e97418bf751772">More...</a><br /></td></tr>
 <tr class="separator:a7e8c39e028338e1c24e97418bf751772"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +156,13 @@ Variables</h2></td></tr>
 <tr class="memitem:ae2e94751612a22494bb717838fca9283"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classkomori_1_1detail_1_1_default_ordered_map.html">DefaultOrderedMap</a>&lt; std::string, <a class="el" href="namespacekomori.html#a0f8bac3d10dabcca8f1933216eb2d7f0">PostSearchLevel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#ae2e94751612a22494bb717838fca9283">post_search_level</a></td></tr>
 <tr class="memdesc:ae2e94751612a22494bb717838fca9283"><td class="mdescLeft">&#160;</td><td class="mdescRight">余詰探索方法 <code>PostSearchLevel</code> 用の Combo 定義。  <a href="namespacekomori_1_1detail.html#ae2e94751612a22494bb717838fca9283">More...</a><br /></td></tr>
 <tr class="separator:ae2e94751612a22494bb717838fca9283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a1d7faa01afa66b690960b3645dc36"><td class="memItemLeft" align="right" valign="top">thread_local int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#ae3a1d7faa01afa66b690960b3645dc36">kPtValues</a> []</td></tr>
+<tr class="memdesc:ae3a1d7faa01afa66b690960b3645dc36"><td class="mdescLeft">&#160;</td><td class="mdescRight">駒のざっくりとした価値。スレッドごとに微妙に乱数を加えたいので thread_local にしている。  <a href="namespacekomori_1_1detail.html#ae3a1d7faa01afa66b690960b3645dc36">More...</a><br /></td></tr>
+<tr class="separator:ae3a1d7faa01afa66b690960b3645dc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc9d65026eca18c95288a75602fa70c"><td class="memItemLeft" align="right" valign="top"><a id="a6bc9d65026eca18c95288a75602fa70c"></a>
+thread_local <a class="el" href="structkomori_1_1detail_1_1_dfpn_plus_parameters.html">DfpnPlusParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a6bc9d65026eca18c95288a75602fa70c">kDfpnPlusParameters</a></td></tr>
+<tr class="memdesc:a6bc9d65026eca18c95288a75602fa70c"><td class="mdescLeft">&#160;</td><td class="mdescRight">df-pn+ で用いるパラメータ。スレッドごとに微妙に乱数を加えたいので thread_local にしている。 <br /></td></tr>
+<tr class="separator:a6bc9d65026eca18c95288a75602fa70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a337cef6e1a5e1743969cf71ff1597b3d"><td class="memItemLeft" align="right" valign="top"><a id="a337cef6e1a5e1743969cf71ff1597b3d"></a>
 constexpr <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a337cef6e1a5e1743969cf71ff1597b3d">kForceSumPnDn</a> = <a class="el" href="namespacekomori.html#a26c6a28d0272596fcb24312758455681">kInfinitePnDn</a> / 1024</td></tr>
 <tr class="memdesc:a337cef6e1a5e1743969cf71ff1597b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">強制的に max 値によるδ値計算へ切り替えるしきい値。 <br /></td></tr>
@@ -303,26 +317,26 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespacekomori_1_1detail_a730c115105733a5cbffe37428c86ce5a_cgraph.png" border="0" usemap="#anamespacekomori_1_1detail_a730c115105733a5cbffe37428c86ce5a_cgraph" alt=""/></div>
 <map name="anamespacekomori_1_1detail_a730c115105733a5cbffe37428c86ce5a_cgraph" id="anamespacekomori_1_1detail_a730c115105733a5cbffe37428c86ce5a_cgraph">
-<area shape="rect" title="OR node n を move した局面が自明な詰み／不詰かどうかを判定する。" alt="" coords="5,667,219,709"/>
-<area shape="rect" href="namespacekomori.html#af60b97ffafc4e100347e046e86ef02ac" title="(OR node限定) n が 1 手詰かどうか判定する。" alt="" coords="300,420,476,447"/>
-<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1082,481,1222,508"/>
-<area shape="rect" href="namespacekomori.html#afa08995342dc8f460d6de738cd457571" title="(OR node限定) n が不詰かどうかを簡易的に調べる。" alt="" coords="267,725,509,752"/>
-<area shape="rect" href="namespacekomori.html#ace83f8e2ffff818bd25b6def2e075904" title="move 後の手駒が after_hand のとき、移動前の持ち駒を返す" alt="" coords="575,369,727,396"/>
-<area shape="rect" href="classkomori_1_1_node.html#a082d5d0045420c8978206fda2b518e17" title="move で1手進める" alt="" coords="565,420,736,447"/>
-<area shape="rect" href="classkomori_1_1_node.html#aad7fe2734b150a1d9645ea72e2fdda83" title="DoMove() で勧めた局面を元に戻す" alt="" coords="557,239,744,265"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5f9f4c0e10424bb96f652c18cfc6afc7" title="スタックの末尾（最も後に保存した要素）" alt="" coords="812,442,984,483"/>
-<area shape="rect" href="classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="809,391,987,417"/>
-<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="815,340,981,367"/>
-<area shape="rect" href="classkomori_1_1_node.html#a6dfeb2e63ce33d5b9043010cbb8428c3" title="move 後の経路ハッシュ値" alt="" coords="1052,264,1252,291"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a122fd54c4b21ad3d1ce129cf1b2d6f3f" title="val をスタックに追加する" alt="" coords="812,507,984,549"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#a3ba89e53fbe90e03b07b2c68eea98334" title="(board_key, hand) を履歴に登録する" alt="" coords="823,173,973,214"/>
-<area shape="rect" href="namespacekomori.html#ae0ab7ef1101897b620e05208fc8975ee" title="現在の path_key と手 move から1手後の path_key を計算する。" alt="" coords="1300,148,1459,175"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#a62769876f5547de5b474300c666cea8a" title="index の次のインデックスを求める" alt="" coords="1077,173,1227,214"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#ab3ed82ca4c526f4f34c90c9277ba7d5b" title="board_key に対する探索開始インデックスを求める" alt="" coords="1077,107,1227,149"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#a3af0755f672c9b15c72253aebc682aa5" title="(board_key, hand) を履歴から消す" alt="" coords="823,107,973,149"/>
-<area shape="rect" href="classkomori_1_1_node.html#a7f1c13d7f57b6af7f34ac77240342d71" title="move 直前の経路ハッシュ値" alt="" coords="792,56,1004,83"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a30a23ee0ab5980d4fad72185cafed9d0" title="スタックから要素を1つ削除する" alt="" coords="796,5,1000,32"/>
-<area shape="rect" href="namespacekomori.html#af65c288516ec71f448f2947aac9e755b" title="1手後の path_key と手 move から現在の path_key を計算する。" alt="" coords="1067,56,1237,83"/>
+<area shape="rect" title="OR node n を move した局面が自明な詰み／不詰かどうかを判定する。" alt="" coords="5,612,219,653"/>
+<area shape="rect" href="namespacekomori.html#af60b97ffafc4e100347e046e86ef02ac" title="(OR node限定) n が 1 手詰かどうか判定する。" alt="" coords="300,493,476,519"/>
+<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1082,442,1222,469"/>
+<area shape="rect" href="namespacekomori.html#afa08995342dc8f460d6de738cd457571" title="(OR node限定) n が不詰かどうかを簡易的に調べる。" alt="" coords="267,670,509,697"/>
+<area shape="rect" href="namespacekomori.html#ace83f8e2ffff818bd25b6def2e075904" title="move 後の手駒が after_hand のとき、移動前の持ち駒を返す" alt="" coords="575,493,727,519"/>
+<area shape="rect" href="classkomori_1_1_node.html#a082d5d0045420c8978206fda2b518e17" title="move で1手進める" alt="" coords="565,274,736,301"/>
+<area shape="rect" href="classkomori_1_1_node.html#aad7fe2734b150a1d9645ea72e2fdda83" title="DoMove() で進めた局面を元に戻す" alt="" coords="557,429,744,455"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5f9f4c0e10424bb96f652c18cfc6afc7" title="スタックの末尾（最も後に保存した要素）" alt="" coords="812,351,984,392"/>
+<area shape="rect" href="classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="809,299,987,326"/>
+<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="815,417,981,443"/>
+<area shape="rect" href="classkomori_1_1_node.html#a6dfeb2e63ce33d5b9043010cbb8428c3" title="move 後の経路ハッシュ値" alt="" coords="1052,34,1252,61"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a122fd54c4b21ad3d1ce129cf1b2d6f3f" title="val をスタックに追加する" alt="" coords="812,52,984,93"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#a3ba89e53fbe90e03b07b2c68eea98334" title="(board_key, hand) を履歴に登録する" alt="" coords="823,117,973,159"/>
+<area shape="rect" href="namespacekomori.html#ae0ab7ef1101897b620e05208fc8975ee" title="現在の path_key と手 move から1手後の path_key を計算する。" alt="" coords="1300,343,1459,370"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#a62769876f5547de5b474300c666cea8a" title="index の次のインデックスを求める" alt="" coords="1077,117,1227,159"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#ab3ed82ca4c526f4f34c90c9277ba7d5b" title="board_key に対する探索開始インデックスを求める" alt="" coords="1077,183,1227,224"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#a3af0755f672c9b15c72253aebc682aa5" title="(board_key, hand) を履歴から消す" alt="" coords="823,183,973,224"/>
+<area shape="rect" href="classkomori_1_1_node.html#a7f1c13d7f57b6af7f34ac77240342d71" title="move 直前の経路ハッシュ値" alt="" coords="792,670,1004,697"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a30a23ee0ab5980d4fad72185cafed9d0" title="スタックから要素を1つ削除する" alt="" coords="796,518,1000,545"/>
+<area shape="rect" href="namespacekomori.html#af65c288516ec71f448f2947aac9e755b" title="1手後の path_key と手 move から現在の path_key を計算する。" alt="" coords="1067,569,1237,595"/>
 </map>
 </div>
 
@@ -428,7 +442,7 @@ template&lt;typename Range &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>n</code> を <code>move</code> で動かした局面の pn/dn の初期値 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="initial__estimation_8hpp_source.html#l00058">58</a> of file <a class="el" href="initial__estimation_8hpp_source.html">initial_estimation.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="initial__estimation_8hpp_source.html#l00127">127</a> of file <a class="el" href="initial__estimation_8hpp_source.html">initial_estimation.hpp</a>.</p>
 
 </div>
 </div>
@@ -476,12 +490,12 @@ template&lt;typename Range &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>n</code> を <code>move</code> で動かした局面の pn/dn の初期値 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="initial__estimation_8hpp_source.html#l00020">20</a> of file <a class="el" href="initial__estimation_8hpp_source.html">initial_estimation.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="initial__estimation_8hpp_source.html#l00087">87</a> of file <a class="el" href="initial__estimation_8hpp_source.html">initial_estimation.hpp</a>.</p>
 
 </div>
 </div>
-<a id="ac7ae04be0fb97c14e7dabbe5137292b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7ae04be0fb97c14e7dabbe5137292b7">&#9670;&nbsp;</a></span>MakeInfIfNotPositive()</h2>
+<a id="a7b2c92e509802b03a01e4d018c22d8ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b2c92e509802b03a01e4d018c22d8ea">&#9670;&nbsp;</a></span>MakeInfIfNotPositive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -492,7 +506,7 @@ template&lt;typename Range &gt; </div>
         <tr>
           <td class="memname">constexpr std::uint64_t komori::detail::MakeInfIfNotPositive </td>
           <td>(</td>
-          <td class="paramtype">std::uint64_t&#160;</td>
+          <td class="paramtype">std::int64_t&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
         </tr>
@@ -575,6 +589,35 @@ template&lt;typename OutType  = s64&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="ae3a1d7faa01afa66b690960b3645dc36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a1d7faa01afa66b690960b3645dc36">&#9670;&nbsp;</a></span>kPtValues</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">thread_local int komori::detail::kPtValues[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    0, 10, 20, 20, 30, 50, 50, 50, 80, 50, 50, 50, 50, 80, 80, 80,</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>駒のざっくりとした価値。スレッドごとに微妙に乱数を加えたいので thread_local にしている。 </p>
+
+<p class="definition">Definition at line <a class="el" href="initial__estimation_8hpp_source.html#l00016">16</a> of file <a class="el" href="initial__estimation_8hpp_source.html">initial_estimation.hpp</a>.</p>
+
+</div>
+</div>
 <a id="ae2e94751612a22494bb717838fca9283"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2e94751612a22494bb717838fca9283">&#9670;&nbsp;</a></span>post_search_level</h2>
 

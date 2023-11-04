@@ -1,11 +1,12 @@
 <map id="initial_estimation.hpp" name="initial_estimation.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="123,5,287,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="193,5,357,32"/>
 <area shape="rect" id="node2" href="$initial__estimation_8cpp_source.html" title=" " alt="" coords="5,80,168,107"/>
-<area shape="rect" id="node3" href="$local__expansion_8hpp.html" title=" " alt="" coords="179,229,333,256"/>
-<area shape="rect" id="node8" href="$move__picker_8hpp.html" title=" " alt="" coords="243,80,375,107"/>
-<area shape="rect" id="node4" href="$expansion__stack_8hpp.html" title=" " alt="" coords="177,304,335,331"/>
-<area shape="rect" id="node5" href="$komoring__heights_8hpp.html" title=" " alt="" coords="173,379,339,405"/>
-<area shape="rect" id="node6" href="$komoring__heights_8cpp_source.html" title=" " alt="" coords="89,453,255,480"/>
-<area shape="rect" id="node7" href="$user-search_8cpp_source.html" title=" " alt="" coords="279,453,404,480"/>
+<area shape="rect" id="node3" href="$local__expansion_8hpp.html" title=" " alt="" coords="192,229,347,256"/>
+<area shape="rect" id="node7" href="$user-search_8cpp_source.html" title=" " alt="" coords="492,453,617,480"/>
+<area shape="rect" id="node8" href="$move__picker_8hpp.html" title=" " alt="" coords="279,80,411,107"/>
+<area shape="rect" id="node4" href="$expansion__stack_8hpp.html" title=" " alt="" coords="226,304,385,331"/>
+<area shape="rect" id="node5" href="$komoring__heights_8hpp.html" title=" " alt="" coords="326,379,493,405"/>
+<area shape="rect" id="node6" href="$komoring__heights_8cpp_source.html" title=" " alt="" coords="303,453,468,480"/>
 <area shape="rect" id="node9" href="$delayed__move__list_8hpp.html" title=" " alt="" coords="293,155,467,181"/>
+<area shape="rect" id="node10" href="$multi__pv_8hpp_source.html" title=" " alt="" coords="397,229,504,256"/>
 </map>

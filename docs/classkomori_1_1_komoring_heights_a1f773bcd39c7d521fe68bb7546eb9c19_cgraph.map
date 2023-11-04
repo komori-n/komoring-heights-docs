@@ -1,0 +1,21 @@
+<map id="komori::KomoringHeights::NewSearch" name="komori::KomoringHeights::NewSearch">
+<area shape="rect" id="node1" title="Search() の準備を行う。探索開始直前に main_thread から呼び出すこと。" alt="" coords="5,229,192,270"/>
+<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a153f8d7584e9c0cb08d8d3f6cf011cb3" title="置換表に保存可能な要素数の概算値を取得する。" alt="" coords="258,5,437,61"/>
+<area shape="rect" id="node4" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a03fe64f10c6759a3d546410a9a5dd97c" title="ガベージコレクションを実行する" alt="" coords="258,91,437,147"/>
+<area shape="rect" id="node8" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a4179ad57f2d4a73ece89f9c380a7751a" title="置換表使用率（千分率）を計算する" alt="" coords="258,181,437,237"/>
+<area shape="rect" id="node11" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a60ba9bb9c00c85a2475c98b256ab1051" title="新しい探索を始める" alt="" coords="258,261,437,317"/>
+<area shape="rect" id="node13" href="$classkomori_1_1_multi_pv.html#a7fac9758f6cf70a0adbd50e6e7729f0c" title="node の合法手からPVの初期化を行う" alt="" coords="245,341,449,368"/>
+<area shape="rect" id="node14" href="$classkomori_1_1detail_1_1_search_monitor.html#a42fbccaf5229209706ebaf7b53445757" title="変数を初期化して探索を開始する。" alt="" coords="240,395,455,437"/>
+<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_regular_table.html#a95d62200a1d7e2346e4b2678eeec31e7" title="通常テーブルに保存可能な要素数。" alt="" coords="521,10,699,51"/>
+<area shape="rect" id="node5" href="$classkomori_1_1tt_1_1_regular_table.html#abc27e107c2b787df207bc94082d05e3e" title="通常テーブルの中で、メモリ使用率が高いエントリを間引く" alt="" coords="521,75,699,117"/>
+<area shape="rect" id="node6" href="$classkomori_1_1tt_1_1_regular_table.html#afa4c0e9340b321a94d0f21f42fd0ecbb" title="エントリをできるだけ手前の方に移動させる（コンパクション）" alt="" coords="784,75,961,117"/>
+<area shape="rect" id="node7" href="$classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="1028,75,1205,117"/>
+<area shape="rect" id="node9" href="$classkomori_1_1tt_1_1_regular_table.html#a9d2dd0f37b92f3af3f34b3b412a5c8a8" title="通常テーブルのメモリ使用率を見積もる。" alt="" coords="521,141,699,182"/>
+<area shape="rect" id="node10" href="$classkomori_1_1tt_1_1_repetition_table.html#a164c681a2c3ac0b306e8807d2d6014cd" title="置換表のメモリ使用率を求める。" alt="" coords="513,206,707,247"/>
+<area shape="rect" id="node12" href="$classkomori_1_1tt_1_1_repetition_table.html#a1cf06ccf4ee8c44a6f965ec43f21185a" title="置換表に保存された経路ハッシュ値をすべて削除する。" alt="" coords="513,271,707,313"/>
+<area shape="rect" id="node15" href="$classkomori_1_1_circular_array.html#aa62e891f09071eefff29a06498526414" title="全要素をデフォルトコンストラクタで初期化する。" alt="" coords="530,337,690,378"/>
+<area shape="rect" id="node16" href="$classkomori_1_1detail_1_1_search_monitor.html#a4a738a1ed6f0aa22ce3d594c46f40c9c" title="次回の置換表使用率チェックタイミングを更新する" alt="" coords="503,402,717,443"/>
+<area shape="rect" id="node18" href="$classkomori_1_1_periodic_alarm.html#a00712a5675d75fd64c14a73a13a82538" title="周期タイマーを開始する" alt="" coords="527,467,693,509"/>
+<area shape="rect" id="node17" href="$classkomori_1_1detail_1_1_search_monitor.html#afc31d019620df41e7762e5bc9a1d0133" title="現在の探索局面数" alt="" coords="765,402,980,443"/>
+<area shape="rect" id="node19" href="$classkomori_1_1_periodic_alarm.html#a021fd50396141ea07f6fd8341c1e7693" title="Time Point をミリ秒で取得する" alt="" coords="771,475,974,501"/>
+</map>

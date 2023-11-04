@@ -106,9 +106,9 @@ Collaboration diagram for komori::LocalExpansion:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af43ef8419d01531a037cb18354984c9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_local_expansion.html#af43ef8419d01531a037cb18354984c9c">LocalExpansion</a> (<a class="el" href="namespacekomori_1_1tt.html#ab367c034eba59afd3939578f638b0ffb">tt::TranspositionTable</a> &amp;tt, const <a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n, <a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> len, bool first_search, <a class="el" href="namespacekomori.html#a20dc4ee64c842a7caa36c7cf7496ce61">BitSet64</a> sum_mask=<a class="el" href="classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15">BitSet64::Full</a>())</td></tr>
-<tr class="memdesc:af43ef8419d01531a037cb18354984c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classkomori_1_1_local_expansion.html" title="局面の局所展開結果を保持する。">LocalExpansion</a> を構築する。  <a href="classkomori_1_1_local_expansion.html#af43ef8419d01531a037cb18354984c9c">More...</a><br /></td></tr>
-<tr class="separator:af43ef8419d01531a037cb18354984c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a617ddabf3c19727746535616e2712c07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_local_expansion.html#a617ddabf3c19727746535616e2712c07">LocalExpansion</a> (<a class="el" href="namespacekomori_1_1tt.html#ab367c034eba59afd3939578f638b0ffb">tt::TranspositionTable</a> &amp;tt, const <a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n, <a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> len, bool first_search, <a class="el" href="namespacekomori.html#a20dc4ee64c842a7caa36c7cf7496ce61">BitSet64</a> sum_mask=<a class="el" href="classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15">BitSet64::Full</a>(), std::uint32_t multi_pv=1)</td></tr>
+<tr class="memdesc:a617ddabf3c19727746535616e2712c07"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classkomori_1_1_local_expansion.html" title="局面の局所展開結果を保持する。">LocalExpansion</a> を構築する。  <a href="classkomori_1_1_local_expansion.html#a617ddabf3c19727746535616e2712c07">More...</a><br /></td></tr>
+<tr class="separator:a617ddabf3c19727746535616e2712c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a4fffb09b52090bf9b9a5835c8ddea4"><td class="memItemLeft" align="right" valign="top"><a id="a2a4fffb09b52090bf9b9a5835c8ddea4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_local_expansion.html#a2a4fffb09b52090bf9b9a5835c8ddea4">LocalExpansion</a> (const <a class="el" href="classkomori_1_1_local_expansion.html">LocalExpansion</a> &amp;)=delete</td></tr>
 <tr class="memdesc:a2a4fffb09b52090bf9b9a5835c8ddea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor(delete) <br /></td></tr>
@@ -145,6 +145,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a4de8b8d220487e7a8b4b28c00461acf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacekomori.html#a20dc4ee64c842a7caa36c7cf7496ce61">BitSet64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_local_expansion.html#a4de8b8d220487e7a8b4b28c00461acf9">FrontSumMask</a> () const</td></tr>
 <tr class="memdesc:a4de8b8d220487e7a8b4b28c00461acf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">最善手の Sum Mask  <a href="classkomori_1_1_local_expansion.html#a4de8b8d220487e7a8b4b28c00461acf9">More...</a><br /></td></tr>
 <tr class="separator:a4de8b8d220487e7a8b4b28c00461acf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506e77405eb278ecd606ad069365c2c7"><td class="memItemLeft" align="right" valign="top"><a id="a506e77405eb278ecd606ad069365c2c7"></a>
+std::vector&lt; std::pair&lt; Move, <a class="el" href="classkomori_1_1_search_result.html">SearchResult</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllResults</b> () const</td></tr>
+<tr class="separator:a506e77405eb278ecd606ad069365c2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b86284bac3fcf5b2de745e2b5376da2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkomori_1_1_search_result.html">SearchResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_local_expansion.html#a6b86284bac3fcf5b2de745e2b5376da2">CurrentResult</a> (const <a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n) const</td></tr>
 <tr class="memdesc:a6b86284bac3fcf5b2de745e2b5376da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面における探索結果を返す  <a href="classkomori_1_1_local_expansion.html#a6b86284bac3fcf5b2de745e2b5376da2">More...</a><br /></td></tr>
 <tr class="separator:a6b86284bac3fcf5b2de745e2b5376da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +220,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_local_expansion.html#af775297809f84ea9b90f806b7b757463">ResortBack</a> ()</td></tr>
 <tr class="memdesc:af775297809f84ea9b90f806b7b757463"><td class="mdescLeft">&#160;</td><td class="mdescRight">末尾以外がソートされた状態のとき、末尾要素を適切な位置に挿入する <br /></td></tr>
 <tr class="separator:af775297809f84ea9b90f806b7b757463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a527e2cbb915cbeadd0002be0ab302"><td class="memItemLeft" align="right" valign="top"><a id="ab4a527e2cbb915cbeadd0002be0ab302"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_local_expansion.html#ab4a527e2cbb915cbeadd0002be0ab302">ResortExcludedBack</a> ()</td></tr>
+<tr class="memdesc:ab4a527e2cbb915cbeadd0002be0ab302"><td class="mdescLeft">&#160;</td><td class="mdescRight">[0, excluded_moves_] の末尾以外がソートされた状態のとき、末尾要素を適切な位置に挿入する <br /></td></tr>
+<tr class="separator:ab4a527e2cbb915cbeadd0002be0ab302"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -240,6 +247,10 @@ const <a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199
 const <a class="el" href="structkomori_1_1_board_key_hand_pair.html">BoardKeyHandPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_local_expansion.html#a437f9b7323c9ef249ff8fc709def66c2">key_hand_pair_</a></td></tr>
 <tr class="memdesc:a437f9b7323c9ef249ff8fc709def66c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面の盤面ハッシュ値と持ち駒。二重カウント対策で用いる。 <br /></td></tr>
 <tr class="separator:a437f9b7323c9ef249ff8fc709def66c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27182227ec2b1fe07c244a088b11f55c"><td class="memItemLeft" align="right" valign="top"><a id="a27182227ec2b1fe07c244a088b11f55c"></a>
+const std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_local_expansion.html#a27182227ec2b1fe07c244a088b11f55c">multi_pv_</a></td></tr>
+<tr class="memdesc:a27182227ec2b1fe07c244a088b11f55c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classkomori_1_1_multi_pv.html" title="複数の初手に対する最善応手列を保存する">MultiPv</a> の値。1以上でなければならない <br /></td></tr>
+<tr class="separator:a27182227ec2b1fe07c244a088b11f55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab28b16455a3cd30d1b67d62bce9242cf"><td class="memItemLeft" align="right" valign="top"><a id="ab28b16455a3cd30d1b67d62bce9242cf"></a>
 std::array&lt; <a class="el" href="classkomori_1_1_search_result.html">SearchResult</a>, <a class="el" href="namespacekomori.html#ae28c3e91f330fe95ecf24570473e6a08">kMaxCheckMovesPerNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_local_expansion.html#ab28b16455a3cd30d1b67d62bce9242cf">results_</a></td></tr>
 <tr class="memdesc:ab28b16455a3cd30d1b67d62bce9242cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">子の現在の評価値結果一覧 <br /></td></tr>
@@ -268,6 +279,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="classkomori_1_1_fixed_size_stack.html">FixedSizeStack</a>&lt; std::uint32_t, <a class="el" href="namespacekomori.html#ae28c3e91f330fe95ecf24570473e6a08">kMaxCheckMovesPerNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_local_expansion.html#af53ce04572548093a1154b3ab0111281">idx_</a></td></tr>
 <tr class="memdesc:af53ce04572548093a1154b3ab0111281"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在有効な生添字の一覧。「良さ順」で並んでいる。 <br /></td></tr>
 <tr class="separator:af53ce04572548093a1154b3ab0111281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fc1c821586951371dc2792ecc1bdd2e"><td class="memItemLeft" align="right" valign="top"><a id="a0fc1c821586951371dc2792ecc1bdd2e"></a>
+std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_local_expansion.html#a0fc1c821586951371dc2792ecc1bdd2e">excluded_moves_</a> {0}</td></tr>
+<tr class="memdesc:a0fc1c821586951371dc2792ecc1bdd2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">勝ちになる手を見つけた個数 multi_pv_ == 1 のときは、この値は常に 0 である。multi_pv_ &gt; 1 のとき、勝ち（phi==0）を見つけた後に探索を続ける 際に用いる。常に excluded_moves_ &lt; multi_pv_ - 1 かつ excluded_moves_ &lt; mp_.size() である。 <br /></td></tr>
+<tr class="separator:a0fc1c821586951371dc2792ecc1bdd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>局面の局所展開結果を保持する。 </p>
@@ -290,8 +305,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00095">95</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af43ef8419d01531a037cb18354984c9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af43ef8419d01531a037cb18354984c9c">&#9670;&nbsp;</a></span>LocalExpansion()</h2>
+<a id="a617ddabf3c19727746535616e2712c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a617ddabf3c19727746535616e2712c07">&#9670;&nbsp;</a></span>LocalExpansion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,7 +342,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacekomori.html#a20dc4ee64c842a7caa36c7cf7496ce61">BitSet64</a>&#160;</td>
-          <td class="paramname"><em>sum_mask</em> = <code><a class="el" href="classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15">BitSet64::Full</a>()</code>&#160;</td>
+          <td class="paramname"><em>sum_mask</em> = <code><a class="el" href="classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15">BitSet64::Full</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint32_t&#160;</td>
+          <td class="paramname"><em>multi_pv</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -350,66 +371,67 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
     <tr><td class="paramname">len</td><td>残り詰み手数 </td></tr>
     <tr><td class="paramname">first_search</td><td>初回探索なら <code>true</code>。<code>true</code> なら高速 1 手詰めルーチンを走らせる。 </td></tr>
     <tr><td class="paramname">sum_mask</td><td>δ値を和で計算する子の集合 </td></tr>
+    <tr><td class="paramname">multi_pv</td><td>勝ちになる手をいくつ見つけるか。1以上でなければならない </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00129">129</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00130">130</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1_local_expansion_af43ef8419d01531a037cb18354984c9c_cgraph.png" border="0" usemap="#aclasskomori_1_1_local_expansion_af43ef8419d01531a037cb18354984c9c_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1_local_expansion_af43ef8419d01531a037cb18354984c9c_cgraph" id="aclasskomori_1_1_local_expansion_af43ef8419d01531a037cb18354984c9c_cgraph">
-<area shape="rect" title="LocalExpansion を構築する。" alt="" coords="5,892,181,933"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5ee11c692c6bfa5698cffdbcfdd02929" title="イテレータの開始位置" alt="" coords="250,233,422,275"/>
-<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a2a0f0621bb26449fdf6d8c00a8600d7e" title="局面 n を move で 1 手進めたエントリを読み書きするためのクエリを返す" alt="" coords="247,299,425,355"/>
-<area shape="rect" href="classkomori_1_1_node.html#ac82d1552c36647cc88e62b104b77595d" title="move 後の攻め方の持ち駒" alt="" coords="513,387,711,414"/>
-<area shape="rect" href="namespacekomori_1_1detail.html#a730c115105733a5cbffe37428c86ce5a" title="OR node n を move した局面が自明な詰み／不詰かどうかを判定する。" alt="" coords="229,976,443,1017"/>
-<area shape="rect" href="classkomori_1_1_node.html#a082d5d0045420c8978206fda2b518e17" title="move で1手進める" alt="" coords="801,590,972,617"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a122fd54c4b21ad3d1ce129cf1b2d6f3f" title="val をスタックに追加する" alt="" coords="1060,657,1232,699"/>
-<area shape="rect" href="classkomori_1_1_node.html#aad7fe2734b150a1d9645ea72e2fdda83" title="DoMove() で勧めた局面を元に戻す" alt="" coords="793,825,980,851"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a30a23ee0ab5980d4fad72185cafed9d0" title="スタックから要素を1つ削除する" alt="" coords="1044,926,1248,953"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a2c7ae503860768e494c2fc41ddeb9270" title="イテレータの終了位置" alt="" coords="234,1042,438,1069"/>
-<area shape="rect" href="namespacekomori.html#a5c6a82becf6ccac969ecceaf30f5b95a" title="初めて訪れた局面の pn/dn 初期値を計算する" alt="" coords="263,733,409,759"/>
-<area shape="rect" href="classkomori_1_1_node.html#a38f310d0efd41fc2f4c376fdf44c7210" title="move をすると千日手または劣等局面になるかどうか" alt="" coords="239,380,433,421"/>
-<area shape="rect" href="namespacekomori.html#a09690cec75eb5532478fb7cb04aafcb8" title="move はδ値をsumで計算すべきか／maxで計上すべきかを判定する" alt="" coords="520,539,704,566"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_query.html#a862bd3224491b431eaff33bc08755ce2" title="置換表から結果を集めてきて返す関数。" alt="" coords="267,1128,405,1169"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#a0d81252fa8281a46c86b05b609434429" title="千日手の探索結果で初期化する" alt="" coords="532,1389,692,1431"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#acdba010a0f3af21bbd55c7a6ffda1863" title="idx_ の比較器を生成する。" alt="" coords="248,1245,424,1287"/>
-<area shape="rect" href="classkomori_1_1_delayed_move_list.html#acb1d55f9cd3730805372ac24fd5229fe" title="i_raw の直前に展開すべき手のインデックスを返す。" alt="" coords="242,1311,430,1352"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#a9510c937ce218cc0334a5434b555d270" title="δ値の一時変数 sum_delta_except_best_, max_delta_except_best_ を計算し直す" alt="" coords="248,1376,424,1417"/>
-<area shape="rect" href="classkomori_1_1_bit_set.html#a4d85204891b7f94b52e8e538325a9efd" title="i 番目のフラグを false に設定する。" alt="" coords="257,1442,415,1469"/>
-<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="523,438,701,465"/>
-<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1309,665,1449,691"/>
-<area shape="rect" href="classkomori_1_1_node.html#a6dfeb2e63ce33d5b9043010cbb8428c3" title="move 後の経路ハッシュ値" alt="" coords="1046,38,1246,65"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="523,119,701,160"/>
-<area shape="rect" href="namespacekomori.html#ae5838f0a6fe258eb2bc0197498cd7358" title="move 後の手駒を返す" alt="" coords="817,337,957,363"/>
-<area shape="rect" href="classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="798,438,975,465"/>
-<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="1063,774,1229,801"/>
-<area shape="rect" href="classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="1079,438,1213,465"/>
-<area shape="rect" href="namespacekomori.html#ae0ab7ef1101897b620e05208fc8975ee" title="現在の path_key と手 move から1手後の path_key を計算する。" alt="" coords="1300,38,1459,65"/>
-<area shape="rect" href="namespacekomori.html#af60b97ffafc4e100347e046e86ef02ac" title="(OR node限定) n が 1 手詰かどうか判定する。" alt="" coords="524,975,700,1002"/>
-<area shape="rect" href="namespacekomori.html#afa08995342dc8f460d6de738cd457571" title="(OR node限定) n が不詰かどうかを簡易的に調べる。" alt="" coords="491,1026,733,1053"/>
-<area shape="rect" href="namespacekomori.html#ace83f8e2ffff818bd25b6def2e075904" title="move 後の手駒が after_hand のとき、移動前の持ち駒を返す" alt="" coords="811,977,963,1003"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5f9f4c0e10424bb96f652c18cfc6afc7" title="スタックの末尾（最も後に保存した要素）" alt="" coords="1060,540,1232,581"/>
-<area shape="rect" href="classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="1057,723,1235,750"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#a3ba89e53fbe90e03b07b2c68eea98334" title="(board_key, hand) を履歴に登録する" alt="" coords="1071,155,1221,196"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#a62769876f5547de5b474300c666cea8a" title="index の次のインデックスを求める" alt="" coords="1304,187,1455,228"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#ab3ed82ca4c526f4f34c90c9277ba7d5b" title="board_key に対する探索開始インデックスを求める" alt="" coords="1304,121,1455,163"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#a3af0755f672c9b15c72253aebc682aa5" title="(board_key, hand) を履歴から消す" alt="" coords="1071,220,1221,261"/>
-<area shape="rect" href="classkomori_1_1_node.html#a7f1c13d7f57b6af7f34ac77240342d71" title="move 直前の経路ハッシュ値" alt="" coords="1040,875,1252,902"/>
-<area shape="rect" href="namespacekomori_1_1detail.html#a56e953984699bd0e99000f56bc96dcb9" title="df&#45;pn+における AND node の pn/dn 初期値を計算する" alt="" coords="525,692,699,733"/>
-<area shape="rect" href="namespacekomori_1_1detail.html#a7e8c39e028338e1c24e97418bf751772" title="df&#45;pn+における OR node の pn/dn 初期値を計算する" alt="" coords="525,757,699,799"/>
-<area shape="rect" href="classkomori_1_1_node.html#ab47757b0ecd5c40af2b2246a17477a13" title="move 後の盤面ハッシュ値" alt="" coords="781,286,992,313"/>
-<area shape="rect" href="classkomori_1_1_visit_history.html#a2ff15618b56e74ace00b9b57434fec4f" title="(board_key, hand) の優等局面が履歴に記録されているか調べる。" alt="" coords="1071,89,1221,131"/>
-<area shape="rect" href="classkomori_1_1_node.html#af2b9d2ba13ac5a9536d6aa1b618d2753" title="AND node（玉方）の手番" alt="" coords="799,691,975,718"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a9666e90a9343ec8e235d1950ff6b0d1f" title="経路ハッシュ値 path_key が保存されているかどうか判定する。" alt="" coords="515,1259,709,1300"/>
-<area shape="rect" href="classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="537,1324,687,1365"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#abf1c99385fe87cabfa3063c03470240d" title="エントリが未使用状態かを判定する" alt="" coords="545,1128,679,1169"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#abaaf9630729de4deca306d3fa87fec73" title="Unknownな探索結果で初期化する" alt="" coords="532,1193,692,1235"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="789,1225,984,1267"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対する探索開始インデックスを求める。" alt="" coords="789,1291,984,1332"/>
-<area shape="rect" href="namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="537,1455,687,1482"/>
+<div class="center"><img src="classkomori_1_1_local_expansion_a617ddabf3c19727746535616e2712c07_cgraph.png" border="0" usemap="#aclasskomori_1_1_local_expansion_a617ddabf3c19727746535616e2712c07_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1_local_expansion_a617ddabf3c19727746535616e2712c07_cgraph" id="aclasskomori_1_1_local_expansion_a617ddabf3c19727746535616e2712c07_cgraph">
+<area shape="rect" title="LocalExpansion を構築する。" alt="" coords="5,799,181,841"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5ee11c692c6bfa5698cffdbcfdd02929" title="イテレータの開始位置" alt="" coords="250,210,422,251"/>
+<area shape="rect" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a2a0f0621bb26449fdf6d8c00a8600d7e" title="局面 n を move で 1 手進めたエントリを読み書きするためのクエリを返す" alt="" coords="247,341,425,397"/>
+<area shape="rect" href="classkomori_1_1_node.html#ac82d1552c36647cc88e62b104b77595d" title="move 後の攻め方の持ち駒" alt="" coords="513,304,711,331"/>
+<area shape="rect" href="namespacekomori_1_1detail.html#a730c115105733a5cbffe37428c86ce5a" title="OR node n を move した局面が自明な詰み／不詰かどうかを判定する。" alt="" coords="229,850,443,891"/>
+<area shape="rect" href="classkomori_1_1_node.html#a082d5d0045420c8978206fda2b518e17" title="move で1手進める" alt="" coords="801,472,972,499"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a122fd54c4b21ad3d1ce129cf1b2d6f3f" title="val をスタックに追加する" alt="" coords="1060,726,1232,767"/>
+<area shape="rect" href="classkomori_1_1_node.html#aad7fe2734b150a1d9645ea72e2fdda83" title="DoMove() で進めた局面を元に戻す" alt="" coords="793,565,980,592"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a30a23ee0ab5980d4fad72185cafed9d0" title="スタックから要素を1つ削除する" alt="" coords="1044,792,1248,819"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a2c7ae503860768e494c2fc41ddeb9270" title="イテレータの終了位置" alt="" coords="234,967,438,993"/>
+<area shape="rect" href="namespacekomori.html#a5c6a82becf6ccac969ecceaf30f5b95a" title="初めて訪れた局面の pn/dn 初期値を計算する" alt="" coords="263,651,409,677"/>
+<area shape="rect" href="classkomori_1_1_node.html#a38f310d0efd41fc2f4c376fdf44c7210" title="move をすると千日手または劣等局面になるかどうか" alt="" coords="239,275,433,317"/>
+<area shape="rect" href="namespacekomori.html#a09690cec75eb5532478fb7cb04aafcb8" title="move はδ値をsumで計算すべきか／maxで計上すべきかを判定する" alt="" coords="520,959,704,985"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_query.html#a862bd3224491b431eaff33bc08755ce2" title="置換表から結果を集めてきて返す関数。" alt="" coords="267,1171,405,1213"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#a0d81252fa8281a46c86b05b609434429" title="千日手の探索結果で初期化する" alt="" coords="532,1415,692,1457"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#acdba010a0f3af21bbd55c7a6ffda1863" title="idx_ の比較器を生成する。" alt="" coords="248,1289,424,1330"/>
+<area shape="rect" href="classkomori_1_1_delayed_move_list.html#acb1d55f9cd3730805372ac24fd5229fe" title="i_raw の直前に展開すべき手のインデックスを返す。" alt="" coords="242,1354,430,1395"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#a9510c937ce218cc0334a5434b555d270" title="δ値の一時変数 sum_delta_except_best_, max_delta_except_best_ を計算し直す" alt="" coords="248,1455,424,1497"/>
+<area shape="rect" href="classkomori_1_1_bit_set.html#a4d85204891b7f94b52e8e538325a9efd" title="i 番目のフラグを false に設定する。" alt="" coords="257,1521,415,1548"/>
+<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="523,421,701,448"/>
+<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1309,565,1449,592"/>
+<area shape="rect" href="classkomori_1_1_node.html#a6dfeb2e63ce33d5b9043010cbb8428c3" title="move 後の経路ハッシュ値" alt="" coords="1046,5,1246,32"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="523,355,701,397"/>
+<area shape="rect" href="namespacekomori.html#ae5838f0a6fe258eb2bc0197498cd7358" title="move 後の手駒を返す" alt="" coords="817,304,957,331"/>
+<area shape="rect" href="classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="798,748,975,775"/>
+<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="1063,456,1229,483"/>
+<area shape="rect" href="classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="1079,843,1213,869"/>
+<area shape="rect" href="namespacekomori.html#ae0ab7ef1101897b620e05208fc8975ee" title="現在の path_key と手 move から1手後の path_key を計算する。" alt="" coords="1300,5,1459,32"/>
+<area shape="rect" href="namespacekomori.html#af60b97ffafc4e100347e046e86ef02ac" title="(OR node限定) n が 1 手詰かどうか判定する。" alt="" coords="524,857,700,884"/>
+<area shape="rect" href="namespacekomori.html#afa08995342dc8f460d6de738cd457571" title="(OR node限定) n が不詰かどうかを簡易的に調べる。" alt="" coords="491,908,733,935"/>
+<area shape="rect" href="namespacekomori.html#ace83f8e2ffff818bd25b6def2e075904" title="move 後の手駒が after_hand のとき、移動前の持ち駒を返す" alt="" coords="811,799,963,825"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5f9f4c0e10424bb96f652c18cfc6afc7" title="スタックの末尾（最も後に保存した要素）" alt="" coords="1060,558,1232,599"/>
+<area shape="rect" href="classkomori_1_1_node.html#afc3ff609d7a14aae03aab36317148f63" title="現在の盤面ハッシュ値" alt="" coords="1057,507,1235,533"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#a3ba89e53fbe90e03b07b2c68eea98334" title="(board_key, hand) を履歴に登録する" alt="" coords="1071,122,1221,163"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#a62769876f5547de5b474300c666cea8a" title="index の次のインデックスを求める" alt="" coords="1304,89,1455,130"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#ab3ed82ca4c526f4f34c90c9277ba7d5b" title="board_key に対する探索開始インデックスを求める" alt="" coords="1304,154,1455,195"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#a3af0755f672c9b15c72253aebc682aa5" title="(board_key, hand) を履歴から消す" alt="" coords="1071,187,1221,229"/>
+<area shape="rect" href="classkomori_1_1_node.html#a7f1c13d7f57b6af7f34ac77240342d71" title="move 直前の経路ハッシュ値" alt="" coords="1040,675,1252,701"/>
+<area shape="rect" href="namespacekomori_1_1detail.html#a56e953984699bd0e99000f56bc96dcb9" title="df&#45;pn+における AND node の pn/dn 初期値を計算する" alt="" coords="525,574,699,615"/>
+<area shape="rect" href="namespacekomori_1_1detail.html#a7e8c39e028338e1c24e97418bf751772" title="df&#45;pn+における OR node の pn/dn 初期値を計算する" alt="" coords="525,639,699,681"/>
+<area shape="rect" href="classkomori_1_1_node.html#ab47757b0ecd5c40af2b2246a17477a13" title="move 後の盤面ハッシュ値" alt="" coords="781,203,992,229"/>
+<area shape="rect" href="classkomori_1_1_visit_history.html#a2ff15618b56e74ace00b9b57434fec4f" title="(board_key, hand) の優等局面が履歴に記録されているか調べる。" alt="" coords="1071,57,1221,98"/>
+<area shape="rect" href="classkomori_1_1_node.html#af2b9d2ba13ac5a9536d6aa1b618d2753" title="AND node（玉方）の手番" alt="" coords="799,951,975,977"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a9666e90a9343ec8e235d1950ff6b0d1f" title="経路ハッシュ値 path_key が保存されているかどうか判定する。" alt="" coords="515,1154,709,1195"/>
+<area shape="rect" href="classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="537,1219,687,1261"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#af1969c3d079ea4a462df415e5ce4ec1b" title="エントリが未使用状態かを判定する。この関数に限っては共有ロックを取得せずに使用することができる。" alt="" coords="545,1285,679,1326"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#abaaf9630729de4deca306d3fa87fec73" title="Unknownな探索結果で初期化する" alt="" coords="532,1350,692,1391"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="789,1154,984,1195"/>
+<area shape="rect" href="namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="537,1481,687,1508"/>
+<area shape="rect" href="namespacekomori.html#ae2a1de257f1363b6f913c501fa5c43c1" title="Iterable の先頭 kSkip 要素をスキップする" alt="" coords="561,1532,663,1559"/>
 </map>
 </div>
 
@@ -440,18 +462,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>現時点の最善手 </p>
-<dl class="section pre"><dt>Precondition</dt><dd>!empty() </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>!Current().IsFinal() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00222">222</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classkomori_1_1_local_expansion_a694216f981a250b39b8ef765a7d2fc76_cgraph.png" border="0" usemap="#aclasskomori_1_1_local_expansion_a694216f981a250b39b8ef765a7d2fc76_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1_local_expansion_a694216f981a250b39b8ef765a7d2fc76_cgraph" id="aclasskomori_1_1_local_expansion_a694216f981a250b39b8ef765a7d2fc76_cgraph">
-<area shape="rect" title="現時点の最善手" alt="" coords="5,5,181,47"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a205c2899942284ebafec8ceb0f0bc330" title="スタックの先頭（最も前に保存した要素）" alt="" coords="229,5,401,47"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00230">230</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 
 </div>
 </div>
@@ -489,40 +502,40 @@ Here is the call graph for this function:</div>
 <dl class="section pre"><dt>Precondition</dt><dd><code>n</code> がコンストラクト時に渡されたものと同じ局面 </dd></dl>
 <dl class="section note"><dt>Note</dt><dd><code>!CurrentResult(n).IsFinal()</code> ならば <code>!empty()</code> が成り立つ。これを利用して <code>!empty()</code> のチェックを スキップすることがある。 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00248">248</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00266">266</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1_local_expansion_a6b86284bac3fcf5b2de745e2b5376da2_cgraph.png" border="0" usemap="#aclasskomori_1_1_local_expansion_a6b86284bac3fcf5b2de745e2b5376da2_cgraph" alt=""/></div>
 <map name="aclasskomori_1_1_local_expansion_a6b86284bac3fcf5b2de745e2b5376da2_cgraph" id="aclasskomori_1_1_local_expansion_a6b86284bac3fcf5b2de745e2b5376da2_cgraph">
-<area shape="rect" title="現局面における探索結果を返す" alt="" coords="5,873,181,914"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#ad2242acca76e58459c834aab8cf28beb" title="探索結果を取得する（不詰局面）" alt="" coords="453,449,629,490"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#a4c31af506aee8cc31905bc6fcf12b488" title="Dn を計算する" alt="" coords="453,938,629,980"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#a08f6427a99f7de8940625fed88ffbf11" title="Pn を計算する" alt="" coords="453,1004,629,1045"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#a2ee8bda2ba11ada7b3629114d358e6cd" title="探索結果を取得する（詰み局面）" alt="" coords="453,112,629,153"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#a1dce0af5754980303ae433b97981f785" title="探索結果を取得する（不明局面）" alt="" coords="229,873,405,914"/>
-<area shape="rect" href="classkomori_1_1_node.html#aa5937f4e1ea7d06752752e1d7a015592" title="現在の玉方の持ち駒" alt="" coords="707,296,883,323"/>
-<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="985,271,1125,298"/>
-<area shape="rect" href="namespacekomori.html#ace83f8e2ffff818bd25b6def2e075904" title="move 後の手駒が after_hand のとき、移動前の持ち駒を返す" alt="" coords="719,144,871,171"/>
-<area shape="rect" href="classkomori_1_1_move_picker.html#aba0fc5c57afd105865c899c156c3cb41" title="現局面の合法手の数が0かどうかを判定する。" alt="" coords="720,449,871,490"/>
-<area shape="rect" href="classkomori_1_1_move_picker.html#a94848cbebf11d7f272a8360cdfc5f1ff" title="現局面の合法手の個数を返す。" alt="" coords="980,449,1131,490"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#af6420e1215e90c8b46af8c7226a32f62" title="最善の子の探索結果を取得する" alt="" coords="967,792,1143,833"/>
-<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="706,631,885,658"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="715,682,875,724"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_mate_len_impl.html#ab53b046400e9408fdc8c744f56e09e27" title="詰み手数を返す" alt="" coords="677,195,913,222"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#a0d81252fa8281a46c86b05b609434429" title="千日手の探索結果で初期化する" alt="" coords="715,514,875,556"/>
-<area shape="rect" href="namespacekomori.html#a910cf44bbf31dae9af184770f7ca5dd4" title="2 つの持ち駒を 1 つにまとめる" alt="" coords="720,580,871,607"/>
-<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="712,347,879,374"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a205c2899942284ebafec8ceb0f0bc330" title="スタックの先頭（最も前に保存した要素）" alt="" coords="1205,880,1377,921"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#aa23d2a359eb761d16275d9d0acf6836c" title="delta 値を計算する" alt="" coords="707,936,883,977"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#a3e469766737ab77e8d095acc18c66e1f" title="phi 値を計算する" alt="" coords="707,1004,883,1045"/>
-<area shape="rect" href="namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="980,858,1131,884"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a0d9c7779d27ccf538345227559b69fd9" title="スタックが空かどうか" alt="" coords="969,1026,1141,1068"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5e99daa3af91a53273900789df53aee8" title="スタックに保存されている要素数" alt="" coords="969,909,1141,950"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#afc8abfab4851e59c5539e13964b6d4c5" title="φ値" alt="" coords="961,1092,1149,1119"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="1197,1067,1384,1094"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="1199,1118,1383,1144"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#abaaf9630729de4deca306d3fa87fec73" title="Unknownな探索結果で初期化する" alt="" coords="461,873,621,914"/>
+<area shape="rect" title="現局面における探索結果を返す" alt="" coords="5,829,181,870"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#ad2242acca76e58459c834aab8cf28beb" title="探索結果を取得する（不詰局面）" alt="" coords="453,333,629,374"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#a4c31af506aee8cc31905bc6fcf12b488" title="Dn を計算する" alt="" coords="453,829,629,870"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#a08f6427a99f7de8940625fed88ffbf11" title="Pn を計算する" alt="" coords="453,959,629,1001"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#a2ee8bda2ba11ada7b3629114d358e6cd" title="探索結果を取得する（詰み局面）" alt="" coords="453,643,629,685"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#a1dce0af5754980303ae433b97981f785" title="探索結果を取得する（不明局面）" alt="" coords="229,891,405,933"/>
+<area shape="rect" href="classkomori_1_1_node.html#aa5937f4e1ea7d06752752e1d7a015592" title="現在の玉方の持ち駒" alt="" coords="707,5,883,32"/>
+<area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="985,315,1125,341"/>
+<area shape="rect" href="namespacekomori.html#ace83f8e2ffff818bd25b6def2e075904" title="move 後の手駒が after_hand のとき、移動前の持ち駒を返す" alt="" coords="719,625,871,652"/>
+<area shape="rect" href="classkomori_1_1_move_picker.html#aba0fc5c57afd105865c899c156c3cb41" title="現局面の合法手の数が0かどうかを判定する。" alt="" coords="720,391,871,433"/>
+<area shape="rect" href="classkomori_1_1_move_picker.html#a94848cbebf11d7f272a8360cdfc5f1ff" title="現局面の合法手の個数を返す。" alt="" coords="980,718,1131,759"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a205c2899942284ebafec8ceb0f0bc330" title="スタックの先頭（最も前に保存した要素）" alt="" coords="709,509,881,550"/>
+<area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="706,56,885,83"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="715,107,875,149"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_mate_len_impl.html#ab53b046400e9408fdc8c744f56e09e27" title="詰み手数を返す" alt="" coords="677,575,913,601"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#a0d81252fa8281a46c86b05b609434429" title="千日手の探索結果で初期化する" alt="" coords="715,173,875,214"/>
+<area shape="rect" href="namespacekomori.html#a910cf44bbf31dae9af184770f7ca5dd4" title="2 つの持ち駒を 1 つにまとめる" alt="" coords="720,239,871,265"/>
+<area shape="rect" href="classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="712,340,879,367"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#aa23d2a359eb761d16275d9d0acf6836c" title="delta 値を計算する" alt="" coords="707,842,883,883"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#a3e469766737ab77e8d095acc18c66e1f" title="phi 値を計算する" alt="" coords="707,959,883,1001"/>
+<area shape="rect" href="namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="980,849,1131,876"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a0d9c7779d27ccf538345227559b69fd9" title="スタックが空かどうか" alt="" coords="969,783,1141,825"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#af6420e1215e90c8b46af8c7226a32f62" title="最善の子の探索結果を取得する" alt="" coords="967,1018,1143,1059"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5e99daa3af91a53273900789df53aee8" title="スタックに保存されている要素数" alt="" coords="969,901,1141,942"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#afc8abfab4851e59c5539e13964b6d4c5" title="φ値" alt="" coords="961,967,1149,993"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="1197,941,1384,968"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="1199,992,1383,1019"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#abaaf9630729de4deca306d3fa87fec73" title="Unknownな探索結果で初期化する" alt="" coords="461,894,621,935"/>
 </map>
 </div>
 
@@ -554,7 +567,7 @@ Here is the call graph for this function:</div>
 <p>合法手がないかどうか </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classkomori_1_1_local_expansion.html#a6b86284bac3fcf5b2de745e2b5376da2" title="現局面における探索結果を返す">CurrentResult</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00217">217</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00225">225</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -591,9 +604,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>最善手の子ノードが初探索かどうか </p>
-<dl class="section pre"><dt>Precondition</dt><dd>!empty() </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>!CurrentResult().IsFinal() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00231">231</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00239">239</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -602,7 +615,6 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="最善手の子ノードが初探索かどうか" alt="" coords="5,39,181,80"/>
 <area shape="rect" href="classkomori_1_1_local_expansion.html#af6420e1215e90c8b46af8c7226a32f62" title="最善の子の探索結果を取得する" alt="" coords="229,5,405,47"/>
 <area shape="rect" href="classkomori_1_1_search_result.html#abfe86f70fc0d0535b1b01057732f6acb" title="Unknown部分の結果。!IsFinal() の場合のみ呼び出し可能。" alt="" coords="237,71,397,112"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a205c2899942284ebafec8ceb0f0bc330" title="スタックの先頭（最も前に保存した要素）" alt="" coords="453,5,625,47"/>
 </map>
 </div>
 
@@ -653,7 +665,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>子局面の pn, dn のしきい値のペア </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00324">324</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00362">362</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -697,9 +709,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>最善手の Sum Mask </p>
-<dl class="section pre"><dt>Precondition</dt><dd>!empty() </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>!CurrentResult().IsFinal() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00236">236</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00244">244</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -707,7 +719,6 @@ Here is the call graph for this function:</div>
 <map name="aclasskomori_1_1_local_expansion_a4de8b8d220487e7a8b4b28c00461acf9_cgraph" id="aclasskomori_1_1_local_expansion_a4de8b8d220487e7a8b4b28c00461acf9_cgraph">
 <area shape="rect" title="最善手の Sum Mask" alt="" coords="5,5,181,47"/>
 <area shape="rect" href="classkomori_1_1_local_expansion.html#af6420e1215e90c8b46af8c7226a32f62" title="最善の子の探索結果を取得する" alt="" coords="229,5,405,47"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a205c2899942284ebafec8ceb0f0bc330" title="スタックの先頭（最も前に保存した要素）" alt="" coords="453,5,625,47"/>
 </map>
 </div>
 
@@ -776,7 +787,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00452">452</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00501">501</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -825,17 +836,18 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>edge</code> を見つけたら true </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00345">345</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00383">383</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1_local_expansion_affb7687064b4b4c158725ef551a3dd87_cgraph.png" border="0" usemap="#aclasskomori_1_1_local_expansion_affb7687064b4b4c158725ef551a3dd87_cgraph" alt=""/></div>
 <map name="aclasskomori_1_1_local_expansion_affb7687064b4b4c158725ef551a3dd87_cgraph" id="aclasskomori_1_1_local_expansion_affb7687064b4b4c158725ef551a3dd87_cgraph">
-<area shape="rect" title="二重カウントの起点 edge に一致する枝が子に含まれるなら二重カウントを解消する" alt="" coords="5,100,256,141"/>
+<area shape="rect" title="二重カウントの起点 edge に一致する枝が子に含まれるなら二重カウントを解消する" alt="" coords="5,129,256,171"/>
 <area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a205c2899942284ebafec8ceb0f0bc330" title="スタックの先頭（最も前に保存した要素）" alt="" coords="306,5,478,47"/>
 <area shape="rect" href="classkomori_1_1_local_expansion.html#a9510c937ce218cc0334a5434b555d270" title="δ値の一時変数 sum_delta_except_best_, max_delta_except_best_ を計算し直す" alt="" coords="304,71,480,112"/>
-<area shape="rect" href="classkomori_1_1_bit_set.html#a4d85204891b7f94b52e8e538325a9efd" title="i 番目のフラグを false に設定する。" alt="" coords="313,137,471,163"/>
-<area shape="rect" href="classkomori_1_1_bit_set.html#a63c3eae9e1719a685e24e8ba98a82804" title="i 番目のフラグ状態を取得する。" alt="" coords="318,187,466,214"/>
+<area shape="rect" href="namespacekomori.html#ae2a1de257f1363b6f913c501fa5c43c1" title="Iterable の先頭 kSkip 要素をスキップする" alt="" coords="552,133,655,159"/>
+<area shape="rect" href="classkomori_1_1_bit_set.html#a4d85204891b7f94b52e8e538325a9efd" title="i 番目のフラグを false に設定する。" alt="" coords="313,187,471,214"/>
+<area shape="rect" href="classkomori_1_1_bit_set.html#a63c3eae9e1719a685e24e8ba98a82804" title="i 番目のフラグ状態を取得する。" alt="" coords="318,238,466,265"/>
 <area shape="rect" href="namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="528,78,679,105"/>
 </map>
 </div>
@@ -874,20 +886,19 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00369">369</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00407">407</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1_local_expansion_a0f681726c1f6ab4aa93aac9593f96c48_cgraph.png" border="0" usemap="#aclasskomori_1_1_local_expansion_a0f681726c1f6ab4aa93aac9593f96c48_cgraph" alt=""/></div>
 <map name="aclasskomori_1_1_local_expansion_a0f681726c1f6ab4aa93aac9593f96c48_cgraph" id="aclasskomori_1_1_local_expansion_a0f681726c1f6ab4aa93aac9593f96c48_cgraph">
-<area shape="rect" title="二重カウント探索をやめるべきかどうか判定する" alt="" coords="5,85,209,127"/>
+<area shape="rect" title="二重カウント探索をやめるべきかどうか判定する" alt="" coords="5,64,209,105"/>
 <area shape="rect" href="classkomori_1_1_local_expansion.html#af6420e1215e90c8b46af8c7226a32f62" title="最善の子の探索結果を取得する" alt="" coords="481,5,657,47"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#aa23d2a359eb761d16275d9d0acf6836c" title="delta 値を計算する" alt="" coords="257,115,433,156"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a205c2899942284ebafec8ceb0f0bc330" title="スタックの先頭（最も前に保存した要素）" alt="" coords="705,35,877,76"/>
-<area shape="rect" href="namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="494,122,645,149"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a0d9c7779d27ccf538345227559b69fd9" title="スタックが空かどうか" alt="" coords="483,173,655,215"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5e99daa3af91a53273900789df53aee8" title="スタックに保存されている要素数" alt="" coords="483,239,655,280"/>
-<area shape="rect" href="classkomori_1_1_move_picker.html#a94848cbebf11d7f272a8360cdfc5f1ff" title="現局面の合法手の個数を返す。" alt="" coords="494,304,645,345"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#aa23d2a359eb761d16275d9d0acf6836c" title="delta 値を計算する" alt="" coords="257,93,433,135"/>
+<area shape="rect" href="namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="494,71,645,98"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a0d9c7779d27ccf538345227559b69fd9" title="スタックが空かどうか" alt="" coords="483,123,655,164"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5e99daa3af91a53273900789df53aee8" title="スタックに保存されている要素数" alt="" coords="483,188,655,229"/>
+<area shape="rect" href="classkomori_1_1_move_picker.html#a94848cbebf11d7f272a8360cdfc5f1ff" title="現局面の合法手の個数を返す。" alt="" coords="494,253,645,295"/>
 </map>
 </div>
 
@@ -926,30 +937,34 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>!empty() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00263">263</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00281">281</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1_local_expansion_abe2ba3b9ec83384f7048de90760edbae_cgraph.png" border="0" usemap="#aclasskomori_1_1_local_expansion_abe2ba3b9ec83384f7048de90760edbae_cgraph" alt=""/></div>
 <map name="aclasskomori_1_1_local_expansion_abe2ba3b9ec83384f7048de90760edbae_cgraph" id="aclasskomori_1_1_local_expansion_abe2ba3b9ec83384f7048de90760edbae_cgraph">
-<area shape="rect" title="最善手の子の評価値を更新する" alt="" coords="5,239,181,281"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#a73ee987a5eafc4bd27c4af3d85278aea" title="δ値" alt="" coords="243,23,403,65"/>
-<area shape="rect" href="namespacekomori.html#a9b03d373bf7f539b7a9d8d0df9a61669" title="δ値を計算する。現局面が or_node なら dn, そうでないなら pn を返す。" alt="" coords="268,89,379,116"/>
-<area shape="rect" href="classkomori_1_1_delayed_move_list.html#a6bedc952934530f4c8a5f86fb62c3e7e" title="i_raw の直後に展開すべき手のインデックスを返す。" alt="" coords="229,141,417,182"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a122fd54c4b21ad3d1ce129cf1b2d6f3f" title="val をスタックに追加する" alt="" coords="237,206,409,247"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#a9510c937ce218cc0334a5434b555d270" title="δ値の一時変数 sum_delta_except_best_, max_delta_except_best_ を計算し直す" alt="" coords="235,271,411,313"/>
-<area shape="rect" href="classkomori_1_1_bit_set.html#a4d85204891b7f94b52e8e538325a9efd" title="i 番目のフラグを false に設定する。" alt="" coords="244,337,403,364"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#af775297809f84ea9b90f806b7b757463" title="末尾以外がソートされた状態のとき、末尾要素を適切な位置に挿入する" alt="" coords="235,389,411,430"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#a99c12378417149d76d98586832018ab1" title="先頭以外がソートされた状態のとき、先頭要素を適切な位置に挿入する" alt="" coords="235,454,411,495"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="474,56,661,83"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="475,5,659,32"/>
-<area shape="rect" href="namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="492,213,643,240"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5f9f4c0e10424bb96f652c18cfc6afc7" title="スタックの末尾（最も後に保存した要素）" alt="" coords="481,265,653,306"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5ee11c692c6bfa5698cffdbcfdd02929" title="イテレータの開始位置" alt="" coords="481,395,653,437"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a2c7ae503860768e494c2fc41ddeb9270" title="イテレータの終了位置" alt="" coords="465,461,669,488"/>
-<area shape="rect" href="classkomori_1_1_local_expansion.html#acdba010a0f3af21bbd55c7a6ffda1863" title="idx_ の比較器を生成する。" alt="" coords="479,513,655,554"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5e99daa3af91a53273900789df53aee8" title="スタックに保存されている要素数" alt="" coords="481,330,653,371"/>
-<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a205c2899942284ebafec8ceb0f0bc330" title="スタックの先頭（最も前に保存した要素）" alt="" coords="481,578,653,619"/>
+<area shape="rect" title="最善手の子の評価値を更新する" alt="" coords="5,339,181,380"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#a73ee987a5eafc4bd27c4af3d85278aea" title="δ値" alt="" coords="243,5,403,47"/>
+<area shape="rect" href="namespacekomori.html#a9b03d373bf7f539b7a9d8d0df9a61669" title="δ値を計算する。現局面が or_node なら dn, そうでないなら pn を返す。" alt="" coords="268,71,379,98"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#ae03260ca26fcff04cc38cd1fc6bd27c0" title="詰み／不詰の結論が出ているか" alt="" coords="243,123,403,164"/>
+<area shape="rect" href="classkomori_1_1_delayed_move_list.html#a6bedc952934530f4c8a5f86fb62c3e7e" title="i_raw の直後に展開すべき手のインデックスを返す。" alt="" coords="229,188,417,229"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#afc8abfab4851e59c5539e13964b6d4c5" title="φ値" alt="" coords="229,254,417,281"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a122fd54c4b21ad3d1ce129cf1b2d6f3f" title="val をスタックに追加する" alt="" coords="237,305,409,347"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#a9510c937ce218cc0334a5434b555d270" title="δ値の一時変数 sum_delta_except_best_, max_delta_except_best_ を計算し直す" alt="" coords="235,371,411,412"/>
+<area shape="rect" href="classkomori_1_1_bit_set.html#a4d85204891b7f94b52e8e538325a9efd" title="i 番目のフラグを false に設定する。" alt="" coords="244,437,403,463"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#af775297809f84ea9b90f806b7b757463" title="末尾以外がソートされた状態のとき、末尾要素を適切な位置に挿入する" alt="" coords="235,488,411,529"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#ab4a527e2cbb915cbeadd0002be0ab302" title="[0, excluded_moves_] の末尾以外がソートされた状態のとき、末尾要素を適切な位置に挿入する" alt="" coords="235,619,411,660"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#a99c12378417149d76d98586832018ab1" title="先頭以外がソートされた状態のとき、先頭要素を適切な位置に挿入する" alt="" coords="235,553,411,595"/>
+<area shape="rect" href="classkomori_1_1_move_picker.html#a94848cbebf11d7f272a8360cdfc5f1ff" title="現局面の合法手の個数を返す。" alt="" coords="248,684,399,725"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="474,155,661,182"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="475,105,659,131"/>
+<area shape="rect" href="namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="492,371,643,398"/>
+<area shape="rect" href="namespacekomori.html#ae2a1de257f1363b6f913c501fa5c43c1" title="Iterable の先頭 kSkip 要素をスキップする" alt="" coords="516,321,619,347"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5f9f4c0e10424bb96f652c18cfc6afc7" title="スタックの末尾（最も後に保存した要素）" alt="" coords="481,423,653,464"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5ee11c692c6bfa5698cffdbcfdd02929" title="イテレータの開始位置" alt="" coords="481,605,653,647"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a2c7ae503860768e494c2fc41ddeb9270" title="イテレータの終了位置" alt="" coords="465,554,669,581"/>
+<area shape="rect" href="classkomori_1_1_local_expansion.html#acdba010a0f3af21bbd55c7a6ffda1863" title="idx_ の比較器を生成する。" alt="" coords="479,671,655,712"/>
+<area shape="rect" href="classkomori_1_1_fixed_size_stack.html#a5e99daa3af91a53273900789df53aee8" title="スタックに保存されている要素数" alt="" coords="481,488,653,529"/>
 </map>
 </div>
 

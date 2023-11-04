@@ -1,9 +1,10 @@
 <map id="move_picker.hpp" name="move_picker.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="106,5,238,32"/>
-<area shape="rect" id="node2" href="$delayed__move__list_8hpp.html" title=" " alt="" coords="24,80,197,107"/>
-<area shape="rect" id="node3" href="$local__expansion_8hpp.html" title=" " alt="" coords="95,155,249,181"/>
-<area shape="rect" id="node4" href="$expansion__stack_8hpp.html" title=" " alt="" coords="93,229,251,256"/>
-<area shape="rect" id="node5" href="$komoring__heights_8hpp.html" title=" " alt="" coords="89,304,255,331"/>
-<area shape="rect" id="node6" href="$komoring__heights_8cpp_source.html" title=" " alt="" coords="5,379,171,405"/>
-<area shape="rect" id="node7" href="$user-search_8cpp_source.html" title=" " alt="" coords="195,379,320,405"/>
+<area shape="rect" id="node1" title=" " alt="" coords="150,5,282,32"/>
+<area shape="rect" id="node2" href="$delayed__move__list_8hpp.html" title=" " alt="" coords="5,80,179,107"/>
+<area shape="rect" id="node3" href="$local__expansion_8hpp.html" title=" " alt="" coords="35,155,189,181"/>
+<area shape="rect" id="node8" href="$multi__pv_8hpp_source.html" title=" " alt="" coords="213,155,320,181"/>
+<area shape="rect" id="node4" href="$expansion__stack_8hpp.html" title=" " alt="" coords="51,229,210,256"/>
+<area shape="rect" id="node5" href="$komoring__heights_8hpp.html" title=" " alt="" coords="106,304,273,331"/>
+<area shape="rect" id="node6" href="$komoring__heights_8cpp_source.html" title=" " alt="" coords="23,379,188,405"/>
+<area shape="rect" id="node7" href="$user-search_8cpp_source.html" title=" " alt="" coords="212,379,337,405"/>
 </map>

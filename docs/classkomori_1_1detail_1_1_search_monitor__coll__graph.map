@@ -1,6 +1,7 @@
 <map id="komori::detail::SearchMonitor" name="komori::detail::SearchMonitor">
-<area shape="rect" id="node1" title="探索局面数を観測して nps を計算したり探索中断の判断をしたりするクラス。" alt="" coords="745,47,960,74"/>
+<area shape="rect" id="node1" title="探索局面数を観測して nps を計算したり探索中断の判断をしたりするクラス。" alt="" coords="769,86,984,113"/>
 <area shape="rect" id="node2" href="$classkomori_1_1_circular_array.html" title=" " alt="" coords="425,5,623,47"/>
 <area shape="rect" id="node3" href="$classkomori_1_1_circular_array.html" title="長さ kSize 、型 T の循環配列。" alt="" coords="5,43,165,84"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_circular_array.html" title=" " alt="" coords="413,71,635,127"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_circular_array.html" title=" " alt="" coords="413,71,635,127"/>
+<area shape="rect" id="node4" href="$classkomori_1_1_periodic_alarm.html" title="一定間隔で通知するアラーム" alt="" coords="441,151,607,178"/>
 </map>

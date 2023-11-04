@@ -86,28 +86,22 @@ Collaboration diagram for komori::detail::SearchMonitor:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1detail_1_1_search_monitor__coll__graph.png" border="0" usemap="#akomori_1_1detail_1_1_search_monitor_coll__map" alt="Collaboration graph"/></div>
 <map name="akomori_1_1detail_1_1_search_monitor_coll__map" id="akomori_1_1detail_1_1_search_monitor_coll__map">
-<area shape="rect" title="探索局面数を観測して nps を計算したり探索中断の判断をしたりするクラス。" alt="" coords="745,47,960,74"/>
+<area shape="rect" title="探索局面数を観測して nps を計算したり探索中断の判断をしたりするクラス。" alt="" coords="769,86,984,113"/>
 <area shape="rect" href="classkomori_1_1_circular_array.html" title=" " alt="" coords="425,5,623,47"/>
 <area shape="rect" href="classkomori_1_1_circular_array.html" title="長さ kSize 、型 T の循環配列。" alt="" coords="5,43,165,84"/>
 <area shape="rect" href="classkomori_1_1_circular_array.html" title=" " alt="" coords="413,71,635,127"/>
+<area shape="rect" href="classkomori_1_1_periodic_alarm.html" title="一定間隔で通知するアラーム" alt="" coords="441,151,607,178"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5698f10ad45eda3404a3651b61854ca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a5698f10ad45eda3404a3651b61854ca5">SetThread</a> (Thread *thread)</td></tr>
-<tr class="memdesc:a5698f10ad45eda3404a3651b61854ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索スレッドを渡す（初期化時に1回だけ必要）  <a href="classkomori_1_1detail_1_1_search_monitor.html#a5698f10ad45eda3404a3651b61854ca5">More...</a><br /></td></tr>
-<tr class="separator:a5698f10ad45eda3404a3651b61854ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8c6ac2429ca88a1646bdc8ba072e5b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#af8c6ac2429ca88a1646bdc8ba072e5b2">NewSearch</a> (std::uint64_t hashfull_check_interval, std::uint64_t move_limit)</td></tr>
-<tr class="memdesc:af8c6ac2429ca88a1646bdc8ba072e5b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">変数を初期化して探索を開始する。  <a href="classkomori_1_1detail_1_1_search_monitor.html#af8c6ac2429ca88a1646bdc8ba072e5b2">More...</a><br /></td></tr>
-<tr class="separator:af8c6ac2429ca88a1646bdc8ba072e5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42fbccaf5229209706ebaf7b53445757"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a42fbccaf5229209706ebaf7b53445757">NewSearch</a> (std::uint64_t hashfull_check_interval, std::uint64_t pv_interval, std::uint64_t move_limit)</td></tr>
+<tr class="memdesc:a42fbccaf5229209706ebaf7b53445757"><td class="mdescLeft">&#160;</td><td class="mdescRight">変数を初期化して探索を開始する。  <a href="classkomori_1_1detail_1_1_search_monitor.html#a42fbccaf5229209706ebaf7b53445757">More...</a><br /></td></tr>
+<tr class="separator:a42fbccaf5229209706ebaf7b53445757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0272905cf2ad091e3cf9f25d2f727cf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a0272905cf2ad091e3cf9f25d2f727cf5">Visit</a> (Depth depth)</td></tr>
 <tr class="memdesc:a0272905cf2ad091e3cf9f25d2f727cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">深さ <code>depth</code> の局面に訪れたことを報告する  <a href="classkomori_1_1detail_1_1_search_monitor.html#a0272905cf2ad091e3cf9f25d2f727cf5">More...</a><br /></td></tr>
 <tr class="separator:a0272905cf2ad091e3cf9f25d2f727cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4df88051b4354971147ea25055e64f1"><td class="memItemLeft" align="right" valign="top"><a id="ab4df88051b4354971147ea25055e64f1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#ab4df88051b4354971147ea25055e64f1">Tick</a> ()</td></tr>
-<tr class="memdesc:ab4df88051b4354971147ea25055e64f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索局面数を観測する。nps を正しく計算するためには定期的に呼び出しが必要。 <br /></td></tr>
-<tr class="separator:ab4df88051b4354971147ea25055e64f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c89cae7c5c90289bf237ec54e775762"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkomori_1_1_usi_info.html">UsiInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a5c89cae7c5c90289bf237ec54e775762">GetInfo</a> () const</td></tr>
 <tr class="memdesc:a5c89cae7c5c90289bf237ec54e775762"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の探索情報を <code><a class="el" href="classkomori_1_1_usi_info.html" title="USIプロトコルに従い探索情報（info）を整形するクラス">UsiInfo</a></code> に詰めて返す。  <a href="classkomori_1_1detail_1_1_search_monitor.html#a5c89cae7c5c90289bf237ec54e775762">More...</a><br /></td></tr>
 <tr class="separator:a5c89cae7c5c90289bf237ec54e775762"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,37 +109,29 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#afc31d019620df41e7762e5bc9a1d0133">MoveCount</a> () const</td></tr>
 <tr class="memdesc:afc31d019620df41e7762e5bc9a1d0133"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の探索局面数 <br /></td></tr>
 <tr class="separator:afc31d019620df41e7762e5bc9a1d0133"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8732d41a7d1f887a7059a511c0f0574a"><td class="memItemLeft" align="right" valign="top"><a id="a8732d41a7d1f887a7059a511c0f0574a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a8732d41a7d1f887a7059a511c0f0574a">ShouldStop</a> () const</td></tr>
-<tr class="memdesc:a8732d41a7d1f887a7059a511c0f0574a"><td class="mdescLeft">&#160;</td><td class="mdescRight">今すぐ探索をやめるべきなら true <br /></td></tr>
-<tr class="separator:a8732d41a7d1f887a7059a511c0f0574a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a769465e6930f15973ab17ac204b1bfe8"><td class="memItemLeft" align="right" valign="top"><a id="a769465e6930f15973ab17ac204b1bfe8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a769465e6930f15973ab17ac204b1bfe8">ShouldCheckHashfull</a> () const</td></tr>
-<tr class="memdesc:a769465e6930f15973ab17ac204b1bfe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">今すぐ置換表使用率をチェックすべきなら true <br /></td></tr>
-<tr class="separator:a769465e6930f15973ab17ac204b1bfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae619feabaebffb942440742c6469553a"><td class="memItemLeft" align="right" valign="top"><a id="ae619feabaebffb942440742c6469553a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#ae619feabaebffb942440742c6469553a">ShouldCheckHashfull</a> ()</td></tr>
+<tr class="memdesc:ae619feabaebffb942440742c6469553a"><td class="mdescLeft">&#160;</td><td class="mdescRight">今すぐ置換表使用率をチェックすべきなら true <br /></td></tr>
+<tr class="separator:ae619feabaebffb942440742c6469553a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a738a1ed6f0aa22ce3d594c46f40c9c"><td class="memItemLeft" align="right" valign="top"><a id="a4a738a1ed6f0aa22ce3d594c46f40c9c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a4a738a1ed6f0aa22ce3d594c46f40c9c">ResetNextHashfullCheck</a> ()</td></tr>
 <tr class="memdesc:a4a738a1ed6f0aa22ce3d594c46f40c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">次回の置換表使用率チェックタイミングを更新する <br /></td></tr>
 <tr class="separator:a4a738a1ed6f0aa22ce3d594c46f40c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4198bca076beaa3ffc5ad980a6a8a60f"><td class="memItemLeft" align="right" valign="top"><a id="a4198bca076beaa3ffc5ad980a6a8a60f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a4198bca076beaa3ffc5ad980a6a8a60f">SetStop</a> (bool stop=true)</td></tr>
-<tr class="memdesc:a4198bca076beaa3ffc5ad980a6a8a60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">今すぐ探索をやめさせる <br /></td></tr>
-<tr class="separator:a4198bca076beaa3ffc5ad980a6a8a60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa297ff59027f5531cdfd0c71741136"><td class="memItemLeft" align="right" valign="top"><a id="a6fa297ff59027f5531cdfd0c71741136"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a6fa297ff59027f5531cdfd0c71741136">ShouldStop</a> (std::uint32_t thread_id)</td></tr>
+<tr class="memdesc:a6fa297ff59027f5531cdfd0c71741136"><td class="mdescLeft">&#160;</td><td class="mdescRight">今すぐ探索をやめるべきなら true <br /></td></tr>
+<tr class="separator:a6fa297ff59027f5531cdfd0c71741136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a363c6d8372b3ca7a12cdb59f73abed"><td class="memItemLeft" align="right" valign="top"><a id="a3a363c6d8372b3ca7a12cdb59f73abed"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a3a363c6d8372b3ca7a12cdb59f73abed">ShouldPrint</a> ()</td></tr>
+<tr class="memdesc:a3a363c6d8372b3ca7a12cdb59f73abed"><td class="mdescLeft">&#160;</td><td class="mdescRight">今すぐ評価値を出力すべきかどうか。定期的に呼び出す必要がある。 <br /></td></tr>
+<tr class="separator:a3a363c6d8372b3ca7a12cdb59f73abed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1f87860491fb903b0bb65b1b61056c9d"><td class="memItemLeft" align="right" valign="top"><a id="a1f87860491fb903b0bb65b1b61056c9d"></a>
-std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a1f87860491fb903b0bb65b1b61056c9d">stop_</a> {false}</td></tr>
-<tr class="memdesc:a1f87860491fb903b0bb65b1b61056c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索を今すぐ中止すべきなら true <br /></td></tr>
-<tr class="separator:a1f87860491fb903b0bb65b1b61056c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add3ea95c3e1d18281ecbb05a0b12737c"><td class="memItemLeft" align="right" valign="top"><a id="add3ea95c3e1d18281ecbb05a0b12737c"></a>
 std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#add3ea95c3e1d18281ecbb05a0b12737c">start_time_</a></td></tr>
 <tr class="memdesc:add3ea95c3e1d18281ecbb05a0b12737c"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索開始時刻 <br /></td></tr>
 <tr class="separator:add3ea95c3e1d18281ecbb05a0b12737c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55b7b0864e4ded3c55828f35a05ac475"><td class="memItemLeft" align="right" valign="top"><a id="a55b7b0864e4ded3c55828f35a05ac475"></a>
-Depth&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a55b7b0864e4ded3c55828f35a05ac475">max_depth_</a></td></tr>
-<tr class="memdesc:a55b7b0864e4ded3c55828f35a05ac475"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大探索深さ <br /></td></tr>
-<tr class="separator:a55b7b0864e4ded3c55828f35a05ac475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a412de4e84586831c3a1c69b8ec7b6c18"><td class="memItemLeft" align="right" valign="top"><a id="a412de4e84586831c3a1c69b8ec7b6c18"></a>
 <a class="el" href="classkomori_1_1_circular_array.html">CircularArray</a>&lt; std::chrono::system_clock::time_point, <a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a8ea05ee06191134b16f4a4cac26716aa">kHistLen</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a412de4e84586831c3a1c69b8ec7b6c18">tp_hist_</a></td></tr>
 <tr class="memdesc:a412de4e84586831c3a1c69b8ec7b6c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">mc_hist_ を観測した時刻 <br /></td></tr>
@@ -162,18 +148,38 @@ std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a9dfdbf9fa5b6e6b86862aed82548d88c">move_limit_</a></td></tr>
 <tr class="memdesc:a9dfdbf9fa5b6e6b86862aed82548d88c"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索局面数の上限 <br /></td></tr>
 <tr class="separator:a9dfdbf9fa5b6e6b86862aed82548d88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0745cc1bf984e76029f1726d85117742"><td class="memItemLeft" align="right" valign="top"><a id="a0745cc1bf984e76029f1726d85117742"></a>
+TimePoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a0745cc1bf984e76029f1726d85117742">time_limit_</a></td></tr>
+<tr class="memdesc:a0745cc1bf984e76029f1726d85117742"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索の時間制限[ms] <br /></td></tr>
+<tr class="separator:a0745cc1bf984e76029f1726d85117742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e38c06c9834aa0802a14542ae58b9f4"><td class="memItemLeft" align="right" valign="top"><a id="a2e38c06c9834aa0802a14542ae58b9f4"></a>
 std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a2e38c06c9834aa0802a14542ae58b9f4">hashfull_check_interval_</a></td></tr>
 <tr class="memdesc:a2e38c06c9834aa0802a14542ae58b9f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">置換表使用率をチェックする周期[探索局面数] <br /></td></tr>
 <tr class="separator:a2e38c06c9834aa0802a14542ae58b9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad038ab660938ecc27df9f1f76eee6eb2"><td class="memItemLeft" align="right" valign="top"><a id="ad038ab660938ecc27df9f1f76eee6eb2"></a>
+std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#ad038ab660938ecc27df9f1f76eee6eb2">hashfull_check_skip_</a></td></tr>
+<tr class="memdesc:ad038ab660938ecc27df9f1f76eee6eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">next_hashfull_check_ のチェックをスキップする回数 <br /></td></tr>
+<tr class="separator:ad038ab660938ecc27df9f1f76eee6eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade0432fc7ab92c9b1d37b84e7d73582c"><td class="memItemLeft" align="right" valign="top"><a id="ade0432fc7ab92c9b1d37b84e7d73582c"></a>
 std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#ade0432fc7ab92c9b1d37b84e7d73582c">next_hashfull_check_</a></td></tr>
 <tr class="memdesc:ade0432fc7ab92c9b1d37b84e7d73582c"><td class="mdescLeft">&#160;</td><td class="mdescRight">次に置換表使用率をチェックするタイミング[探索局面数] <br /></td></tr>
 <tr class="separator:ade0432fc7ab92c9b1d37b84e7d73582c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2333931d98106357d95a68824a0cb567"><td class="memItemLeft" align="right" valign="top"><a id="a2333931d98106357d95a68824a0cb567"></a>
-Thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a2333931d98106357d95a68824a0cb567">thread_</a> {nullptr}</td></tr>
-<tr class="memdesc:a2333931d98106357d95a68824a0cb567"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索に用いるスレッド。探索局面数の取得に用いる。 <br /></td></tr>
-<tr class="separator:a2333931d98106357d95a68824a0cb567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a19f75eac671babae8df4eed678ed9"><td class="memItemLeft" align="right" valign="top"><a id="af9a19f75eac671babae8df4eed678ed9"></a>
+<a class="el" href="classkomori_1_1_periodic_alarm.html">PeriodicAlarm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#af9a19f75eac671babae8df4eed678ed9">print_alarm_</a></td></tr>
+<tr class="memdesc:af9a19f75eac671babae8df4eed678ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">PV出力用のタイマー <br /></td></tr>
+<tr class="separator:af9a19f75eac671babae8df4eed678ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d98e92803dcf4ddf60f6767f55ac71e"><td class="memItemLeft" align="right" valign="top"><a id="a4d98e92803dcf4ddf60f6767f55ac71e"></a>
+<a class="el" href="classkomori_1_1_periodic_alarm.html">PeriodicAlarm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a4d98e92803dcf4ddf60f6767f55ac71e">stop_check_</a></td></tr>
+<tr class="memdesc:a4d98e92803dcf4ddf60f6767f55ac71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索停止判断用のタイマー <br /></td></tr>
+<tr class="separator:a4d98e92803dcf4ddf60f6767f55ac71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f04cbf0ff66c32288d2449fd6747ea"><td class="memItemLeft" align="right" valign="top"><a id="a83f04cbf0ff66c32288d2449fd6747ea"></a>
+std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a83f04cbf0ff66c32288d2449fd6747ea">stop_</a></td></tr>
+<tr class="memdesc:a83f04cbf0ff66c32288d2449fd6747ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索中止状態かどうか <br /></td></tr>
+<tr class="separator:a83f04cbf0ff66c32288d2449fd6747ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa83d3575af7f110d1fdefce2c30feb"><td class="memItemLeft" align="right" valign="top"><a id="a9aa83d3575af7f110d1fdefce2c30feb"></a>
+std::atomic&lt; Depth &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html#a9aa83d3575af7f110d1fdefce2c30feb">max_depth_</a></td></tr>
+<tr class="memdesc:a9aa83d3575af7f110d1fdefce2c30feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大探索深さ <br /></td></tr>
+<tr class="separator:a9aa83d3575af7f110d1fdefce2c30feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -185,7 +191,7 @@ static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>探索局面数を観測して nps を計算したり探索中断の判断をしたりするクラス。 </p>
 
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8hpp_source.html#l00026">26</a> of file <a class="el" href="komoring__heights_8hpp_source.html">komoring_heights.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="komoring__heights_8hpp_source.html#l00028">28</a> of file <a class="el" href="komoring__heights_8hpp_source.html">komoring_heights.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5c89cae7c5c90289bf237ec54e775762"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c89cae7c5c90289bf237ec54e775762">&#9670;&nbsp;</a></span>GetInfo()</h2>
@@ -205,7 +211,7 @@ static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom">
 <p>現在の探索情報を <code><a class="el" href="classkomori_1_1_usi_info.html" title="USIプロトコルに従い探索情報（info）を整形するクラス">UsiInfo</a></code> に詰めて返す。 </p>
 <dl class="section return"><dt>Returns</dt><dd>現在の探索情報 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00073">73</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00095">95</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -213,15 +219,14 @@ Here is the call graph for this function:</div>
 <map name="aclasskomori_1_1detail_1_1_search_monitor_a5c89cae7c5c90289bf237ec54e775762_cgraph" id="aclasskomori_1_1detail_1_1_search_monitor_a5c89cae7c5c90289bf237ec54e775762_cgraph">
 <area shape="rect" title="現在の探索情報を UsiInfo に詰めて返す。" alt="" coords="5,35,220,76"/>
 <area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#afc31d019620df41e7762e5bc9a1d0133" title="現在の探索局面数" alt="" coords="268,5,483,47"/>
-<area shape="rect" href="classkomori_1_1_usi_info.html#a0168968e66135ba7225030c489243e57" title="key に val を設定する。" alt="" coords="300,71,451,98"/>
-<area shape="rect" href="classkomori_1_1_usi_info.html#ac6b39b3ffe4360857101ab18c44ffffe" title="設定済のオプションの中に key が含まれているかどうか判定する。" alt="" coords="531,71,685,98"/>
+<area shape="rect" href="classkomori_1_1_usi_info.html#abc0d87a921059d9c1a503e390eb2f0e3" title="key に val を設定する。" alt="" coords="300,71,451,98"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af8c6ac2429ca88a1646bdc8ba072e5b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8c6ac2429ca88a1646bdc8ba072e5b2">&#9670;&nbsp;</a></span>NewSearch()</h2>
+<a id="a42fbccaf5229209706ebaf7b53445757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42fbccaf5229209706ebaf7b53445757">&#9670;&nbsp;</a></span>NewSearch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -231,6 +236,12 @@ Here is the call graph for this function:</div>
           <td>(</td>
           <td class="paramtype">std::uint64_t&#160;</td>
           <td class="paramname"><em>hashfull_check_interval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint64_t&#160;</td>
+          <td class="paramname"><em>pv_interval</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -254,54 +265,20 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00052">52</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="komoring__heights_8cpp_source.html#l00068">68</a> of file <a class="el" href="komoring__heights_8cpp_source.html">komoring_heights.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1detail_1_1_search_monitor_af8c6ac2429ca88a1646bdc8ba072e5b2_cgraph.png" border="0" usemap="#aclasskomori_1_1detail_1_1_search_monitor_af8c6ac2429ca88a1646bdc8ba072e5b2_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1detail_1_1_search_monitor_af8c6ac2429ca88a1646bdc8ba072e5b2_cgraph" id="aclasskomori_1_1detail_1_1_search_monitor_af8c6ac2429ca88a1646bdc8ba072e5b2_cgraph">
-<area shape="rect" title="変数を初期化して探索を開始する。" alt="" coords="5,39,220,80"/>
+<div class="center"><img src="classkomori_1_1detail_1_1_search_monitor_a42fbccaf5229209706ebaf7b53445757_cgraph.png" border="0" usemap="#aclasskomori_1_1detail_1_1_search_monitor_a42fbccaf5229209706ebaf7b53445757_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1detail_1_1_search_monitor_a42fbccaf5229209706ebaf7b53445757_cgraph" id="aclasskomori_1_1detail_1_1_search_monitor_a42fbccaf5229209706ebaf7b53445757_cgraph">
+<area shape="rect" title="変数を初期化して探索を開始する。" alt="" coords="5,71,220,112"/>
 <area shape="rect" href="classkomori_1_1_circular_array.html#aa62e891f09071eefff29a06498526414" title="全要素をデフォルトコンストラクタで初期化する。" alt="" coords="295,5,455,47"/>
 <area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#a4a738a1ed6f0aa22ce3d594c46f40c9c" title="次回の置換表使用率チェックタイミングを更新する" alt="" coords="268,71,483,112"/>
+<area shape="rect" href="classkomori_1_1_periodic_alarm.html#a00712a5675d75fd64c14a73a13a82538" title="周期タイマーを開始する" alt="" coords="292,136,459,177"/>
 <area shape="rect" href="classkomori_1_1detail_1_1_search_monitor.html#afc31d019620df41e7762e5bc9a1d0133" title="現在の探索局面数" alt="" coords="531,71,745,112"/>
+<area shape="rect" href="classkomori_1_1_periodic_alarm.html#a021fd50396141ea07f6fd8341c1e7693" title="Time Point をミリ秒で取得する" alt="" coords="537,143,739,170"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="a5698f10ad45eda3404a3651b61854ca5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5698f10ad45eda3404a3651b61854ca5">&#9670;&nbsp;</a></span>SetThread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void komori::detail::SearchMonitor::SetThread </td>
-          <td>(</td>
-          <td class="paramtype">Thread *&#160;</td>
-          <td class="paramname"><em>thread</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>探索スレッドを渡す（初期化時に1回だけ必要） </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">thread</td><td>探索に用いるスレッド </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8hpp_source.html#l00032">32</a> of file <a class="el" href="komoring__heights_8hpp_source.html">komoring_heights.hpp</a>.</p>
 
 </div>
 </div>
@@ -337,7 +314,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="komoring__heights_8hpp_source.html#l00043">43</a> of file <a class="el" href="komoring__heights_8hpp_source.html">komoring_heights.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="komoring__heights_8hpp_source.html#l00040">40</a> of file <a class="el" href="komoring__heights_8hpp_source.html">komoring_heights.hpp</a>.</p>
 
 </div>
 </div>

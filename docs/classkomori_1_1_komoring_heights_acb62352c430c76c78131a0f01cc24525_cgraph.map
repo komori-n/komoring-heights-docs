@@ -1,0 +1,12 @@
+<map id="komori::KomoringHeights::Init" name="komori::KomoringHeights::Init">
+<area shape="rect" id="node1" title="エンジンを初期化する" alt="" coords="5,108,192,149"/>
+<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a38165a8d6b382f5b9454f51c717c90cd" title="バイナリ入力ストリーム in から置換表エントリを読み込む。" alt="" coords="240,71,459,112"/>
+<area shape="rect" id="node6" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a315463f0ac29c325849d661a15cdc167" title="置換表サイズを hash_size_mb に変更し、書かれていた内容をすべて消去する。" alt="" coords="260,137,439,193"/>
+<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_regular_table.html#a58fb5620ad6be47be76f6b33626ba643" title="バイナリ入力ストリーム in から置換表エントリを読み込む。" alt="" coords="515,71,693,112"/>
+<area shape="rect" id="node4" href="$classkomori_1_1tt_1_1_entry.html#a1d3881f8878d1682512df5cec19df4c9" title="盤面ハッシュ値（コンパクション用）" alt="" coords="779,5,914,47"/>
+<area shape="rect" id="node5" href="$classkomori_1_1tt_1_1_regular_table.html#aa6ac86c8e1152cbe7a18e8d81a55fcef" title="board_key に対応する循環領域へのポインタを取得する" alt="" coords="758,71,935,112"/>
+<area shape="rect" id="node7" href="$classkomori_1_1tt_1_1_repetition_table.html#a3d0ab73a60dfafe31459ccf8423ca3d7" title="置換表サイズを table_size へ変更する。" alt="" coords="507,136,701,177"/>
+<area shape="rect" id="node9" href="$classkomori_1_1tt_1_1_regular_table.html#a25ac332dc05bf44ac45e1e3aecd0a0c7" title="要素数が num_entries 個になるようにメモリの確保・解放を行う" alt="" coords="515,201,693,243"/>
+<area shape="rect" id="node8" href="$classkomori_1_1tt_1_1_repetition_table.html#a1cf06ccf4ee8c44a6f965ec43f21185a" title="置換表に保存された経路ハッシュ値をすべて削除する。" alt="" coords="749,136,944,177"/>
+<area shape="rect" id="node10" href="$classkomori_1_1tt_1_1_regular_table.html#a0fb34e7a1f84b14f29e014f9bb8b41f6" title="以前の探索結果をすべて消去する。" alt="" coords="758,201,935,243"/>
+</map>

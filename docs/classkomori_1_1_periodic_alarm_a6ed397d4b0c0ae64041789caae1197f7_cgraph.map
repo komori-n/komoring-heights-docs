@@ -1,0 +1,4 @@
+<map id="komori::PeriodicAlarm::Tick" name="komori::PeriodicAlarm::Tick">
+<area shape="rect" id="node1" title="現在時刻を確認し、前回の true を返してから interval_ms_ が経過していれば true を返す" alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_periodic_alarm.html#a021fd50396141ea07f6fd8341c1e7693" title="Time Point をミリ秒で取得する" alt="" coords="220,13,423,39"/>
+</map>

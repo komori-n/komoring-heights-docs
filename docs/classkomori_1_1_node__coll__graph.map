@@ -1,6 +1,7 @@
 <map id="komori::Node" name="komori::Node">
-<area shape="rect" id="node1" title="Position をラップして詰将棋特有の判定を追加するクラス。" alt="" coords="147,213,256,240"/>
-<area shape="rect" id="node2" href="$classkomori_1_1_fixed_size_stack.html" title=" " alt="" coords="5,109,200,151"/>
-<area shape="rect" id="node3" href="$classkomori_1_1_fixed_size_stack.html" title="サイズ固定のスタック。" alt="" coords="17,5,189,47"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_visit_history.html" title="探索履歴を管理し、千日手や優等局面の判定を行うクラス。" alt="" coords="225,117,375,143"/>
+<area shape="rect" id="node1" title="Position をラップして詰将棋特有の判定を追加するクラス。" alt="" coords="737,78,847,105"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_fixed_size_stack.html" title=" " alt="" coords="403,5,597,47"/>
+<area shape="rect" id="node3" href="$classkomori_1_1_fixed_size_stack.html" title="サイズ固定のスタック。" alt="" coords="5,39,177,80"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_fixed_size_stack.html" title=" " alt="" coords="414,71,586,112"/>
+<area shape="rect" id="node4" href="$classkomori_1_1_visit_history.html" title="探索履歴を管理し、千日手や優等局面の判定を行うクラス。" alt="" coords="425,137,575,163"/>
 </map>

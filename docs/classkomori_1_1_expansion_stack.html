@@ -123,6 +123,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 const <a class="el" href="classkomori_1_1_local_expansion.html">LocalExpansion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_expansion_stack.html#af2c0120a43fa31fcea8c1949202678e3">Current</a> () const</td></tr>
 <tr class="memdesc:af2c0120a43fa31fcea8c1949202678e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">スタック先頭要素を返す。 <br /></td></tr>
 <tr class="separator:af2c0120a43fa31fcea8c1949202678e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac285c463ae42afdd46286c361b983382"><td class="memItemLeft" align="right" valign="top"><a id="ac285c463ae42afdd46286c361b983382"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_expansion_stack.html#ac285c463ae42afdd46286c361b983382">IsEmpty</a> () const</td></tr>
+<tr class="memdesc:ac285c463ae42afdd46286c361b983382"><td class="mdescLeft">&#160;</td><td class="mdescRight">スタックが空かどうか判定する <br /></td></tr>
+<tr class="separator:ac285c463ae42afdd46286c361b983382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5771215bcc747c0793ca7d7c836dffdf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classkomori_1_1_local_expansion.html">LocalExpansion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_expansion_stack.html#a5771215bcc747c0793ca7d7c836dffdf">Root</a> () const</td></tr>
+<tr class="memdesc:a5771215bcc747c0793ca7d7c836dffdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">スタックの最も古い要素を返す  <a href="classkomori_1_1_expansion_stack.html#a5771215bcc747c0793ca7d7c836dffdf">More...</a><br /></td></tr>
+<tr class="separator:a5771215bcc747c0793ca7d7c836dffdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1bb984f52e71df980b5a105b41f71f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_expansion_stack.html#ad1bb984f52e71df980b5a105b41f71f2">EliminateDoubleCount</a> (<a class="el" href="namespacekomori_1_1tt.html#ab367c034eba59afd3939578f638b0ffb">tt::TranspositionTable</a> &amp;tt, const <a class="el" href="classkomori_1_1_node.html">Node</a> &amp;n)</td></tr>
 <tr class="memdesc:ad1bb984f52e71df980b5a105b41f71f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面が終点となるの二重カウント解消を試みる  <a href="classkomori_1_1_expansion_stack.html#ad1bb984f52e71df980b5a105b41f71f2">More...</a><br /></td></tr>
 <tr class="separator:ad1bb984f52e71df980b5a105b41f71f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,7 +189,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="expansion__stack_8hpp_source.html#l00061">61</a> of file <a class="el" href="expansion__stack_8hpp_source.html">expansion_stack.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expansion__stack_8hpp_source.html#l00070">70</a> of file <a class="el" href="expansion__stack_8hpp_source.html">expansion_stack.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -197,7 +204,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classkomori_1_1_node.html#a518389ecf55b16ebf8f41dcb8c5ff731" title="(board_key, hand) が経路に含まれているかどうか" alt="" coords="744,275,959,301"/>
 <area shape="rect" href="classkomori_1_1_node.html#a1e4f1da48b69fb3356543b7cf37aab12" title="盤面ハッシュ値と攻め方の持ち駒を同時に取得する" alt="" coords="750,209,953,250"/>
 <area shape="rect" href="classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="500,397,679,424"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_query.html#ab73f7666d785f8b6cf94d64579260c22" title="置換表に保存された現局面の親局面を取得する" alt="" coords="520,449,659,490"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_query.html#ae11cf79d33310475e709b3001a39ee63" title="置換表に保存された現局面の親局面を取得する" alt="" coords="520,449,659,490"/>
 <area shape="rect" href="classkomori_1_1_node.html#ab47757b0ecd5c40af2b2246a17477a13" title="move 後の盤面ハッシュ値" alt="" coords="1233,5,1444,32"/>
 <area shape="rect" href="classkomori_1_1_node.html#ac82d1552c36647cc88e62b104b77595d" title="move 後の攻め方の持ち駒" alt="" coords="753,107,950,133"/>
 <area shape="rect" href="classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1492,157,1632,184"/>
@@ -209,7 +216,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classkomori_1_1_visit_history.html#a5b2e24143732a4396cc526be6aac0196" title="(board_key, hand) の同一局面が履歴に記録されているか調べる。" alt="" coords="1021,310,1171,351"/>
 <area shape="rect" href="classkomori_1_1_visit_history.html#a62769876f5547de5b474300c666cea8a" title="index の次のインデックスを求める" alt="" coords="1263,310,1414,351"/>
 <area shape="rect" href="classkomori_1_1_visit_history.html#ab3ed82ca4c526f4f34c90c9277ba7d5b" title="board_key に対する探索開始インデックスを求める" alt="" coords="1263,375,1414,417"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#abf1c99385fe87cabfa3063c03470240d" title="エントリが未使用状態かを判定する" alt="" coords="784,449,919,490"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#af1969c3d079ea4a462df415e5ce4ec1b" title="エントリが未使用状態かを判定する。この関数に限っては共有ロックを取得せずに使用することができる。" alt="" coords="784,449,919,490"/>
 </map>
 </div>
 
@@ -261,6 +268,37 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
+<a id="a5771215bcc747c0793ca7d7c836dffdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5771215bcc747c0793ca7d7c836dffdf">&#9670;&nbsp;</a></span>Root()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classkomori_1_1_local_expansion.html">LocalExpansion</a>&amp; komori::ExpansionStack::Root </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スタックの最も古い要素を返す </p>
+<dl class="section return"><dt>Returns</dt><dd>スタックの最も古い要素 </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><code>!IsEmpty()</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="expansion__stack_8hpp_source.html#l00063">63</a> of file <a class="el" href="expansion__stack_8hpp_source.html">expansion_stack.hpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a95863003439824f9354888e53293a0ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95863003439824f9354888e53293a0ad">&#9670;&nbsp;</a></span>list_</h2>
@@ -285,7 +323,7 @@ template&lt;typename... Args&gt; </div>
 <p>格納データの本体。 </p>
 <dl class="section note"><dt>Note</dt><dd><code>std::vector</code> のほうが若干高速に動作すると思われるが、 <code><a class="el" href="classkomori_1_1_local_expansion.html" title="局面の局所展開結果を保持する。">LocalExpansion</a></code> のような move 不可オブジェクトには用いることができない。 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="expansion__stack_8hpp_source.html#l00089">89</a> of file <a class="el" href="expansion__stack_8hpp_source.html">expansion_stack.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expansion__stack_8hpp_source.html#l00098">98</a> of file <a class="el" href="expansion__stack_8hpp_source.html">expansion_stack.hpp</a>.</p>
 
 </div>
 </div>

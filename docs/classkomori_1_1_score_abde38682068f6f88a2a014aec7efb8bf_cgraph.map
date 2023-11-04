@@ -1,4 +1,9 @@
 <map id="komori::Score::Make" name="komori::Score::Make">
-<area shape="rect" id="node1" title="Score オブジェクトを構築する。" alt="" coords="5,5,160,32"/>
-<area shape="rect" id="node2" href="$classkomori_1_1_score.html#a992a9272df730122ff52335e7ef339d1" title="デフォルトコンストラクタ" alt="" coords="208,5,363,32"/>
+<area shape="rect" id="node1" title="Score オブジェクトを構築する。" alt="" coords="5,144,160,171"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_score.html#a992a9272df730122ff52335e7ef339d1" title="デフォルトコンストラクタ" alt="" coords="249,5,403,32"/>
+<area shape="rect" id="node3" href="$classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="492,88,679,115"/>
+<area shape="rect" id="node4" href="$classkomori_1_1_search_result.html#ae03260ca26fcff04cc38cd1fc6bd27c0" title="詰み／不詰の結論が出ているか" alt="" coords="246,107,406,149"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="493,143,677,169"/>
+<area shape="rect" id="node6" href="$classkomori_1_1_search_result.html#af353f0cfab41b586a7c994d2507ca699" title="探索時の残り手数" alt="" coords="231,224,421,251"/>
+<area shape="rect" id="node7" href="$classkomori_1_1detail_1_1_mate_len_impl.html#ab53b046400e9408fdc8c744f56e09e27" title="詰み手数を返す" alt="" coords="208,275,444,301"/>
 </map>

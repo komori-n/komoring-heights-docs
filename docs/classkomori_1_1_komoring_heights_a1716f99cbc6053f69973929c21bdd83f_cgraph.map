@@ -1,0 +1,10 @@
+<map id="komori::KomoringHeights::CurrentInfo" name="komori::KomoringHeights::CurrentInfo">
+<area shape="rect" id="node1" title="現在の探索情報を取得する" alt="" coords="5,97,192,139"/>
+<area shape="rect" id="node2" href="$classkomori_1_1detail_1_1_search_monitor.html#a5c89cae7c5c90289bf237ec54e775762" title="現在の探索情報を UsiInfo に詰めて返す。" alt="" coords="240,5,455,47"/>
+<area shape="rect" id="node4" href="$classkomori_1_1_usi_info.html#abc0d87a921059d9c1a503e390eb2f0e3" title="key に val を設定する。" alt="" coords="535,71,685,98"/>
+<area shape="rect" id="node5" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a4179ad57f2d4a73ece89f9c380a7751a" title="置換表使用率（千分率）を計算する" alt="" coords="258,122,437,178"/>
+<area shape="rect" id="node8" href="$classkomori_1_1_score.html#a8d4d0c6ccf9d41846b8ebe16be1f7faa" title="現在の評価値を USI 文字列で返す" alt="" coords="262,202,433,229"/>
+<area shape="rect" id="node3" href="$classkomori_1_1detail_1_1_search_monitor.html#afc31d019620df41e7762e5bc9a1d0133" title="現在の探索局面数" alt="" coords="503,5,717,47"/>
+<area shape="rect" id="node6" href="$classkomori_1_1tt_1_1_regular_table.html#a9d2dd0f37b92f3af3f34b3b412a5c8a8" title="通常テーブルのメモリ使用率を見積もる。" alt="" coords="521,125,699,167"/>
+<area shape="rect" id="node7" href="$classkomori_1_1tt_1_1_repetition_table.html#a164c681a2c3ac0b306e8807d2d6014cd" title="置換表のメモリ使用率を求める。" alt="" coords="513,191,707,232"/>
+</map>

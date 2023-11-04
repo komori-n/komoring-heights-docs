@@ -1,0 +1,4 @@
+<map id="komori::tt::Entry::unlock" name="komori::tt::Entry::unlock">
+<area shape="rect" id="node1" title="エントリの排他ロックを解除する" alt="" coords="5,5,140,47"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_shared_exclusive_lock.html#a678bfb5327fe28da25a448d1a5f687ae" title="排他ロックを解放する" alt="" coords="188,5,400,47"/>
+</map>

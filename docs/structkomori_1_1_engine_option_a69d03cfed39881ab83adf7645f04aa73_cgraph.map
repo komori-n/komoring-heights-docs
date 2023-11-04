@@ -1,5 +1,5 @@
 <map id="komori::EngineOption::Reload" name="komori::EngineOption::Reload">
 <area shape="rect" id="node1" title="エンジンオプションをメンバ変数に読み込む" alt="" coords="5,35,168,76"/>
-<area shape="rect" id="node2" href="$namespacekomori_1_1detail.html#ac7ae04be0fb97c14e7dabbe5137292b7" title="val が0以下なら 2^64&#45;1 を返す。" alt="" coords="223,5,405,47"/>
+<area shape="rect" id="node2" href="$namespacekomori_1_1detail.html#a7b2c92e509802b03a01e4d018c22d8ea" title="val が0以下なら 2^64&#45;1 を返す。" alt="" coords="223,5,405,47"/>
 <area shape="rect" id="node3" href="$namespacekomori_1_1detail.html#a7a1ee47b3617f7a51661ec137724e0fb" title="オプション o から name の値を読み込む" alt="" coords="216,71,412,98"/>
 </map>

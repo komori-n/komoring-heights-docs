@@ -1,12 +1,14 @@
 <map id="komori::tt::Query::SetRepetition" name="komori::tt::Query::SetRepetition">
-<area shape="rect" id="node1" title=" " alt="" coords="5,123,144,164"/>
-<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="220,57,359,99"/>
-<area shape="rect" id="node6" href="$classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="209,123,369,164"/>
-<area shape="rect" id="node7" href="$classkomori_1_1tt_1_1_repetition_table.html#a2f9650cc7179964dbacc3df5165cb659" title="経路ハッシュ値 path_key に千日手判定開始深さ depth を設定する" alt="" coords="192,188,387,229"/>
-<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_entry.html#a0d7c96a919f3c80ecf16ced9553d4180" title="エントリの初期化を行う" alt="" coords="455,13,609,39"/>
-<area shape="rect" id="node5" href="$classkomori_1_1tt_1_1_entry.html#acccbfa45c2b0e66e0c32bce4473c8723" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="465,64,599,105"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="700,5,849,47"/>
-<area shape="rect" id="node8" href="$classkomori_1_1tt_1_1_repetition_table.html#ad14e640283025eb47eb9ee518adc0b51" title="ガベージコレクションを行う" alt="" coords="435,188,629,229"/>
-<area shape="rect" id="node9" href="$classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="677,155,872,196"/>
-<area shape="rect" id="node10" href="$classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対する探索開始インデックスを求める。" alt="" coords="677,233,872,275"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,141,144,183"/>
+<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="220,71,359,112"/>
+<area shape="rect" id="node8" href="$classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="209,141,369,183"/>
+<area shape="rect" id="node9" href="$classkomori_1_1tt_1_1_repetition_table.html#a2f9650cc7179964dbacc3df5165cb659" title="経路ハッシュ値 path_key に千日手判定開始深さ depth を設定する" alt="" coords="192,217,387,259"/>
+<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_entry.html#ac259de04e6dad6e3c3223570d8337d26" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="465,5,599,47"/>
+<area shape="rect" id="node4" href="$classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78" title="エントリの排他ロックを取る" alt="" coords="451,71,613,98"/>
+<area shape="rect" id="node6" href="$classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1" title="エントリの排他ロックを解除する" alt="" coords="465,123,599,164"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_shared_exclusive_lock.html#a29f2f8973d3016bbc68ba9c69d07d0e7" title="排他ロックを取得する" alt="" coords="677,61,889,103"/>
+<area shape="rect" id="node7" href="$classkomori_1_1_shared_exclusive_lock.html#a678bfb5327fe28da25a448d1a5f687ae" title="排他ロックを解放する" alt="" coords="677,127,889,168"/>
+<area shape="rect" id="node10" href="$classkomori_1_1tt_1_1_repetition_table.html#ad14e640283025eb47eb9ee518adc0b51" title="ガベージコレクションを行う" alt="" coords="435,240,629,281"/>
+<area shape="rect" id="node11" href="$classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="686,201,881,243"/>
+<area shape="rect" id="node12" href="$classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対する探索開始インデックスを求める。" alt="" coords="686,285,881,327"/>
 </map>

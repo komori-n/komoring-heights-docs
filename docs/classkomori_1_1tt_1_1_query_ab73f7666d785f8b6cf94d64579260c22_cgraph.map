@@ -1,4 +1,0 @@
-<map id="komori::tt::Query::LookUpParent" name="komori::tt::Query::LookUpParent">
-<area shape="rect" id="node1" title="置換表に保存された現局面の親局面を取得する" alt="" coords="5,5,144,47"/>
-<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_entry.html#abf1c99385fe87cabfa3063c03470240d" title="エントリが未使用状態かを判定する" alt="" coords="192,5,327,47"/>
-</map>
