@@ -280,55 +280,58 @@ $(function() {
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                                                                std::is_nothrow_copy_assignable_v&lt;Iterator2&gt;)</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        : itr1_{itr1}, itr2_{itr2} {}</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    constexpr <span class="keyword">auto</span> operator*() noexcept(noexcept(*itr1_, *itr2_)) { <span class="keywordflow">return</span> std::make_pair(*itr1_, *itr2_); }</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    constexpr <a class="code" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator</a>&amp; operator++() noexcept(noexcept(itr1_++, itr2_++)) {</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      itr1_++;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      itr2_++;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> LI1, <span class="keyword">typename</span> LI2, <span class="keyword">typename</span> RI1, <span class="keyword">typename</span> RI2&gt;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keyword">friend</span> constexpr <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator&lt;LI1, LI2&gt;</a>&amp; lhs,</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                                     <span class="keyword">const</span> <a class="code" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator&lt;RI1, RI2&gt;</a>&amp; rhs) noexcept(noexcept(lhs.itr1_ == rhs.itr1_ ||</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                                                                                      lhs.itr2_ == rhs.itr2_)) {</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      <span class="keywordflow">return</span> lhs.itr1_ != rhs.itr1_ &amp;&amp; lhs.itr2_ != rhs.itr2_;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    }</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;   <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    Iterator1 itr1_;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    Iterator2 itr2_;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  };</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  constexpr <a class="code" href="classkomori_1_1detail_1_1_zip_impl.html">ZipImpl</a>(Range1 range1, Range2 range2) noexcept(</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      std::is_nothrow_constructible_v&lt;Range1, decltype(std::forward&lt;Range1&gt;(range1))&gt; &amp;&amp;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;      std::is_nothrow_constructible_v&lt;Range2, decltype(std::forward&lt;Range2&gt;(range2))&gt;)</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      : range1_{std::forward&lt;Range1&gt;(range1)}, range2_{std::forward&lt;Range2&gt;(range2)} {}</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  constexpr <span class="keyword">auto</span> begin() const noexcept(noexcept(<a class="code" href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">call_begin</a>(range1_), <a class="code" href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">call_begin</a>(range2_))) {</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keywordflow">return</span> Iterator&lt;decltype(call_begin(range1_)), decltype(call_begin(range2_))&gt;(<a class="code" href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">call_begin</a>(range1_),</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                                                                                  <a class="code" href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">call_begin</a>(range2_));</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  }</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  constexpr <span class="keyword">auto</span> end() const noexcept(noexcept(<a class="code" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a>(range1_), <a class="code" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a>(range2_))) {</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keywordflow">return</span> Iterator&lt;decltype(call_end(range1_)), decltype(call_end(range2_))&gt;(<a class="code" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a>(range1_), <a class="code" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a>(range2_));</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  }</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  Range1 range1_;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  Range2 range2_;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;};</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;}  <span class="comment">// namespace detail</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Range1, <span class="keyword">typename</span> Range2&gt;</div>
-<div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="namespacekomori.html#a3abf9ca26f7022f402cd774514ce16a5">  398</a></span>&#160;constexpr <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="namespacekomori.html#a3abf9ca26f7022f402cd774514ce16a5">Zip</a>(Range1&amp;&amp; range1, Range2&amp;&amp; range2) noexcept(</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    noexcept(<a class="code" href="classkomori_1_1detail_1_1_zip_impl.html">detail::ZipImpl&lt;Range1, Range2&gt;</a>(std::forward&lt;Range1&gt;(range1), std::forward&lt;Range2&gt;(range2)))) {</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classkomori_1_1detail_1_1_zip_impl.html">detail::ZipImpl&lt;Range1, Range2&gt;</a>(std::forward&lt;Range1&gt;(range1), std::forward&lt;Range2&gt;(range2));</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;}</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;}  <span class="comment">// namespace komori</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// KOMORI_RANGES_HPP_</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    constexpr <span class="keyword">auto</span> operator*() noexcept(noexcept(*std::declval&lt;Iterator1&gt;(), *std::declval&lt;Iterator2&gt;())) {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;      <span class="keywordflow">return</span> std::make_pair(*itr1_, *itr2_);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    constexpr <a class="code" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator</a>&amp; operator++() noexcept(noexcept(std::declval&lt;Iterator1&gt;()++, std::declval&lt;Iterator2&gt;()++)) {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;      itr1_++;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      itr2_++;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    }</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> LI1, <span class="keyword">typename</span> LI2, <span class="keyword">typename</span> RI1, <span class="keyword">typename</span> RI2&gt;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keyword">friend</span> constexpr <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator&lt;LI1, LI2&gt;</a>&amp; lhs,</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                                     <span class="keyword">const</span> <a class="code" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator&lt;RI1, RI2&gt;</a>&amp; rhs) noexcept(noexcept(lhs.itr1_ == rhs.itr1_ ||</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                                                                                      lhs.itr2_ == rhs.itr2_)) {</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      <span class="keywordflow">return</span> lhs.itr1_ != rhs.itr1_ &amp;&amp; lhs.itr2_ != rhs.itr2_;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    }</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;   <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    Iterator1 itr1_;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    Iterator2 itr2_;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  };</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  constexpr <a class="code" href="classkomori_1_1detail_1_1_zip_impl.html">ZipImpl</a>(Range1 range1, Range2 range2) noexcept(</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      std::is_nothrow_constructible_v&lt;Range1, decltype(std::forward&lt;Range1&gt;(range1))&gt; &amp;&amp;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      std::is_nothrow_constructible_v&lt;Range2, decltype(std::forward&lt;Range2&gt;(range2))&gt;)</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      : range1_{std::forward&lt;Range1&gt;(range1)}, range2_{std::forward&lt;Range2&gt;(range2)} {}</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  constexpr <span class="keyword">auto</span> begin() const</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;      noexcept(noexcept(<a class="code" href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">call_begin</a>(std::declval&lt;Range1&gt;()), <a class="code" href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">call_begin</a>(std::declval&lt;Range2&gt;()))) {</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordflow">return</span> Iterator&lt;decltype(call_begin(range1_)), decltype(call_begin(range2_))&gt;(<a class="code" href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">call_begin</a>(range1_),</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                                                                                  <a class="code" href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">call_begin</a>(range2_));</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  }</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  constexpr <span class="keyword">auto</span> end() const noexcept(noexcept(<a class="code" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a>(std::declval&lt;Range1&gt;()), <a class="code" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a>(std::declval&lt;Range2&gt;()))) {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keywordflow">return</span> Iterator&lt;decltype(call_end(range1_)), decltype(call_end(range2_))&gt;(<a class="code" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a>(range1_), <a class="code" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a>(range2_));</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  }</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  Range1 range1_;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  Range2 range2_;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;};</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;}  <span class="comment">// namespace detail</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Range1, <span class="keyword">typename</span> Range2&gt;</div>
+<div class="line"><a name="l00401"></a><span class="lineno"><a class="line" href="namespacekomori.html#a3abf9ca26f7022f402cd774514ce16a5">  401</a></span>&#160;constexpr <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="namespacekomori.html#a3abf9ca26f7022f402cd774514ce16a5">Zip</a>(Range1&amp;&amp; range1, Range2&amp;&amp; range2) noexcept(</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    noexcept(<a class="code" href="classkomori_1_1detail_1_1_zip_impl.html">detail::ZipImpl&lt;Range1, Range2&gt;</a>(std::forward&lt;Range1&gt;(range1), std::forward&lt;Range2&gt;(range2)))) {</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classkomori_1_1detail_1_1_zip_impl.html">detail::ZipImpl&lt;Range1, Range2&gt;</a>(std::forward&lt;Range1&gt;(range1), std::forward&lt;Range2&gt;(range2));</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;}</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;}  <span class="comment">// namespace komori</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// KOMORI_RANGES_HPP_</span></div>
 <div class="ttc" id="aclasskomori_1_1_range_html"><div class="ttname"><a href="classkomori_1_1_range.html">komori::Range</a></div><div class="ttdoc">イテレータの範囲を表す型。</div><div class="ttdef"><b>Definition:</b> <a href="ranges_8hpp_source.html#l00214">ranges.hpp:214</a></div></div>
 <div class="ttc" id="aclasskomori_1_1_range_html_a21efd47a75bc69707f2beb0edb0254af"><div class="ttname"><a href="classkomori_1_1_range.html#a21efd47a75bc69707f2beb0edb0254af">komori::Range::end</a></div><div class="ttdeci">constexpr Iterator end() const noexcept</div><div class="ttdoc">範囲の末尾</div><div class="ttdef"><b>Definition:</b> <a href="ranges_8hpp_source.html#l00224">ranges.hpp:224</a></div></div>
 <div class="ttc" id="aclasskomori_1_1_range_html_a58d318210417db1b41a925b8eef576da"><div class="ttname"><a href="classkomori_1_1_range.html#a58d318210417db1b41a925b8eef576da">komori::Range::begin</a></div><div class="ttdeci">constexpr Iterator begin() const noexcept</div><div class="ttdoc">範囲の先頭</div><div class="ttdef"><b>Definition:</b> <a href="ranges_8hpp_source.html#l00222">ranges.hpp:222</a></div></div>
@@ -365,7 +368,7 @@ $(function() {
 <div class="ttc" id="anamespacekomori_1_1detail_html_a65bf0cecc656d96fca9addfb4c90816f"><div class="ttname"><a href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">komori::detail::call_begin</a></div><div class="ttdeci">constexpr auto call_begin(Range &amp;&amp;range) noexcept(noexcept(std::begin(std::forward&lt; Range &gt;(range))))</div><div class="ttdoc">range-based for の要件に従って begin をコールする関数（配列版）</div><div class="ttdef"><b>Definition:</b> <a href="ranges_8hpp_source.html#l00042">ranges.hpp:42</a></div></div>
 <div class="ttc" id="anamespacekomori_1_1detail_html_a723abd115e7a47a8c4072b9b1e7f7dd2"><div class="ttname"><a href="namespacekomori_1_1detail.html#a723abd115e7a47a8c4072b9b1e7f7dd2">komori::detail::HasBeginAndEndMembersCheck</a></div><div class="ttdeci">std::false_type HasBeginAndEndMembersCheck(long)</div><div class="ttdoc">Range が begin と end メンバ関数を持っているかどうか判定するダミー関数（never defined）</div></div>
 <div class="ttc" id="anamespacekomori_html"><div class="ttname"><a href="namespacekomori.html">komori</a></div><div class="ttdoc">Komoring Heights.</div><div class="ttdef"><b>Definition:</b> <a href="bitset_8hpp_source.html#l00015">bitset.hpp:15</a></div></div>
-<div class="ttc" id="anamespacekomori_html_a3abf9ca26f7022f402cd774514ce16a5"><div class="ttname"><a href="namespacekomori.html#a3abf9ca26f7022f402cd774514ce16a5">komori::Zip</a></div><div class="ttdeci">constexpr auto Zip(Range1 &amp;&amp;range1, Range2 &amp;&amp;range2) noexcept(noexcept(detail::ZipImpl&lt; Range1, Range2 &gt;(std::forward&lt; Range1 &gt;(range1), std::forward&lt; Range2 &gt;(range2))))</div><div class="ttdoc">2つのrangeをpairでまとめたようなrangeを返す。</div><div class="ttdef"><b>Definition:</b> <a href="ranges_8hpp_source.html#l00398">ranges.hpp:398</a></div></div>
+<div class="ttc" id="anamespacekomori_html_a3abf9ca26f7022f402cd774514ce16a5"><div class="ttname"><a href="namespacekomori.html#a3abf9ca26f7022f402cd774514ce16a5">komori::Zip</a></div><div class="ttdeci">constexpr auto Zip(Range1 &amp;&amp;range1, Range2 &amp;&amp;range2) noexcept(noexcept(detail::ZipImpl&lt; Range1, Range2 &gt;(std::forward&lt; Range1 &gt;(range1), std::forward&lt; Range2 &gt;(range2))))</div><div class="ttdoc">2つのrangeをpairでまとめたようなrangeを返す。</div><div class="ttdef"><b>Definition:</b> <a href="ranges_8hpp_source.html#l00401">ranges.hpp:401</a></div></div>
 <div class="ttc" id="anamespacekomori_html_a55fb0edd05205e09790d1b3f440dc196"><div class="ttname"><a href="namespacekomori.html#a55fb0edd05205e09790d1b3f440dc196">komori::Constraints</a></div><div class="ttdeci">typename detail::ConstraintsImpl&lt; Args... &gt;::Type Constraints</div><div class="ttdoc">SFINAE の制約を書くのに便利な型。</div><div class="ttdef"><b>Definition:</b> <a href="type__traits_8hpp_source.html#l00049">type_traits.hpp:49</a></div></div>
 <div class="ttc" id="anamespacekomori_html_a592455f5972570f64271d49fa7ffe9ff"><div class="ttname"><a href="namespacekomori.html#a592455f5972570f64271d49fa7ffe9ff">komori::WithIndex</a></div><div class="ttdeci">constexpr detail::WithIndexImpl&lt; IndexType, Range &gt; WithIndex(Range &amp;&amp;range) noexcept(noexcept(detail::WithIndexImpl&lt; IndexType, Range &gt;{std::forward&lt; Range &gt;(range)}))</div><div class="ttdoc">添字つきのrange-based for 文用オブジェクトを生成する。</div><div class="ttdef"><b>Definition:</b> <a href="ranges_8hpp_source.html#l00201">ranges.hpp:201</a></div></div>
 <div class="ttc" id="anamespacekomori_html_a8e1493fa709128d5d926e1809323c633"><div class="ttname"><a href="namespacekomori.html#a8e1493fa709128d5d926e1809323c633">komori::AsRange</a></div><div class="ttdeci">auto AsRange(const std::pair&lt; Iterator, Iterator &gt; &amp;p) noexcept</div><div class="ttdoc">イテレータのペアで range-based for をするためのアダプタ</div><div class="ttdef"><b>Definition:</b> <a href="ranges_8hpp_source.html#l00246">ranges.hpp:246</a></div></div>

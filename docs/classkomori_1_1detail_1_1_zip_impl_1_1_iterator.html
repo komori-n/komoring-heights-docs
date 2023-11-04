@@ -82,12 +82,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9804cf9477d579fe9103704a9fbd20c"><td class="memItemLeft" align="right" valign="top"><a id="ad9804cf9477d579fe9103704a9fbd20c"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>Iterator</b> (Iterator1 itr1, Iterator2 itr2) noexcept(std::is_nothrow_copy_assignable_v&lt; Iterator1 &gt; &amp;&amp;std::is_nothrow_copy_assignable_v&lt; Iterator2 &gt;)</td></tr>
 <tr class="separator:ad9804cf9477d579fe9103704a9fbd20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a124bf20b945f048602e21b1fa7538646"><td class="memItemLeft" align="right" valign="top"><a id="a124bf20b945f048602e21b1fa7538646"></a>
-constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () noexcept(noexcept(*itr1_, *itr2_))</td></tr>
-<tr class="separator:a124bf20b945f048602e21b1fa7538646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16705f58ceae36660458083e3993fa1f"><td class="memItemLeft" align="right" valign="top"><a id="a16705f58ceae36660458083e3993fa1f"></a>
-constexpr <a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> () noexcept(noexcept(itr1_++, itr2_++))</td></tr>
-<tr class="separator:a16705f58ceae36660458083e3993fa1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a9ece2b375fce0779dd98d851c1c2e7"><td class="memItemLeft" align="right" valign="top"><a id="a1a9ece2b375fce0779dd98d851c1c2e7"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () noexcept(noexcept(*std::declval&lt; Iterator1 &gt;(), *std::declval&lt; Iterator2 &gt;()))</td></tr>
+<tr class="separator:a1a9ece2b375fce0779dd98d851c1c2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c96336506a075d627b2eb2dd19336b9"><td class="memItemLeft" align="right" valign="top"><a id="a3c96336506a075d627b2eb2dd19336b9"></a>
+constexpr <a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> () noexcept(noexcept(std::declval&lt; Iterator1 &gt;()++, std::declval&lt; Iterator2 &gt;()++))</td></tr>
+<tr class="separator:a3c96336506a075d627b2eb2dd19336b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>

@@ -111,9 +111,9 @@ $(function() {
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    std::mt19937 mt(thread_id);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// kPtValues と kDfpnPlusParameters へ薄い乱数を加える</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::normal_distribution&lt;int&gt; dist(0, 200);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::normal_distribution&lt;double&gt; dist(0, 200);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; value : <a class="code" href="namespacekomori_1_1detail.html#ae3a1d7faa01afa66b690960b3645dc36">detail::kPtValues</a>) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      value += dist(mt);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      value += <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(dist(mt));</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::discrete_distribution&lt;PnDn&gt; discrete_dist({0.7, 0.25, 0.05});</div>
