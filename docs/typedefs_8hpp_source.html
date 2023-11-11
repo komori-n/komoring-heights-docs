@@ -71,59 +71,57 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef KOMORI_TYPEDEFS_HPP_</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define KOMORI_TYPEDEFS_HPP_</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;cinttypes&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../../bitboard.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;../../position.h&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;../../types.h&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;../../usi.h&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="type__traits_8hpp.html">type_traits.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#if defined(KOMORI_DEBUG)</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define KOMORI_PRECONDITION(cond)                                                                                    \</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">  do {                                                                                                               \</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">    if (!(cond)) {                                                                                                   \</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">      sync_cout &lt;&lt; &quot;info string ERROR! precondition &quot;</span> &lt;&lt; #cond &lt;&lt; &quot; @L&quot; &lt;&lt; __LINE__ &lt;&lt; &quot;:&quot; &lt;&lt; __FILE__ &lt;&lt; sync_endl; \</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      std::this_thread::sleep_for(std::chrono::seconds(1));                                                          \</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      std::terminate();                                                                                              \</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }                                                                                                                \</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  } while (false)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="typedefs_8hpp.html#ab0163bb9b3bd0c8a1ba322e9b361e448">   35</a></span>&#160;<span class="preprocessor">#define KOMORI_PRECONDITION(cond) ConsumeValues({cond})</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#if !defined(DOXYGEN_SHOULD_SKIP_THIS)</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// X を文字列にする。このままでは文字列化できないので IMPL マクロを経由する。</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define KOMORI_TO_STRING(X) KOMORI_TO_STRING_IMPL(X)</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// X を文字列化する。</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define KOMORI_TO_STRING_IMPL(X) #X</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#if defined(__clang__)</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define KOMORI_UNROLL(n) _Pragma(KOMORI_TO_STRING(unroll n))</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#elif defined(__GNUC__)</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#define KOMORI_UNROLL(n) _Pragma(KOMORI_TO_STRING(GCC unroll n))</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#define KOMORI_UNROLL(n)</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#define KOMORI_HAND_LOOP_UNROLL KOMORI_UNROLL(7)</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// !defined(DOXYGEN_SHOULD_SKIP_THIS)</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacekomori.html">komori</a> {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// &lt;namespaceコメント&gt; NOLINTBEGIN</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// Doxygen で名前空間を認識してもらうためにはコメントをつける必要がある。</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// 各名前空間に対するコメントはどのヘッダに書いても良い。コメント位置を迷わないようにするためにすべてここに書いておく。</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span><span class="keyword">namespace </span>detail {}  <span class="comment">// namespace detail</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span><span class="keyword">namespace </span>tt {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">namespace </span>detail {}  <span class="comment">// namespace detail</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}  <span class="comment">// namespace tt</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// &lt;/namespaceコメント&gt; NOLINTEND</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../../bitboard.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../../position.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../../types.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../../usi.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="type__traits_8hpp.html">type_traits.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#if defined(KOMORI_DEBUG)</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define KOMORI_PRECONDITION(cond)                                                                                    \</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">  do {                                                                                                               \</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">    if (!(cond)) {                                                                                                   \</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">      sync_cout &lt;&lt; &quot;info string ERROR! precondition &quot;</span> &lt;&lt; #cond &lt;&lt; &quot; @L&quot; &lt;&lt; __LINE__ &lt;&lt; &quot;:&quot; &lt;&lt; __FILE__ &lt;&lt; sync_endl; \</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      std::this_thread::sleep_for(std::chrono::seconds(1));                                                          \</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      std::terminate();                                                                                              \</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }                                                                                                                \</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  } while (false)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="typedefs_8hpp.html#ab0163bb9b3bd0c8a1ba322e9b361e448">   30</a></span>&#160;<span class="preprocessor">#define KOMORI_PRECONDITION(cond) ConsumeValues({cond})</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#if !defined(DOXYGEN_SHOULD_SKIP_THIS)</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// X を文字列にする。このままでは文字列化できないので IMPL マクロを経由する。</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#define KOMORI_TO_STRING(X) KOMORI_TO_STRING_IMPL(X)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// X を文字列化する。</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define KOMORI_TO_STRING_IMPL(X) #X</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#if defined(__clang__)</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define KOMORI_UNROLL(n) _Pragma(KOMORI_TO_STRING(unroll n))</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#elif defined(__GNUC__)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define KOMORI_UNROLL(n) _Pragma(KOMORI_TO_STRING(GCC unroll n))</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define KOMORI_UNROLL(n)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#define KOMORI_HAND_LOOP_UNROLL KOMORI_UNROLL(7)</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// !defined(DOXYGEN_SHOULD_SKIP_THIS)</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacekomori.html">komori</a> {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">// &lt;namespaceコメント&gt; NOLINTBEGIN</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// Doxygen で名前空間を認識してもらうためにはコメントをつける必要がある。</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// 各名前空間に対するコメントはどのヘッダに書いても良い。コメント位置を迷わないようにするためにすべてここに書いておく。</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span><span class="keyword">namespace </span>detail {}  <span class="comment">// namespace detail</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span><span class="keyword">namespace </span>tt {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">namespace </span>detail {}  <span class="comment">// namespace detail</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}  <span class="comment">// namespace tt</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// &lt;/namespaceコメント&gt; NOLINTEND</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="namespacekomori.html#a1566dce8d7bbeb1e6bad5be02fd99009">   68</a></span>&#160;thread_local <span class="keyword">inline</span> std::uint32_t <a class="code" href="namespacekomori.html#a1566dce8d7bbeb1e6bad5be02fd99009">tl_thread_id</a> = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="namespacekomori.html#a13f6e43ba7f9cbef8d324f18914c9082">   70</a></span>&#160;thread_local <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacekomori.html#a13f6e43ba7f9cbef8d324f18914c9082">tl_gc_thread</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, Constra<span class="keywordtype">int</span>s&lt;std::enable_if_t&lt;std::is_<span class="keywordtype">unsigned</span>_v&lt;T&gt;&gt;&gt; = <span class="keywordtype">nullptr</span>&gt;</div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="namespacekomori.html#a7311d41d5455115265700ac2518036a7">   80</a></span>&#160;constexpr <span class="keyword">inline</span> T <a class="code" href="namespacekomori.html#a7311d41d5455115265700ac2518036a7">SaturatedAdd</a>(T lhs, T rhs) noexcept {</div>
@@ -304,8 +302,10 @@ $(function() {
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// KOMORI_TYPEDEFS_HPP_</span></div>
 <div class="ttc" id="aclasskomori_1_1_range_html"><div class="ttname"><a href="classkomori_1_1_range.html">komori::Range</a></div><div class="ttdoc">イテレータの範囲を表す型。</div><div class="ttdef"><b>Definition:</b> <a href="ranges_8hpp_source.html#l00214">ranges.hpp:214</a></div></div>
-<div class="ttc" id="anamespacekomori_html"><div class="ttname"><a href="namespacekomori.html">komori</a></div><div class="ttdoc">Komoring Heights.</div><div class="ttdef"><b>Definition:</b> <a href="bitset_8hpp_source.html#l00015">bitset.hpp:15</a></div></div>
+<div class="ttc" id="anamespacekomori_html"><div class="ttname"><a href="namespacekomori.html">komori</a></div><div class="ttdoc">Komoring Heights.</div><div class="ttdef"><b>Definition:</b> <a href="bitset_8hpp_source.html#l00014">bitset.hpp:14</a></div></div>
 <div class="ttc" id="anamespacekomori_html_a077cff4c0bde489c0330a39b102a21bf"><div class="ttname"><a href="namespacekomori.html#a077cff4c0bde489c0330a39b102a21bf">komori::SearchAmount</a></div><div class="ttdeci">std::uint32_t SearchAmount</div><div class="ttdoc">探索量。TTでエントリを消す際の判断に用いる。</div><div class="ttdef"><b>Definition:</b> <a href="typedefs_8hpp_source.html#l00233">typedefs.hpp:233</a></div></div>
+<div class="ttc" id="anamespacekomori_html_a13f6e43ba7f9cbef8d324f18914c9082"><div class="ttname"><a href="namespacekomori.html#a13f6e43ba7f9cbef8d324f18914c9082">komori::tl_gc_thread</a></div><div class="ttdeci">thread_local bool tl_gc_thread</div><div class="ttdoc">自分は GC 担当スレッドかどうか</div><div class="ttdef"><b>Definition:</b> <a href="typedefs_8hpp_source.html#l00070">typedefs.hpp:70</a></div></div>
+<div class="ttc" id="anamespacekomori_html_a1566dce8d7bbeb1e6bad5be02fd99009"><div class="ttname"><a href="namespacekomori.html#a1566dce8d7bbeb1e6bad5be02fd99009">komori::tl_thread_id</a></div><div class="ttdeci">thread_local std::uint32_t tl_thread_id</div><div class="ttdoc">自分の thread id</div><div class="ttdef"><b>Definition:</b> <a href="typedefs_8hpp_source.html#l00068">typedefs.hpp:68</a></div></div>
 <div class="ttc" id="anamespacekomori_html_a177c33b9356030cab989f275b6fd6ea4"><div class="ttname"><a href="namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4">komori::ClampPnDn</a></div><div class="ttdeci">constexpr PnDn ClampPnDn(PnDn val, PnDn min=0, PnDn max=kInfinitePnDn)</div><div class="ttdoc">pn/dn の値を [min, max] の範囲に収まるように丸める。</div><div class="ttdef"><b>Definition:</b> <a href="typedefs_8hpp_source.html#l00206">typedefs.hpp:206</a></div></div>
 <div class="ttc" id="anamespacekomori_html_a210e0bb519f465c1516790e741bda731"><div class="ttname"><a href="namespacekomori.html#a210e0bb519f465c1516790e741bda731">komori::kNullHand</a></div><div class="ttdeci">constexpr Hand kNullHand</div><div class="ttdoc">無効な持ち駒</div><div class="ttdef"><b>Definition:</b> <a href="typedefs_8hpp_source.html#l00175">typedefs.hpp:175</a></div></div>
 <div class="ttc" id="anamespacekomori_html_a26c6a28d0272596fcb24312758455681"><div class="ttname"><a href="namespacekomori.html#a26c6a28d0272596fcb24312758455681">komori::kInfinitePnDn</a></div><div class="ttdeci">constexpr PnDn kInfinitePnDn</div><div class="ttdoc">pn/dn の最大値。オーバーフローを避けるために、max() より少し小さな値を設定する。</div><div class="ttdef"><b>Definition:</b> <a href="typedefs_8hpp_source.html#l00196">typedefs.hpp:196</a></div></div>

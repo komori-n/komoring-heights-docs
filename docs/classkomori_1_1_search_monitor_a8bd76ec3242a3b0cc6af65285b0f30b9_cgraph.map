@@ -1,0 +1,5 @@
+<map id="komori::SearchMonitor::GetInfo" name="komori::SearchMonitor::GetInfo">
+<area shape="rect" id="node1" title="現在の探索情報を UsiInfo に詰めて返す。" alt="" coords="5,35,175,76"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_search_monitor.html#a52109fe1ac3359f99fc605e4b020ddfc" title="現在の探索局面数" alt="" coords="223,5,392,47"/>
+<area shape="rect" id="node3" href="$classkomori_1_1_usi_info.html#abc0d87a921059d9c1a503e390eb2f0e3" title="key に val を設定する。" alt="" coords="232,71,383,98"/>
+</map>

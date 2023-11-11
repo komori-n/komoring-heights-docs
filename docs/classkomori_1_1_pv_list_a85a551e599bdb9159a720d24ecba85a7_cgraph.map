@@ -1,0 +1,4 @@
+<map id="komori::PvList::BestMoves" name="komori::PvList::BestMoves">
+<area shape="rect" id="node1" title="開始局面における PV を返す" alt="" coords="5,5,200,32"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_pv_list.html#a83cae4bad864ff71f444890950854efa" title="idx_ を comparer_ に従って評価値がいい順に並べ替える" alt="" coords="248,5,455,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="komori::tt::Entry::LookUp" name="komori::tt::Entry::LookUp">
+<area shape="rect" id="node1" title="pn, dn などの探索情報を取得する" alt="" coords="5,71,140,112"/>
+<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_entry.html#a7a7b99fdd923fae682abb1bf2194f3f5" title="現局面とエントリが一致しているときの LookUp" alt="" coords="188,5,323,47"/>
+<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_entry.html#a2b1aa9089e7ebb75092ffe46d087f7fc" title="現局面が劣等局面のときの LookUp" alt="" coords="188,71,323,112"/>
+<area shape="rect" id="node4" href="$classkomori_1_1tt_1_1_entry.html#af9837c4fcbddbd23792148da2fbbe5a3" title="現局面が優等局面のときの LookUp" alt="" coords="188,136,323,177"/>
+</map>

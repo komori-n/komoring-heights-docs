@@ -1,0 +1,10 @@
+<map id="komori::PvList::NewSearch" name="komori::PvList::NewSearch">
+<area shape="rect" id="node1" title="新しい探索を始める" alt="" coords="5,85,200,112"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_pv_list.html#a9b1b8e9fe2080faea1ac90af6a883a73" title="探索情報を削除する" alt="" coords="259,5,415,32"/>
+<area shape="rect" id="node3" href="$classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="248,56,425,83"/>
+<area shape="rect" id="node6" href="$classkomori_1_1_search_result.html#a11407d50b68b88ce01feff0227ccdf65" title="Unknown（1回目）の探索結果で初期化する" alt="" coords="257,107,417,149"/>
+<area shape="rect" id="node8" href="$namespacekomori.html#a592455f5972570f64271d49fa7ffe9ff" title="添字つきのrange&#45;based for 文用オブジェクトを生成する。" alt="" coords="266,173,407,200"/>
+<area shape="rect" id="node4" href="$classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="481,56,615,83"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="671,56,811,83"/>
+<area shape="rect" id="node7" href="$classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15" title="フラグをすべて true にした BitSet を返す。" alt="" coords="473,107,623,149"/>
+</map>

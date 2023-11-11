@@ -1,0 +1,9 @@
+<map id="komori::SearchMonitor::NewSearch" name="komori::SearchMonitor::NewSearch">
+<area shape="rect" id="node1" title="変数を初期化して探索を開始する。" alt="" coords="5,104,175,145"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_circular_array.html#aa62e891f09071eefff29a06498526414" title="全要素をデフォルトコンストラクタで初期化する。" alt="" coords="239,5,399,47"/>
+<area shape="rect" id="node3" href="$namespacekomori_1_1detail.html#abe71454b986eab9bbd9936ebfb3d4c22" title="HashfullCheck の周期を計算する" alt="" coords="231,71,406,112"/>
+<area shape="rect" id="node4" href="$classkomori_1_1_search_monitor.html#a7358be665cb6c316b9f3a546460b42f7" title="次回の置換表使用率チェックタイミングを更新する" alt="" coords="223,136,415,177"/>
+<area shape="rect" id="node6" href="$classkomori_1_1_periodic_alarm.html#a00712a5675d75fd64c14a73a13a82538" title="周期タイマーを開始する" alt="" coords="235,201,402,243"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_search_monitor.html#a52109fe1ac3359f99fc605e4b020ddfc" title="現在の探索局面数" alt="" coords="479,136,649,177"/>
+<area shape="rect" id="node7" href="$classkomori_1_1_periodic_alarm.html#a021fd50396141ea07f6fd8341c1e7693" title="Time Point をミリ秒で取得する" alt="" coords="463,209,665,235"/>
+</map>

@@ -87,20 +87,20 @@ Collaboration diagram for komori::tt::Entry:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1tt_1_1_entry__coll__graph.png" border="0" usemap="#akomori_1_1tt_1_1_entry_coll__map" alt="Collaboration graph"/></div>
 <map name="akomori_1_1tt_1_1_entry_coll__map" id="akomori_1_1tt_1_1_entry_coll__map">
-<area shape="rect" title="局面の探索結果を保続するための基本クラス。" alt="" coords="1695,113,1821,140"/>
-<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html" title=" " alt="" coords="1332,19,1544,61"/>
-<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html" title="std::atomic を用いた Shared&#45;Exclusive lock" alt="" coords="917,5,1168,32"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_mate_len_impl.html" title=" " alt="" coords="1335,173,1541,214"/>
-<area shape="rect" href="structkomori_1_1_define_not_equal_by_equal.html" title=" " alt="" coords="681,160,874,216"/>
-<area shape="rect" href="structkomori_1_1_define_not_equal_by_equal.html" title="operator== から operator!= を自動定義するクラス。" alt="" coords="6,137,199,178"/>
-<area shape="rect" href="structkomori_1_1_define_not_equal_by_equal.html" title=" " alt="" coords="416,225,627,266"/>
-<area shape="rect" href="classkomori_1_1_bit_set.html" title=" " alt="" coords="1363,106,1513,147"/>
-<area shape="rect" href="structkomori_1_1_define_not_equal_by_equal.html" title=" " alt="" coords="425,107,618,149"/>
-<area shape="rect" href="structkomori_1_1_define_comparison_operators_by_less.html" title=" " alt="" coords="661,327,893,383"/>
-<area shape="rect" href="structkomori_1_1_define_comparison_operators_by_less.html" title="operator&lt; から各種演算子を自動定義するクラス。" alt="" coords="5,330,200,371"/>
-<area shape="rect" href="structkomori_1_1_define_comparison_operators_by_less.html" title=" " alt="" coords="405,291,637,347"/>
-<area shape="rect" href="classkomori_1_1detail_1_1_mate_len_impl.html" title="MateLen と MateLen16 の実装本体。中身はほぼ同じなので一箇所にまとめる。" alt="" coords="921,232,1164,259"/>
-<area shape="rect" href="classkomori_1_1_bit_set.html" title="整数 T を用いたフラグ集合。" alt="" coords="967,115,1119,141"/>
+<area shape="rect" title="局面の探索結果を保続するための基本クラス。" alt="" coords="1695,144,1821,170"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_mate_len_impl.html" title=" " alt="" coords="1335,136,1541,178"/>
+<area shape="rect" href="structkomori_1_1_define_not_equal_by_equal.html" title=" " alt="" coords="681,74,874,130"/>
+<area shape="rect" href="structkomori_1_1_define_not_equal_by_equal.html" title="operator== から operator!= を自動定義するクラス。" alt="" coords="6,48,199,90"/>
+<area shape="rect" href="structkomori_1_1_define_not_equal_by_equal.html" title=" " alt="" coords="416,136,627,178"/>
+<area shape="rect" href="classkomori_1_1_bit_set.html" title=" " alt="" coords="1363,19,1513,60"/>
+<area shape="rect" href="structkomori_1_1_define_not_equal_by_equal.html" title=" " alt="" coords="425,19,618,60"/>
+<area shape="rect" href="structkomori_1_1_define_comparison_operators_by_less.html" title=" " alt="" coords="661,238,893,294"/>
+<area shape="rect" href="structkomori_1_1_define_comparison_operators_by_less.html" title="operator&lt; から各種演算子を自動定義するクラス。" alt="" coords="5,242,200,283"/>
+<area shape="rect" href="structkomori_1_1_define_comparison_operators_by_less.html" title=" " alt="" coords="405,202,637,258"/>
+<area shape="rect" href="classkomori_1_1detail_1_1_mate_len_impl.html" title="MateLen と MateLen16 の実装本体。中身はほぼ同じなので一箇所にまとめる。" alt="" coords="921,144,1164,170"/>
+<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html" title=" " alt="" coords="1332,219,1544,260"/>
+<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html" title="std::atomic を用いた Shared&#45;Exclusive lock" alt="" coords="917,245,1168,272"/>
+<area shape="rect" href="classkomori_1_1_bit_set.html" title="整数 T を用いたフラグ集合。" alt="" coords="967,26,1119,53"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -130,17 +130,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a24bacfcc1ebd8e79cd3e29340e0f1d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリの排他ロックを取る <br /></td></tr>
 <tr class="separator:a24bacfcc1ebd8e79cd3e29340e0f1d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b51a8372cc58033b3ad6ff1f4db09e3"><td class="memItemLeft" align="right" valign="top"><a id="a9b51a8372cc58033b3ad6ff1f4db09e3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>lock_shared</b> () const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a9b51a8372cc58033b3ad6ff1f4db09e3">lock_shared</a> () const</td></tr>
+<tr class="memdesc:a9b51a8372cc58033b3ad6ff1f4db09e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリの共有ロックを取る <br /></td></tr>
 <tr class="separator:a9b51a8372cc58033b3ad6ff1f4db09e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b1919fecc95bae6896ed1ce8cd40ab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1">unlock</a> () const</td></tr>
 <tr class="memdesc:a2b1919fecc95bae6896ed1ce8cd40ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリの排他ロックを解除する  <a href="classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1">More...</a><br /></td></tr>
 <tr class="separator:a2b1919fecc95bae6896ed1ce8cd40ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c5494e87485abb077ad075e0b77ce20"><td class="memItemLeft" align="right" valign="top"><a id="a1c5494e87485abb077ad075e0b77ce20"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>unlock_shared</b> () const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a1c5494e87485abb077ad075e0b77ce20">unlock_shared</a> () const</td></tr>
+<tr class="memdesc:a1c5494e87485abb077ad075e0b77ce20"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリの共有ロックを解除する <br /></td></tr>
 <tr class="separator:a1c5494e87485abb077ad075e0b77ce20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2a56abea99528c93241c846e21565d2"><td class="memItemLeft" align="right" valign="top"><a id="ab2a56abea99528c93241c846e21565d2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#ab2a56abea99528c93241c846e21565d2">SetNull</a> () noexcept</td></tr>
-<tr class="memdesc:ab2a56abea99528c93241c846e21565d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリに無効値を設定する <br /></td></tr>
+<tr class="memdesc:ab2a56abea99528c93241c846e21565d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリに無効値を設定する。この関数に限っては共有ロックを取得せずに使用することができる。 <br /></td></tr>
 <tr class="separator:ab2a56abea99528c93241c846e21565d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1969c3d079ea4a462df415e5ce4ec1b"><td class="memItemLeft" align="right" valign="top"><a id="af1969c3d079ea4a462df415e5ce4ec1b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#af1969c3d079ea4a462df415e5ce4ec1b">IsNull</a> () const noexcept</td></tr>
@@ -189,33 +191,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ac92e325d6f768f456b80e53e86c0ad8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#ac92e325d6f768f456b80e53e86c0ad8c">UpdateUnknown</a> (Depth depth, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> pn, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> dn, <a class="el" href="namespacekomori.html#a077cff4c0bde489c0330a39b102a21bf">SearchAmount</a> amount, <a class="el" href="namespacekomori.html#a20dc4ee64c842a7caa36c7cf7496ce61">BitSet64</a> sum_mask, Key parent_board_key, Hand parent_hand) noexcept</td></tr>
 <tr class="memdesc:ac92e325d6f768f456b80e53e86c0ad8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索結果を書き込む（未解決局面）  <a href="classkomori_1_1tt_1_1_entry.html#ac92e325d6f768f456b80e53e86c0ad8c">More...</a><br /></td></tr>
 <tr class="separator:ac92e325d6f768f456b80e53e86c0ad8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedbe856b1c3993d491140eee6f32b6cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#aedbe856b1c3993d491140eee6f32b6cb">UpdateProven</a> (<a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a> len, <a class="el" href="namespacekomori.html#a077cff4c0bde489c0330a39b102a21bf">SearchAmount</a> amount) noexcept</td></tr>
-<tr class="memdesc:aedbe856b1c3993d491140eee6f32b6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索結果を書き込む（詰み局面）  <a href="classkomori_1_1tt_1_1_entry.html#aedbe856b1c3993d491140eee6f32b6cb">More...</a><br /></td></tr>
-<tr class="separator:aedbe856b1c3993d491140eee6f32b6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a946c075142a62fec93ab702c7913a7ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a946c075142a62fec93ab702c7913a7ef">UpdateDisproven</a> (<a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a> len, <a class="el" href="namespacekomori.html#a077cff4c0bde489c0330a39b102a21bf">SearchAmount</a> amount) noexcept</td></tr>
-<tr class="memdesc:a946c075142a62fec93ab702c7913a7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索結果を書き込む（不詰局面）  <a href="classkomori_1_1tt_1_1_entry.html#a946c075142a62fec93ab702c7913a7ef">More...</a><br /></td></tr>
-<tr class="separator:a946c075142a62fec93ab702c7913a7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d59fe54cf3e3191e2003f2df88683f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a0d59fe54cf3e3191e2003f2df88683f0">LookUp</a> (Hand hand, Depth depth, <a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a> &amp;len, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;pn, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;dn, bool &amp;use_old_child) const noexcept</td></tr>
-<tr class="memdesc:a0d59fe54cf3e3191e2003f2df88683f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">pn, dn などの探索情報を取得する  <a href="classkomori_1_1tt_1_1_entry.html#a0d59fe54cf3e3191e2003f2df88683f0">More...</a><br /></td></tr>
-<tr class="separator:a0d59fe54cf3e3191e2003f2df88683f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc444ad7a5f47343c7ac4aa6025ac055"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#abc444ad7a5f47343c7ac4aa6025ac055">UpdateProven</a> (<a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> len, <a class="el" href="namespacekomori.html#a077cff4c0bde489c0330a39b102a21bf">SearchAmount</a> amount) noexcept</td></tr>
+<tr class="memdesc:abc444ad7a5f47343c7ac4aa6025ac055"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索結果を書き込む（詰み局面）  <a href="classkomori_1_1tt_1_1_entry.html#abc444ad7a5f47343c7ac4aa6025ac055">More...</a><br /></td></tr>
+<tr class="separator:abc444ad7a5f47343c7ac4aa6025ac055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c92f5c945e0c9cd2839dc4fbce1d81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a86c92f5c945e0c9cd2839dc4fbce1d81">UpdateDisproven</a> (<a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> len, <a class="el" href="namespacekomori.html#a077cff4c0bde489c0330a39b102a21bf">SearchAmount</a> amount) noexcept</td></tr>
+<tr class="memdesc:a86c92f5c945e0c9cd2839dc4fbce1d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索結果を書き込む（不詰局面）  <a href="classkomori_1_1tt_1_1_entry.html#a86c92f5c945e0c9cd2839dc4fbce1d81">More...</a><br /></td></tr>
+<tr class="separator:a86c92f5c945e0c9cd2839dc4fbce1d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65eedfbe0ca37ae00eadb41fc73f2173"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a65eedfbe0ca37ae00eadb41fc73f2173">LookUp</a> (Hand hand, Depth depth, <a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> &amp;len, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;pn, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;dn, bool &amp;use_old_child) const noexcept</td></tr>
+<tr class="memdesc:a65eedfbe0ca37ae00eadb41fc73f2173"><td class="mdescLeft">&#160;</td><td class="mdescRight">pn, dn などの探索情報を取得する  <a href="classkomori_1_1tt_1_1_entry.html#a65eedfbe0ca37ae00eadb41fc73f2173">More...</a><br /></td></tr>
+<tr class="separator:a65eedfbe0ca37ae00eadb41fc73f2173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19083032f3bbe0a2f055014bcc48472b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a19083032f3bbe0a2f055014bcc48472b">UpdateParentCandidate</a> (Hand hand, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;pn, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;dn, Key &amp;parent_board_key, Hand &amp;parent_hand) const</td></tr>
 <tr class="memdesc:a19083032f3bbe0a2f055014bcc48472b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>hand</code> に対応する親局面を取得する  <a href="classkomori_1_1tt_1_1_entry.html#a19083032f3bbe0a2f055014bcc48472b">More...</a><br /></td></tr>
 <tr class="separator:a19083032f3bbe0a2f055014bcc48472b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29bcb4b6c1f920e28119ad7dec411fc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a29bcb4b6c1f920e28119ad7dec411fc0">UpdateFinalRange</a> (Hand hand, <a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a> &amp;disproven_len, <a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a> &amp;proven_len) const noexcept</td></tr>
-<tr class="memdesc:a29bcb4b6c1f920e28119ad7dec411fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">詰み／不詰手数専用の <a class="el" href="classkomori_1_1tt_1_1_entry.html#a0d59fe54cf3e3191e2003f2df88683f0" title="pn, dn などの探索情報を取得する">LookUp()</a>  <a href="classkomori_1_1tt_1_1_entry.html#a29bcb4b6c1f920e28119ad7dec411fc0">More...</a><br /></td></tr>
-<tr class="separator:a29bcb4b6c1f920e28119ad7dec411fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe78d1925ea0bb315f4406e96939967"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#adfe78d1925ea0bb315f4406e96939967">UpdateFinalRange</a> (Hand hand, <a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> &amp;disproven_len, <a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> &amp;proven_len) const noexcept</td></tr>
+<tr class="memdesc:adfe78d1925ea0bb315f4406e96939967"><td class="mdescLeft">&#160;</td><td class="mdescRight">詰み／不詰手数専用の <a class="el" href="classkomori_1_1tt_1_1_entry.html#a65eedfbe0ca37ae00eadb41fc73f2173" title="pn, dn などの探索情報を取得する">LookUp()</a>  <a href="classkomori_1_1tt_1_1_entry.html#adfe78d1925ea0bb315f4406e96939967">More...</a><br /></td></tr>
+<tr class="separator:adfe78d1925ea0bb315f4406e96939967"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6927b41f8f1542701d67e327ddf90161"><td class="memItemLeft" align="right" valign="top"><a id="a6927b41f8f1542701d67e327ddf90161"></a>
 Depth&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a6927b41f8f1542701d67e327ddf90161">MinDepth</a> () const noexcept</td></tr>
 <tr class="memdesc:a6927b41f8f1542701d67e327ddf90161"><td class="mdescLeft">&#160;</td><td class="mdescRight">最小距離 <br /></td></tr>
 <tr class="separator:a6927b41f8f1542701d67e327ddf90161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63da74f8adf860e72ec12a9ac5690032"><td class="memItemLeft" align="right" valign="top"><a id="a63da74f8adf860e72ec12a9ac5690032"></a>
-<a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a63da74f8adf860e72ec12a9ac5690032">ProvenLen</a> () const noexcept</td></tr>
-<tr class="memdesc:a63da74f8adf860e72ec12a9ac5690032"><td class="mdescLeft">&#160;</td><td class="mdescRight">詰み手数 <br /></td></tr>
-<tr class="separator:a63da74f8adf860e72ec12a9ac5690032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c8d95391334d7cf13c7ed0472cb982b"><td class="memItemLeft" align="right" valign="top"><a id="a0c8d95391334d7cf13c7ed0472cb982b"></a>
-<a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a0c8d95391334d7cf13c7ed0472cb982b">DisprovenLen</a> () const noexcept</td></tr>
-<tr class="memdesc:a0c8d95391334d7cf13c7ed0472cb982b"><td class="mdescLeft">&#160;</td><td class="mdescRight">不詰手数 <br /></td></tr>
-<tr class="separator:a0c8d95391334d7cf13c7ed0472cb982b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7576c234d0593315fc4027c9cf44a1e7"><td class="memItemLeft" align="right" valign="top"><a id="a7576c234d0593315fc4027c9cf44a1e7"></a>
+<a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a7576c234d0593315fc4027c9cf44a1e7">ProvenLen</a> () const noexcept</td></tr>
+<tr class="memdesc:a7576c234d0593315fc4027c9cf44a1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">詰み手数 <br /></td></tr>
+<tr class="separator:a7576c234d0593315fc4027c9cf44a1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a617c8eaf118315e520c7c3a5b1b11b58"><td class="memItemLeft" align="right" valign="top"><a id="a617c8eaf118315e520c7c3a5b1b11b58"></a>
+<a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a617c8eaf118315e520c7c3a5b1b11b58">DisprovenLen</a> () const noexcept</td></tr>
+<tr class="memdesc:a617c8eaf118315e520c7c3a5b1b11b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">不詰手数 <br /></td></tr>
+<tr class="separator:a617c8eaf118315e520c7c3a5b1b11b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a520c49489ffd32cb1c42eb1b4b53e59b"><td class="memItemLeft" align="right" valign="top"><a id="a520c49489ffd32cb1c42eb1b4b53e59b"></a>
 <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a520c49489ffd32cb1c42eb1b4b53e59b">Pn</a> () const noexcept</td></tr>
 <tr class="memdesc:a520c49489ffd32cb1c42eb1b4b53e59b"><td class="mdescLeft">&#160;</td><td class="mdescRight">pn <br /></td></tr>
@@ -235,15 +237,15 @@ Private Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a28c1c8f43a7524a8c7e1e803e7ed50b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a28c1c8f43a7524a8c7e1e803e7ed50b9">LookUpExact</a> (std::int16_t depth16, <a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a> &amp;len, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;pn, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;dn, bool &amp;use_old_child) const noexcept</td></tr>
-<tr class="memdesc:a28c1c8f43a7524a8c7e1e803e7ed50b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面とエントリが一致しているときの LookUp  <a href="classkomori_1_1tt_1_1_entry.html#a28c1c8f43a7524a8c7e1e803e7ed50b9">More...</a><br /></td></tr>
-<tr class="separator:a28c1c8f43a7524a8c7e1e803e7ed50b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20c6e12418baa7ea0ed7a6f8ba35c242"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a20c6e12418baa7ea0ed7a6f8ba35c242">LookUpSuperior</a> (std::int16_t depth16, <a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a> &amp;len, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;pn, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;dn, bool &amp;use_old_child) const noexcept</td></tr>
-<tr class="memdesc:a20c6e12418baa7ea0ed7a6f8ba35c242"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面が優等局面のときの LookUp  <a href="classkomori_1_1tt_1_1_entry.html#a20c6e12418baa7ea0ed7a6f8ba35c242">More...</a><br /></td></tr>
-<tr class="separator:a20c6e12418baa7ea0ed7a6f8ba35c242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0221111730baf194503840e02fe2921"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#ab0221111730baf194503840e02fe2921">LookUpInferior</a> (std::int16_t depth16, <a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a> &amp;len, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;pn, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;dn, bool &amp;use_old_child) const noexcept</td></tr>
-<tr class="memdesc:ab0221111730baf194503840e02fe2921"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面が劣等局面のときの LookUp  <a href="classkomori_1_1tt_1_1_entry.html#ab0221111730baf194503840e02fe2921">More...</a><br /></td></tr>
-<tr class="separator:ab0221111730baf194503840e02fe2921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7b99fdd923fae682abb1bf2194f3f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a7a7b99fdd923fae682abb1bf2194f3f5">LookUpExact</a> (std::int16_t depth16, <a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> &amp;len, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;pn, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;dn, bool &amp;use_old_child) const noexcept</td></tr>
+<tr class="memdesc:a7a7b99fdd923fae682abb1bf2194f3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面とエントリが一致しているときの LookUp  <a href="classkomori_1_1tt_1_1_entry.html#a7a7b99fdd923fae682abb1bf2194f3f5">More...</a><br /></td></tr>
+<tr class="separator:a7a7b99fdd923fae682abb1bf2194f3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9837c4fcbddbd23792148da2fbbe5a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#af9837c4fcbddbd23792148da2fbbe5a3">LookUpSuperior</a> (std::int16_t depth16, <a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> &amp;len, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;pn, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;dn, bool &amp;use_old_child) const noexcept</td></tr>
+<tr class="memdesc:af9837c4fcbddbd23792148da2fbbe5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面が優等局面のときの LookUp  <a href="classkomori_1_1tt_1_1_entry.html#af9837c4fcbddbd23792148da2fbbe5a3">More...</a><br /></td></tr>
+<tr class="separator:af9837c4fcbddbd23792148da2fbbe5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1aa9089e7ebb75092ffe46d087f7fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a2b1aa9089e7ebb75092ffe46d087f7fc">LookUpInferior</a> (std::int16_t depth16, <a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> &amp;len, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;pn, <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> &amp;dn, bool &amp;use_old_child) const noexcept</td></tr>
+<tr class="memdesc:a2b1aa9089e7ebb75092ffe46d087f7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面が劣等局面のときの LookUp  <a href="classkomori_1_1tt_1_1_entry.html#a2b1aa9089e7ebb75092ffe46d087f7fc">More...</a><br /></td></tr>
+<tr class="separator:a2b1aa9089e7ebb75092ffe46d087f7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -259,14 +261,14 @@ std::atomic&lt; Hand &gt;&#160;</td><td class="memItemRight" valign="bottom"><a 
 Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a23de87519db9683666cd76a3b03b9ee4">board_key_</a></td></tr>
 <tr class="memdesc:a23de87519db9683666cd76a3b03b9ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">盤面ハッシュ値 <br /></td></tr>
 <tr class="separator:a23de87519db9683666cd76a3b03b9ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac979c98462307db37611841ba172c857"><td class="memItemLeft" align="right" valign="top"><a id="ac979c98462307db37611841ba172c857"></a>
-<a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#ac979c98462307db37611841ba172c857">proven_len_</a></td></tr>
-<tr class="memdesc:ac979c98462307db37611841ba172c857"><td class="mdescLeft">&#160;</td><td class="mdescRight">詰み手数 <br /></td></tr>
-<tr class="separator:ac979c98462307db37611841ba172c857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed6778bda474c8bcb1e7a8dc53b72e69"><td class="memItemLeft" align="right" valign="top"><a id="aed6778bda474c8bcb1e7a8dc53b72e69"></a>
-<a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#aed6778bda474c8bcb1e7a8dc53b72e69">disproven_len_</a></td></tr>
-<tr class="memdesc:aed6778bda474c8bcb1e7a8dc53b72e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">不詰手数 <br /></td></tr>
-<tr class="separator:aed6778bda474c8bcb1e7a8dc53b72e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e084c0b2b8662428818fe5d9afded8"><td class="memItemLeft" align="right" valign="top"><a id="af9e084c0b2b8662428818fe5d9afded8"></a>
+<a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#af9e084c0b2b8662428818fe5d9afded8">proven_len_</a></td></tr>
+<tr class="memdesc:af9e084c0b2b8662428818fe5d9afded8"><td class="mdescLeft">&#160;</td><td class="mdescRight">詰み手数 <br /></td></tr>
+<tr class="separator:af9e084c0b2b8662428818fe5d9afded8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6cbe919bbe6a11df3374cc298b7cdec"><td class="memItemLeft" align="right" valign="top"><a id="ad6cbe919bbe6a11df3374cc298b7cdec"></a>
+<a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#ad6cbe919bbe6a11df3374cc298b7cdec">disproven_len_</a></td></tr>
+<tr class="memdesc:ad6cbe919bbe6a11df3374cc298b7cdec"><td class="mdescLeft">&#160;</td><td class="mdescRight">不詰手数 <br /></td></tr>
+<tr class="separator:ad6cbe919bbe6a11df3374cc298b7cdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38048203a3e45de279f64733c1830119"><td class="memItemLeft" align="right" valign="top"><a id="a38048203a3e45de279f64733c1830119"></a>
 <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a38048203a3e45de279f64733c1830119">pn_</a></td></tr>
 <tr class="memdesc:a38048203a3e45de279f64733c1830119"><td class="mdescLeft">&#160;</td><td class="mdescRight">pn値 <br /></td></tr>
@@ -285,7 +287,7 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="separator:a82d5f2476820395fef9ebf84f6747047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc83a601ee79496067b5e63cdef440d7"><td class="memItemLeft" align="right" valign="top"><a id="afc83a601ee79496067b5e63cdef440d7"></a>
 std::int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#afc83a601ee79496067b5e63cdef440d7">min_depth_</a></td></tr>
-<tr class="memdesc:afc83a601ee79496067b5e63cdef440d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">最小探索深さ。<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a0d59fe54cf3e3191e2003f2df88683f0" title="pn, dn などの探索情報を取得する">LookUp()</a></code> 中に書き換える可能性があるので mutable。 <br /></td></tr>
+<tr class="memdesc:afc83a601ee79496067b5e63cdef440d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">最小探索深さ。<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a65eedfbe0ca37ae00eadb41fc73f2173" title="pn, dn などの探索情報を取得する">LookUp()</a></code> 中に書き換える可能性があるので mutable。 <br /></td></tr>
 <tr class="separator:afc83a601ee79496067b5e63cdef440d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabe391ce30afb4acbcb187149d346cd5"><td class="memItemLeft" align="right" valign="top"><a id="aabe391ce30afb4acbcb187149d346cd5"></a>
 Hand&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#aabe391ce30afb4acbcb187149d346cd5">parent_hand_</a></td></tr>
@@ -315,7 +317,7 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
 <div class="line">                 8 |                      <a class="code" href="classkomori_1_1tt_1_1_entry.html#a23de87519db9683666cd76a3b03b9ee4">board_key_</a>                       |</div>
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
-<div class="line">                16 | <a class="code" href="classkomori_1_1tt_1_1_entry.html#ac979c98462307db37611841ba172c857">proven_len_</a> |disproven_len|          (unused)         |</div>
+<div class="line">                16 |        <a class="code" href="classkomori_1_1tt_1_1_entry.html#af9e084c0b2b8662428818fe5d9afded8">proven_len_</a>        |       <a class="code" href="classkomori_1_1tt_1_1_entry.html#ad6cbe919bbe6a11df3374cc298b7cdec">disproven_len_</a>      |</div>
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
 <div class="line">                24 |                          <a class="code" href="classkomori_1_1tt_1_1_entry.html#a38048203a3e45de279f64733c1830119">pn_</a>                          |</div>
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
@@ -327,21 +329,22 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
 <div class="line">                56 |                       <a class="code" href="classkomori_1_1tt_1_1_entry.html#afc44e63fe5cd5df66660e7e0a170ac65">sum_mask_</a>                       |</div>
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a0db14ee7a3a680ce054ccc840fabc271"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a0db14ee7a3a680ce054ccc840fabc271">komori::tt::Entry::hand_</a></div><div class="ttdeci">std::atomic&lt; Hand &gt; hand_</div><div class="ttdoc">現局面の持ち駒（コンストラクト時は無効値をセット）</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00549">ttentry.hpp:549</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a23de87519db9683666cd76a3b03b9ee4"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a23de87519db9683666cd76a3b03b9ee4">komori::tt::Entry::board_key_</a></div><div class="ttdeci">Key board_key_</div><div class="ttdoc">盤面ハッシュ値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00551">ttentry.hpp:551</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a0db14ee7a3a680ce054ccc840fabc271"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a0db14ee7a3a680ce054ccc840fabc271">komori::tt::Entry::hand_</a></div><div class="ttdeci">std::atomic&lt; Hand &gt; hand_</div><div class="ttdoc">現局面の持ち駒（コンストラクト時は無効値をセット）</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00551">ttentry.hpp:551</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a23de87519db9683666cd76a3b03b9ee4"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a23de87519db9683666cd76a3b03b9ee4">komori::tt::Entry::board_key_</a></div><div class="ttdeci">Key board_key_</div><div class="ttdoc">盤面ハッシュ値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00553">ttentry.hpp:553</a></div></div>
 <div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a24bacfcc1ebd8e79cd3e29340e0f1d78"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78">komori::tt::Entry::lock</a></div><div class="ttdeci">void lock() const</div><div class="ttdoc">エントリの排他ロックを取る</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00201">ttentry.hpp:201</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a38048203a3e45de279f64733c1830119"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a38048203a3e45de279f64733c1830119">komori::tt::Entry::pn_</a></div><div class="ttdeci">PnDn pn_</div><div class="ttdoc">pn値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00556">ttentry.hpp:556</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a4fb181b4ee5cc175a792c52d2417e9f9"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a4fb181b4ee5cc175a792c52d2417e9f9">komori::tt::Entry::amount_</a></div><div class="ttdeci">SearchAmount amount_</div><div class="ttdoc">現局面の探索量</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00550">ttentry.hpp:550</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a6ed07741113f8839a56f8b2fedf655cf"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a6ed07741113f8839a56f8b2fedf655cf">komori::tt::Entry::dn_</a></div><div class="ttdeci">PnDn dn_</div><div class="ttdoc">dn値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00557">ttentry.hpp:557</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a7467449eb036b1783d9529287248708c"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a7467449eb036b1783d9529287248708c">komori::tt::Entry::parent_board_key_</a></div><div class="ttdeci">Key parent_board_key_</div><div class="ttdoc">親局面の盤面ハッシュ値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00564">ttentry.hpp:564</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_aabe391ce30afb4acbcb187149d346cd5"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#aabe391ce30afb4acbcb187149d346cd5">komori::tt::Entry::parent_hand_</a></div><div class="ttdeci">Hand parent_hand_</div><div class="ttdoc">親局面の持ち駒</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00563">ttentry.hpp:563</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_ac979c98462307db37611841ba172c857"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#ac979c98462307db37611841ba172c857">komori::tt::Entry::proven_len_</a></div><div class="ttdeci">MateLen16 proven_len_</div><div class="ttdoc">詰み手数</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00553">ttentry.hpp:553</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_afc44e63fe5cd5df66660e7e0a170ac65"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#afc44e63fe5cd5df66660e7e0a170ac65">komori::tt::Entry::sum_mask_</a></div><div class="ttdeci">BitSet64 sum_mask_</div><div class="ttdoc">δ値を和で計算する子の集合</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00565">ttentry.hpp:565</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_afc83a601ee79496067b5e63cdef440d7"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#afc83a601ee79496067b5e63cdef440d7">komori::tt::Entry::min_depth_</a></div><div class="ttdeci">std::int16_t min_depth_</div><div class="ttdoc">最小探索深さ。LookUp() 中に書き換える可能性があるので mutable。</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00561">ttentry.hpp:561</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a38048203a3e45de279f64733c1830119"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a38048203a3e45de279f64733c1830119">komori::tt::Entry::pn_</a></div><div class="ttdeci">PnDn pn_</div><div class="ttdoc">pn値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00558">ttentry.hpp:558</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a4fb181b4ee5cc175a792c52d2417e9f9"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a4fb181b4ee5cc175a792c52d2417e9f9">komori::tt::Entry::amount_</a></div><div class="ttdeci">SearchAmount amount_</div><div class="ttdoc">現局面の探索量</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00552">ttentry.hpp:552</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a6ed07741113f8839a56f8b2fedf655cf"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a6ed07741113f8839a56f8b2fedf655cf">komori::tt::Entry::dn_</a></div><div class="ttdeci">PnDn dn_</div><div class="ttdoc">dn値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00559">ttentry.hpp:559</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a7467449eb036b1783d9529287248708c"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a7467449eb036b1783d9529287248708c">komori::tt::Entry::parent_board_key_</a></div><div class="ttdeci">Key parent_board_key_</div><div class="ttdoc">親局面の盤面ハッシュ値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00566">ttentry.hpp:566</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_aabe391ce30afb4acbcb187149d346cd5"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#aabe391ce30afb4acbcb187149d346cd5">komori::tt::Entry::parent_hand_</a></div><div class="ttdeci">Hand parent_hand_</div><div class="ttdoc">親局面の持ち駒</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00565">ttentry.hpp:565</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_ad6cbe919bbe6a11df3374cc298b7cdec"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#ad6cbe919bbe6a11df3374cc298b7cdec">komori::tt::Entry::disproven_len_</a></div><div class="ttdeci">MateLen disproven_len_</div><div class="ttdoc">不詰手数</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00556">ttentry.hpp:556</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_af9e084c0b2b8662428818fe5d9afded8"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#af9e084c0b2b8662428818fe5d9afded8">komori::tt::Entry::proven_len_</a></div><div class="ttdeci">MateLen proven_len_</div><div class="ttdoc">詰み手数</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00555">ttentry.hpp:555</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_afc44e63fe5cd5df66660e7e0a170ac65"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#afc44e63fe5cd5df66660e7e0a170ac65">komori::tt::Entry::sum_mask_</a></div><div class="ttdeci">BitSet64 sum_mask_</div><div class="ttdoc">δ値を和で計算する子の集合</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00567">ttentry.hpp:567</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_afc83a601ee79496067b5e63cdef440d7"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#afc83a601ee79496067b5e63cdef440d7">komori::tt::Entry::min_depth_</a></div><div class="ttdeci">std::int16_t min_depth_</div><div class="ttdoc">最小探索深さ。LookUp() 中に書き換える可能性があるので mutable。</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00563">ttentry.hpp:563</a></div></div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md8"></a>
 初期化</h3>
 <p>配列により一気にメモリ確保したいので、デフォルトコンストラクト可能にする。</p>
-<p>エントリを初めて使う際は、<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a21f23aa24e8d8275b5edd9a5275c9f7b" title="エントリの初期化を行う">Init()</a></code> により初期化を行う。これにより、必要なメンバ変数に初期値設定が行われ、 エントリが使える状態になる。エントリがもう必要なくなった場合、<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#ab2a56abea99528c93241c846e21565d2" title="エントリに無効値を設定する">SetNull()</a></code> により無効値をセットできる。 無効値がセットされたエントリは <code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a21f23aa24e8d8275b5edd9a5275c9f7b" title="エントリの初期化を行う">Init()</a></code> によりまた上書きして使用することができる。</p>
+<p>エントリを初めて使う際は、<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a21f23aa24e8d8275b5edd9a5275c9f7b" title="エントリの初期化を行う">Init()</a></code> により初期化を行う。これにより、必要なメンバ変数に初期値設定が行われ、 エントリが使える状態になる。エントリがもう必要なくなった場合、<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#ab2a56abea99528c93241c846e21565d2" title="エントリに無効値を設定する。この関数に限っては共有ロックを取得せずに使用することができる。">SetNull()</a></code> により無効値をセットできる。 無効値がセットされたエントリは <code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a21f23aa24e8d8275b5edd9a5275c9f7b" title="エントリの初期化を行う">Init()</a></code> によりまた上書きして使用することができる。</p>
 <h3><a class="anchor" id="autotoc_md9"></a>
 無効値判定</h3>
 <p>無効値の判定は <code>hand_</code> の値が <code>kNullHand</code> かどうかを調べることにより行う。無効値の判定は TT のガベージコレクションや 空きエントリの探索など、探索中にとても頻繁に行いたいので、先頭アドレスに無効値判定のための情報を置いている。</p>
@@ -349,7 +352,7 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <p>デフォルトコンストラクト直後は無効値がセットされる。エントリが無効状態のとき、以下の関数のみコールすることができる。</p>
 <ul>
 <li><a class="el" href="classkomori_1_1tt_1_1_entry.html#a21f23aa24e8d8275b5edd9a5275c9f7b" title="エントリの初期化を行う">Init()</a></li>
-<li><a class="el" href="classkomori_1_1tt_1_1_entry.html#ab2a56abea99528c93241c846e21565d2" title="エントリに無効値を設定する">SetNull()</a></li>
+<li><a class="el" href="classkomori_1_1tt_1_1_entry.html#ab2a56abea99528c93241c846e21565d2" title="エントリに無効値を設定する。この関数に限っては共有ロックを取得せずに使用することができる。">SetNull()</a></li>
 <li><a class="el" href="classkomori_1_1tt_1_1_entry.html#af1969c3d079ea4a462df415e5ce4ec1b" title="エントリが未使用状態かを判定する。この関数に限っては共有ロックを取得せずに使用することができる。">IsNull()</a></li>
 <li>IsFor(key, hand)</li>
 </ul>
@@ -370,7 +373,7 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <p><code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a21f23aa24e8d8275b5edd9a5275c9f7b" title="エントリの初期化を行う">Init()</a></code> 直後は、-1手不詰、+∞手詰みで初期化する。こうすることで、任意の非負有限手に対し不明（探索中）の状態に 設定できる。</p>
 <h3><a class="anchor" id="autotoc_md12"></a>
 Look Up</h3>
-<p>探索結果の取得には関数 <code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a0d59fe54cf3e3191e2003f2df88683f0" title="pn, dn などの探索情報を取得する">LookUp()</a></code> を用いる。<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a0d59fe54cf3e3191e2003f2df88683f0" title="pn, dn などの探索情報を取得する">LookUp()</a></code> は優等性や劣等性を生かして pn, dn を取得する関数である。 優等局面や劣等局面に対し、以下の性質が成り立つ。</p>
+<p>探索結果の取得には関数 <code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a65eedfbe0ca37ae00eadb41fc73f2173" title="pn, dn などの探索情報を取得する">LookUp()</a></code> を用いる。<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a65eedfbe0ca37ae00eadb41fc73f2173" title="pn, dn などの探索情報を取得する">LookUp()</a></code> は優等性や劣等性を生かして pn, dn を取得する関数である。 優等局面や劣等局面に対し、以下の性質が成り立つ。</p>
 <ol type="1">
 <li>劣等局面は優等局面と比べて詰みを示しづらい（王手回避の合法手が増えるので）</li>
 <li>優等局面は劣等局面と比べて不詰を示しづらい（王手の合法手が増えるので）</li>
@@ -419,7 +422,7 @@ SumMask</h3>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00544">544</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00546">546</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -514,7 +517,7 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>エントリが <code>board_key</code> のものなら <code>true</code> </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>!IsNull()</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00220">220</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00222">222</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -564,7 +567,7 @@ Here is the call graph for this function:</div>
 <p><code>IsFor(board_key)</code> の条件に加え、<code>hand</code> が一致するかどうかの判定を行う。</p>
 <dl class="section note"><dt>Note</dt><dd>エントリが無効かどうかは <code>hand</code> に格納されているので、無効状態でも正しく動作する </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00231">231</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00233">233</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -594,12 +597,12 @@ Here is the call graph for this function:</div>
 <p>千日手可能性フラグが立っているかどうか判定する。 </p>
 <dl class="section pre"><dt>Precondition</dt><dd><code>!IsNull()</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00266">266</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00268">268</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a0d59fe54cf3e3191e2003f2df88683f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d59fe54cf3e3191e2003f2df88683f0">&#9670;&nbsp;</a></span>LookUp()</h2>
+<a id="a65eedfbe0ca37ae00eadb41fc73f2173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65eedfbe0ca37ae00eadb41fc73f2173">&#9670;&nbsp;</a></span>LookUp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -622,7 +625,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> &amp;&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
@@ -675,29 +678,29 @@ Here is the call graph for this function:</div>
 実装詳細</h2>
 <p>探索中にとても頻繁に呼ばれる関数なので限界まで高速化したい。そのため、シンプルな処理ながら関数の実装は 長めになっている。実装の本体は次の3つの関数に分割されている。</p>
 <ul>
-<li><a class="el" href="classkomori_1_1tt_1_1_entry.html#a28c1c8f43a7524a8c7e1e803e7ed50b9" title="現局面とエントリが一致しているときの LookUp">LookUpExact()</a>: 現局面とエントリが一致</li>
-<li><a class="el" href="classkomori_1_1tt_1_1_entry.html#ab0221111730baf194503840e02fe2921" title="現局面が劣等局面のときの LookUp">LookUpInferior()</a>: 現局面が劣等局面</li>
-<li><a class="el" href="classkomori_1_1tt_1_1_entry.html#a20c6e12418baa7ea0ed7a6f8ba35c242" title="現局面が優等局面のときの LookUp">LookUpSuperior()</a>: 現局面が優等局面</li>
+<li><a class="el" href="classkomori_1_1tt_1_1_entry.html#a7a7b99fdd923fae682abb1bf2194f3f5" title="現局面とエントリが一致しているときの LookUp">LookUpExact()</a>: 現局面とエントリが一致</li>
+<li><a class="el" href="classkomori_1_1tt_1_1_entry.html#a2b1aa9089e7ebb75092ffe46d087f7fc" title="現局面が劣等局面のときの LookUp">LookUpInferior()</a>: 現局面が劣等局面</li>
+<li><a class="el" href="classkomori_1_1tt_1_1_entry.html#af9837c4fcbddbd23792148da2fbbe5a3" title="現局面が優等局面のときの LookUp">LookUpSuperior()</a>: 現局面が優等局面</li>
 </ul>
 <p>細かいことを言うと、 現局面とエントリが一致 &lt;=&gt; 現局面が優等局面 ∧ 現局面が劣等局面 が成り立つので LookUpUnknown() はそれほど必要ではないが、実際には優等局面・劣等局面よりも一致局面のほうが 頻繁に現れ、かつ容易に一致局面かどうかの判定ができるため、別処理にしたほうが高速化できる。 </p>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00351">351</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00353">353</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1tt_1_1_entry_a0d59fe54cf3e3191e2003f2df88683f0_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_entry_a0d59fe54cf3e3191e2003f2df88683f0_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1tt_1_1_entry_a0d59fe54cf3e3191e2003f2df88683f0_cgraph" id="aclasskomori_1_1tt_1_1_entry_a0d59fe54cf3e3191e2003f2df88683f0_cgraph">
+<div class="center"><img src="classkomori_1_1tt_1_1_entry_a65eedfbe0ca37ae00eadb41fc73f2173_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_entry_a65eedfbe0ca37ae00eadb41fc73f2173_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1_entry_a65eedfbe0ca37ae00eadb41fc73f2173_cgraph" id="aclasskomori_1_1tt_1_1_entry_a65eedfbe0ca37ae00eadb41fc73f2173_cgraph">
 <area shape="rect" title="pn, dn などの探索情報を取得する" alt="" coords="5,71,140,112"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a28c1c8f43a7524a8c7e1e803e7ed50b9" title="現局面とエントリが一致しているときの LookUp" alt="" coords="188,5,323,47"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#ab0221111730baf194503840e02fe2921" title="現局面が劣等局面のときの LookUp" alt="" coords="188,71,323,112"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a20c6e12418baa7ea0ed7a6f8ba35c242" title="現局面が優等局面のときの LookUp" alt="" coords="188,136,323,177"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a7a7b99fdd923fae682abb1bf2194f3f5" title="現局面とエントリが一致しているときの LookUp" alt="" coords="188,5,323,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a2b1aa9089e7ebb75092ffe46d087f7fc" title="現局面が劣等局面のときの LookUp" alt="" coords="188,71,323,112"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#af9837c4fcbddbd23792148da2fbbe5a3" title="現局面が優等局面のときの LookUp" alt="" coords="188,136,323,177"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a28c1c8f43a7524a8c7e1e803e7ed50b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28c1c8f43a7524a8c7e1e803e7ed50b9">&#9670;&nbsp;</a></span>LookUpExact()</h2>
+<a id="a7a7b99fdd923fae682abb1bf2194f3f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a7b99fdd923fae682abb1bf2194f3f5">&#9670;&nbsp;</a></span>LookUpExact()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -714,7 +717,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> &amp;&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
@@ -760,12 +763,12 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>必ず <code>true</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00460">460</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00462">462</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
-<a id="ab0221111730baf194503840e02fe2921"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0221111730baf194503840e02fe2921">&#9670;&nbsp;</a></span>LookUpInferior()</h2>
+<a id="a2b1aa9089e7ebb75092ffe46d087f7fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b1aa9089e7ebb75092ffe46d087f7fc">&#9670;&nbsp;</a></span>LookUpInferior()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -782,7 +785,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> &amp;&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
@@ -828,12 +831,12 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pn/dn を更新したら <code>true</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00520">520</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00522">522</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a20c6e12418baa7ea0ed7a6f8ba35c242"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20c6e12418baa7ea0ed7a6f8ba35c242">&#9670;&nbsp;</a></span>LookUpSuperior()</h2>
+<a id="af9837c4fcbddbd23792148da2fbbe5a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9837c4fcbddbd23792148da2fbbe5a3">&#9670;&nbsp;</a></span>LookUpSuperior()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -850,7 +853,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> &amp;&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
@@ -896,7 +899,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pn/dn を更新したら <code>true</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00492">492</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00494">494</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -926,7 +929,7 @@ Here is the call graph for this function:</div>
 <p>千日手の可能性ありフラグの設定および pn/dn の再初期化を行う。 </p>
 <dl class="section pre"><dt>Precondition</dt><dd><code>!IsNull()</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00256">256</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00258">258</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -956,7 +959,7 @@ Here is the call graph for this function:</div>
 <p>エントリの排他ロックを解除する </p>
 <dl class="section pre"><dt>Precondition</dt><dd><code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78" title="エントリの排他ロックを取る">lock()</a></code> によりロックされている </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00207">207</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00208">208</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -969,8 +972,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a946c075142a62fec93ab702c7913a7ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a946c075142a62fec93ab702c7913a7ef">&#9670;&nbsp;</a></span>UpdateDisproven()</h2>
+<a id="a86c92f5c945e0c9cd2839dc4fbce1d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c92f5c945e0c9cd2839dc4fbce1d81">&#9670;&nbsp;</a></span>UpdateDisproven()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -981,7 +984,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void komori::tt::Entry::UpdateDisproven </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a>&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
@@ -1015,12 +1018,12 @@ Here is the call graph for this function:</div>
 <dd>
 <code>len</code> &lt; <code>proven_len_</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00316">316</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00318">318</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1tt_1_1_entry_a946c075142a62fec93ab702c7913a7ef_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_entry_a946c075142a62fec93ab702c7913a7ef_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1tt_1_1_entry_a946c075142a62fec93ab702c7913a7ef_cgraph" id="aclasskomori_1_1tt_1_1_entry_a946c075142a62fec93ab702c7913a7ef_cgraph">
+<div class="center"><img src="classkomori_1_1tt_1_1_entry_a86c92f5c945e0c9cd2839dc4fbce1d81_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_entry_a86c92f5c945e0c9cd2839dc4fbce1d81_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1_entry_a86c92f5c945e0c9cd2839dc4fbce1d81_cgraph" id="aclasskomori_1_1tt_1_1_entry_a86c92f5c945e0c9cd2839dc4fbce1d81_cgraph">
 <area shape="rect" title="探索結果を書き込む（不詰局面）" alt="" coords="5,5,140,47"/>
 <area shape="rect" href="namespacekomori.html#a7311d41d5455115265700ac2518036a7" title="T 型の値を足し合わせる。ただし、計算結果が T 型で表現できない場合は上限値で丸める（符号なし型）" alt="" coords="188,13,351,39"/>
 </map>
@@ -1028,8 +1031,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a29bcb4b6c1f920e28119ad7dec411fc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29bcb4b6c1f920e28119ad7dec411fc0">&#9670;&nbsp;</a></span>UpdateFinalRange()</h2>
+<a id="adfe78d1925ea0bb315f4406e96939967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfe78d1925ea0bb315f4406e96939967">&#9670;&nbsp;</a></span>UpdateFinalRange()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1046,13 +1049,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> &amp;&#160;</td>
           <td class="paramname"><em>disproven_len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a> &amp;&#160;</td>
           <td class="paramname"><em>proven_len</em>&#160;</td>
         </tr>
         <tr>
@@ -1068,7 +1071,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>詰み／不詰手数専用の <a class="el" href="classkomori_1_1tt_1_1_entry.html#a0d59fe54cf3e3191e2003f2df88683f0" title="pn, dn などの探索情報を取得する">LookUp()</a> </p>
+<p>詰み／不詰手数専用の <a class="el" href="classkomori_1_1tt_1_1_entry.html#a65eedfbe0ca37ae00eadb41fc73f2173" title="pn, dn などの探索情報を取得する">LookUp()</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hand</td><td>現局面の持ち駒 </td></tr>
@@ -1087,7 +1090,7 @@ IsFor(board_key_)</dd></dl>
 <li>少なくとも <code>disproven_len</code> 手で詰まない </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00422">422</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00424">424</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1158,7 @@ IsFor(board_key_)</dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00385">385</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00387">387</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1168,8 +1171,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="aedbe856b1c3993d491140eee6f32b6cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedbe856b1c3993d491140eee6f32b6cb">&#9670;&nbsp;</a></span>UpdateProven()</h2>
+<a id="abc444ad7a5f47343c7ac4aa6025ac055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc444ad7a5f47343c7ac4aa6025ac055">&#9670;&nbsp;</a></span>UpdateProven()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1180,7 +1183,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void komori::tt::Entry::UpdateProven </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacekomori.html#a5b173701f7efb9de640cd66a993a0af2">MateLen16</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacekomori.html#af2c3856a7c53116227693f8dcca64199">MateLen</a>&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
@@ -1214,12 +1217,12 @@ Here is the call graph for this function:</div>
 <dd>
 <code>len</code> &gt; <code>disproven_len_</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00303">303</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00305">305</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classkomori_1_1tt_1_1_entry_aedbe856b1c3993d491140eee6f32b6cb_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_entry_aedbe856b1c3993d491140eee6f32b6cb_cgraph" alt=""/></div>
-<map name="aclasskomori_1_1tt_1_1_entry_aedbe856b1c3993d491140eee6f32b6cb_cgraph" id="aclasskomori_1_1tt_1_1_entry_aedbe856b1c3993d491140eee6f32b6cb_cgraph">
+<div class="center"><img src="classkomori_1_1tt_1_1_entry_abc444ad7a5f47343c7ac4aa6025ac055_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_entry_abc444ad7a5f47343c7ac4aa6025ac055_cgraph" alt=""/></div>
+<map name="aclasskomori_1_1tt_1_1_entry_abc444ad7a5f47343c7ac4aa6025ac055_cgraph" id="aclasskomori_1_1tt_1_1_entry_abc444ad7a5f47343c7ac4aa6025ac055_cgraph">
 <area shape="rect" title="探索結果を書き込む（詰み局面）" alt="" coords="5,5,140,47"/>
 <area shape="rect" href="namespacekomori.html#a7311d41d5455115265700ac2518036a7" title="T 型の値を足し合わせる。ただし、計算結果が T 型で表現できない場合は上限値で丸める（符号なし型）" alt="" coords="188,13,351,39"/>
 </map>
@@ -1306,7 +1309,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>IsFor(board_key, hand)</code> （<code>board_key</code>, <code>hand</code> は現局面の盤面ハッシュ、持ち駒） </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00279">279</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00281">281</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>

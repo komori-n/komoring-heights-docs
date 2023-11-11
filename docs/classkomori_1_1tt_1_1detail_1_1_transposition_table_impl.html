@@ -105,7 +105,7 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="separator:a0c24d5dd7a200160900d4241696c9e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0472159b40306cf837a6ed5dc7dd3eb4"><td class="memItemLeft" align="right" valign="top"><a id="a0472159b40306cf837a6ed5dc7dd3eb4"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a0472159b40306cf837a6ed5dc7dd3eb4">TranspositionTableImpl</a> (<a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;&amp;) noexcept=delete</td></tr>
-<tr class="memdesc:a0472159b40306cf837a6ed5dc7dd3eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor(default) <br /></td></tr>
+<tr class="memdesc:a0472159b40306cf837a6ed5dc7dd3eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor(delete) <br /></td></tr>
 <tr class="separator:a0472159b40306cf837a6ed5dc7dd3eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd58fa21a626dd2aec61507dc40830a2"><td class="memItemLeft" align="right" valign="top"><a id="acd58fa21a626dd2aec61507dc40830a2"></a>
 constexpr <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#acd58fa21a626dd2aec61507dc40830a2">operator=</a> (const <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;)=delete</td></tr>
@@ -113,7 +113,7 @@ constexpr <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_tabl
 <tr class="separator:acd58fa21a626dd2aec61507dc40830a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a272a11c91dee79fc97c8f2ab4056465e"><td class="memItemLeft" align="right" valign="top"><a id="a272a11c91dee79fc97c8f2ab4056465e"></a>
 constexpr <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a272a11c91dee79fc97c8f2ab4056465e">operator=</a> (<a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html">TranspositionTableImpl</a> &amp;&amp;) noexcept=delete</td></tr>
-<tr class="memdesc:a272a11c91dee79fc97c8f2ab4056465e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assign operator(default) <br /></td></tr>
+<tr class="memdesc:a272a11c91dee79fc97c8f2ab4056465e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assign operator(delete) <br /></td></tr>
 <tr class="separator:a272a11c91dee79fc97c8f2ab4056465e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e574f79e8c418ac9e58b2a7a9f97ea9"><td class="memItemLeft" align="right" valign="top"><a id="a0e574f79e8c418ac9e58b2a7a9f97ea9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a0e574f79e8c418ac9e58b2a7a9f97ea9">~TranspositionTableImpl</a> ()=default</td></tr>
@@ -188,10 +188,10 @@ class komori::tt::detail::TranspositionTableImpl&lt; Query, RegularTable, Repeti
 </dl>
 <p>置換表は、大きく分けて通常テーブル（RegularTable）と千日手テーブル（RepetitionTable）に分けられる。 通常テーブルは大部分の探索結果を保存する領域で、探索中局面の pn/dn 値および証明済／反証済局面の 詰み手数を保存する。一方、千日手テーブルはその名の通り千日手局面を覚えておくための専用領域である。通常テーブルは 経路に依存しない探索結果を覚えているのに対し、千日手テーブルは経路依存の値を覚えるという棲み分けである。</p>
 <p>置換表に対する値の読み書きは、クエリ（Query）クラスにより実現される。置換表の読み書きに必要な情報は （盤面ハッシュや持ち駒など）探索が進んでも不変な値で構成されているので、クエリを使い回すことで 探索性能を向上させることができる。1回1回のクエリ構築はそれほど重い処理ではないように見えるかもしれないが、 実際には同じエントリに何回も読み書きする必要があるので、有意に高速化できる。</p>
-<p>また、置換表読み書きは詰将棋エンジン内で頻繁に呼び出す処理のため、現局面だけでなく1手進めた局面のクエリの 構築することができる。（<code>CreateChildQuery()</code>）</p>
+<p>また、置換表読み書きは詰将棋エンジン内で頻繁に呼び出す処理のため、現局面だけでなく1手進めた局面のクエリの 構築することができる。（<code><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a2a0f0621bb26449fdf6d8c00a8600d7e" title="局面 n を move で 1 手進めたエントリを読み書きするためのクエリを返す">BuildChildQuery()</a></code>）</p>
 <p>このクラスでは、Query, <a class="el" href="classkomori_1_1tt_1_1_regular_table.html" title="経路に依存しない探索結果を記録する置換表。（通常テーブル）">RegularTable</a>, <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html" title="千日手手順（経路ハッシュ値）を記録する置換表">RepetitionTable</a> をテンプレートパラメータ化している。これは、単体テスト時に 外部から注入するためのトリックである。本物のクラスは外部から状態を観測しづらく、Look Up してみなければ 内部変数がどうなっているかが把握できない。単体テストで知りたいのは参照クラスのメンバ関数が正しく呼ばれているかどうか なので、別物に差し替えて中身をチェックできるようにしている。 </p>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00048">48</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00045">45</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2a0f0621bb26449fdf6d8c00a8600d7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a0f0621bb26449fdf6d8c00a8600d7e">&#9670;&nbsp;</a></span>BuildChildQuery()</h2>
@@ -240,7 +240,7 @@ template&lt;typename Query , typename RegularTable , typename RepetitionTable &g
 <dl class="section return"><dt>Returns</dt><dd>クエリ</dd></dl>
 <p><code><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a96c4e38870490176e0053914a17c908c" title="局面 n のエントリを読み書きするためのクエリを返す">BuildQuery()</a></code> と比較して、<code>n.DoMove()</code> により局面を動かさなくてもクエリを構築できるため高速に動作する。 </p>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00127">127</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00124">124</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -297,7 +297,7 @@ template&lt;typename Query , typename RegularTable , typename RepetitionTable &g
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>クエリ </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00109">109</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00106">106</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -361,7 +361,7 @@ template&lt;typename Query , typename RegularTable , typename RepetitionTable &g
 <dl class="section return"><dt>Returns</dt><dd>クエリ </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>二重カウント検出用 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00144">144</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00141">141</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -402,7 +402,7 @@ template&lt;typename Query , typename RegularTable , typename RepetitionTable &g
 <p>置換表に保存可能な要素数の概算値を取得する。 </p>
 <dl class="section return"><dt>Returns</dt><dd>置換表に保存可能な要素数（概算値） </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00198">198</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00196">196</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -443,9 +443,9 @@ template&lt;typename Query , typename RegularTable , typename RepetitionTable &g
 
 <p>ガベージコレクションを実行する </p>
 <dl class="section return"><dt>Returns</dt><dd>削除されたエントリ数</dd></dl>
-<p>通常テーブルおよび千日手テーブルのうち、必要なさそうなエントリの削除を行う。 </p>
+<p>通常テーブルから必要なさそうなエントリの削除を行う。 （千日手テーブルは都度 GC をしているのでここでは何もする必要がない） </p>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00175">175</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00173">173</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -490,7 +490,7 @@ template&lt;typename Query , typename RegularTable , typename RepetitionTable &g
 <p>置換表全体のメモリ使用率を計算する。置換表は通常テーブルと千日手テーブルに分かれているため、それぞれの メモリ使用率を重み付けして足し合わせることで全体のメモリ使用量を見積もる。</p>
 <p>通常テーブルのメモリ使用率を計算する際、置換表のサンプリングを行う。そのため、結果の計算にはそこそこの 計算コストがかかる。1秒に1回程度なら問題ないが、それ以上の頻度で呼び出すと性能劣化につながるので注意すること。 </p>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00161">161</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00158">158</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -539,7 +539,7 @@ template&lt;typename Query , typename RegularTable , typename RepetitionTable &g
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>is</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00192">192</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00190">190</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -584,7 +584,7 @@ template&lt;typename Query , typename RegularTable , typename RepetitionTable &g
 <p>通常探索エントリを完全に消去したい場合は <a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#af55851a911e7918a6b97947855f2f325" title="以前の探索結果をすべて消去する。">Clear()</a> を使うこと。</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#af55851a911e7918a6b97947855f2f325" title="以前の探索結果をすべて消去する。">Clear</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00094">94</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00091">91</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -631,9 +631,9 @@ template&lt;typename Query , typename RegularTable , typename RepetitionTable &g
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>hash_size_mb &gt;= 1</code></dd></dl>
-<p>置換表サイズが <code>hash_size_mb</code> 以下になるようにする。置換表は大きく分けて <a class="el" href="classkomori_1_1tt_1_1_regular_table.html" title="経路に依存しない探索結果を記録する置換表。（通常テーブル）">RegularTable</a> と <a class="el" href="classkomori_1_1tt_1_1_repetition_table.html" title="千日手手順（経路ハッシュ値）を記録する置換表">RepetitionTable</a> に 分けられるが、それらの合計サイズが <code>hash_size_mb</code>[MB] を超えないようにする。 </p>
+<p>置換表サイズが <code>hash_size_mb</code> 以下になるようにする。通常テーブルと千日手テーブルの合計サイズが <code>hash_size_mb</code>[MB] を超えないようにする。 </p>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00071">71</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00068">68</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -685,7 +685,7 @@ template&lt;typename Query , typename RegularTable , typename RepetitionTable &g
 <dl class="section return"><dt>Returns</dt><dd><code>os</code></dd></dl>
 <p>千日手テーブルについては書き出しを行わない。なぜなら、探索開始局面が同一でなければ再利用しづらい情報であり、 多くの詰将棋では千日手テーブルなしでもそれほど時間がかからず詰み手順を復元できるためである。 </p>
 
-<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00185">185</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="transposition__table_8hpp_source.html#l00183">183</a> of file <a class="el" href="transposition__table_8hpp_source.html">transposition_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

@@ -76,33 +76,44 @@ $(function() {
 <div class="title">komori::detail::ZipImpl&lt; Range1, Range2 &gt;::Iterator&lt; Iterator1, Iterator2 &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>zipイテレータ  
+ <a href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ranges_8hpp_source.html">ranges.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9804cf9477d579fe9103704a9fbd20c"><td class="memItemLeft" align="right" valign="top"><a id="ad9804cf9477d579fe9103704a9fbd20c"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>Iterator</b> (Iterator1 itr1, Iterator2 itr2) noexcept(std::is_nothrow_copy_assignable_v&lt; Iterator1 &gt; &amp;&amp;std::is_nothrow_copy_assignable_v&lt; Iterator2 &gt;)</td></tr>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html#ad9804cf9477d579fe9103704a9fbd20c">Iterator</a> (Iterator1 itr1, Iterator2 itr2) noexcept(std::is_nothrow_copy_assignable_v&lt; Iterator1 &gt; &amp;&amp;std::is_nothrow_copy_assignable_v&lt; Iterator2 &gt;)</td></tr>
+<tr class="memdesc:ad9804cf9477d579fe9103704a9fbd20c"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ <br /></td></tr>
 <tr class="separator:ad9804cf9477d579fe9103704a9fbd20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a9ece2b375fce0779dd98d851c1c2e7"><td class="memItemLeft" align="right" valign="top"><a id="a1a9ece2b375fce0779dd98d851c1c2e7"></a>
-constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () noexcept(noexcept(*std::declval&lt; Iterator1 &gt;(), *std::declval&lt; Iterator2 &gt;()))</td></tr>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html#a1a9ece2b375fce0779dd98d851c1c2e7">operator*</a> () noexcept(noexcept(*std::declval&lt; Iterator1 &gt;(), *std::declval&lt; Iterator2 &gt;()))</td></tr>
+<tr class="memdesc:a1a9ece2b375fce0779dd98d851c1c2e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">イテレータをペアにして値を読み取る <br /></td></tr>
 <tr class="separator:a1a9ece2b375fce0779dd98d851c1c2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c96336506a075d627b2eb2dd19336b9"><td class="memItemLeft" align="right" valign="top"><a id="a3c96336506a075d627b2eb2dd19336b9"></a>
-constexpr <a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> () noexcept(noexcept(std::declval&lt; Iterator1 &gt;()++, std::declval&lt; Iterator2 &gt;()++))</td></tr>
+constexpr <a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html#a3c96336506a075d627b2eb2dd19336b9">operator++</a> () noexcept(noexcept(std::declval&lt; Iterator1 &gt;()++, std::declval&lt; Iterator2 &gt;()++))</td></tr>
+<tr class="memdesc:a3c96336506a075d627b2eb2dd19336b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">イテレータを進める <br /></td></tr>
 <tr class="separator:a3c96336506a075d627b2eb2dd19336b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a566103ff0a46ff1793a08fcb933d68e5"><td class="memItemLeft" align="right" valign="top"><a id="a566103ff0a46ff1793a08fcb933d68e5"></a>
-Iterator1&#160;</td><td class="memItemRight" valign="bottom"><b>itr1_</b></td></tr>
+Iterator1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html#a566103ff0a46ff1793a08fcb933d68e5">itr1_</a></td></tr>
+<tr class="memdesc:a566103ff0a46ff1793a08fcb933d68e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range1 に対するイテレータ <br /></td></tr>
 <tr class="separator:a566103ff0a46ff1793a08fcb933d68e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73309663976c283c8bd19933d76fa35c"><td class="memItemLeft" align="right" valign="top"><a id="a73309663976c283c8bd19933d76fa35c"></a>
-Iterator2&#160;</td><td class="memItemRight" valign="bottom"><b>itr2_</b></td></tr>
+Iterator2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html#a73309663976c283c8bd19933d76fa35c">itr2_</a></td></tr>
+<tr class="memdesc:a73309663976c283c8bd19933d76fa35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range2 に対するイテレータ <br /></td></tr>
 <tr class="separator:a73309663976c283c8bd19933d76fa35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ad79138a82cdfb09a5ebc1bdbcc3848bc"><td class="memTemplParams" colspan="2"><a id="ad79138a82cdfb09a5ebc1bdbcc3848bc"></a>
 template&lt;typename LI1 , typename LI2 , typename RI1 , typename RI2 &gt; </td></tr>
-<tr class="memitem:ad79138a82cdfb09a5ebc1bdbcc3848bc"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator</a>&lt; LI1, LI2 &gt; &amp;lhs, const <a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator</a>&lt; RI1, RI2 &gt; &amp;rhs) noexcept(noexcept(lhs.itr1_==rhs.itr1_||lhs.itr2_==rhs.itr2_))</td></tr>
+<tr class="memitem:ad79138a82cdfb09a5ebc1bdbcc3848bc"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html#ad79138a82cdfb09a5ebc1bdbcc3848bc">operator!=</a> (const <a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator</a>&lt; LI1, LI2 &gt; &amp;lhs, const <a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator</a>&lt; RI1, RI2 &gt; &amp;rhs) noexcept(noexcept(lhs.itr1_==rhs.itr1_||lhs.itr2_==rhs.itr2_))</td></tr>
+<tr class="memdesc:ad79138a82cdfb09a5ebc1bdbcc3848bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">イテレータを比較する <br /></td></tr>
 <tr class="separator:ad79138a82cdfb09a5ebc1bdbcc3848bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -110,8 +121,16 @@ template&lt;typename LI1 , typename LI2 , typename RI1 , typename RI2 &gt; </td>
 template&lt;typename Iterator1, typename Iterator2&gt;<br />
 class komori::detail::ZipImpl&lt; Range1, Range2 &gt;::Iterator&lt; Iterator1, Iterator2 &gt;</h3>
 
+<p>zipイテレータ </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Iterator1</td><td>Range1 に対するイテレータ </td></tr>
+    <tr><td class="paramname">Iterator2</td><td>Range2 に対するイテレータ </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="ranges_8hpp_source.html#l00344">344</a> of file <a class="el" href="ranges_8hpp_source.html">ranges.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ranges_8hpp_source.html#l00358">358</a> of file <a class="el" href="ranges_8hpp_source.html">ranges.hpp</a>.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

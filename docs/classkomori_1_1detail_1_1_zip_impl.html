@@ -76,39 +76,58 @@ $(function() {
 <div class="title">komori::detail::ZipImpl&lt; Range1, Range2 &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>Zip</code> の実装本体  
+ <a href="classkomori_1_1detail_1_1_zip_impl.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ranges_8hpp_source.html">ranges.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">Iterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">zipイテレータ  <a href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae02014a55d646e779d58df0008a06c6d"><td class="memItemLeft" align="right" valign="top"><a id="ae02014a55d646e779d58df0008a06c6d"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>ZipImpl</b> (Range1 range1, Range2 range2) noexcept(std::is_nothrow_constructible_v&lt; Range1, decltype(std::forward&lt; Range1 &gt;(range1))&gt; &amp;&amp;std::is_nothrow_constructible_v&lt; Range2, decltype(std::forward&lt; Range2 &gt;(range2))&gt;)</td></tr>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl.html#ae02014a55d646e779d58df0008a06c6d">ZipImpl</a> (Range1 range1, Range2 range2) noexcept(std::is_nothrow_constructible_v&lt; Range1, decltype(std::forward&lt; Range1 &gt;(range1))&gt; &amp;&amp;std::is_nothrow_constructible_v&lt; Range2, decltype(std::forward&lt; Range2 &gt;(range2))&gt;)</td></tr>
+<tr class="memdesc:ae02014a55d646e779d58df0008a06c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ <br /></td></tr>
 <tr class="separator:ae02014a55d646e779d58df0008a06c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a063dd53edc239b1ffd1257d0a8e3fdde"><td class="memItemLeft" align="right" valign="top"><a id="a063dd53edc239b1ffd1257d0a8e3fdde"></a>
-constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const noexcept(noexcept(<a class="el" href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">call_begin</a>(std::declval&lt; Range1 &gt;()), <a class="el" href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">call_begin</a>(std::declval&lt; Range2 &gt;())))</td></tr>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl.html#a063dd53edc239b1ffd1257d0a8e3fdde">begin</a> () const noexcept(noexcept(<a class="el" href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">call_begin</a>(std::declval&lt; Range1 &gt;()), <a class="el" href="namespacekomori_1_1detail.html#a65bf0cecc656d96fca9addfb4c90816f">call_begin</a>(std::declval&lt; Range2 &gt;())))</td></tr>
+<tr class="memdesc:a063dd53edc239b1ffd1257d0a8e3fdde"><td class="mdescLeft">&#160;</td><td class="mdescRight">範囲の先頭 <br /></td></tr>
 <tr class="separator:a063dd53edc239b1ffd1257d0a8e3fdde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace8b2ee8216a1c4e6a9fdc51a9d4a384"><td class="memItemLeft" align="right" valign="top"><a id="ace8b2ee8216a1c4e6a9fdc51a9d4a384"></a>
-constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const noexcept(noexcept(<a class="el" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a>(std::declval&lt; Range1 &gt;()), <a class="el" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a>(std::declval&lt; Range2 &gt;())))</td></tr>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl.html#ace8b2ee8216a1c4e6a9fdc51a9d4a384">end</a> () const noexcept(noexcept(<a class="el" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a>(std::declval&lt; Range1 &gt;()), <a class="el" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a>(std::declval&lt; Range2 &gt;())))</td></tr>
+<tr class="memdesc:ace8b2ee8216a1c4e6a9fdc51a9d4a384"><td class="mdescLeft">&#160;</td><td class="mdescRight">範囲の末尾 <br /></td></tr>
 <tr class="separator:ace8b2ee8216a1c4e6a9fdc51a9d4a384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a01e2c23878eab3656b44e37ee4ef7e2b"><td class="memItemLeft" align="right" valign="top"><a id="a01e2c23878eab3656b44e37ee4ef7e2b"></a>
-Range1&#160;</td><td class="memItemRight" valign="bottom"><b>range1_</b></td></tr>
+Range1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl.html#a01e2c23878eab3656b44e37ee4ef7e2b">range1_</a></td></tr>
+<tr class="memdesc:a01e2c23878eab3656b44e37ee4ef7e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range1. <br /></td></tr>
 <tr class="separator:a01e2c23878eab3656b44e37ee4ef7e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf369c79b3219469b94895ccf474f3a2"><td class="memItemLeft" align="right" valign="top"><a id="abf369c79b3219469b94895ccf474f3a2"></a>
-Range2&#160;</td><td class="memItemRight" valign="bottom"><b>range2_</b></td></tr>
+Range2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl.html#abf369c79b3219469b94895ccf474f3a2">range2_</a></td></tr>
+<tr class="memdesc:abf369c79b3219469b94895ccf474f3a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range2. <br /></td></tr>
 <tr class="separator:abf369c79b3219469b94895ccf474f3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename Range1, typename Range2&gt;<br />
 class komori::detail::ZipImpl&lt; Range1, Range2 &gt;</h3>
 
+<p><code>Zip</code> の実装本体 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Range1</td><td>Iterable </td></tr>
+    <tr><td class="paramname">Range2</td><td>Iterable </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="ranges_8hpp_source.html#l00341">341</a> of file <a class="el" href="ranges_8hpp_source.html">ranges.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ranges_8hpp_source.html#l00350">350</a> of file <a class="el" href="ranges_8hpp_source.html">ranges.hpp</a>.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

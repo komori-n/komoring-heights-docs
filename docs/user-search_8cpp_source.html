@@ -67,162 +67,152 @@ $(function() {
 <div class="title">user-search.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;condition_variable&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../../extra/all.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="initial__estimation_8hpp.html">initial_estimation.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="komoring__heights_8hpp.html">komoring_heights.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="path__keys_8hpp.html">path_keys.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="typedefs_8hpp.html">typedefs.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#if defined(USER_ENGINE)</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<a class="code" href="classkomori_1_1_komoring_heights.html">komori::KomoringHeights</a> g_searcher;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<a class="code" href="structkomori_1_1_engine_option.html">komori::EngineOption</a> g_option;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;std::atomic_bool g_path_key_init_flag;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<a class="code" href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488">komori::NodeState</a> g_search_result = <a class="code" href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488a25c2dc47991b3df171ed5192bcf70390">komori::NodeState::kUnknown</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">bool</span> IsPosOrNode(<span class="keyword">const</span> Position&amp; root_pos) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  Color us = root_pos.side_to_move();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  Color them = ~us;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="komoring__heights_8hpp.html">komoring_heights.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="path__keys_8hpp.html">path_keys.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="thread__initialization_8hpp.html">thread_initialization.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="typedefs_8hpp.html">typedefs.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(USER_ENGINE)</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<a class="code" href="classkomori_1_1_komoring_heights.html">komori::KomoringHeights</a> g_searcher;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<a class="code" href="structkomori_1_1_engine_option.html">komori::EngineOption</a> g_option;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;std::atomic_bool g_path_key_init_flag;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<a class="code" href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488">komori::NodeState</a> g_search_result = <a class="code" href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488a25c2dc47991b3df171ed5192bcf70390">komori::NodeState::kUnknown</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">bool</span> IsPosOrNode(<span class="keyword">const</span> Position&amp; root_pos) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">const</span> Color us = root_pos.side_to_move();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">const</span> Color them = ~us;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordflow">if</span> (root_pos.king_square(us) == SQ_NB) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (root_pos.king_square(them) == SQ_NB) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordflow">if</span> (root_pos.king_square(us) == SQ_NB) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (root_pos.king_square(them) == SQ_NB) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordflow">if</span> (root_pos.in_check() &amp;&amp; g_option.<a class="code" href="structkomori_1_1_engine_option.html#a870ea3032fc6da862594dafbc7065702">root_is_and_node_if_checked</a>) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">if</span> (root_pos.in_check() &amp;&amp; g_option.<a class="code" href="structkomori_1_1_engine_option.html#a870ea3032fc6da862594dafbc7065702">root_is_and_node_if_checked</a>) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">enum class</span> LoseKind {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  kTimeout,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  kNoMate,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  kMate,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">enum class</span> LoseKind {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  kTimeout,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  kNoMate,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  kMate,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> PrintResult(<span class="keywordtype">bool</span> is_root_or_node, <span class="keywordtype">bool</span> is_mate_search, LoseKind kind, <span class="keyword">const</span> std::string&amp; pv_moves = <span class="stringliteral">&quot;resign&quot;</span>) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">if</span> (is_mate_search) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">switch</span> (kind) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">case</span> LoseKind::kTimeout:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        sync_cout &lt;&lt; <span class="stringliteral">&quot;checkmate timeout&quot;</span> &lt;&lt; sync_endl;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">case</span> LoseKind::kNoMate:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        sync_cout &lt;&lt; <span class="stringliteral">&quot;checkmate nomate&quot;</span> &lt;&lt; sync_endl;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        sync_cout &lt;&lt; <span class="stringliteral">&quot;checkmate &quot;</span> &lt;&lt; pv_moves &lt;&lt; sync_endl;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// `KomoringHeights::Search()` 内で出力しているはずなので、ここでは何もする必要がない。</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}  <span class="comment">// namespace</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// USI拡張コマンド&quot;user&quot;が送られてくるとこの関数が呼び出される。実験に使ってください。</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> user_test(Position&amp; pos, std::istringstream&amp; is) {}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> PrintResult(<span class="keywordtype">bool</span> is_mate_search, LoseKind kind, <span class="keyword">const</span> std::string&amp; pv_moves = <span class="stringliteral">&quot;resign&quot;</span>) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">if</span> (is_mate_search) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">switch</span> (kind) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">case</span> LoseKind::kTimeout:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        sync_cout &lt;&lt; <span class="stringliteral">&quot;checkmate timeout&quot;</span> &lt;&lt; sync_endl;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keywordflow">case</span> LoseKind::kNoMate:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        sync_cout &lt;&lt; <span class="stringliteral">&quot;checkmate nomate&quot;</span> &lt;&lt; sync_endl;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        sync_cout &lt;&lt; <span class="stringliteral">&quot;checkmate &quot;</span> &lt;&lt; pv_moves &lt;&lt; sync_endl;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// `KomoringHeights::Search()` 内で出力しているはずなので、ここでは何もする必要がない。</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}  <span class="comment">// namespace</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// USI拡張コマンド&quot;user&quot;が送られてくるとこの関数が呼び出される。実験に使ってください。</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> user_test(Position&amp; pos, std::istringstream&amp; is) {}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">// USIに追加オプションを設定したいときは、この関数を定義すること。</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// USI::init()のなかからコールバックされる。</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">void</span> USI::extra_option(USI::OptionsMap&amp; o) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="structkomori_1_1_engine_option.html#a4a363b65cb399894efe16efe5893f1d2">komori::EngineOption::Init</a>(o);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// USIに追加オプションを設定したいときは、この関数を定義すること。</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">// USI::init()のなかからコールバックされる。</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> USI::extra_option(USI::OptionsMap&amp; o) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="structkomori_1_1_engine_option.html#a4a363b65cb399894efe16efe5893f1d2">komori::EngineOption::Init</a>(o);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">// 起動時に呼び出される。時間のかからない探索関係の初期化処理はここに書くこと。</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> Search::init() {}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">// isreadyコマンドの応答中に呼び出される。時間のかかる処理はここに書くこと。</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> Search::clear() {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  Threads.main()-&gt;wait_for_search_finished();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  Threads.clear();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// 起動時に呼び出される。時間のかからない探索関係の初期化処理はここに書くこと。</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> Search::init() {}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">// isreadyコマンドの応答中に呼び出される。時間のかかる処理はここに書くこと。</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> Search::clear() {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  Threads.main()-&gt;wait_for_search_finished();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  Threads.clear();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">if</span> (!g_path_key_init_flag) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    g_path_key_init_flag = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="namespacekomori.html#a3758efae8cd7b2132e88bdb7a145e072">komori::PathKeyInit</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  g_option.<a class="code" href="structkomori_1_1_engine_option.html#a69d03cfed39881ab83adf7645f04aa73">Reload</a>(Options);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">if</span> (!g_path_key_init_flag) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    g_path_key_init_flag = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="namespacekomori.html#a3758efae8cd7b2132e88bdb7a145e072">komori::PathKeyInit</a>();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  g_option.<a class="code" href="structkomori_1_1_engine_option.html#a69d03cfed39881ab83adf7645f04aa73">Reload</a>(Options);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#if defined(USE_DEEP_DFPN)</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">auto</span> d = g_option.deep_dfpn_d_;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">auto</span> e = g_option.deep_dfpn_e_;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  komori::DeepDfpnInit(d, e);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// defined(USE_DEEP_DFPN)</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#if defined(USE_DEEP_DFPN)</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">auto</span> d = g_option.deep_dfpn_d_;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">auto</span> e = g_option.deep_dfpn_e_;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  komori::DeepDfpnInit(d, e);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// defined(USE_DEEP_DFPN)</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  g_searcher.<a class="code" href="classkomori_1_1_komoring_heights.html#acb62352c430c76c78131a0f01cc24525">Init</a>(g_option, Threads.size());</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">// 探索開始時に呼び出される。</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">// この関数内で初期化を終わらせ、slaveスレッドを起動してThread::search()を呼び出す。</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">// そのあとslaveスレッドを終了させ、ベストな指し手を返すこと。</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> MainThread::search() {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">// `go mate` で探索開始したときは true、`go` で探索開始したときは false</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">bool</span> is_mate_search = Search::Limits.mate != 0;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">bool</span> is_root_or_node = IsPosOrNode(rootPos);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  g_searcher.<a class="code" href="classkomori_1_1_komoring_heights.html#acb62352c430c76c78131a0f01cc24525">Init</a>(g_option, Threads.size());</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">// 探索開始時に呼び出される。</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// この関数内で初期化を終わらせ、slaveスレッドを起動してThread::search()を呼び出す。</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">// そのあとslaveスレッドを終了させ、ベストな指し手を返すこと。</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">void</span> MainThread::search() {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="comment">// `go mate` で探索開始したときは true、`go` で探索開始したときは false</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">bool</span> is_mate_search = Search::Limits.mate != 0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">bool</span> is_root_or_node = IsPosOrNode(rootPos);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  g_searcher.<a class="code" href="classkomori_1_1_komoring_heights.html#a1f773bcd39c7d521fe68bb7546eb9c19">NewSearch</a>(rootPos, is_root_or_node);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  Threads.start_searching();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  Thread::search();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  Threads.stop = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  Threads.wait_for_search_finished();</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  g_searcher.<a class="code" href="classkomori_1_1_komoring_heights.html#a1f773bcd39c7d521fe68bb7546eb9c19">NewSearch</a>(rootPos, is_root_or_node);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  Threads.start_searching();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  Thread::search();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  Threads.stop = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  Threads.wait_for_search_finished();</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  Move best_move = MOVE_NONE;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">if</span> (g_search_result == <a class="code" href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488a91941e19d11188fa06c946a61bef1d7d">komori::NodeState::kProven</a>) {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">auto</span> best_moves = g_searcher.<a class="code" href="classkomori_1_1_komoring_heights.html#ac8606e609eecf83f3274f6e3d04e4bf8">BestMoves</a>();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    PrintResult(is_root_or_node, is_mate_search, LoseKind::kMate, <a class="code" href="namespacekomori.html#ac8e4cfe49668438b31f8af11d1043bbe">komori::ToString</a>(best_moves));</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">if</span> (!best_moves.empty()) {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      best_move = best_moves[0];</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  Move best_move = MOVE_NONE;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">if</span> (g_search_result == <a class="code" href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488a91941e19d11188fa06c946a61bef1d7d">komori::NodeState::kProven</a>) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">auto</span> best_moves = g_searcher.<a class="code" href="classkomori_1_1_komoring_heights.html#ac8606e609eecf83f3274f6e3d04e4bf8">BestMoves</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    PrintResult(is_mate_search, LoseKind::kMate, <a class="code" href="namespacekomori.html#ac8e4cfe49668438b31f8af11d1043bbe">komori::ToString</a>(best_moves));</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span> (!best_moves.empty()) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      best_move = best_moves[0];</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">if</span> (g_search_result == <a class="code" href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488ac07a394d06065193a8cbf2f53000b916">komori::NodeState::kDisproven</a> || g_search_result == <a class="code" href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488a0da05df76ef6b213939d96600064949d">komori::NodeState::kRepetition</a>) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      PrintResult(is_mate_search, LoseKind::kNoMate);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      PrintResult(is_mate_search, LoseKind::kTimeout);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (g_search_result == <a class="code" href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488ac07a394d06065193a8cbf2f53000b916">komori::NodeState::kDisproven</a> || g_search_result == <a class="code" href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488a0da05df76ef6b213939d96600064949d">komori::NodeState::kRepetition</a>) {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      PrintResult(is_root_or_node, is_mate_search, LoseKind::kNoMate);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      PrintResult(is_root_or_node, is_mate_search, LoseKind::kTimeout);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">if</span> (Search::Limits.mate == 0) {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// &quot;go infinite&quot;に対してはstopが送られてくるまで待つ。</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">while</span> (!Threads.stop &amp;&amp; Search::Limits.infinite) {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      Tools::sleep(1);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">if</span> (best_move == MOVE_NONE) {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      sync_cout &lt;&lt; <span class="stringliteral">&quot;bestmove resign&quot;</span> &lt;&lt; sync_endl;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      sync_cout &lt;&lt; <span class="stringliteral">&quot;bestmove &quot;</span> &lt;&lt; best_move &lt;&lt; sync_endl;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">// 探索本体。並列化している場合、ここがslaveのエントリーポイント。</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keywordtype">void</span> Thread::search() {</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <a class="code" href="namespacekomori.html#a0674ce184ef6aec644ffb45a0b021bb5">komori::InitBriefEvaluation</a>(<span class="keywordtype">id</span>());</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <a class="code" href="namespacekomori_1_1tt.html#a5412496f8d69289ce41076dad0b8730e">komori::tt::InitializeTTNoise</a>(<span class="keywordtype">id</span>());</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> result = g_searcher.<a class="code" href="classkomori_1_1_komoring_heights.html#af78ee12a36aaa883b868d60fc0e3cf67">Search</a>(<span class="keywordtype">id</span>(), rootPos, IsPosOrNode(rootPos));</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordflow">if</span> (<span class="keywordtype">id</span>() == 0) {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    g_search_result = result;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// USER_ENGINE</span></div>
-<div class="ttc" id="aclasskomori_1_1_komoring_heights_html"><div class="ttname"><a href="classkomori_1_1_komoring_heights.html">komori::KomoringHeights</a></div><div class="ttdoc">詰将棋探索の本体</div><div class="ttdef"><b>Definition:</b> <a href="komoring__heights_8hpp_source.html#l00088">komoring_heights.hpp:88</a></div></div>
-<div class="ttc" id="aclasskomori_1_1_komoring_heights_html_a1f773bcd39c7d521fe68bb7546eb9c19"><div class="ttname"><a href="classkomori_1_1_komoring_heights.html#a1f773bcd39c7d521fe68bb7546eb9c19">komori::KomoringHeights::NewSearch</a></div><div class="ttdeci">void NewSearch(const Position &amp;n, bool is_root_or_node)</div><div class="ttdoc">Search() の準備を行う。探索開始直前に main_thread から呼び出すこと。</div><div class="ttdef"><b>Definition:</b> <a href="komoring__heights_8cpp_source.html#l00188">komoring_heights.cpp:188</a></div></div>
-<div class="ttc" id="aclasskomori_1_1_komoring_heights_html_ac8606e609eecf83f3274f6e3d04e4bf8"><div class="ttname"><a href="classkomori_1_1_komoring_heights.html#ac8606e609eecf83f3274f6e3d04e4bf8">komori::KomoringHeights::BestMoves</a></div><div class="ttdeci">const std::vector&lt; Move &gt; &amp; BestMoves() const</div><div class="ttdoc">詰み手順を取得する</div><div class="ttdef"><b>Definition:</b> <a href="komoring__heights_8hpp_source.html#l00117">komoring_heights.hpp:117</a></div></div>
-<div class="ttc" id="aclasskomori_1_1_komoring_heights_html_acb62352c430c76c78131a0f01cc24525"><div class="ttname"><a href="classkomori_1_1_komoring_heights.html#acb62352c430c76c78131a0f01cc24525">komori::KomoringHeights::Init</a></div><div class="ttdeci">void Init(const EngineOption &amp;option, std::uint32_t num_threads)</div><div class="ttdoc">エンジンを初期化する</div><div class="ttdef"><b>Definition:</b> <a href="komoring__heights_8cpp_source.html#l00166">komoring_heights.cpp:166</a></div></div>
-<div class="ttc" id="aclasskomori_1_1_komoring_heights_html_af78ee12a36aaa883b868d60fc0e3cf67"><div class="ttname"><a href="classkomori_1_1_komoring_heights.html#af78ee12a36aaa883b868d60fc0e3cf67">komori::KomoringHeights::Search</a></div><div class="ttdeci">NodeState Search(std::uint32_t thread_id, const Position &amp;n, bool is_root_or_node)</div><div class="ttdoc">詰め探索を行う。（探索本体）</div><div class="ttdef"><b>Definition:</b> <a href="komoring__heights_8cpp_source.html#l00204">komoring_heights.cpp:204</a></div></div>
-<div class="ttc" id="ainitial__estimation_8hpp_html"><div class="ttname"><a href="initial__estimation_8hpp.html">initial_estimation.hpp</a></div></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordflow">if</span> (Search::Limits.mate == 0) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// &quot;go infinite&quot;に対してはstopが送られてくるまで待つ。</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">while</span> (!Threads.stop &amp;&amp; Search::Limits.infinite) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      Tools::sleep(1);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> (best_move == MOVE_NONE) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      sync_cout &lt;&lt; <span class="stringliteral">&quot;bestmove resign&quot;</span> &lt;&lt; sync_endl;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      sync_cout &lt;&lt; <span class="stringliteral">&quot;bestmove &quot;</span> &lt;&lt; best_move &lt;&lt; sync_endl;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">// 探索本体。並列化している場合、ここがslaveのエントリーポイント。</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keywordtype">void</span> Thread::search() {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <a class="code" href="namespacekomori.html#afb92abe1c44b30904f85796fd729b87e">komori::InitializeThread</a>(<span class="keywordtype">id</span>(), Threads.size());</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> result = g_searcher.<a class="code" href="classkomori_1_1_komoring_heights.html#a46ca7753e4ed402263f06e9bab0dd832">Search</a>(rootPos, IsPosOrNode(rootPos));</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">if</span> (<span class="keywordtype">id</span>() == 0) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    g_search_result = result;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// USER_ENGINE</span></div>
+<div class="ttc" id="aclasskomori_1_1_komoring_heights_html"><div class="ttname"><a href="classkomori_1_1_komoring_heights.html">komori::KomoringHeights</a></div><div class="ttdoc">詰将棋探索の本体</div><div class="ttdef"><b>Definition:</b> <a href="komoring__heights_8hpp_source.html#l00022">komoring_heights.hpp:22</a></div></div>
+<div class="ttc" id="aclasskomori_1_1_komoring_heights_html_a1f773bcd39c7d521fe68bb7546eb9c19"><div class="ttname"><a href="classkomori_1_1_komoring_heights.html#a1f773bcd39c7d521fe68bb7546eb9c19">komori::KomoringHeights::NewSearch</a></div><div class="ttdeci">void NewSearch(const Position &amp;n, bool is_root_or_node)</div><div class="ttdoc">Search() の準備を行う。探索開始直前に main_thread から呼び出すこと。</div><div class="ttdef"><b>Definition:</b> <a href="komoring__heights_8cpp_source.html#l00072">komoring_heights.cpp:72</a></div></div>
+<div class="ttc" id="aclasskomori_1_1_komoring_heights_html_a46ca7753e4ed402263f06e9bab0dd832"><div class="ttname"><a href="classkomori_1_1_komoring_heights.html#a46ca7753e4ed402263f06e9bab0dd832">komori::KomoringHeights::Search</a></div><div class="ttdeci">NodeState Search(const Position &amp;n, bool is_root_or_node)</div><div class="ttdoc">詰め探索を行う。（探索本体）</div><div class="ttdef"><b>Definition:</b> <a href="komoring__heights_8cpp_source.html#l00088">komoring_heights.cpp:88</a></div></div>
+<div class="ttc" id="aclasskomori_1_1_komoring_heights_html_ac8606e609eecf83f3274f6e3d04e4bf8"><div class="ttname"><a href="classkomori_1_1_komoring_heights.html#ac8606e609eecf83f3274f6e3d04e4bf8">komori::KomoringHeights::BestMoves</a></div><div class="ttdeci">const std::vector&lt; Move &gt; &amp; BestMoves() const</div><div class="ttdoc">詰み手順を取得する</div><div class="ttdef"><b>Definition:</b> <a href="komoring__heights_8hpp_source.html#l00051">komoring_heights.hpp:51</a></div></div>
+<div class="ttc" id="aclasskomori_1_1_komoring_heights_html_acb62352c430c76c78131a0f01cc24525"><div class="ttname"><a href="classkomori_1_1_komoring_heights.html#acb62352c430c76c78131a0f01cc24525">komori::KomoringHeights::Init</a></div><div class="ttdeci">void Init(const EngineOption &amp;option, std::uint32_t num_threads)</div><div class="ttdoc">エンジンを初期化する</div><div class="ttdef"><b>Definition:</b> <a href="komoring__heights_8cpp_source.html#l00050">komoring_heights.cpp:50</a></div></div>
 <div class="ttc" id="akomoring__heights_8hpp_html"><div class="ttname"><a href="komoring__heights_8hpp.html">komoring_heights.hpp</a></div></div>
-<div class="ttc" id="anamespacekomori_1_1tt_html_a5412496f8d69289ce41076dad0b8730e"><div class="ttname"><a href="namespacekomori_1_1tt.html#a5412496f8d69289ce41076dad0b8730e">komori::tt::InitializeTTNoise</a></div><div class="ttdeci">void InitializeTTNoise(std::uint32_t thread_id)</div><div class="ttdoc">LookUp() のノイズ周期を初期化する</div><div class="ttdef"><b>Definition:</b> <a href="ttquery_8hpp_source.html#l00030">ttquery.hpp:30</a></div></div>
-<div class="ttc" id="anamespacekomori_html_a0674ce184ef6aec644ffb45a0b021bb5"><div class="ttname"><a href="namespacekomori.html#a0674ce184ef6aec644ffb45a0b021bb5">komori::InitBriefEvaluation</a></div><div class="ttdeci">void InitBriefEvaluation(std::uint32_t thread_id)</div><div class="ttdoc">初期評価値を乱数でずらす</div><div class="ttdef"><b>Definition:</b> <a href="initial__estimation_8hpp_source.html#l00048">initial_estimation.hpp:48</a></div></div>
 <div class="ttc" id="anamespacekomori_html_a3758efae8cd7b2132e88bdb7a145e072"><div class="ttname"><a href="namespacekomori.html#a3758efae8cd7b2132e88bdb7a145e072">komori::PathKeyInit</a></div><div class="ttdeci">void PathKeyInit()</div><div class="ttdoc">経路ハッシュのテーブルを初期化する。</div><div class="ttdef"><b>Definition:</b> <a href="path__keys_8hpp_source.html#l00028">path_keys.hpp:28</a></div></div>
 <div class="ttc" id="anamespacekomori_html_ac8e4cfe49668438b31f8af11d1043bbe"><div class="ttname"><a href="namespacekomori.html#ac8e4cfe49668438b31f8af11d1043bbe">komori::ToString</a></div><div class="ttdeci">std::string ToString(PnDn val)</div><div class="ttdoc">pn/dn 値を文字列に変換する</div><div class="ttdef"><b>Definition:</b> <a href="typedefs_8hpp_source.html#l00240">typedefs.hpp:240</a></div></div>
 <div class="ttc" id="anamespacekomori_html_ada1a4eeb6080f15a12a946bf93ff7488"><div class="ttname"><a href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488">komori::NodeState</a></div><div class="ttdeci">NodeState</div><div class="ttdoc">局面の探索状態。</div><div class="ttdef"><b>Definition:</b> <a href="typedefs_8hpp_source.html#l00182">typedefs.hpp:182</a></div></div>
@@ -230,11 +220,13 @@ $(function() {
 <div class="ttc" id="anamespacekomori_html_ada1a4eeb6080f15a12a946bf93ff7488a25c2dc47991b3df171ed5192bcf70390"><div class="ttname"><a href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488a25c2dc47991b3df171ed5192bcf70390">komori::NodeState::kUnknown</a></div><div class="ttdeci">@ kUnknown</div><div class="ttdoc">不明（探索中）</div></div>
 <div class="ttc" id="anamespacekomori_html_ada1a4eeb6080f15a12a946bf93ff7488a91941e19d11188fa06c946a61bef1d7d"><div class="ttname"><a href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488a91941e19d11188fa06c946a61bef1d7d">komori::NodeState::kProven</a></div><div class="ttdeci">@ kProven</div><div class="ttdoc">詰み</div></div>
 <div class="ttc" id="anamespacekomori_html_ada1a4eeb6080f15a12a946bf93ff7488ac07a394d06065193a8cbf2f53000b916"><div class="ttname"><a href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488ac07a394d06065193a8cbf2f53000b916">komori::NodeState::kDisproven</a></div><div class="ttdeci">@ kDisproven</div><div class="ttdoc">千日手ではない不詰</div></div>
+<div class="ttc" id="anamespacekomori_html_afb92abe1c44b30904f85796fd729b87e"><div class="ttname"><a href="namespacekomori.html#afb92abe1c44b30904f85796fd729b87e">komori::InitializeThread</a></div><div class="ttdeci">void InitializeThread(std::uint32_t id, std::uint32_t num_threads)</div><div class="ttdoc">thread local 変数を初期化する</div><div class="ttdef"><b>Definition:</b> <a href="thread__initialization_8hpp_source.html#l00019">thread_initialization.hpp:19</a></div></div>
 <div class="ttc" id="apath__keys_8hpp_html"><div class="ttname"><a href="path__keys_8hpp.html">path_keys.hpp</a></div></div>
-<div class="ttc" id="astructkomori_1_1_engine_option_html"><div class="ttname"><a href="structkomori_1_1_engine_option.html">komori::EngineOption</a></div><div class="ttdoc">エンジンオプションの事前読み込みおよび提供を行うクラス。</div><div class="ttdef"><b>Definition:</b> <a href="engine__option_8hpp_source.html#l00150">engine_option.hpp:150</a></div></div>
-<div class="ttc" id="astructkomori_1_1_engine_option_html_a4a363b65cb399894efe16efe5893f1d2"><div class="ttname"><a href="structkomori_1_1_engine_option.html#a4a363b65cb399894efe16efe5893f1d2">komori::EngineOption::Init</a></div><div class="ttdeci">static void Init(USI::OptionsMap &amp;o)</div><div class="ttdoc">詰めエンジン独自のエンジンオプションを設定する</div><div class="ttdef"><b>Definition:</b> <a href="engine__option_8hpp_source.html#l00180">engine_option.hpp:180</a></div></div>
-<div class="ttc" id="astructkomori_1_1_engine_option_html_a69d03cfed39881ab83adf7645f04aa73"><div class="ttname"><a href="structkomori_1_1_engine_option.html#a69d03cfed39881ab83adf7645f04aa73">komori::EngineOption::Reload</a></div><div class="ttdeci">void Reload(const USI::OptionsMap &amp;o)</div><div class="ttdoc">エンジンオプションをメンバ変数に読み込む</div><div class="ttdef"><b>Definition:</b> <a href="engine__option_8hpp_source.html#l00207">engine_option.hpp:207</a></div></div>
-<div class="ttc" id="astructkomori_1_1_engine_option_html_a870ea3032fc6da862594dafbc7065702"><div class="ttname"><a href="structkomori_1_1_engine_option.html#a870ea3032fc6da862594dafbc7065702">komori::EngineOption::root_is_and_node_if_checked</a></div><div class="ttdeci">bool root_is_and_node_if_checked</div><div class="ttdoc">開始局面が王手されているとき、玉方手番として扱うフラグ。</div><div class="ttdef"><b>Definition:</b> <a href="engine__option_8hpp_source.html#l00158">engine_option.hpp:158</a></div></div>
+<div class="ttc" id="astructkomori_1_1_engine_option_html"><div class="ttname"><a href="structkomori_1_1_engine_option.html">komori::EngineOption</a></div><div class="ttdoc">エンジンオプションの事前読み込みおよび提供を行うクラス。</div><div class="ttdef"><b>Definition:</b> <a href="engine__option_8hpp_source.html#l00148">engine_option.hpp:148</a></div></div>
+<div class="ttc" id="astructkomori_1_1_engine_option_html_a4a363b65cb399894efe16efe5893f1d2"><div class="ttname"><a href="structkomori_1_1_engine_option.html#a4a363b65cb399894efe16efe5893f1d2">komori::EngineOption::Init</a></div><div class="ttdeci">static void Init(USI::OptionsMap &amp;o)</div><div class="ttdoc">詰めエンジン独自のエンジンオプションを設定する</div><div class="ttdef"><b>Definition:</b> <a href="engine__option_8hpp_source.html#l00177">engine_option.hpp:177</a></div></div>
+<div class="ttc" id="astructkomori_1_1_engine_option_html_a69d03cfed39881ab83adf7645f04aa73"><div class="ttname"><a href="structkomori_1_1_engine_option.html#a69d03cfed39881ab83adf7645f04aa73">komori::EngineOption::Reload</a></div><div class="ttdeci">void Reload(const USI::OptionsMap &amp;o)</div><div class="ttdoc">エンジンオプションをメンバ変数に読み込む</div><div class="ttdef"><b>Definition:</b> <a href="engine__option_8hpp_source.html#l00204">engine_option.hpp:204</a></div></div>
+<div class="ttc" id="astructkomori_1_1_engine_option_html_a870ea3032fc6da862594dafbc7065702"><div class="ttname"><a href="structkomori_1_1_engine_option.html#a870ea3032fc6da862594dafbc7065702">komori::EngineOption::root_is_and_node_if_checked</a></div><div class="ttdeci">bool root_is_and_node_if_checked</div><div class="ttdoc">開始局面が王手されているとき、玉方手番として扱うフラグ。</div><div class="ttdef"><b>Definition:</b> <a href="engine__option_8hpp_source.html#l00156">engine_option.hpp:156</a></div></div>
+<div class="ttc" id="athread__initialization_8hpp_html"><div class="ttname"><a href="thread__initialization_8hpp.html">thread_initialization.hpp</a></div></div>
 <div class="ttc" id="atypedefs_8hpp_html"><div class="ttname"><a href="typedefs_8hpp.html">typedefs.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

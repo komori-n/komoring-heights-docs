@@ -1,4 +1,0 @@
-<map id="komori::MultiPv::operator[]" name="komori::MultiPv::operator[]">
-<area shape="rect" id="node1" title="手 move に対する、現在の最善応手列 pv とその時の探索深さ depth を取得する" alt="" coords="5,5,201,32"/>
-<area shape="rect" id="node2" href="$classkomori_1_1_multi_pv.html#af6d56201d62afa41be04e5c239eb488e" title="手 move に対する、現在の最善応手列 pv とその時の探索深さ depth を取得する" alt="" coords="249,5,404,32"/>
-</map>

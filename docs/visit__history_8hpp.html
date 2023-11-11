@@ -71,34 +71,27 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;optional&gt;</code><br />
-<code>#include &quot;<a class="el" href="ranges_8hpp_source.html">ranges.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="typedefs_8hpp_source.html">typedefs.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for visit_history.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="visit__history_8hpp__incl.png" border="0" usemap="#avisit__history_8hpp" alt=""/></div>
 <map name="avisit__history_8hpp" id="avisit__history_8hpp">
-<area shape="rect" title=" " alt="" coords="122,5,250,32"/>
-<area shape="rect" title=" " alt="" coords="14,80,70,107"/>
-<area shape="rect" title=" " alt="" coords="94,80,169,107"/>
-<area shape="rect" href="ranges_8hpp.html" title=" " alt="" coords="193,80,288,107"/>
-<area shape="rect" href="typedefs_8hpp.html" title=" " alt="" coords="821,80,927,107"/>
-<area shape="rect" title=" " alt="" coords="5,155,76,181"/>
-<area shape="rect" title=" " alt="" coords="100,155,171,181"/>
-<area shape="rect" title=" " alt="" coords="195,155,287,181"/>
-<area shape="rect" href="type__traits_8hpp.html" title=" " alt="" coords="311,155,431,181"/>
-<area shape="rect" title=" " alt="" coords="455,155,525,181"/>
-<area shape="rect" title=" " alt="" coords="549,155,615,181"/>
-<area shape="rect" title=" " alt="" coords="639,155,722,181"/>
-<area shape="rect" title=" " alt="" coords="746,155,821,181"/>
-<area shape="rect" title=" " alt="" coords="845,155,903,181"/>
-<area shape="rect" title=" " alt="" coords="927,155,986,181"/>
-<area shape="rect" title=" " alt="" coords="1010,155,1074,181"/>
-<area shape="rect" title=" " alt="" coords="1098,155,1210,181"/>
-<area shape="rect" title=" " alt="" coords="1235,155,1345,181"/>
-<area shape="rect" title=" " alt="" coords="1369,155,1464,181"/>
-<area shape="rect" title=" " alt="" coords="1489,155,1566,181"/>
+<area shape="rect" title=" " alt="" coords="72,5,200,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,61,107"/>
+<area shape="rect" title=" " alt="" coords="383,229,454,256"/>
+<area shape="rect" title=" " alt="" coords="136,80,211,107"/>
+<area shape="rect" href="typedefs_8hpp.html" title=" " alt="" coords="372,80,479,107"/>
+<area shape="rect" title=" " alt="" coords="136,155,195,181"/>
+<area shape="rect" title=" " alt="" coords="219,155,277,181"/>
+<area shape="rect" title=" " alt="" coords="301,155,413,181"/>
+<area shape="rect" title=" " alt="" coords="438,155,549,181"/>
+<area shape="rect" title=" " alt="" coords="573,155,667,181"/>
+<area shape="rect" title=" " alt="" coords="692,155,769,181"/>
+<area shape="rect" href="type__traits_8hpp.html" title=" " alt="" coords="793,155,913,181"/>
+<area shape="rect" title=" " alt="" coords="798,229,909,256"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -106,20 +99,21 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="visit__history_8hpp__dep__incl.png" border="0" usemap="#avisit__history_8hppdep" alt=""/></div>
 <map name="avisit__history_8hppdep" id="avisit__history_8hppdep">
-<area shape="rect" title=" " alt="" coords="347,5,475,32"/>
-<area shape="rect" href="node_8hpp.html" title=" " alt="" coords="369,80,452,107"/>
-<area shape="rect" href="delayed__move__list_8hpp.html" title=" " alt="" coords="187,304,360,331"/>
-<area shape="rect" href="local__expansion_8hpp.html" title=" " alt="" coords="381,379,536,405"/>
-<area shape="rect" href="double__count__elimination_8hpp.html" title=" " alt="" coords="496,304,715,331"/>
-<area shape="rect" href="initial__estimation_8hpp.html" title=" " alt="" coords="329,155,493,181"/>
-<area shape="rect" href="move__picker_8hpp.html" title=" " alt="" coords="97,229,229,256"/>
-<area shape="rect" href="multi__pv_8hpp_source.html" title=" " alt="" coords="5,304,112,331"/>
-<area shape="rect" href="transposition__table_8hpp.html" title=" " alt="" coords="643,229,818,256"/>
-<area shape="rect" href="expansion__stack_8hpp.html" title=" " alt="" coords="493,453,651,480"/>
-<area shape="rect" href="komoring__heights_8hpp.html" title=" " alt="" coords="546,528,713,555"/>
-<area shape="rect" href="komoring__heights_8cpp_source.html" title=" " alt="" coords="547,603,712,629"/>
-<area shape="rect" href="user-search_8cpp_source.html" title=" " alt="" coords="736,603,861,629"/>
-<area shape="rect" href="initial__estimation_8cpp_source.html" title=" " alt="" coords="355,229,517,256"/>
+<area shape="rect" title=" " alt="" coords="279,5,407,32"/>
+<area shape="rect" href="node_8hpp.html" title=" " alt="" coords="302,80,385,107"/>
+<area shape="rect" href="delayed__move__list_8hpp.html" title=" " alt="" coords="457,304,630,331"/>
+<area shape="rect" href="local__expansion_8hpp.html" title=" " alt="" coords="342,379,497,405"/>
+<area shape="rect" href="double__count__elimination_8hpp.html" title=" " alt="" coords="113,304,331,331"/>
+<area shape="rect" href="initial__estimation_8hpp.html" title=" " alt="" coords="456,155,620,181"/>
+<area shape="rect" href="move__picker_8hpp.html" title=" " alt="" coords="644,229,776,256"/>
+<area shape="rect" href="transposition__table_8hpp.html" title=" " alt="" coords="5,229,180,256"/>
+<area shape="rect" href="expansion__stack_8hpp.html" title=" " alt="" coords="369,453,528,480"/>
+<area shape="rect" href="komoring__heights_8hpp.html" title=" " alt="" coords="448,528,615,555"/>
+<area shape="rect" href="komoring__heights_8cpp_source.html" title=" " alt="" coords="449,603,614,629"/>
+<area shape="rect" href="user-search_8cpp_source.html" title=" " alt="" coords="670,603,795,629"/>
+<area shape="rect" href="initial__estimation_8cpp_source.html" title=" " alt="" coords="457,229,619,256"/>
+<area shape="rect" href="thread__initialization_8hpp.html" title=" " alt="" coords="756,379,936,405"/>
+<area shape="rect" href="pv__list_8hpp.html" title=" " alt="" coords="626,453,719,480"/>
 </map>
 </div>
 </div>

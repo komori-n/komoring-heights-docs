@@ -1,0 +1,30 @@
+<map id="komori::KomoringHeights::Print" name="komori::KomoringHeights::Print">
+<area shape="rect" id="node1" title="探索情報を出力する" alt="" coords="5,381,192,422"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_pv_list.html#a85a551e599bdb9159a720d24ecba85a7" title="開始局面における PV を返す" alt="" coords="255,92,449,119"/>
+<area shape="rect" id="node4" href="$classkomori_1_1_komoring_heights.html#a1716f99cbc6053f69973929c21bdd83f" title="現在の探索情報を取得する" alt="" coords="259,179,445,221"/>
+<area shape="rect" id="node12" href="$classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="541,304,719,331"/>
+<area shape="rect" id="node13" href="$classkomori_1_1_pv_list.html#ab154752ca42ecfacef247d2b3c241ce8" title="各手の探索結果とPVをまとめた配列を返す。" alt="" coords="260,24,444,51"/>
+<area shape="rect" id="node14" href="$classkomori_1_1_search_result.html#ae03260ca26fcff04cc38cd1fc6bd27c0" title="詰み／不詰の結論が出ているか" alt="" coords="550,406,710,447"/>
+<area shape="rect" id="node17" href="$classkomori_1_1_node.html#ad8aec0a7fdeb5376090cd1e5c3a833a2" title="開始局面が OR Node かどうか" alt="" coords="249,337,455,364"/>
+<area shape="rect" id="node21" href="$classkomori_1_1_score.html#abde38682068f6f88a2a014aec7efb8bf" title="Score オブジェクトを構築する。" alt="" coords="275,489,429,516"/>
+<area shape="rect" id="node25" href="$classkomori_1_1_node.html#aa6cdedb1efb346e60168dadfb24aa980" title="開始局面からの指し手" alt="" coords="240,540,464,567"/>
+<area shape="rect" id="node26" href="$namespacekomori.html#acd8be37a9f85d1912131fe1379f30e70" title="Iterable の先頭 kTake 要素だけを取ってくる" alt="" coords="300,591,404,617"/>
+<area shape="rect" id="node27" href="$namespacekomori.html#ac8e4cfe49668438b31f8af11d1043bbe" title="pn/dn 値を文字列に変換する" alt="" coords="289,641,415,668"/>
+<area shape="rect" id="node28" href="$classkomori_1_1_pv_list.html#a289167d3bc2e10c3e726dc4e35d63843" title="手 move に対する探索結果を更新する" alt="" coords="267,439,437,465"/>
+<area shape="rect" id="node3" href="$classkomori_1_1_pv_list.html#a83cae4bad864ff71f444890950854efa" title="idx_ を comparer_ に従って評価値がいい順に並べ替える" alt="" coords="527,5,733,32"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_search_monitor.html#a8bd76ec3242a3b0cc6af65285b0f30b9" title="現在の探索情報を UsiInfo に詰めて返す。" alt="" coords="545,238,715,279"/>
+<area shape="rect" id="node7" href="$classkomori_1_1_usi_info.html#abc0d87a921059d9c1a503e390eb2f0e3" title="key に val を設定する。" alt="" coords="818,161,969,188"/>
+<area shape="rect" id="node8" href="$classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a4179ad57f2d4a73ece89f9c380a7751a" title="置換表使用率（千分率）を計算する" alt="" coords="541,56,719,112"/>
+<area shape="rect" id="node11" href="$classkomori_1_1_score.html#a8d4d0c6ccf9d41846b8ebe16be1f7faa" title="現在の評価値を USI 文字列で返す" alt="" coords="545,187,715,213"/>
+<area shape="rect" id="node6" href="$classkomori_1_1_search_monitor.html#a52109fe1ac3359f99fc605e4b020ddfc" title="現在の探索局面数" alt="" coords="809,238,978,279"/>
+<area shape="rect" id="node9" href="$classkomori_1_1tt_1_1_regular_table.html#a9d2dd0f37b92f3af3f34b3b412a5c8a8" title="通常テーブルのメモリ使用率を見積もる。" alt="" coords="805,79,982,121"/>
+<area shape="rect" id="node10" href="$classkomori_1_1tt_1_1_repetition_table.html#a164c681a2c3ac0b306e8807d2d6014cd" title="置換表のメモリ使用率を求める。" alt="" coords="796,14,991,55"/>
+<area shape="rect" id="node15" href="$classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="800,569,987,596"/>
+<area shape="rect" id="node16" href="$classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="801,443,985,469"/>
+<area shape="rect" id="node18" href="$classkomori_1_1_node.html#a4340f73789f45570ffe593fc9d0aafa9" title="現在 OR node かどうか" alt="" coords="541,355,719,381"/>
+<area shape="rect" id="node19" href="$classkomori_1_1_node.html#acd0ed0838fa087e459aadae9cf563b0c" title="現在の手番" alt="" coords="826,355,961,381"/>
+<area shape="rect" id="node20" href="$classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="1039,355,1179,381"/>
+<area shape="rect" id="node22" href="$classkomori_1_1_score.html#a992a9272df730122ff52335e7ef339d1" title="デフォルトコンストラクタ" alt="" coords="553,523,707,549"/>
+<area shape="rect" id="node23" href="$classkomori_1_1_search_result.html#af353f0cfab41b586a7c994d2507ca699" title="探索時の残り手数" alt="" coords="535,573,725,600"/>
+<area shape="rect" id="node24" href="$classkomori_1_1detail_1_1_mate_len_impl.html#ab53b046400e9408fdc8c744f56e09e27" title="詰み手数を返す" alt="" coords="512,624,748,651"/>
+</map>

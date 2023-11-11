@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classkomori_1_1tt_1_1_regular_table-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -145,6 +146,13 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:afa4c0e9340b321a94d0f21f42fd0ecbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">エントリをできるだけ手前の方に移動させる（コンパクション）  <a href="classkomori_1_1tt_1_1_regular_table.html#afa4c0e9340b321a94d0f21f42fd0ecbb">More...</a><br /></td></tr>
 <tr class="separator:afa4c0e9340b321a94d0f21f42fd0ecbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a9c13bd619843fb730dd1dc01879e0d22"><td class="memItemLeft" align="right" valign="top"><a id="a9c13bd619843fb730dd1dc01879e0d22"></a>
+static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_regular_table.html#a9c13bd619843fb730dd1dc01879e0d22">kSizePerEntry</a> = sizeof(<a class="el" href="classkomori_1_1tt_1_1_entry.html">Entry</a>)</td></tr>
+<tr class="memdesc:a9c13bd619843fb730dd1dc01879e0d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">1エントリのサイズ(byte) <br /></td></tr>
+<tr class="separator:a9c13bd619843fb730dd1dc01879e0d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aedd5c85b3b2a5793d9bdb518c7a4760c"><td class="memItemLeft" align="right" valign="top"><a id="aedd5c85b3b2a5793d9bdb518c7a4760c"></a>
@@ -186,7 +194,7 @@ std::vector&lt; <a class="el" href="classkomori_1_1tt_1_1_entry.html">Entry</a> 
 <dl class="section return"><dt>Returns</dt><dd>メモリ使用率（通常テーブル）</dd></dl>
 <p><code>entries_</code> の中から <code>kHashfullCalcEntries</code> 個のエントリをサンプリングしてメモリ使用率を求める。 </p>
 
-<p class="definition">Definition at line <a class="el" href="regular__table_8hpp_source.html#l00196">196</a> of file <a class="el" href="regular__table_8hpp_source.html">regular_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="regular__table_8hpp_source.html#l00198">198</a> of file <a class="el" href="regular__table_8hpp_source.html">regular_table.hpp</a>.</p>
 
 </div>
 </div>
@@ -226,7 +234,7 @@ std::vector&lt; <a class="el" href="classkomori_1_1tt_1_1_entry.html">Entry</a> 
 0 &lt; gc_removal_ratio &lt; 1</dd></dl>
 <p><code>entries_</code> の中から <code>GcSamplingEntries</code> 個のエントリの探索量を調べ、下位 <code>kGcRemovalRatio</code> のエントリを削除する。 </p>
 
-<p class="definition">Definition at line <a class="el" href="regular__table_8hpp_source.html#l00224">224</a> of file <a class="el" href="regular__table_8hpp_source.html">regular_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="regular__table_8hpp_source.html#l00226">226</a> of file <a class="el" href="regular__table_8hpp_source.html">regular_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -266,7 +274,7 @@ Here is the call graph for this function:</div>
 <p>エントリをできるだけ手前の方に移動させる（コンパクション） </p>
 <p>GC + コンパクションを同時に単体テストするのは厳しいので、コンパクションだけ行えるようにしておく。 </p>
 
-<p class="definition">Definition at line <a class="el" href="regular__table_8hpp_source.html#l00342">342</a> of file <a class="el" href="regular__table_8hpp_source.html">regular_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="regular__table_8hpp_source.html#l00344">344</a> of file <a class="el" href="regular__table_8hpp_source.html">regular_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -314,7 +322,7 @@ Here is the call graph for this function:</div>
 <p><code><a class="el" href="classkomori_1_1tt_1_1_regular_table.html#ad675f3ae1432dd82b49b1a39b7286766" title="置換表の中身をバイナリ出力ストリーム os へ出力する">Save()</a></code> で書き出した情報を置換表へ読み込む。ストリームから読み込んだエントリを挿入するイメージで動作する。</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classkomori_1_1tt_1_1_regular_table.html#ad675f3ae1432dd82b49b1a39b7286766" title="置換表の中身をバイナリ出力ストリーム os へ出力する">Save()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="regular__table_8hpp_source.html#l00309">309</a> of file <a class="el" href="regular__table_8hpp_source.html">regular_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="regular__table_8hpp_source.html#l00311">311</a> of file <a class="el" href="regular__table_8hpp_source.html">regular_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -362,7 +370,7 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd><code>board_key</code> に対応する循環領域ポインタ</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>盤面ハッシュ値の下位32ビットをもとに循環領域の先頭位置を決定する </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="regular__table_8hpp_source.html#l00178">178</a> of file <a class="el" href="regular__table_8hpp_source.html">regular_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="regular__table_8hpp_source.html#l00180">180</a> of file <a class="el" href="regular__table_8hpp_source.html">regular_table.hpp</a>.</p>
 
 </div>
 </div>
@@ -398,7 +406,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="regular__table_8hpp_source.html#l00152">152</a> of file <a class="el" href="regular__table_8hpp_source.html">regular_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="regular__table_8hpp_source.html#l00154">154</a> of file <a class="el" href="regular__table_8hpp_source.html">regular_table.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -451,7 +459,7 @@ Here is the call graph for this function:</div>
 </ul>
 <p>なお、<code>os</code> がバイナリモードではない場合、書き込みを行わないので注意。 </p>
 
-<p class="definition">Definition at line <a class="el" href="regular__table_8hpp_source.html#l00284">284</a> of file <a class="el" href="regular__table_8hpp_source.html">regular_table.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="regular__table_8hpp_source.html#l00286">286</a> of file <a class="el" href="regular__table_8hpp_source.html">regular_table.hpp</a>.</p>
 
 </div>
 </div>

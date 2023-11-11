@@ -1,0 +1,4 @@
+<map id="komori::PvList" name="komori::PvList">
+<area shape="rect" id="node1" title="各手の探索結果とPVのリスト。" alt="" coords="60,95,175,121"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_search_result_comparer.html" title="SearchResult 同士の半順序関係。" alt="" coords="5,5,229,32"/>
+</map>

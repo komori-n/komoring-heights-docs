@@ -1,15 +1,18 @@
 <map id="mate_len.hpp" name="mate_len.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="182,5,293,32"/>
-<area shape="rect" id="node2" href="$search__result_8hpp.html" title=" " alt="" coords="63,155,201,181"/>
-<area shape="rect" id="node12" href="$ttentry_8hpp.html" title=" " alt="" coords="245,80,337,107"/>
-<area shape="rect" id="node3" href="$komoring__heights_8hpp.html" title=" " alt="" coords="89,603,255,629"/>
-<area shape="rect" id="node6" href="$score_8hpp.html" title=" " alt="" coords="24,304,109,331"/>
-<area shape="rect" id="node7" href="$ttquery_8hpp.html" title=" " alt="" coords="202,229,297,256"/>
-<area shape="rect" id="node4" href="$komoring__heights_8cpp_source.html" title=" " alt="" coords="5,677,171,704"/>
-<area shape="rect" id="node5" href="$user-search_8cpp_source.html" title=" " alt="" coords="195,677,320,704"/>
-<area shape="rect" id="node8" href="$transposition__table_8hpp.html" title=" " alt="" coords="257,304,431,331"/>
-<area shape="rect" id="node9" href="$double__count__elimination_8hpp.html" title=" " alt="" coords="235,379,453,405"/>
-<area shape="rect" id="node10" href="$local__expansion_8hpp.html" title=" " alt="" coords="267,453,421,480"/>
-<area shape="rect" id="node11" href="$expansion__stack_8hpp.html" title=" " alt="" coords="250,528,409,555"/>
-<area shape="rect" id="node13" href="$regular__table_8hpp.html" title=" " alt="" coords="276,155,412,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="246,5,357,32"/>
+<area shape="rect" id="node2" href="$komoring__heights_8cpp_source.html" title=" " alt="" coords="91,677,256,704"/>
+<area shape="rect" id="node3" href="$pv__list_8hpp.html" title=" " alt="" coords="43,229,136,256"/>
+<area shape="rect" id="node6" href="$repetition__table_8hpp.html" title=" " alt="" coords="289,155,442,181"/>
+<area shape="rect" id="node11" href="$ttquery_8hpp.html" title=" " alt="" coords="569,229,663,256"/>
+<area shape="rect" id="node13" href="$search__result_8hpp.html" title=" " alt="" coords="127,155,265,181"/>
+<area shape="rect" id="node15" href="$ttentry_8hpp.html" title=" " alt="" coords="489,80,581,107"/>
+<area shape="rect" id="node4" href="$komoring__heights_8hpp.html" title=" " alt="" coords="221,603,387,629"/>
+<area shape="rect" id="node5" href="$user-search_8cpp_source.html" title=" " alt="" coords="452,677,577,704"/>
+<area shape="rect" id="node7" href="$transposition__table_8hpp.html" title=" " alt="" coords="443,304,618,331"/>
+<area shape="rect" id="node8" href="$double__count__elimination_8hpp.html" title=" " alt="" coords="421,379,640,405"/>
+<area shape="rect" id="node9" href="$local__expansion_8hpp.html" title=" " alt="" coords="453,453,608,480"/>
+<area shape="rect" id="node10" href="$expansion__stack_8hpp.html" title=" " alt="" coords="437,528,595,555"/>
+<area shape="rect" id="node12" href="$thread__initialization_8hpp.html" title=" " alt="" coords="635,453,815,480"/>
+<area shape="rect" id="node14" href="$score_8hpp.html" title=" " alt="" coords="261,379,347,405"/>
+<area shape="rect" id="node16" href="$regular__table_8hpp.html" title=" " alt="" coords="467,155,603,181"/>
 </map>

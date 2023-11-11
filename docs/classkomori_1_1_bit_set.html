@@ -206,7 +206,7 @@ class komori::BitSet&lt; T &gt;</h3>
 <p>使える添字は 0-base。例えば、<code>T=uint64_t</code> なら [0, 64) の範囲。ただし、範囲外はすべて<code>false</code> として扱う。すなわち、例えば <code>T=uint64_t</code> の場合、 <code>Set(334)</code> は何もせず、 <code>Test(334)</code> は常に <code>false</code> を返す。</p>
 <dl class="section note"><dt>Note</dt><dd>trivially default constructible にするために、デフォルトコンストラクタは0初期化を行わない。空の <a class="el" href="classkomori_1_1_bit_set.html" title="整数 T を用いたフラグ集合。">BitSet</a> が ほしい場合、<code><a class="el" href="classkomori_1_1_bit_set.html#ab288b08f23e9249c33212e63613d2837" title="フラグをすべて false にした BitSet を返す。">BitSet::None()</a></code> を用いて初期化すること。 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitset_8hpp_source.html#l00030">30</a> of file <a class="el" href="bitset_8hpp_source.html">bitset.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitset_8hpp_source.html#l00029">29</a> of file <a class="el" href="bitset_8hpp_source.html">bitset.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7c26e21db04e337562a535bfb09ce945"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c26e21db04e337562a535bfb09ce945">&#9670;&nbsp;</a></span>operator[]()</h2>
@@ -244,7 +244,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>bool <code>i</code> 番目のフラグ状態</dd></dl>
 <p><code>i</code> が範囲外を指している場合、 <code>false</code> を返す。 </p>
 
-<p class="definition">Definition at line <a class="el" href="bitset_8hpp_source.html#l00106">106</a> of file <a class="el" href="bitset_8hpp_source.html">bitset.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitset_8hpp_source.html#l00105">105</a> of file <a class="el" href="bitset_8hpp_source.html">bitset.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -293,7 +293,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classkomori_1_1_bit_set.html" title="整数 T を用いたフラグ集合。">BitSet</a>&amp; <code>*this</code></dd></dl>
 <p><code>i</code> が範囲外を指している場合、なにもしない。 </p>
 
-<p class="definition">Definition at line <a class="el" href="bitset_8hpp_source.html#l00078">78</a> of file <a class="el" href="bitset_8hpp_source.html">bitset.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitset_8hpp_source.html#l00077">77</a> of file <a class="el" href="bitset_8hpp_source.html">bitset.hpp</a>.</p>
 
 </div>
 </div>
@@ -333,7 +333,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classkomori_1_1_bit_set.html" title="整数 T を用いたフラグ集合。">BitSet</a>&amp; <code>*this</code></dd></dl>
 <p><code>i</code> が範囲外を指している場合、なにもしない。 </p>
 
-<p class="definition">Definition at line <a class="el" href="bitset_8hpp_source.html#l00064">64</a> of file <a class="el" href="bitset_8hpp_source.html">bitset.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitset_8hpp_source.html#l00063">63</a> of file <a class="el" href="bitset_8hpp_source.html">bitset.hpp</a>.</p>
 
 </div>
 </div>
@@ -373,7 +373,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>bool <code>i</code> 番目のフラグ状態</dd></dl>
 <p><code>i</code> が範囲外を指している場合、 <code>false</code> を返す。 </p>
 
-<p class="definition">Definition at line <a class="el" href="bitset_8hpp_source.html#l00092">92</a> of file <a class="el" href="bitset_8hpp_source.html">bitset.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitset_8hpp_source.html#l00091">91</a> of file <a class="el" href="bitset_8hpp_source.html">bitset.hpp</a>.</p>
 
 </div>
 </div>
@@ -404,7 +404,7 @@ template&lt;typename T &gt; </div>
 <p>は下位ビットから順に bit0, bit1, ... へと対応する。</p>
 <p>trivially default constructible にするために、初期値の代入は行わない。 </p>
 
-<p class="definition">Definition at line <a class="el" href="bitset_8hpp_source.html#l00123">123</a> of file <a class="el" href="bitset_8hpp_source.html">bitset.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitset_8hpp_source.html#l00122">122</a> of file <a class="el" href="bitset_8hpp_source.html">bitset.hpp</a>.</p>
 
 </div>
 </div>

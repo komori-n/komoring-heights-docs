@@ -87,9 +87,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkomori_1_1detail_1_1_dfpn_plus_parameters.html">DfpnPlusParameters</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">df-pn+ で用いるパラメータたち  <a href="structkomori_1_1detail_1_1_dfpn_plus_parameters.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_search_monitor.html">SearchMonitor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索局面数を観測して nps を計算したり探索中断の判断をしたりするクラス。  <a href="classkomori_1_1detail_1_1_search_monitor.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_mate_len_impl.html">MateLenImpl</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>MateLen</code> と <code>MateLen16</code> の実装本体。中身はほぼ同じなので一箇所にまとめる。  <a href="classkomori_1_1detail_1_1_mate_len_impl.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,8 +100,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>Skep</code> の実装本体  <a href="classkomori_1_1detail_1_1_skip_impl.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_take_impl.html">TakeImpl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>Take</code> の実装本体  <a href="classkomori_1_1detail_1_1_take_impl.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl.html">ZipImpl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>Zip</code> の実装本体  <a href="classkomori_1_1detail_1_1_zip_impl.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkomori_1_1detail_1_1_constraints_impl.html">ConstraintsImpl</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>Args...</code> を無視して<code>Type</code> に <code>std::nullptr_t</code> を定義するメタ関数  <a href="structkomori_1_1detail_1_1_constraints_impl.html#details">More...</a><br /></td></tr>
@@ -147,6 +146,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a144bd1e9041f7686eede4096fcdfad22"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">call_end</a> (<a class="el" href="classkomori_1_1_range.html">Range</a> &amp;&amp;range) noexcept(noexcept(std::end(std::forward&lt; <a class="el" href="classkomori_1_1_range.html">Range</a> &gt;(range))))</td></tr>
 <tr class="memdesc:a144bd1e9041f7686eede4096fcdfad22"><td class="mdescLeft">&#160;</td><td class="mdescRight">range-based for の要件に従って end をコールする関数（配列版）  <a href="namespacekomori_1_1detail.html#a144bd1e9041f7686eede4096fcdfad22">More...</a><br /></td></tr>
 <tr class="separator:a144bd1e9041f7686eede4096fcdfad22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe71454b986eab9bbd9936ebfb3d4c22"><td class="memItemLeft" align="right" valign="top"><a id="abe71454b986eab9bbd9936ebfb3d4c22"></a>
+constexpr std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#abe71454b986eab9bbd9936ebfb3d4c22">HashfullCheckInterval</a> (std::uint64_t capacity) noexcept</td></tr>
+<tr class="memdesc:abe71454b986eab9bbd9936ebfb3d4c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">HashfullCheck の周期を計算する <br /></td></tr>
+<tr class="separator:abe71454b986eab9bbd9936ebfb3d4c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -156,13 +159,13 @@ Variables</h2></td></tr>
 <tr class="memitem:ae2e94751612a22494bb717838fca9283"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classkomori_1_1detail_1_1_default_ordered_map.html">DefaultOrderedMap</a>&lt; std::string, <a class="el" href="namespacekomori.html#a0f8bac3d10dabcca8f1933216eb2d7f0">PostSearchLevel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#ae2e94751612a22494bb717838fca9283">post_search_level</a></td></tr>
 <tr class="memdesc:ae2e94751612a22494bb717838fca9283"><td class="mdescLeft">&#160;</td><td class="mdescRight">余詰探索方法 <code>PostSearchLevel</code> 用の Combo 定義。  <a href="namespacekomori_1_1detail.html#ae2e94751612a22494bb717838fca9283">More...</a><br /></td></tr>
 <tr class="separator:ae2e94751612a22494bb717838fca9283"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3a1d7faa01afa66b690960b3645dc36"><td class="memItemLeft" align="right" valign="top">thread_local int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#ae3a1d7faa01afa66b690960b3645dc36">kPtValues</a> []</td></tr>
-<tr class="memdesc:ae3a1d7faa01afa66b690960b3645dc36"><td class="mdescLeft">&#160;</td><td class="mdescRight">駒のざっくりとした価値。スレッドごとに微妙に乱数を加えたいので thread_local にしている。  <a href="namespacekomori_1_1detail.html#ae3a1d7faa01afa66b690960b3645dc36">More...</a><br /></td></tr>
-<tr class="separator:ae3a1d7faa01afa66b690960b3645dc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc9d65026eca18c95288a75602fa70c"><td class="memItemLeft" align="right" valign="top"><a id="a6bc9d65026eca18c95288a75602fa70c"></a>
-thread_local <a class="el" href="structkomori_1_1detail_1_1_dfpn_plus_parameters.html">DfpnPlusParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a6bc9d65026eca18c95288a75602fa70c">kDfpnPlusParameters</a></td></tr>
-<tr class="memdesc:a6bc9d65026eca18c95288a75602fa70c"><td class="mdescLeft">&#160;</td><td class="mdescRight">df-pn+ で用いるパラメータ。スレッドごとに微妙に乱数を加えたいので thread_local にしている。 <br /></td></tr>
-<tr class="separator:a6bc9d65026eca18c95288a75602fa70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e555fab5fcccd104d35021efb273a24"><td class="memItemLeft" align="right" valign="top">thread_local int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a0e555fab5fcccd104d35021efb273a24">tl_pt_values</a> []</td></tr>
+<tr class="memdesc:a0e555fab5fcccd104d35021efb273a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">駒のざっくりとした価値。スレッドごとに微妙に乱数を加えたいので thread_local にしている。  <a href="namespacekomori_1_1detail.html#a0e555fab5fcccd104d35021efb273a24">More...</a><br /></td></tr>
+<tr class="separator:a0e555fab5fcccd104d35021efb273a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64ca8b15fdf9c7b808402de0f5b685c"><td class="memItemLeft" align="right" valign="top"><a id="af64ca8b15fdf9c7b808402de0f5b685c"></a>
+thread_local <a class="el" href="structkomori_1_1detail_1_1_dfpn_plus_parameters.html">DfpnPlusParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#af64ca8b15fdf9c7b808402de0f5b685c">tl_dfpn_plus_parameters</a></td></tr>
+<tr class="memdesc:af64ca8b15fdf9c7b808402de0f5b685c"><td class="mdescLeft">&#160;</td><td class="mdescRight">df-pn+ で用いるパラメータ。スレッドごとに微妙に乱数を加えたいので thread_local にしている。 <br /></td></tr>
+<tr class="separator:af64ca8b15fdf9c7b808402de0f5b685c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a337cef6e1a5e1743969cf71ff1597b3d"><td class="memItemLeft" align="right" valign="top"><a id="a337cef6e1a5e1743969cf71ff1597b3d"></a>
 constexpr <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a337cef6e1a5e1743969cf71ff1597b3d">kForceSumPnDn</a> = <a class="el" href="namespacekomori.html#a26c6a28d0272596fcb24312758455681">kInfinitePnDn</a> / 1024</td></tr>
 <tr class="memdesc:a337cef6e1a5e1743969cf71ff1597b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">強制的に max 値によるδ値計算へ切り替えるしきい値。 <br /></td></tr>
@@ -187,6 +190,10 @@ HASH_KEY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 HASH_KEY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a2e27891fba964c6f33e366432899a627">g_stolen_pr</a> [PIECE_HAND_NB][<a class="el" href="namespacekomori.html#ac939d98950f0320e5694ced139d4c8e0">komori::kDepthMax</a>]</td></tr>
 <tr class="memdesc:a2e27891fba964c6f33e366432899a627"><td class="mdescLeft">&#160;</td><td class="mdescRight">駒強奪（無駄合防止探索用）に関する経路ハッシュ値 <br /></td></tr>
 <tr class="separator:a2e27891fba964c6f33e366432899a627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d474e46fd918c222fc95277f663d5a"><td class="memItemLeft" align="right" valign="top"><a id="a44d474e46fd918c222fc95277f663d5a"></a>
+constexpr std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori_1_1detail.html#a44d474e46fd918c222fc95277f663d5a">kHashfullCheeckSkipRatio</a> = 4096</td></tr>
+<tr class="memdesc:a44d474e46fd918c222fc95277f663d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">HashfullCheck をスキップする回数の割合 <br /></td></tr>
+<tr class="separator:a44d474e46fd918c222fc95277f663d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Detail. </p>
@@ -527,7 +534,7 @@ template&lt;typename Range &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>val</code> が正ならその値、それ以外なら 2^64-1 を返す。 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__option_8hpp_source.html#l00136">136</a> of file <a class="el" href="engine__option_8hpp_source.html">engine_option.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__option_8hpp_source.html#l00134">134</a> of file <a class="el" href="engine__option_8hpp_source.html">engine_option.hpp</a>.</p>
 
 </div>
 </div>
@@ -584,40 +591,11 @@ template&lt;typename OutType  = s64&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><code>name</code> に対応する値</dd></dl>
 <p>もし <code>o[name]</code> が存在しないなら <code>OutType{}</code> を返す。 </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__option_8hpp_source.html#l00123">123</a> of file <a class="el" href="engine__option_8hpp_source.html">engine_option.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__option_8hpp_source.html#l00121">121</a> of file <a class="el" href="engine__option_8hpp_source.html">engine_option.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ae3a1d7faa01afa66b690960b3645dc36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3a1d7faa01afa66b690960b3645dc36">&#9670;&nbsp;</a></span>kPtValues</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">thread_local int komori::detail::kPtValues[]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0, 10, 20, 20, 30, 50, 50, 50, 80, 50, 50, 50, 50, 80, 80, 80,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-<p>駒のざっくりとした価値。スレッドごとに微妙に乱数を加えたいので thread_local にしている。 </p>
-
-<p class="definition">Definition at line <a class="el" href="initial__estimation_8hpp_source.html#l00016">16</a> of file <a class="el" href="initial__estimation_8hpp_source.html">initial_estimation.hpp</a>.</p>
-
-</div>
-</div>
 <a id="ae2e94751612a22494bb717838fca9283"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2e94751612a22494bb717838fca9283">&#9670;&nbsp;</a></span>post_search_level</h2>
 
@@ -649,7 +627,7 @@ template&lt;typename OutType  = s64&gt; </div>
 </div><!-- fragment -->
 <p>余詰探索方法 <code>PostSearchLevel</code> 用の Combo 定義。 </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__option_8hpp_source.html#l00103">103</a> of file <a class="el" href="engine__option_8hpp_source.html">engine_option.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__option_8hpp_source.html#l00101">101</a> of file <a class="el" href="engine__option_8hpp_source.html">engine_option.hpp</a>.</p>
 
 </div>
 </div>
@@ -685,7 +663,36 @@ template&lt;typename OutType  = s64&gt; </div>
 </div><!-- fragment -->
 <p>評価値計算方法 <code>ScoreCalculationMethod</code> 用の Combo 定義。 </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__option_8hpp_source.html#l00091">91</a> of file <a class="el" href="engine__option_8hpp_source.html">engine_option.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__option_8hpp_source.html#l00089">89</a> of file <a class="el" href="engine__option_8hpp_source.html">engine_option.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0e555fab5fcccd104d35021efb273a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e555fab5fcccd104d35021efb273a24">&#9670;&nbsp;</a></span>tl_pt_values</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">thread_local int komori::detail::tl_pt_values[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    0, 10, 20, 20, 30, 50, 50, 50, 80, 50, 50, 50, 50, 80, 80, 80,</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>駒のざっくりとした価値。スレッドごとに微妙に乱数を加えたいので thread_local にしている。 </p>
+
+<p class="definition">Definition at line <a class="el" href="initial__estimation_8hpp_source.html#l00016">16</a> of file <a class="el" href="initial__estimation_8hpp_source.html">initial_estimation.hpp</a>.</p>
 
 </div>
 </div>

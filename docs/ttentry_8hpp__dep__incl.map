@@ -1,12 +1,13 @@
 <map id="ttentry.hpp" name="ttentry.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="243,5,335,32"/>
-<area shape="rect" id="node2" href="$regular__table_8hpp.html" title=" " alt="" coords="116,80,252,107"/>
-<area shape="rect" id="node3" href="$transposition__table_8hpp.html" title=" " alt="" coords="174,229,349,256"/>
-<area shape="rect" id="node10" href="$ttquery_8hpp.html" title=" " alt="" coords="214,155,309,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="293,5,385,32"/>
+<area shape="rect" id="node2" href="$regular__table_8hpp.html" title=" " alt="" coords="219,80,355,107"/>
+<area shape="rect" id="node10" href="$ttquery_8hpp.html" title=" " alt="" coords="334,155,429,181"/>
+<area shape="rect" id="node3" href="$transposition__table_8hpp.html" title=" " alt="" coords="199,229,374,256"/>
 <area shape="rect" id="node4" href="$double__count__elimination_8hpp.html" title=" " alt="" coords="5,304,224,331"/>
 <area shape="rect" id="node5" href="$local__expansion_8hpp.html" title=" " alt="" coords="117,379,272,405"/>
-<area shape="rect" id="node7" href="$komoring__heights_8hpp.html" title=" " alt="" coords="170,528,337,555"/>
+<area shape="rect" id="node7" href="$komoring__heights_8hpp.html" title=" " alt="" coords="207,528,374,555"/>
 <area shape="rect" id="node6" href="$expansion__stack_8hpp.html" title=" " alt="" coords="115,453,274,480"/>
-<area shape="rect" id="node8" href="$komoring__heights_8cpp_source.html" title=" " alt="" coords="87,603,252,629"/>
-<area shape="rect" id="node9" href="$user-search_8cpp_source.html" title=" " alt="" coords="276,603,401,629"/>
+<area shape="rect" id="node8" href="$komoring__heights_8cpp_source.html" title=" " alt="" coords="188,603,353,629"/>
+<area shape="rect" id="node9" href="$user-search_8cpp_source.html" title=" " alt="" coords="377,603,503,629"/>
+<area shape="rect" id="node11" href="$thread__initialization_8hpp.html" title=" " alt="" coords="350,304,530,331"/>
 </map>
