@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['localexpansion_652',['LocalExpansion',['../classkomori_1_1_local_expansion.html',1,'komori']]]
+  ['localexpansion_651',['LocalExpansion',['../classkomori_1_1_local_expansion.html',1,'komori']]]
 ];

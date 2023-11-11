@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['addifhandgivesotherevasions_721',['AddIfHandGivesOtherEvasions',['../namespacekomori.html#abe78bf2e5661e6a5459917ea76c2d560',1,'komori']]],
-  ['addoneiffinal_722',['AddOneIfFinal',['../classkomori_1_1_score.html#a77d892822d9364cb743654973ab2c5c8',1,'komori::Score']]],
-  ['afterhand_723',['AfterHand',['../namespacekomori.html#ae5838f0a6fe258eb2bc0197498cd7358',1,'komori']]],
-  ['amount_724',['Amount',['../classkomori_1_1_search_result.html#af0b32b9f9fff602c03f5ea4ab4e5fff1',1,'komori::SearchResult::Amount()'],['../classkomori_1_1tt_1_1_entry.html#a5b2db46acb7973a7bc762e3a449b0ce3',1,'komori::tt::Entry::Amount()']]],
-  ['andcolor_725',['AndColor',['../classkomori_1_1_node.html#af2b9d2ba13ac5a9536d6aa1b618d2753',1,'komori::Node']]],
-  ['andhand_726',['AndHand',['../classkomori_1_1_node.html#aa5937f4e1ea7d06752752e1d7a015592',1,'komori::Node']]],
-  ['anything_727',['Anything',['../structkomori_1_1detail_1_1_anything.html#ad5cf598505e05d0d038149e0f3b6adfc',1,'komori::detail::Anything']]],
-  ['applydeltahand_728',['ApplyDeltaHand',['../namespacekomori.html#a2b91824ee210b1157a170f0b0dc650cb',1,'komori']]],
-  ['asrange_729',['AsRange',['../namespacekomori.html#a8e1493fa709128d5d926e1809323c633',1,'komori']]]
+  ['addifhandgivesotherevasions_720',['AddIfHandGivesOtherEvasions',['../namespacekomori.html#abe78bf2e5661e6a5459917ea76c2d560',1,'komori']]],
+  ['addoneiffinal_721',['AddOneIfFinal',['../classkomori_1_1_score.html#a77d892822d9364cb743654973ab2c5c8',1,'komori::Score']]],
+  ['afterhand_722',['AfterHand',['../namespacekomori.html#ae5838f0a6fe258eb2bc0197498cd7358',1,'komori']]],
+  ['amount_723',['Amount',['../classkomori_1_1_search_result.html#af0b32b9f9fff602c03f5ea4ab4e5fff1',1,'komori::SearchResult::Amount()'],['../classkomori_1_1tt_1_1_entry.html#a5b2db46acb7973a7bc762e3a449b0ce3',1,'komori::tt::Entry::Amount()']]],
+  ['andcolor_724',['AndColor',['../classkomori_1_1_node.html#af2b9d2ba13ac5a9536d6aa1b618d2753',1,'komori::Node']]],
+  ['andhand_725',['AndHand',['../classkomori_1_1_node.html#aa5937f4e1ea7d06752752e1d7a015592',1,'komori::Node']]],
+  ['anything_726',['Anything',['../structkomori_1_1detail_1_1_anything.html#ad5cf598505e05d0d038149e0f3b6adfc',1,'komori::detail::Anything']]],
+  ['applydeltahand_727',['ApplyDeltaHand',['../namespacekomori.html#a2b91824ee210b1157a170f0b0dc650cb',1,'komori']]],
+  ['asrange_728',['AsRange',['../namespacekomori.html#a8e1493fa709128d5d926e1809323c633',1,'komori']]]
 ];

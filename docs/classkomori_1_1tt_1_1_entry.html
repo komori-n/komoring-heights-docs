@@ -281,14 +281,12 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <a class="el" href="classkomori_1_1_shared_exclusive_lock.html">SharedExclusiveLock</a>&lt; std::int8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a489e60d4fb3d2fbf62230a5984d9689c">lock_</a></td></tr>
 <tr class="memdesc:a489e60d4fb3d2fbf62230a5984d9689c"><td class="mdescLeft">&#160;</td><td class="mdescRight">スピンロック <br /></td></tr>
 <tr class="separator:a489e60d4fb3d2fbf62230a5984d9689c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82d5f2476820395fef9ebf84f6747047"><td class="memItemLeft" align="right" valign="top"><a id="a82d5f2476820395fef9ebf84f6747047"></a>
-<a class="el" href="classkomori_1_1tt_1_1_entry.html#acb54ee89c48f59fbaafcd042de5822a0">RepetitionState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a82d5f2476820395fef9ebf84f6747047">repetition_state_</a></td></tr>
-<tr class="memdesc:a82d5f2476820395fef9ebf84f6747047"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面が千日手の可能性があるか <br /></td></tr>
+<tr class="memitem:a82d5f2476820395fef9ebf84f6747047"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkomori_1_1tt_1_1_entry.html#acb54ee89c48f59fbaafcd042de5822a0">RepetitionState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a82d5f2476820395fef9ebf84f6747047">repetition_state_</a></td></tr>
+<tr class="memdesc:a82d5f2476820395fef9ebf84f6747047"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面が千日手の可能性があるか  <a href="classkomori_1_1tt_1_1_entry.html#a82d5f2476820395fef9ebf84f6747047">More...</a><br /></td></tr>
 <tr class="separator:a82d5f2476820395fef9ebf84f6747047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc83a601ee79496067b5e63cdef440d7"><td class="memItemLeft" align="right" valign="top"><a id="afc83a601ee79496067b5e63cdef440d7"></a>
-std::int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#afc83a601ee79496067b5e63cdef440d7">min_depth_</a></td></tr>
-<tr class="memdesc:afc83a601ee79496067b5e63cdef440d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">最小探索深さ。<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a65eedfbe0ca37ae00eadb41fc73f2173" title="pn, dn などの探索情報を取得する">LookUp()</a></code> 中に書き換える可能性があるので mutable。 <br /></td></tr>
-<tr class="separator:afc83a601ee79496067b5e63cdef440d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad0dbdda704374f8d8ca2f57911041a"><td class="memItemLeft" align="right" valign="top"><a id="a9ad0dbdda704374f8d8ca2f57911041a"></a>
+std::atomic&lt; std::int16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>min_depth_</b></td></tr>
+<tr class="separator:a9ad0dbdda704374f8d8ca2f57911041a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabe391ce30afb4acbcb187149d346cd5"><td class="memItemLeft" align="right" valign="top"><a id="aabe391ce30afb4acbcb187149d346cd5"></a>
 Hand&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#aabe391ce30afb4acbcb187149d346cd5">parent_hand_</a></td></tr>
 <tr class="memdesc:aabe391ce30afb4acbcb187149d346cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">親局面の持ち駒 <br /></td></tr>
@@ -323,24 +321,23 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
 <div class="line">                32 |                          <a class="code" href="classkomori_1_1tt_1_1_entry.html#a6ed07741113f8839a56f8b2fedf655cf">dn_</a>                          |</div>
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
-<div class="line">                40 | <a class="code" href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78">lock</a> | rep  | <a class="code" href="classkomori_1_1tt_1_1_entry.html#afc83a601ee79496067b5e63cdef440d7">min_depth_</a>  |        <a class="code" href="classkomori_1_1tt_1_1_entry.html#aabe391ce30afb4acbcb187149d346cd5">parent_hand_</a>       |</div>
+<div class="line">                40 | <a class="code" href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78">lock</a> | rep  | min_depth_  |        <a class="code" href="classkomori_1_1tt_1_1_entry.html#aabe391ce30afb4acbcb187149d346cd5">parent_hand_</a>       |</div>
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
 <div class="line">                48 |                  <a class="code" href="classkomori_1_1tt_1_1_entry.html#a7467449eb036b1783d9529287248708c">parent_board_key_</a>                    |</div>
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
 <div class="line">                56 |                       <a class="code" href="classkomori_1_1tt_1_1_entry.html#afc44e63fe5cd5df66660e7e0a170ac65">sum_mask_</a>                       |</div>
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a0db14ee7a3a680ce054ccc840fabc271"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a0db14ee7a3a680ce054ccc840fabc271">komori::tt::Entry::hand_</a></div><div class="ttdeci">std::atomic&lt; Hand &gt; hand_</div><div class="ttdoc">現局面の持ち駒（コンストラクト時は無効値をセット）</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00551">ttentry.hpp:551</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a23de87519db9683666cd76a3b03b9ee4"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a23de87519db9683666cd76a3b03b9ee4">komori::tt::Entry::board_key_</a></div><div class="ttdeci">Key board_key_</div><div class="ttdoc">盤面ハッシュ値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00553">ttentry.hpp:553</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a0db14ee7a3a680ce054ccc840fabc271"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a0db14ee7a3a680ce054ccc840fabc271">komori::tt::Entry::hand_</a></div><div class="ttdeci">std::atomic&lt; Hand &gt; hand_</div><div class="ttdoc">現局面の持ち駒（コンストラクト時は無効値をセット）</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00554">ttentry.hpp:554</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a23de87519db9683666cd76a3b03b9ee4"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a23de87519db9683666cd76a3b03b9ee4">komori::tt::Entry::board_key_</a></div><div class="ttdeci">Key board_key_</div><div class="ttdoc">盤面ハッシュ値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00556">ttentry.hpp:556</a></div></div>
 <div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a24bacfcc1ebd8e79cd3e29340e0f1d78"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78">komori::tt::Entry::lock</a></div><div class="ttdeci">void lock() const</div><div class="ttdoc">エントリの排他ロックを取る</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00201">ttentry.hpp:201</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a38048203a3e45de279f64733c1830119"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a38048203a3e45de279f64733c1830119">komori::tt::Entry::pn_</a></div><div class="ttdeci">PnDn pn_</div><div class="ttdoc">pn値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00558">ttentry.hpp:558</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a4fb181b4ee5cc175a792c52d2417e9f9"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a4fb181b4ee5cc175a792c52d2417e9f9">komori::tt::Entry::amount_</a></div><div class="ttdeci">SearchAmount amount_</div><div class="ttdoc">現局面の探索量</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00552">ttentry.hpp:552</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a6ed07741113f8839a56f8b2fedf655cf"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a6ed07741113f8839a56f8b2fedf655cf">komori::tt::Entry::dn_</a></div><div class="ttdeci">PnDn dn_</div><div class="ttdoc">dn値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00559">ttentry.hpp:559</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a7467449eb036b1783d9529287248708c"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a7467449eb036b1783d9529287248708c">komori::tt::Entry::parent_board_key_</a></div><div class="ttdeci">Key parent_board_key_</div><div class="ttdoc">親局面の盤面ハッシュ値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00566">ttentry.hpp:566</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_aabe391ce30afb4acbcb187149d346cd5"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#aabe391ce30afb4acbcb187149d346cd5">komori::tt::Entry::parent_hand_</a></div><div class="ttdeci">Hand parent_hand_</div><div class="ttdoc">親局面の持ち駒</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00565">ttentry.hpp:565</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_ad6cbe919bbe6a11df3374cc298b7cdec"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#ad6cbe919bbe6a11df3374cc298b7cdec">komori::tt::Entry::disproven_len_</a></div><div class="ttdeci">MateLen disproven_len_</div><div class="ttdoc">不詰手数</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00556">ttentry.hpp:556</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_af9e084c0b2b8662428818fe5d9afded8"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#af9e084c0b2b8662428818fe5d9afded8">komori::tt::Entry::proven_len_</a></div><div class="ttdeci">MateLen proven_len_</div><div class="ttdoc">詰み手数</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00555">ttentry.hpp:555</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_afc44e63fe5cd5df66660e7e0a170ac65"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#afc44e63fe5cd5df66660e7e0a170ac65">komori::tt::Entry::sum_mask_</a></div><div class="ttdeci">BitSet64 sum_mask_</div><div class="ttdoc">δ値を和で計算する子の集合</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00567">ttentry.hpp:567</a></div></div>
-<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_afc83a601ee79496067b5e63cdef440d7"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#afc83a601ee79496067b5e63cdef440d7">komori::tt::Entry::min_depth_</a></div><div class="ttdeci">std::int16_t min_depth_</div><div class="ttdoc">最小探索深さ。LookUp() 中に書き換える可能性があるので mutable。</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00563">ttentry.hpp:563</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a38048203a3e45de279f64733c1830119"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a38048203a3e45de279f64733c1830119">komori::tt::Entry::pn_</a></div><div class="ttdeci">PnDn pn_</div><div class="ttdoc">pn値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00561">ttentry.hpp:561</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a4fb181b4ee5cc175a792c52d2417e9f9"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a4fb181b4ee5cc175a792c52d2417e9f9">komori::tt::Entry::amount_</a></div><div class="ttdeci">SearchAmount amount_</div><div class="ttdoc">現局面の探索量</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00555">ttentry.hpp:555</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a6ed07741113f8839a56f8b2fedf655cf"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a6ed07741113f8839a56f8b2fedf655cf">komori::tt::Entry::dn_</a></div><div class="ttdeci">PnDn dn_</div><div class="ttdoc">dn値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00562">ttentry.hpp:562</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a7467449eb036b1783d9529287248708c"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a7467449eb036b1783d9529287248708c">komori::tt::Entry::parent_board_key_</a></div><div class="ttdeci">Key parent_board_key_</div><div class="ttdoc">親局面の盤面ハッシュ値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00570">ttentry.hpp:570</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_aabe391ce30afb4acbcb187149d346cd5"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#aabe391ce30afb4acbcb187149d346cd5">komori::tt::Entry::parent_hand_</a></div><div class="ttdeci">Hand parent_hand_</div><div class="ttdoc">親局面の持ち駒</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00569">ttentry.hpp:569</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_ad6cbe919bbe6a11df3374cc298b7cdec"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#ad6cbe919bbe6a11df3374cc298b7cdec">komori::tt::Entry::disproven_len_</a></div><div class="ttdeci">MateLen disproven_len_</div><div class="ttdoc">不詰手数</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00559">ttentry.hpp:559</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_af9e084c0b2b8662428818fe5d9afded8"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#af9e084c0b2b8662428818fe5d9afded8">komori::tt::Entry::proven_len_</a></div><div class="ttdeci">MateLen proven_len_</div><div class="ttdoc">詰み手数</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00558">ttentry.hpp:558</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_afc44e63fe5cd5df66660e7e0a170ac65"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#afc44e63fe5cd5df66660e7e0a170ac65">komori::tt::Entry::sum_mask_</a></div><div class="ttdeci">BitSet64 sum_mask_</div><div class="ttdoc">δ値を和で計算する子の集合</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00571">ttentry.hpp:571</a></div></div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md8"></a>
 初期化</h3>
 <p>配列により一気にメモリ確保したいので、デフォルトコンストラクト可能にする。</p>
@@ -422,7 +419,7 @@ SumMask</h3>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00546">546</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00549">549</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -831,7 +828,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pn/dn を更新したら <code>true</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00522">522</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00524">524</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -899,7 +896,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pn/dn を更新したら <code>true</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00494">494</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00495">495</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>
@@ -1310,6 +1307,34 @@ Here is the call graph for this function:</div>
 <dl class="section pre"><dt>Precondition</dt><dd><code>IsFor(board_key, hand)</code> （<code>board_key</code>, <code>hand</code> は現局面の盤面ハッシュ、持ち駒） </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00281">281</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a82d5f2476820395fef9ebf84f6747047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d5f2476820395fef9ebf84f6747047">&#9670;&nbsp;</a></span>repetition_state_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classkomori_1_1tt_1_1_entry.html#acb54ee89c48f59fbaafcd042de5822a0">RepetitionState</a> komori::tt::Entry::repetition_state_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現局面が千日手の可能性があるか </p>
+<p>最小探索深さ。<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#a65eedfbe0ca37ae00eadb41fc73f2173" title="pn, dn などの探索情報を取得する">LookUp()</a></code> 中に書き換える可能性があるので atomic かつ mutable。 </p>
+
+<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00565">565</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>

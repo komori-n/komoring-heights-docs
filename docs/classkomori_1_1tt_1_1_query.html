@@ -211,7 +211,7 @@ Depth&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <li>劣等局面（盤面が一致していて持ち駒が現局面より少ない） </li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00054">54</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00055">55</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8c8bf9913c5a039c98bbdf30aba29eda"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c8bf9913c5a039c98bbdf30aba29eda">&#9670;&nbsp;</a></span>Query() <span class="overload">[1/2]</span></h2>
@@ -284,7 +284,7 @@ Depth&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00065">65</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00066">66</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 
 </div>
 </div>
@@ -344,7 +344,7 @@ Depth&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <dl class="section return"><dt>Returns</dt><dd>pair&lt;最長不詰手数、最短詰み手数&gt;</dd></dl>
 <p>現局面の最長不詰手数および最短詰み手数を得る関数。LookUp() を単純に使うと、詰み手数と不詰手数を同時に得るのは 難しいため、専用関数として提供する。詰み探索終了後の手順の復元に用いることを想定している。 </p>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00209">209</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00210">210</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -393,7 +393,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>見つけた or 作成したエントリ。<code>lock()</code> された状態で返るので、参照が完了したら必ず <code>unlock()</code> を呼ぶこと。 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00257">257</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00258">258</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -472,7 +472,7 @@ template&lt;typename InitialEvalFunc &gt; </div>
 <p>一般に、初期化関数の呼び出しは実行コストがかかる。そのため、初期化関数は <code>eval_func</code> に包んで渡す。 必要な時のみ <code>eval_func</code> の呼び出しを行うことで、呼び出さないパスの高速化ができる。</p>
 <dl class="section note"><dt>Note</dt><dd>詰将棋エンジンで最も最適化の効果がある関数。1回1回の呼び出し時間は大したことがないが、探索中にたくさん 呼ばれるため、ループアンローリングなどの小手先の高速化でかなり全体の処理性能向上に貢献できる。 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00120">120</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00121">121</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -536,7 +536,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>現局面の親局面 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00183">183</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00184">184</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -589,7 +589,7 @@ template&lt;bool kIsProven&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00287">287</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00288">288</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -640,7 +640,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00305">305</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00306">306</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -708,7 +708,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>実際の処理は <code>SetProven()</code>, <code>SetDisproven()</code>, <code><a class="el" href="classkomori_1_1tt_1_1_query.html#adbef48a41d416069c997ec6315a938de">SetRepetition()</a></code>, <code><a class="el" href="classkomori_1_1tt_1_1_query.html#a64af13f9edde082ec5e11ca79c904ee3" title="探索中の探索結果 result を置換表に書き込む関数">SetUnknown()</a></code> を参照。 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00236">236</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00237">237</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 
 </div>
 </div>
@@ -754,7 +754,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00317">317</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00318">318</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
