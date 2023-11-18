@@ -137,6 +137,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html">komori::detail::ZipImpl&lt; Range1, Range2 &gt;::Iterator&lt; Iterator1, Iterator2 &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">zipイテレータ  <a href="classkomori_1_1detail_1_1_zip_impl_1_1_iterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_apply_impl.html">komori::detail::ApplyImpl&lt; Range, Func &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>Take</code> の実装本体  <a href="classkomori_1_1detail_1_1_apply_impl.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1detail_1_1_apply_impl_1_1_iterator.html">komori::detail::ApplyImpl&lt; Range, Func &gt;::Iterator&lt; Itr &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applyイテレータ  <a href="classkomori_1_1detail_1_1_apply_impl_1_1_iterator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -185,6 +191,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a3abf9ca26f7022f402cd774514ce16a5"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori.html#a3abf9ca26f7022f402cd774514ce16a5">komori::Zip</a> (Range1 &amp;&amp;range1, Range2 &amp;&amp;range2) noexcept(noexcept(detail::ZipImpl&lt; Range1, Range2 &gt;(std::forward&lt; Range1 &gt;(range1), std::forward&lt; Range2 &gt;(range2))))</td></tr>
 <tr class="memdesc:a3abf9ca26f7022f402cd774514ce16a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">2つのrangeをpairでまとめたようなrangeを返す。  <a href="namespacekomori.html#a3abf9ca26f7022f402cd774514ce16a5">More...</a><br /></td></tr>
 <tr class="separator:a3abf9ca26f7022f402cd774514ce16a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02f36bba9f6289806c06f00e2c8581cc"><td class="memTemplParams" colspan="2">template&lt;typename Range , typename Func &gt; </td></tr>
+<tr class="memitem:a02f36bba9f6289806c06f00e2c8581cc"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori.html#a02f36bba9f6289806c06f00e2c8581cc">komori::Apply</a> (Range &amp;&amp;range, Func &amp;&amp;func) noexcept(noexcept(detail::ApplyImpl&lt; Range, Func &gt;{ std::forward&lt; Range &gt;(range), std::forward&lt; Func &gt;(func)}))</td></tr>
+<tr class="memdesc:a02f36bba9f6289806c06f00e2c8581cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">範囲 <code>range</code> に対して関数 <code>func</code> をそれぞれ適用したような範囲を返す。  <a href="namespacekomori.html#a02f36bba9f6289806c06f00e2c8581cc">More...</a><br /></td></tr>
+<tr class="separator:a02f36bba9f6289806c06f00e2c8581cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

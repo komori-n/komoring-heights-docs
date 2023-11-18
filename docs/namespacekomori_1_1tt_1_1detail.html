@@ -138,7 +138,7 @@ thread_local std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a
 </div><div class="memdoc">
 
 <p>Hashfull（ハッシュ使用率）を計算するために仕様するエントリ数。大きすぎると探索性能が低下する。 </p>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 サンプル数の考察（読まなくていい）</h2>
 <p>N 個のエントリのうち K 個が使用中の状況で、この N 個から無作為に n 個のエントリを調べたとき、 使用中のエントリの個数 X は超幾何分布 P(X=k) = (K choose k) * ((N - K) choose (n - k)) / (N choose n) に従う。この確率変数 X は n * K / N で分散 n * K * (N - K) * (N - n) / N^2 / (N - 1) である。よって、1 &lt; n &lt;&lt; N のとき、 Y := X / n とおくと、Y は平均 K / N =: p # ハッシュ使用率 で分散 K * (N - K) * (N - n) / N^2 / (N - 1) / n = p * (1 - p) * (1 - n/N) / (1 - 1/N) / n ~ p * (1 - p) / n となる。よって、n=10000 のとき、Y が K/N ± 0.01 の範囲の値を取る確率は少なく見積もってだいたい 95 ぐらいとなる。 探索中の詰将棋エンジンのハッシュ使用率の値が 1% ずれていても実用上ほとんど影響ないと考えられるので、 実行速度とのバランスを考えて n=10000 というのはある程度妥当な数字だと言える。 </p>
 

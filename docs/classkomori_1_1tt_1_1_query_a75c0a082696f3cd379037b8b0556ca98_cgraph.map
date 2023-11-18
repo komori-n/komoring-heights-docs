@@ -1,8 +1,9 @@
 <map id="komori::tt::Query::FindOrCreate" name="komori::tt::Query::FindOrCreate">
-<area shape="rect" id="node1" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="5,64,144,105"/>
+<area shape="rect" id="node1" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="5,100,144,141"/>
 <area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_entry.html#ac259de04e6dad6e3c3223570d8337d26" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="205,5,340,47"/>
-<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78" title="エントリの排他ロックを取る" alt="" coords="192,71,353,98"/>
-<area shape="rect" id="node5" href="$classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1" title="エントリの排他ロックを解除する" alt="" coords="205,124,340,165"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_shared_exclusive_lock.html#a29f2f8973d3016bbc68ba9c69d07d0e7" title="排他ロックを取得する" alt="" coords="401,61,613,103"/>
-<area shape="rect" id="node6" href="$classkomori_1_1_shared_exclusive_lock.html#a678bfb5327fe28da25a448d1a5f687ae" title="排他ロックを解放する" alt="" coords="401,127,613,168"/>
+<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_entry.html#af1969c3d079ea4a462df415e5ce4ec1b" title="エントリが未使用状態かを判定する。この関数に限っては共有ロックを取得せずに使用することができる。" alt="" coords="205,71,340,112"/>
+<area shape="rect" id="node4" href="$classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78" title="エントリの排他ロックを取る" alt="" coords="192,137,353,163"/>
+<area shape="rect" id="node6" href="$classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1" title="エントリの排他ロックを解除する" alt="" coords="205,189,340,231"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_shared_exclusive_lock.html#a29f2f8973d3016bbc68ba9c69d07d0e7" title="排他ロックを取得する" alt="" coords="401,127,613,168"/>
+<area shape="rect" id="node7" href="$classkomori_1_1_shared_exclusive_lock.html#a678bfb5327fe28da25a448d1a5f687ae" title="排他ロックを解放する" alt="" coords="401,192,613,233"/>
 </map>

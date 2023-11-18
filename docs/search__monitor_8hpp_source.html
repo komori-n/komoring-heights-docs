@@ -173,7 +173,7 @@ $(function() {
 <div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="classkomori_1_1_search_monitor.html#a69bf484d9bdcf77f15e33acef0b2b4cc">  131</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classkomori_1_1_search_monitor.html#a69bf484d9bdcf77f15e33acef0b2b4cc">ShouldStop</a>() {</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> stop = <a class="code" href="classkomori_1_1_search_monitor.html#a44c11298c2e908acd3380f8344a9b70f">stop_</a>.load(std::memory_order_acquire);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespacekomori.html#a1566dce8d7bbeb1e6bad5be02fd99009">tl_thread_id</a> != 0) {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      <span class="keywordflow">return</span> stop;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      <span class="keywordflow">return</span> stop || Threads.stop;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (stop) {</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      <span class="comment">// tick 状態に関係なく stop_ なら終了。</span></div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>

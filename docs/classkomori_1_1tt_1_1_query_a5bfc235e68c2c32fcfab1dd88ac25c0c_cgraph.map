@@ -1,12 +1,13 @@
 <map id="komori::tt::Query::SetFinal" name="komori::tt::Query::SetFinal">
-<area shape="rect" id="node1" title="詰みまたは不詰の探索結果 result を置換表に書き込む" alt="" coords="5,104,144,145"/>
-<area shape="rect" id="node2" href="$classkomori_1_1_search_result.html#af0b32b9f9fff602c03f5ea4ab4e5fff1" title="探索量" alt="" coords="207,5,367,47"/>
-<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="218,71,357,112"/>
-<area shape="rect" id="node9" href="$classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="207,136,367,177"/>
-<area shape="rect" id="node10" href="$classkomori_1_1_search_result.html#af353f0cfab41b586a7c994d2507ca699" title="探索時の残り手数" alt="" coords="192,202,383,229"/>
-<area shape="rect" id="node4" href="$classkomori_1_1tt_1_1_entry.html#ac259de04e6dad6e3c3223570d8337d26" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="444,12,579,53"/>
-<area shape="rect" id="node5" href="$classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78" title="エントリの排他ロックを取る" alt="" coords="431,78,592,105"/>
-<area shape="rect" id="node7" href="$classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1" title="エントリの排他ロックを解除する" alt="" coords="444,131,579,172"/>
-<area shape="rect" id="node6" href="$classkomori_1_1_shared_exclusive_lock.html#a29f2f8973d3016bbc68ba9c69d07d0e7" title="排他ロックを取得する" alt="" coords="640,68,852,109"/>
-<area shape="rect" id="node8" href="$classkomori_1_1_shared_exclusive_lock.html#a678bfb5327fe28da25a448d1a5f687ae" title="排他ロックを解放する" alt="" coords="640,133,852,175"/>
+<area shape="rect" id="node1" title="詰みまたは不詰の探索結果 result を置換表に書き込む" alt="" coords="5,133,144,175"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_search_result.html#af0b32b9f9fff602c03f5ea4ab4e5fff1" title="探索量" alt="" coords="207,35,367,76"/>
+<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="218,100,357,141"/>
+<area shape="rect" id="node10" href="$classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="207,165,367,207"/>
+<area shape="rect" id="node11" href="$classkomori_1_1_search_result.html#af353f0cfab41b586a7c994d2507ca699" title="探索時の残り手数" alt="" coords="192,231,383,258"/>
+<area shape="rect" id="node4" href="$classkomori_1_1tt_1_1_entry.html#ac259de04e6dad6e3c3223570d8337d26" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="444,5,579,47"/>
+<area shape="rect" id="node5" href="$classkomori_1_1tt_1_1_entry.html#af1969c3d079ea4a462df415e5ce4ec1b" title="エントリが未使用状態かを判定する。この関数に限っては共有ロックを取得せずに使用することができる。" alt="" coords="444,71,579,112"/>
+<area shape="rect" id="node6" href="$classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78" title="エントリの排他ロックを取る" alt="" coords="431,137,592,163"/>
+<area shape="rect" id="node8" href="$classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1" title="エントリの排他ロックを解除する" alt="" coords="444,189,579,231"/>
+<area shape="rect" id="node7" href="$classkomori_1_1_shared_exclusive_lock.html#a29f2f8973d3016bbc68ba9c69d07d0e7" title="排他ロックを取得する" alt="" coords="640,127,852,168"/>
+<area shape="rect" id="node9" href="$classkomori_1_1_shared_exclusive_lock.html#a678bfb5327fe28da25a448d1a5f687ae" title="排他ロックを解放する" alt="" coords="640,192,852,233"/>
 </map>

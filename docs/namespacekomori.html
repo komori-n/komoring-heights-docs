@@ -339,6 +339,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 <tr class="memitem:a3abf9ca26f7022f402cd774514ce16a5"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori.html#a3abf9ca26f7022f402cd774514ce16a5">Zip</a> (Range1 &amp;&amp;range1, Range2 &amp;&amp;range2) noexcept(noexcept(<a class="el" href="classkomori_1_1detail_1_1_zip_impl.html">detail::ZipImpl</a>&lt; Range1, Range2 &gt;(std::forward&lt; Range1 &gt;(range1), std::forward&lt; Range2 &gt;(range2))))</td></tr>
 <tr class="memdesc:a3abf9ca26f7022f402cd774514ce16a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">2つのrangeをpairでまとめたようなrangeを返す。  <a href="namespacekomori.html#a3abf9ca26f7022f402cd774514ce16a5">More...</a><br /></td></tr>
 <tr class="separator:a3abf9ca26f7022f402cd774514ce16a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02f36bba9f6289806c06f00e2c8581cc"><td class="memTemplParams" colspan="2">template&lt;typename Range , typename Func &gt; </td></tr>
+<tr class="memitem:a02f36bba9f6289806c06f00e2c8581cc"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacekomori.html#a02f36bba9f6289806c06f00e2c8581cc">Apply</a> (<a class="el" href="classkomori_1_1_range.html">Range</a> &amp;&amp;range, Func &amp;&amp;func) noexcept(noexcept(<a class="el" href="classkomori_1_1detail_1_1_apply_impl.html">detail::ApplyImpl</a>&lt; <a class="el" href="classkomori_1_1_range.html">Range</a>, Func &gt;{ std::forward&lt; <a class="el" href="classkomori_1_1_range.html">Range</a> &gt;(range), std::forward&lt; Func &gt;(func)}))</td></tr>
+<tr class="memdesc:a02f36bba9f6289806c06f00e2c8581cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">範囲 <code>range</code> に対して関数 <code>func</code> をそれぞれ適用したような範囲を返す。  <a href="namespacekomori.html#a02f36bba9f6289806c06f00e2c8581cc">More...</a><br /></td></tr>
+<tr class="separator:a02f36bba9f6289806c06f00e2c8581cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb92abe1c44b30904f85796fd729b87e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori.html#afb92abe1c44b30904f85796fd729b87e">InitializeThread</a> (std::uint32_t id, std::uint32_t num_threads)</td></tr>
 <tr class="memdesc:afb92abe1c44b30904f85796fd729b87e"><td class="mdescLeft">&#160;</td><td class="mdescRight">thread local 変数を初期化する  <a href="namespacekomori.html#afb92abe1c44b30904f85796fd729b87e">More...</a><br /></td></tr>
 <tr class="separator:afb92abe1c44b30904f85796fd729b87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -379,7 +383,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac300cf6ad5859846af0891d87ef8ec8f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori.html#ac300cf6ad5859846af0891d87ef8ec8f">kAncestorSearchThreshold</a> = 2 * <a class="el" href="namespacekomori.html#ae827eafdb768dc1d7ee921cf9a345694">kPnDnUnit</a></td></tr>
+<tr class="memitem:ac300cf6ad5859846af0891d87ef8ec8f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekomori.html#ac300cf6ad5859846af0891d87ef8ec8f">kAncestorSearchThreshold</a> = 3 * <a class="el" href="namespacekomori.html#ae827eafdb768dc1d7ee921cf9a345694">kPnDnUnit</a></td></tr>
 <tr class="memdesc:ac300cf6ad5859846af0891d87ef8ec8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">二重カウント回避のために局面を過去方向へ遡るとき、目をつぶる pn/dn の差  <a href="namespacekomori.html#ac300cf6ad5859846af0891d87ef8ec8f">More...</a><br /></td></tr>
 <tr class="separator:ac300cf6ad5859846af0891d87ef8ec8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6277ec63507731b721341c17c86699ea"><td class="memItemLeft" align="right" valign="top"><a id="a6277ec63507731b721341c17c86699ea"></a>
@@ -770,6 +774,56 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespacekomori.html#a48f3fa8cf78887150c3558bf0ebbf47c" title="hand から pr を消す" alt="" coords="269,56,432,83"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a02f36bba9f6289806c06f00e2c8581cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02f36bba9f6289806c06f00e2c8581cc">&#9670;&nbsp;</a></span>Apply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Range , typename Func &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto komori::Apply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classkomori_1_1_range.html">Range</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func &amp;&amp;&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>範囲 <code>range</code> に対して関数 <code>func</code> をそれぞれ適用したような範囲を返す。 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">range</td><td>範囲 </td></tr>
+    <tr><td class="paramname">func</td><td>適用する関数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>範囲 <code>range</code> に対して関数 <code>func</code> をそれぞれ適用したような範囲 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ranges_8hpp_source.html#l00503">503</a> of file <a class="el" href="ranges_8hpp_source.html">ranges.hpp</a>.</p>
 
 </div>
 </div>
@@ -2376,7 +2430,7 @@ template&lt;typename Range1 , typename Range2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> komori::kAncestorSearchThreshold = 2 * <a class="el" href="namespacekomori.html#ae827eafdb768dc1d7ee921cf9a345694">kPnDnUnit</a></td>
+          <td class="memname">constexpr <a class="el" href="namespacekomori.html#ae2b179f7c8adb463807f13c9d73ec34a">PnDn</a> komori::kAncestorSearchThreshold = 3 * <a class="el" href="namespacekomori.html#ae827eafdb768dc1d7ee921cf9a345694">kPnDnUnit</a></td>
         </tr>
       </table>
   </td>

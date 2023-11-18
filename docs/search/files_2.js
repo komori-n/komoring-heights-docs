@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['delayed_5fmove_5flist_2ehpp_691',['delayed_move_list.hpp',['../delayed__move__list_8hpp.html',1,'']]],
-  ['double_5fcount_5felimination_2ehpp_692',['double_count_elimination.hpp',['../double__count__elimination_8hpp.html',1,'']]]
+  ['delayed_5fmove_5flist_2ehpp_698',['delayed_move_list.hpp',['../delayed__move__list_8hpp.html',1,'']]],
+  ['double_5fcount_5felimination_2ehpp_699',['double_count_elimination.hpp',['../double__count__elimination_8hpp.html',1,'']]]
 ];

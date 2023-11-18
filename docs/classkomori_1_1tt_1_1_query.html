@@ -202,7 +202,7 @@ Depth&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>連続する複数エントリを束ねてまとめて読み書きするためのクラス。 </p>
 <p>詰将棋エンジンでは置換表を何回も何回も読み書きする。このクラスでは、置換表の読み書きに必要となる 情報（ハッシュ値など）をキャッシュしておき、高速化することが目的である。</p>
-<h2><a class="anchor" id="autotoc_md16"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 実装詳細</h2>
 <p>置換表から結果を読む際、以下の情報を利用して探索結果を復元する。</p>
 <ol type="1">
@@ -344,7 +344,7 @@ Depth&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <dl class="section return"><dt>Returns</dt><dd>pair&lt;最長不詰手数、最短詰み手数&gt;</dd></dl>
 <p>現局面の最長不詰手数および最短詰み手数を得る関数。LookUp() を単純に使うと、詰み手数と不詰手数を同時に得るのは 難しいため、専用関数として提供する。詰み探索終了後の手順の復元に用いることを想定している。 </p>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00210">210</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00207">207</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -393,18 +393,19 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>見つけた or 作成したエントリ。<code>lock()</code> された状態で返るので、参照が完了したら必ず <code>unlock()</code> を呼ぶこと。 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00258">258</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00255">255</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1tt_1_1_query_a75c0a082696f3cd379037b8b0556ca98_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_query_a75c0a082696f3cd379037b8b0556ca98_cgraph" alt=""/></div>
 <map name="aclasskomori_1_1tt_1_1_query_a75c0a082696f3cd379037b8b0556ca98_cgraph" id="aclasskomori_1_1tt_1_1_query_a75c0a082696f3cd379037b8b0556ca98_cgraph">
-<area shape="rect" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="5,64,144,105"/>
+<area shape="rect" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="5,100,144,141"/>
 <area shape="rect" href="classkomori_1_1tt_1_1_entry.html#ac259de04e6dad6e3c3223570d8337d26" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="205,5,340,47"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78" title="エントリの排他ロックを取る" alt="" coords="192,71,353,98"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1" title="エントリの排他ロックを解除する" alt="" coords="205,124,340,165"/>
-<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a29f2f8973d3016bbc68ba9c69d07d0e7" title="排他ロックを取得する" alt="" coords="401,61,613,103"/>
-<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a678bfb5327fe28da25a448d1a5f687ae" title="排他ロックを解放する" alt="" coords="401,127,613,168"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#af1969c3d079ea4a462df415e5ce4ec1b" title="エントリが未使用状態かを判定する。この関数に限っては共有ロックを取得せずに使用することができる。" alt="" coords="205,71,340,112"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78" title="エントリの排他ロックを取る" alt="" coords="192,137,353,163"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1" title="エントリの排他ロックを解除する" alt="" coords="205,189,340,231"/>
+<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a29f2f8973d3016bbc68ba9c69d07d0e7" title="排他ロックを取得する" alt="" coords="401,127,613,168"/>
+<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a678bfb5327fe28da25a448d1a5f687ae" title="排他ロックを解放する" alt="" coords="401,192,613,233"/>
 </map>
 </div>
 
@@ -469,10 +470,9 @@ template&lt;typename InitialEvalFunc &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Look Up 結果</dd></dl>
 <p>置換表を探索して現局面の探索情報を返す関数。</p>
-<p>一般に、初期化関数の呼び出しは実行コストがかかる。そのため、初期化関数は <code>eval_func</code> に包んで渡す。 必要な時のみ <code>eval_func</code> の呼び出しを行うことで、呼び出さないパスの高速化ができる。</p>
-<dl class="section note"><dt>Note</dt><dd>詰将棋エンジンで最も最適化の効果がある関数。1回1回の呼び出し時間は大したことがないが、探索中にたくさん 呼ばれるため、ループアンローリングなどの小手先の高速化でかなり全体の処理性能向上に貢献できる。 </dd></dl>
+<p>一般に、初期化関数の呼び出しは実行コストがかかる。そのため、初期化関数は <code>eval_func</code> に包んで渡す。 必要な時のみ <code>eval_func</code> の呼び出しを行うことで、呼び出さないパスの高速化ができる。 </p>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00121">121</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00118">118</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -536,7 +536,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>現局面の親局面 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00184">184</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00181">181</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -589,22 +589,23 @@ template&lt;bool kIsProven&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00288">288</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00284">284</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1tt_1_1_query_a5bfc235e68c2c32fcfab1dd88ac25c0c_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_query_a5bfc235e68c2c32fcfab1dd88ac25c0c_cgraph" alt=""/></div>
 <map name="aclasskomori_1_1tt_1_1_query_a5bfc235e68c2c32fcfab1dd88ac25c0c_cgraph" id="aclasskomori_1_1tt_1_1_query_a5bfc235e68c2c32fcfab1dd88ac25c0c_cgraph">
-<area shape="rect" title="詰みまたは不詰の探索結果 result を置換表に書き込む" alt="" coords="5,104,144,145"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#af0b32b9f9fff602c03f5ea4ab4e5fff1" title="探索量" alt="" coords="207,5,367,47"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="218,71,357,112"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="207,136,367,177"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#af353f0cfab41b586a7c994d2507ca699" title="探索時の残り手数" alt="" coords="192,202,383,229"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#ac259de04e6dad6e3c3223570d8337d26" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="444,12,579,53"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78" title="エントリの排他ロックを取る" alt="" coords="431,78,592,105"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1" title="エントリの排他ロックを解除する" alt="" coords="444,131,579,172"/>
-<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a29f2f8973d3016bbc68ba9c69d07d0e7" title="排他ロックを取得する" alt="" coords="640,68,852,109"/>
-<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a678bfb5327fe28da25a448d1a5f687ae" title="排他ロックを解放する" alt="" coords="640,133,852,175"/>
+<area shape="rect" title="詰みまたは不詰の探索結果 result を置換表に書き込む" alt="" coords="5,133,144,175"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#af0b32b9f9fff602c03f5ea4ab4e5fff1" title="探索量" alt="" coords="207,35,367,76"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="218,100,357,141"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="207,165,367,207"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#af353f0cfab41b586a7c994d2507ca699" title="探索時の残り手数" alt="" coords="192,231,383,258"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#ac259de04e6dad6e3c3223570d8337d26" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="444,5,579,47"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#af1969c3d079ea4a462df415e5ce4ec1b" title="エントリが未使用状態かを判定する。この関数に限っては共有ロックを取得せずに使用することができる。" alt="" coords="444,71,579,112"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78" title="エントリの排他ロックを取る" alt="" coords="431,137,592,163"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1" title="エントリの排他ロックを解除する" alt="" coords="444,189,579,231"/>
+<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a29f2f8973d3016bbc68ba9c69d07d0e7" title="排他ロックを取得する" alt="" coords="640,127,852,168"/>
+<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a678bfb5327fe28da25a448d1a5f687ae" title="排他ロックを解放する" alt="" coords="640,192,852,233"/>
 </map>
 </div>
 
@@ -640,25 +641,26 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00306">306</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00302">302</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkomori_1_1tt_1_1_query_adbef48a41d416069c997ec6315a938de_cgraph.png" border="0" usemap="#aclasskomori_1_1tt_1_1_query_adbef48a41d416069c997ec6315a938de_cgraph" alt=""/></div>
 <map name="aclasskomori_1_1tt_1_1_query_adbef48a41d416069c997ec6315a938de_cgraph" id="aclasskomori_1_1tt_1_1_query_adbef48a41d416069c997ec6315a938de_cgraph">
-<area shape="rect" title=" " alt="" coords="5,197,144,239"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="220,76,359,117"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="209,164,369,205"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a31ad235f0eca1b0b49dc04d32df20843" title="経路ハッシュ値 path_key に千日手判定開始深さ depth を設定する" alt="" coords="192,229,387,271"/>
-<area shape="rect" href="classkomori_1_1_search_result.html#af353f0cfab41b586a7c994d2507ca699" title="探索時の残り手数" alt="" coords="194,295,385,322"/>
+<area shape="rect" title=" " alt="" coords="5,251,144,292"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="220,129,359,171"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150" title="Final部分の結果。IsFinal() の場合のみ呼び出し可能。" alt="" coords="209,217,369,259"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#a31ad235f0eca1b0b49dc04d32df20843" title="経路ハッシュ値 path_key に千日手判定開始深さ depth を設定する" alt="" coords="192,283,387,324"/>
+<area shape="rect" href="classkomori_1_1_search_result.html#af353f0cfab41b586a7c994d2507ca699" title="探索時の残り手数" alt="" coords="194,349,385,375"/>
 <area shape="rect" href="classkomori_1_1tt_1_1_entry.html#ac259de04e6dad6e3c3223570d8337d26" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="465,5,599,47"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78" title="エントリの排他ロックを取る" alt="" coords="451,71,613,98"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1" title="エントリの排他ロックを解除する" alt="" coords="465,123,599,164"/>
-<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a29f2f8973d3016bbc68ba9c69d07d0e7" title="排他ロックを取得する" alt="" coords="677,61,889,103"/>
-<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a678bfb5327fe28da25a448d1a5f687ae" title="排他ロックを解放する" alt="" coords="677,127,889,168"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ad14e640283025eb47eb9ee518adc0b51" title="ガベージコレクションを行う" alt="" coords="435,240,629,281"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="686,201,881,243"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対する探索開始インデックスを求める。" alt="" coords="686,285,881,327"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#af1969c3d079ea4a462df415e5ce4ec1b" title="エントリが未使用状態かを判定する。この関数に限っては共有ロックを取得せずに使用することができる。" alt="" coords="465,71,599,112"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78" title="エントリの排他ロックを取る" alt="" coords="451,137,613,163"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1" title="エントリの排他ロックを解除する" alt="" coords="465,188,599,229"/>
+<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a29f2f8973d3016bbc68ba9c69d07d0e7" title="排他ロックを取得する" alt="" coords="677,127,889,168"/>
+<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a678bfb5327fe28da25a448d1a5f687ae" title="排他ロックを解放する" alt="" coords="677,192,889,233"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ad14e640283025eb47eb9ee518adc0b51" title="ガベージコレクションを行う" alt="" coords="435,305,629,347"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ac3aba5ed8a8a18bb8591d38cb0a050ba" title="index の次のインデックスを求める。" alt="" coords="686,267,881,308"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_repetition_table.html#ab4064a942f6e30221c09712db99d1d28" title="path_key に対する探索開始インデックスを求める。" alt="" coords="686,351,881,392"/>
 </map>
 </div>
 
@@ -708,7 +710,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>実際の処理は <code>SetProven()</code>, <code>SetDisproven()</code>, <code><a class="el" href="classkomori_1_1tt_1_1_query.html#adbef48a41d416069c997ec6315a938de">SetRepetition()</a></code>, <code><a class="el" href="classkomori_1_1tt_1_1_query.html#a64af13f9edde082ec5e11ca79c904ee3" title="探索中の探索結果 result を置換表に書き込む関数">SetUnknown()</a></code> を参照。 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00237">237</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00234">234</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 
 </div>
 </div>
@@ -754,7 +756,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00318">318</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ttquery_8hpp_source.html#l00314">314</a> of file <a class="el" href="ttquery_8hpp_source.html">ttquery.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -766,11 +768,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classkomori_1_1tt_1_1_query.html#a75c0a082696f3cd379037b8b0556ca98" title="置換表に hand に一致するエントリがあればそれを返し、なければ作って返す" alt="" coords="216,123,355,164"/>
 <area shape="rect" href="classkomori_1_1_search_result.html#abfe86f70fc0d0535b1b01057732f6acb" title="Unknown部分の結果。!IsFinal() の場合のみ呼び出し可能。" alt="" coords="205,188,365,229"/>
 <area shape="rect" href="classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="193,254,377,281"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#ac259de04e6dad6e3c3223570d8337d26" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="440,64,575,105"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78" title="エントリの排他ロックを取る" alt="" coords="427,130,588,157"/>
-<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1" title="エントリの排他ロックを解除する" alt="" coords="440,183,575,224"/>
-<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a29f2f8973d3016bbc68ba9c69d07d0e7" title="排他ロックを取得する" alt="" coords="636,120,848,161"/>
-<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a678bfb5327fe28da25a448d1a5f687ae" title="排他ロックを解放する" alt="" coords="636,185,848,227"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#ac259de04e6dad6e3c3223570d8337d26" title="保存されている情報が board_key のものかどうか判定する" alt="" coords="440,28,575,69"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#af1969c3d079ea4a462df415e5ce4ec1b" title="エントリが未使用状態かを判定する。この関数に限っては共有ロックを取得せずに使用することができる。" alt="" coords="440,93,575,135"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78" title="エントリの排他ロックを取る" alt="" coords="427,159,588,186"/>
+<area shape="rect" href="classkomori_1_1tt_1_1_entry.html#a2b1919fecc95bae6896ed1ce8cd40ab1" title="エントリの排他ロックを解除する" alt="" coords="440,212,575,253"/>
+<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a29f2f8973d3016bbc68ba9c69d07d0e7" title="排他ロックを取得する" alt="" coords="636,149,848,191"/>
+<area shape="rect" href="classkomori_1_1_shared_exclusive_lock.html#a678bfb5327fe28da25a448d1a5f687ae" title="排他ロックを解放する" alt="" coords="636,215,848,256"/>
 </map>
 </div>
 
