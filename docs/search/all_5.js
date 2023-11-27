@@ -17,5 +17,5 @@ var searchData=
   ['frontresult_143',['FrontResult',['../classkomori_1_1_local_expansion.html#af6420e1215e90c8b46af8c7226a32f62',1,'komori::LocalExpansion']]],
   ['frontsummask_144',['FrontSumMask',['../classkomori_1_1_local_expansion.html#a4de8b8d220487e7a8b4b28c00461acf9',1,'komori::LocalExpansion']]],
   ['full_145',['Full',['../classkomori_1_1_bit_set.html#a44f83fc0843130cea8ea99086d586a15',1,'komori::BitSet']]],
-  ['func_5f_146',['func_',['../classkomori_1_1detail_1_1_apply_impl_1_1_iterator.html#adc916675b65b4ba3a4beee8f05577ce4',1,'komori::detail::ApplyImpl::Iterator']]]
+  ['func_5f_146',['func_',['../classkomori_1_1detail_1_1_apply_impl_1_1_iterator.html#adc916675b65b4ba3a4beee8f05577ce4',1,'komori::detail::ApplyImpl::Iterator::func_()'],['../classkomori_1_1detail_1_1_apply_impl.html#a507f47b65402f3dc077c705bc4b084ec',1,'komori::detail::ApplyImpl::func_()']]]
 ];

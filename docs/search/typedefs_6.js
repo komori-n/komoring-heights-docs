@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['transpositiontable_1223',['TranspositionTable',['../namespacekomori_1_1tt.html#ab367c034eba59afd3939578f638b0ffb',1,'komori::tt']]],
-  ['type_1224',['type',['../structkomori_1_1_identity.html#ae08a0fa55a486b9c92ca0b8d787d90b1',1,'komori::Identity']]],
-  ['type_1225',['Type',['../structkomori_1_1detail_1_1_constraints_impl.html#acb2daebf73267c39a83d660207141299',1,'komori::detail::ConstraintsImpl']]]
+  ['transpositiontable_1230',['TranspositionTable',['../namespacekomori_1_1tt.html#ab367c034eba59afd3939578f638b0ffb',1,'komori::tt']]],
+  ['type_1231',['Type',['../structkomori_1_1detail_1_1_constraints_impl.html#acb2daebf73267c39a83d660207141299',1,'komori::detail::ConstraintsImpl']]],
+  ['type_1232',['type',['../structkomori_1_1_identity.html#ae08a0fa55a486b9c92ca0b8d787d90b1',1,'komori::Identity']]]
 ];

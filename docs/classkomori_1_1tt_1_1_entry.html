@@ -278,11 +278,13 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <a class="el" href="classkomori_1_1_shared_exclusive_lock.html">SharedExclusiveLock</a>&lt; std::int8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a489e60d4fb3d2fbf62230a5984d9689c">lock_</a></td></tr>
 <tr class="memdesc:a489e60d4fb3d2fbf62230a5984d9689c"><td class="mdescLeft">&#160;</td><td class="mdescRight">スピンロック <br /></td></tr>
 <tr class="separator:a489e60d4fb3d2fbf62230a5984d9689c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82d5f2476820395fef9ebf84f6747047"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkomori_1_1tt_1_1_entry.html#acb54ee89c48f59fbaafcd042de5822a0">RepetitionState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a82d5f2476820395fef9ebf84f6747047">repetition_state_</a></td></tr>
-<tr class="memdesc:a82d5f2476820395fef9ebf84f6747047"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面が千日手の可能性があるか  <a href="classkomori_1_1tt_1_1_entry.html#a82d5f2476820395fef9ebf84f6747047">More...</a><br /></td></tr>
+<tr class="memitem:a82d5f2476820395fef9ebf84f6747047"><td class="memItemLeft" align="right" valign="top"><a id="a82d5f2476820395fef9ebf84f6747047"></a>
+<a class="el" href="classkomori_1_1tt_1_1_entry.html#acb54ee89c48f59fbaafcd042de5822a0">RepetitionState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a82d5f2476820395fef9ebf84f6747047">repetition_state_</a></td></tr>
+<tr class="memdesc:a82d5f2476820395fef9ebf84f6747047"><td class="mdescLeft">&#160;</td><td class="mdescRight">現局面が千日手の可能性があるか <br /></td></tr>
 <tr class="separator:a82d5f2476820395fef9ebf84f6747047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ad0dbdda704374f8d8ca2f57911041a"><td class="memItemLeft" align="right" valign="top"><a id="a9ad0dbdda704374f8d8ca2f57911041a"></a>
-std::atomic&lt; std::int16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>min_depth_</b></td></tr>
+std::atomic&lt; std::int16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#a9ad0dbdda704374f8d8ca2f57911041a">min_depth_</a></td></tr>
+<tr class="memdesc:a9ad0dbdda704374f8d8ca2f57911041a"><td class="mdescLeft">&#160;</td><td class="mdescRight">最小探索深さ。<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#aea46b75c476b090d0b5baef1eb3f882b" title="pn, dn などの探索情報を取得する">LookUp()</a></code> 中に書き換える可能性があるので atomic かつ mutable。 <br /></td></tr>
 <tr class="separator:a9ad0dbdda704374f8d8ca2f57911041a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabe391ce30afb4acbcb187149d346cd5"><td class="memItemLeft" align="right" valign="top"><a id="aabe391ce30afb4acbcb187149d346cd5"></a>
 Hand&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1tt_1_1_entry.html#aabe391ce30afb4acbcb187149d346cd5">parent_hand_</a></td></tr>
@@ -318,7 +320,7 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
 <div class="line">                32 |                          <a class="code" href="classkomori_1_1tt_1_1_entry.html#a6ed07741113f8839a56f8b2fedf655cf">dn_</a>                          |</div>
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
-<div class="line">                40 | <a class="code" href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78">lock</a> | rep  | min_depth_  |        <a class="code" href="classkomori_1_1tt_1_1_entry.html#aabe391ce30afb4acbcb187149d346cd5">parent_hand_</a>       |</div>
+<div class="line">                40 | <a class="code" href="classkomori_1_1tt_1_1_entry.html#a24bacfcc1ebd8e79cd3e29340e0f1d78">lock</a> | rep  | <a class="code" href="classkomori_1_1tt_1_1_entry.html#a9ad0dbdda704374f8d8ca2f57911041a">min_depth_</a>  |        <a class="code" href="classkomori_1_1tt_1_1_entry.html#aabe391ce30afb4acbcb187149d346cd5">parent_hand_</a>       |</div>
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
 <div class="line">                48 |                  <a class="code" href="classkomori_1_1tt_1_1_entry.html#a7467449eb036b1783d9529287248708c">parent_board_key_</a>                    |</div>
 <div class="line">                   +------+------+------+------+------+------+------+------+</div>
@@ -331,6 +333,7 @@ Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a4fb181b4ee5cc175a792c52d2417e9f9"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a4fb181b4ee5cc175a792c52d2417e9f9">komori::tt::Entry::amount_</a></div><div class="ttdeci">SearchAmount amount_</div><div class="ttdoc">現局面の探索量</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00581">ttentry.hpp:581</a></div></div>
 <div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a6ed07741113f8839a56f8b2fedf655cf"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a6ed07741113f8839a56f8b2fedf655cf">komori::tt::Entry::dn_</a></div><div class="ttdeci">PnDn dn_</div><div class="ttdoc">dn値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00588">ttentry.hpp:588</a></div></div>
 <div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a7467449eb036b1783d9529287248708c"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a7467449eb036b1783d9529287248708c">komori::tt::Entry::parent_board_key_</a></div><div class="ttdeci">Key parent_board_key_</div><div class="ttdoc">親局面の盤面ハッシュ値</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00596">ttentry.hpp:596</a></div></div>
+<div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_a9ad0dbdda704374f8d8ca2f57911041a"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#a9ad0dbdda704374f8d8ca2f57911041a">komori::tt::Entry::min_depth_</a></div><div class="ttdeci">std::atomic&lt; std::int16_t &gt; min_depth_</div><div class="ttdoc">最小探索深さ。LookUp() 中に書き換える可能性があるので atomic かつ mutable。</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00593">ttentry.hpp:593</a></div></div>
 <div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_aabe391ce30afb4acbcb187149d346cd5"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#aabe391ce30afb4acbcb187149d346cd5">komori::tt::Entry::parent_hand_</a></div><div class="ttdeci">Hand parent_hand_</div><div class="ttdoc">親局面の持ち駒</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00595">ttentry.hpp:595</a></div></div>
 <div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_ad6cbe919bbe6a11df3374cc298b7cdec"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#ad6cbe919bbe6a11df3374cc298b7cdec">komori::tt::Entry::disproven_len_</a></div><div class="ttdeci">MateLen disproven_len_</div><div class="ttdoc">不詰手数</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00585">ttentry.hpp:585</a></div></div>
 <div class="ttc" id="aclasskomori_1_1tt_1_1_entry_html_af9e084c0b2b8662428818fe5d9afded8"><div class="ttname"><a href="classkomori_1_1tt_1_1_entry.html#af9e084c0b2b8662428818fe5d9afded8">komori::tt::Entry::proven_len_</a></div><div class="ttdeci">MateLen proven_len_</div><div class="ttdoc">詰み手数</div><div class="ttdef"><b>Definition:</b> <a href="ttentry_8hpp_source.html#l00584">ttentry.hpp:584</a></div></div>
@@ -1415,34 +1418,6 @@ Here is the call graph for this function:</div>
 <dl class="section pre"><dt>Precondition</dt><dd><code>IsFor(board_key, hand)</code> （<code>board_key</code>, <code>hand</code> は現局面の盤面ハッシュ、持ち駒） </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00306">306</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a82d5f2476820395fef9ebf84f6747047"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82d5f2476820395fef9ebf84f6747047">&#9670;&nbsp;</a></span>repetition_state_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classkomori_1_1tt_1_1_entry.html#acb54ee89c48f59fbaafcd042de5822a0">RepetitionState</a> komori::tt::Entry::repetition_state_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>現局面が千日手の可能性があるか </p>
-<p>最小探索深さ。<code><a class="el" href="classkomori_1_1tt_1_1_entry.html#aea46b75c476b090d0b5baef1eb3f882b" title="pn, dn などの探索情報を取得する">LookUp()</a></code> 中に書き換える可能性があるので atomic かつ mutable。 </p>
-
-<p class="definition">Definition at line <a class="el" href="ttentry_8hpp_source.html#l00591">591</a> of file <a class="el" href="ttentry_8hpp_source.html">ttentry.hpp</a>.</p>
 
 </div>
 </div>

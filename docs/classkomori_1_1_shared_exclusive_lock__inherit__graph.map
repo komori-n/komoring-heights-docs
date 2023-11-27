@@ -1,5 +1,4 @@
 <map id="komori::SharedExclusiveLock&lt; T &gt;" name="komori::SharedExclusiveLock&lt; T &gt;">
-<area shape="rect" id="node1" title="std::atomic を用いた Shared&#45;Exclusive lock" alt="" coords="5,46,256,73"/>
-<area shape="rect" id="node2" href="$classkomori_1_1_shared_exclusive_lock.html" title=" " alt="" coords="412,5,624,47"/>
-<area shape="rect" id="node3" href="$classkomori_1_1_shared_exclusive_lock.html" title=" " alt="" coords="412,71,624,112"/>
+<area shape="rect" id="node1" title="std::atomic を用いた Shared&#45;Exclusive lock" alt="" coords="5,5,256,32"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_shared_exclusive_lock.html" title=" " alt="" coords="25,95,237,136"/>
 </map>

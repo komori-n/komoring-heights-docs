@@ -1,29 +1,29 @@
 <map id="komori::LocalExpansion::CurrentResult" name="komori::LocalExpansion::CurrentResult">
-<area shape="rect" id="node1" title="現局面における探索結果を返す" alt="" coords="5,279,181,320"/>
-<area shape="rect" id="node2" href="$classkomori_1_1_local_expansion.html#ab49df843166b8d1455bd53280eb7f690" title="delta 値を計算する" alt="" coords="707,171,883,212"/>
-<area shape="rect" id="node8" href="$classkomori_1_1_local_expansion.html#a35831c841b25716f8d40e4c715d3634e" title="探索結果を取得する（手番側から見て負け局面）" alt="" coords="453,577,629,619"/>
-<area shape="rect" id="node17" href="$classkomori_1_1_local_expansion.html#aee599a02eef43101948fa6cdb6814fb4" title="phi 値を計算する" alt="" coords="707,76,883,117"/>
-<area shape="rect" id="node21" href="$classkomori_1_1_local_expansion.html#a1dce0af5754980303ae433b97981f785" title="探索結果を取得する（不明局面）" alt="" coords="229,187,405,228"/>
-<area shape="rect" id="node25" href="$classkomori_1_1_local_expansion.html#a17108ba9ff06835351cfd91bbcbfc9c1" title="探索結果を取得する（手番側から見て勝ち局面）" alt="" coords="453,808,629,849"/>
-<area shape="rect" id="node3" href="$namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="980,254,1131,281"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_fixed_size_stack.html#a0d9c7779d27ccf538345227559b69fd9" title="スタックが空かどうか" alt="" coords="969,188,1141,229"/>
-<area shape="rect" id="node5" href="$classkomori_1_1_local_expansion.html#af6420e1215e90c8b46af8c7226a32f62" title="最善の子の探索結果を取得する" alt="" coords="967,5,1143,47"/>
+<area shape="rect" id="node1" title="現局面における探索結果を返す" alt="" coords="5,312,181,353"/>
+<area shape="rect" id="node2" href="$classkomori_1_1_local_expansion.html#ab49df843166b8d1455bd53280eb7f690" title="delta 値を計算する" alt="" coords="707,123,883,164"/>
+<area shape="rect" id="node8" href="$classkomori_1_1_local_expansion.html#a35831c841b25716f8d40e4c715d3634e" title="探索結果を取得する（手番側から見て負け局面）" alt="" coords="453,607,629,648"/>
+<area shape="rect" id="node17" href="$classkomori_1_1_local_expansion.html#aee599a02eef43101948fa6cdb6814fb4" title="phi 値を計算する" alt="" coords="707,188,883,229"/>
+<area shape="rect" id="node21" href="$classkomori_1_1_local_expansion.html#a1dce0af5754980303ae433b97981f785" title="探索結果を取得する（不明局面）" alt="" coords="229,253,405,295"/>
+<area shape="rect" id="node25" href="$classkomori_1_1_local_expansion.html#a17108ba9ff06835351cfd91bbcbfc9c1" title="探索結果を取得する（手番側から見て勝ち局面）" alt="" coords="453,829,629,871"/>
+<area shape="rect" id="node3" href="$namespacekomori.html#a177c33b9356030cab989f275b6fd6ea4" title="pn/dn の値を [min, max] の範囲に収まるように丸める。" alt="" coords="980,71,1131,98"/>
+<area shape="rect" id="node4" href="$classkomori_1_1_fixed_size_stack.html#a0d9c7779d27ccf538345227559b69fd9" title="スタックが空かどうか" alt="" coords="969,5,1141,47"/>
+<area shape="rect" id="node5" href="$classkomori_1_1_local_expansion.html#af6420e1215e90c8b46af8c7226a32f62" title="最善の子の探索結果を取得する" alt="" coords="967,188,1143,229"/>
 <area shape="rect" id="node6" href="$classkomori_1_1_fixed_size_stack.html#a5e99daa3af91a53273900789df53aee8" title="スタックに保存されている要素数" alt="" coords="969,123,1141,164"/>
-<area shape="rect" id="node7" href="$classkomori_1_1_move_picker.html#a94848cbebf11d7f272a8360cdfc5f1ff" title="現局面の合法手の個数を返す。" alt="" coords="980,431,1131,472"/>
-<area shape="rect" id="node9" href="$namespacekomori.html#ace83f8e2ffff818bd25b6def2e075904" title="move 後の手駒が after_hand のとき、移動前の持ち駒を返す" alt="" coords="719,790,871,817"/>
-<area shape="rect" id="node10" href="$classkomori_1_1_move_picker.html#aba0fc5c57afd105865c899c156c3cb41" title="現局面の合法手の数が0かどうかを判定する。" alt="" coords="720,489,871,531"/>
-<area shape="rect" id="node11" href="$classkomori_1_1_fixed_size_stack.html#a205c2899942284ebafec8ceb0f0bc330" title="スタックの先頭（最も前に保存した要素）" alt="" coords="709,607,881,648"/>
-<area shape="rect" id="node12" href="$classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="706,673,885,699"/>
-<area shape="rect" id="node13" href="$classkomori_1_1detail_1_1_mate_len_impl.html#ab53b046400e9408fdc8c744f56e09e27" title="詰み手数を返す" alt="" coords="677,387,913,414"/>
-<area shape="rect" id="node14" href="$classkomori_1_1_search_result.html#a0d81252fa8281a46c86b05b609434429" title="千日手の探索結果で初期化する" alt="" coords="715,724,875,765"/>
-<area shape="rect" id="node15" href="$classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="712,891,879,918"/>
-<area shape="rect" id="node16" href="$classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="985,917,1125,943"/>
-<area shape="rect" id="node18" href="$classkomori_1_1_search_result.html#afc8abfab4851e59c5539e13964b6d4c5" title="φ値" alt="" coords="961,71,1149,98"/>
-<area shape="rect" id="node19" href="$classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="1197,46,1384,73"/>
-<area shape="rect" id="node20" href="$classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="1199,97,1383,123"/>
-<area shape="rect" id="node22" href="$classkomori_1_1_local_expansion.html#a41ca1e4127441aabb77abd505922cbb5" title="Dn を計算する" alt="" coords="453,155,629,196"/>
-<area shape="rect" id="node23" href="$classkomori_1_1_local_expansion.html#ae40d95fbb784281a50322f62559cccd6" title="Pn を計算する" alt="" coords="453,89,629,131"/>
-<area shape="rect" id="node24" href="$classkomori_1_1_search_result.html#a997a66618f04c5215c77ec7c5d3eaa01" title="Unknown（2回目以降）の探索結果で初期化する" alt="" coords="461,220,621,261"/>
-<area shape="rect" id="node26" href="$classkomori_1_1_node.html#aa5937f4e1ea7d06752752e1d7a015592" title="現在の玉方の持ち駒" alt="" coords="707,1043,883,1070"/>
-<area shape="rect" id="node27" href="$namespacekomori.html#a910cf44bbf31dae9af184770f7ca5dd4" title="2 つの持ち駒を 1 つにまとめる" alt="" coords="720,993,871,1019"/>
+<area shape="rect" id="node7" href="$classkomori_1_1_move_picker.html#a94848cbebf11d7f272a8360cdfc5f1ff" title="現局面の合法手の個数を返す。" alt="" coords="980,413,1131,455"/>
+<area shape="rect" id="node9" href="$namespacekomori.html#ace83f8e2ffff818bd25b6def2e075904" title="move 後の手駒が after_hand のとき、移動前の持ち駒を返す" alt="" coords="719,807,871,834"/>
+<area shape="rect" id="node10" href="$classkomori_1_1_move_picker.html#aba0fc5c57afd105865c899c156c3cb41" title="現局面の合法手の数が0かどうかを判定する。" alt="" coords="720,472,871,513"/>
+<area shape="rect" id="node11" href="$classkomori_1_1_fixed_size_stack.html#a205c2899942284ebafec8ceb0f0bc330" title="スタックの先頭（最も前に保存した要素）" alt="" coords="709,859,881,900"/>
+<area shape="rect" id="node12" href="$classkomori_1_1_node.html#a19fbde5adf6e542e61f6c620df5b4d16" title="現在の探索深さ" alt="" coords="706,639,885,666"/>
+<area shape="rect" id="node13" href="$classkomori_1_1detail_1_1_mate_len_impl.html#ab53b046400e9408fdc8c744f56e09e27" title="詰み手数を返す" alt="" coords="677,538,913,565"/>
+<area shape="rect" id="node14" href="$classkomori_1_1_search_result.html#a0d81252fa8281a46c86b05b609434429" title="千日手の探索結果で初期化する" alt="" coords="715,691,875,732"/>
+<area shape="rect" id="node15" href="$classkomori_1_1_node.html#a2c10b9d22f4966f51b47495088f4fd4b" title="現在の攻め方の持ち駒" alt="" coords="712,757,879,783"/>
+<area shape="rect" id="node16" href="$classkomori_1_1_node.html#a485678f91b4653d87fcf5ee6071351de" title="このクラスが保持する Position への参照" alt="" coords="985,891,1125,918"/>
+<area shape="rect" id="node18" href="$classkomori_1_1_search_result.html#afc8abfab4851e59c5539e13964b6d4c5" title="φ値" alt="" coords="961,254,1149,281"/>
+<area shape="rect" id="node19" href="$classkomori_1_1_search_result.html#af8b976b730b126e74a8c062f275444e9" title="dn" alt="" coords="1197,229,1384,255"/>
+<area shape="rect" id="node20" href="$classkomori_1_1_search_result.html#a87047b35fcd4a5b7be3b7ee76d8b740c" title="pn" alt="" coords="1199,279,1383,306"/>
+<area shape="rect" id="node22" href="$classkomori_1_1_local_expansion.html#a41ca1e4127441aabb77abd505922cbb5" title="Dn を計算する" alt="" coords="453,123,629,164"/>
+<area shape="rect" id="node23" href="$classkomori_1_1_local_expansion.html#ae40d95fbb784281a50322f62559cccd6" title="Pn を計算する" alt="" coords="453,188,629,229"/>
+<area shape="rect" id="node24" href="$classkomori_1_1_search_result.html#a997a66618f04c5215c77ec7c5d3eaa01" title="Unknown（2回目以降）の探索結果で初期化する" alt="" coords="461,253,621,295"/>
+<area shape="rect" id="node26" href="$classkomori_1_1_node.html#aa5937f4e1ea7d06752752e1d7a015592" title="現在の玉方の持ち駒" alt="" coords="707,1026,883,1053"/>
+<area shape="rect" id="node27" href="$namespacekomori.html#a910cf44bbf31dae9af184770f7ca5dd4" title="2 つの持ち駒を 1 つにまとめる" alt="" coords="720,975,871,1002"/>
 </map>

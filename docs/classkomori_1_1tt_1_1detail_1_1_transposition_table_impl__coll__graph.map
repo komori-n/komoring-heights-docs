@@ -1,7 +1,5 @@
 <map id="komori::tt::detail::TranspositionTableImpl&lt; Query, RegularTable, RepetitionTable &gt;" name="komori::tt::detail::TranspositionTableImpl&lt; Query, RegularTable, RepetitionTable &gt;">
-<area shape="rect" id="node1" title="詰将棋エンジンの置換表本体" alt="" coords="69,288,247,359"/>
-<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_regular_table.html" title="経路に依存しない探索結果を記録する置換表。（通常テーブル）" alt="" coords="5,199,183,225"/>
-<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_repetition_table.html" title="千日手手順（経路ハッシュ値）を記録する置換表" alt="" coords="207,199,402,225"/>
-<area shape="rect" id="node4" href="$classkomori_1_1_shared_exclusive_lock.html" title=" " alt="" coords="199,95,411,136"/>
-<area shape="rect" id="node5" href="$classkomori_1_1_shared_exclusive_lock.html" title="std::atomic を用いた Shared&#45;Exclusive lock" alt="" coords="179,5,430,32"/>
+<area shape="rect" id="node1" title="詰将棋エンジンの置換表本体" alt="" coords="110,95,289,165"/>
+<area shape="rect" id="node2" href="$classkomori_1_1tt_1_1_regular_table.html" title="経路に依存しない探索結果を記録する置換表。（通常テーブル）" alt="" coords="5,5,183,32"/>
+<area shape="rect" id="node3" href="$classkomori_1_1tt_1_1_repetition_table.html" title="千日手手順（経路ハッシュ値）を記録する置換表" alt="" coords="207,5,402,32"/>
 </map>
