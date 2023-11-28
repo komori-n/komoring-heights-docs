@@ -167,6 +167,10 @@ constexpr const <a class="el" href="structkomori_1_1_unknown_data.html">UnknownD
 constexpr const <a class="el" href="structkomori_1_1_final_data.html">FinalData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_search_result.html#a700ff3d262d3aead4ea240af872a8150">GetFinalData</a> () const</td></tr>
 <tr class="memdesc:a700ff3d262d3aead4ea240af872a8150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Final部分の結果。<code><a class="el" href="classkomori_1_1_search_result.html#ae03260ca26fcff04cc38cd1fc6bd27c0" title="詰み／不詰の結論が出ているか">IsFinal()</a></code> の場合のみ呼び出し可能。 <br /></td></tr>
 <tr class="separator:a700ff3d262d3aead4ea240af872a8150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab163dc7a3d24a78b394cec5bcef29675"><td class="memItemLeft" align="right" valign="top"><a id="ab163dc7a3d24a78b394cec5bcef29675"></a>
+constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_search_result.html#ab163dc7a3d24a78b394cec5bcef29675">UpdateAmount</a> (<a class="el" href="namespacekomori.html#a077cff4c0bde489c0330a39b102a21bf">SearchAmount</a> amount) noexcept</td></tr>
+<tr class="memdesc:ab163dc7a3d24a78b394cec5bcef29675"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索量を更新する <br /></td></tr>
+<tr class="separator:ab163dc7a3d24a78b394cec5bcef29675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade87327c3250867cf68b014362d4ec0d"><td class="memItemLeft" align="right" valign="top"><a id="ade87327c3250867cf68b014362d4ec0d"></a>
 constexpr <a class="el" href="namespacekomori.html#ada1a4eeb6080f15a12a946bf93ff7488">NodeState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_search_result.html#ade87327c3250867cf68b014362d4ec0d">GetNodeState</a> () const</td></tr>
 <tr class="memdesc:ade87327c3250867cf68b014362d4ec0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">探索結果に基づくノード状態（詰み／不詰／千日手／不明） <br /></td></tr>
@@ -244,10 +248,9 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>探索結果をやり取りするためのクラス。 </p>
 <p>このクラスは、置換表からの探索結果の読み込みおよび探索結果の書き込みに用いる。置換表サイズの節約および 並列探索性能の向上のために、置換表本体とは異なるデータ構造を用いる。</p>
-<p>領域を節約するために、Unknown（結論が出ていないノード）とFinal（結論が出ているノード）専用の領域を union で 共有している。</p>
-<p>余計な変更を阻止するために、初期化時と代入時以外はメンバを変更できないようにしている。少し煩雑になってしまうが、 メンバへのアクセスには必ず getter method を用いなければならない。 </p>
+<p>領域を節約するために、Unknown（結論が出ていないノード）とFinal（結論が出ているノード）専用の領域を union で 共有している。 </p>
 
-<p class="definition">Definition at line <a class="el" href="search__result_8hpp_source.html#l00043">43</a> of file <a class="el" href="search__result_8hpp_source.html">search_result.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search__result_8hpp_source.html#l00040">40</a> of file <a class="el" href="search__result_8hpp_source.html">search_result.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af46221ca37701379e3aeab623d486df0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af46221ca37701379e3aeab623d486df0">&#9670;&nbsp;</a></span>MakeFinal()</h2>
@@ -308,7 +311,7 @@ template&lt;bool kIsProven&gt; </div>
 </dl>
 <p>千日手の場合、この関数ではなく <code><a class="el" href="classkomori_1_1_search_result.html#a0d81252fa8281a46c86b05b609434429" title="千日手の探索結果で初期化する">MakeRepetition()</a></code> を用いること。 </p>
 
-<p class="definition">Definition at line <a class="el" href="search__result_8hpp_source.html#l00078">78</a> of file <a class="el" href="search__result_8hpp_source.html">search_result.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search__result_8hpp_source.html#l00075">75</a> of file <a class="el" href="search__result_8hpp_source.html">search_result.hpp</a>.</p>
 
 </div>
 </div>
@@ -369,7 +372,7 @@ template&lt;bool kIsProven&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="search__result_8hpp_source.html#l00052">52</a> of file <a class="el" href="search__result_8hpp_source.html">search_result.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search__result_8hpp_source.html#l00049">49</a> of file <a class="el" href="search__result_8hpp_source.html">search_result.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -439,7 +442,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="search__result_8hpp_source.html#l00091">91</a> of file <a class="el" href="search__result_8hpp_source.html">search_result.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search__result_8hpp_source.html#l00088">88</a> of file <a class="el" href="search__result_8hpp_source.html">search_result.hpp</a>.</p>
 
 </div>
 </div>
@@ -507,7 +510,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="search__result_8hpp_source.html#l00064">64</a> of file <a class="el" href="search__result_8hpp_source.html">search_result.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search__result_8hpp_source.html#l00061">61</a> of file <a class="el" href="search__result_8hpp_source.html">search_result.hpp</a>.</p>
 
 </div>
 </div>
