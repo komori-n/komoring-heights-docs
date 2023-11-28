@@ -1,4 +1,0 @@
-<map id="komori::LocalExpansion::RewriteImportantChildren" name="komori::LocalExpansion::RewriteImportantChildren">
-<area shape="rect" id="node1" title="重要そうな子局面を改めて置換表に書き直す" alt="" coords="5,5,204,47"/>
-<area shape="rect" id="node2" href="$classkomori_1_1_delayed_move_list.html#a6bedc952934530f4c8a5f86fb62c3e7e" title="i_raw の直後に展開すべき手のインデックスを返す。" alt="" coords="252,5,440,47"/>
-</map>

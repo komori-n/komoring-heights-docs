@@ -19,7 +19,7 @@ var searchData=
   ['repetition_5ftable_2ehpp_467',['repetition_table.hpp',['../repetition__table_8hpp.html',1,'']]],
   ['repetition_5ftable_5f_468',['repetition_table_',['../classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#aa384f1163c18ffaca170180346410460',1,'komori::tt::detail::TranspositionTableImpl']]],
   ['repetitionstate_469',['RepetitionState',['../classkomori_1_1tt_1_1_entry.html#acb54ee89c48f59fbaafcd042de5822a0',1,'komori::tt::Entry']]],
-  ['repetitiontable_470',['RepetitionTable',['../classkomori_1_1tt_1_1_repetition_table.html',1,'komori::tt::RepetitionTable'],['../classkomori_1_1tt_1_1_repetition_table.html#ac34c0e1904a2039bf161abcb2194af93',1,'komori::tt::RepetitionTable::RepetitionTable(RepetitionTable &amp;&amp;) noexcept=delete'],['../classkomori_1_1tt_1_1_repetition_table.html#aebea03c0e20d022bacf33d688c27b610',1,'komori::tt::RepetitionTable::RepetitionTable(std::size_t table_size=1)'],['../classkomori_1_1tt_1_1_repetition_table.html#a7f00dea9a7ba69e55243b85372c9c7e2',1,'komori::tt::RepetitionTable::RepetitionTable(const RepetitionTable &amp;)=delete']]],
+  ['repetitiontable_470',['RepetitionTable',['../classkomori_1_1tt_1_1_repetition_table.html',1,'komori::tt::RepetitionTable'],['../classkomori_1_1tt_1_1_repetition_table.html#ac34c0e1904a2039bf161abcb2194af93',1,'komori::tt::RepetitionTable::RepetitionTable(RepetitionTable &amp;&amp;) noexcept=delete'],['../classkomori_1_1tt_1_1_repetition_table.html#a7f00dea9a7ba69e55243b85372c9c7e2',1,'komori::tt::RepetitionTable::RepetitionTable(const RepetitionTable &amp;)=delete'],['../classkomori_1_1tt_1_1_repetition_table.html#aebea03c0e20d022bacf33d688c27b610',1,'komori::tt::RepetitionTable::RepetitionTable(std::size_t table_size=1)']]],
   ['reset_471',['Reset',['../classkomori_1_1_bit_set.html#a4d85204891b7f94b52e8e538325a9efd',1,'komori::BitSet']]],
   ['resetnexthashfullcheck_472',['ResetNextHashfullCheck',['../classkomori_1_1_search_monitor.html#a7358be665cb6c316b9f3a546460b42f7',1,'komori::SearchMonitor']]],
   ['resize_473',['Resize',['../classkomori_1_1tt_1_1_regular_table.html#a25ac332dc05bf44ac45e1e3aecd0a0c7',1,'komori::tt::RegularTable::Resize()'],['../classkomori_1_1tt_1_1_repetition_table.html#a3d0ab73a60dfafe31459ccf8423ca3d7',1,'komori::tt::RepetitionTable::Resize()'],['../classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a315463f0ac29c325849d661a15cdc167',1,'komori::tt::detail::TranspositionTableImpl::Resize()']]],
@@ -29,10 +29,9 @@ var searchData=
   ['resortfront_477',['ResortFront',['../classkomori_1_1_local_expansion.html#a99c12378417149d76d98586832018ab1',1,'komori::LocalExpansion']]],
   ['result_478',['result',['../structkomori_1_1_pv_list_1_1_pv_info.html#a6062887ff88b0bbea931d421d8750c9b',1,'komori::PvList::PvInfo']]],
   ['results_5f_479',['results_',['../classkomori_1_1_local_expansion.html#ab28b16455a3cd30d1b67d62bce9242cf',1,'komori::LocalExpansion']]],
-  ['rewriteimportantchildren_480',['RewriteImportantChildren',['../classkomori_1_1_local_expansion.html#a8913e080ee09b726e16a2dd4f23091e9',1,'komori::LocalExpansion']]],
-  ['rollback_481',['RollBack',['../namespacekomori.html#a13b1a743c345f921833c153fd537a50d',1,'komori']]],
-  ['rollforward_482',['RollForward',['../namespacekomori.html#adb4a7bc8f5922f5024476b6d276e0169',1,'komori']]],
-  ['root_483',['Root',['../classkomori_1_1_expansion_stack.html#a5771215bcc747c0793ca7d7c836dffdf',1,'komori::ExpansionStack']]],
-  ['root_5fis_5fand_5fnode_5fif_5fchecked_484',['root_is_and_node_if_checked',['../structkomori_1_1_engine_option.html#a870ea3032fc6da862594dafbc7065702',1,'komori::EngineOption']]],
-  ['rootmove_485',['RootMove',['../classkomori_1_1_node.html#a0e8450fb527da7cc00f8fc072a474617',1,'komori::Node']]]
+  ['rollback_480',['RollBack',['../namespacekomori.html#a13b1a743c345f921833c153fd537a50d',1,'komori']]],
+  ['rollforward_481',['RollForward',['../namespacekomori.html#adb4a7bc8f5922f5024476b6d276e0169',1,'komori']]],
+  ['root_482',['Root',['../classkomori_1_1_expansion_stack.html#a5771215bcc747c0793ca7d7c836dffdf',1,'komori::ExpansionStack']]],
+  ['root_5fis_5fand_5fnode_5fif_5fchecked_483',['root_is_and_node_if_checked',['../structkomori_1_1_engine_option.html#a870ea3032fc6da862594dafbc7065702',1,'komori::EngineOption']]],
+  ['rootmove_484',['RootMove',['../classkomori_1_1_node.html#a0e8450fb527da7cc00f8fc072a474617',1,'komori::Node']]]
 ];
