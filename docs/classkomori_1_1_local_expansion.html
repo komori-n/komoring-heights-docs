@@ -283,10 +283,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_local_expansion.html#a0fc1c821586951371dc2792ecc1bdd2e">excluded_moves_</a> {0}</td></tr>
 <tr class="memdesc:a0fc1c821586951371dc2792ecc1bdd2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">勝ちになる手を見つけた個数 multi_pv_ == 1 のときは、この値は常に 0 である。multi_pv_ &gt; 1 のとき、勝ち（phi==0）を見つけた後に探索を続ける 際に用いる。常に excluded_moves_ &lt;= multi_pv_ - 1 かつ excluded_moves_ &lt;= mp_.size() である。 <br /></td></tr>
 <tr class="separator:a0fc1c821586951371dc2792ecc1bdd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ee1975863574b38a5e3ece53d193d67"><td class="memItemLeft" align="right" valign="top"><a id="a9ee1975863574b38a5e3ece53d193d67"></a>
-<a class="el" href="namespacekomori.html#a077cff4c0bde489c0330a39b102a21bf">SearchAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkomori_1_1_local_expansion.html#a9ee1975863574b38a5e3ece53d193d67">max_child_amount_</a> {1}</td></tr>
-<tr class="memdesc:a9ee1975863574b38a5e3ece53d193d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">子局面の探索量の最大値。本当は和を取りたいが、そうすると二重カウントによりオーバーフローする可能性があるのでダメ。 <br /></td></tr>
-<tr class="separator:a9ee1975863574b38a5e3ece53d193d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>局面の局所展開結果を保持する。 </p>
@@ -472,7 +468,7 @@ Here is the call graph for this function:</div>
 <p>現時点の最善手 </p>
 <dl class="section pre"><dt>Precondition</dt><dd>!Current().IsFinal() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00241">241</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00240">240</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 
 </div>
 </div>
@@ -510,7 +506,7 @@ Here is the call graph for this function:</div>
 <dl class="section pre"><dt>Precondition</dt><dd><code>n</code> がコンストラクト時に渡されたものと同じ局面 </dd></dl>
 <dl class="section note"><dt>Note</dt><dd><code>!CurrentResult(n).IsFinal()</code> ならば <code>!empty()</code> が成り立つ。これを利用して <code>!empty()</code> のチェックを スキップすることがある。 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00280">280</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00279">279</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -574,7 +570,7 @@ Here is the call graph for this function:</div>
 <p>合法手がないかどうか </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classkomori_1_1_local_expansion.html#a6b86284bac3fcf5b2de745e2b5376da2" title="現局面における探索結果を返す">CurrentResult</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00236">236</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00235">235</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -613,7 +609,7 @@ Here is the call graph for this function:</div>
 <p>最善手の子ノードが初探索かどうか </p>
 <dl class="section pre"><dt>Precondition</dt><dd>!CurrentResult().IsFinal() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00255">255</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00254">254</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -672,7 +668,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>子局面の pn, dn のしきい値のペア </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00377">377</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00375">375</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -718,7 +714,7 @@ Here is the call graph for this function:</div>
 <p>最善の子の探索結果を取得する </p>
 <dl class="section pre"><dt>Precondition</dt><dd>!Current().IsFinal() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00246">246</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00245">245</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 
 </div>
 </div>
@@ -748,7 +744,7 @@ Here is the call graph for this function:</div>
 <p>最善手の Sum Mask </p>
 <dl class="section pre"><dt>Precondition</dt><dd>!CurrentResult().IsFinal() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00260">260</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00259">259</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -824,7 +820,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00513">513</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00511">511</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -873,7 +869,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>edge</code> を見つけたら true </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00398">398</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00396">396</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -923,7 +919,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00422">422</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00420">420</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -974,7 +970,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>!empty() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00295">295</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="local__expansion_8hpp_source.html#l00294">294</a> of file <a class="el" href="local__expansion_8hpp_source.html">local_expansion.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

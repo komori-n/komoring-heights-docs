@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['saturatedadd_485',['SaturatedAdd',['../namespacekomori.html#a7311d41d5455115265700ac2518036a7',1,'komori']]],
-  ['saturatedmultiply_486',['SaturatedMultiply',['../namespacekomori.html#aa65253422e6bdf5544f59a4937671cf1',1,'komori']]],
-  ['save_487',['Save',['../classkomori_1_1tt_1_1_regular_table.html#ad675f3ae1432dd82b49b1a39b7286766',1,'komori::tt::RegularTable::Save()'],['../classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a1e58a8adc4d1f758e77aa32caa4b34ba',1,'komori::tt::detail::TranspositionTableImpl::Save()']]],
-  ['score_488',['Score',['../classkomori_1_1_score.html',1,'komori::Score'],['../classkomori_1_1_score.html#a4fae32ae77fb758765c6cacab6487e64',1,'komori::Score::Score(Kind kind, ScoreValue value)'],['../classkomori_1_1_score.html#a992a9272df730122ff52335e7ef339d1',1,'komori::Score::Score() noexcept=default']]],
-  ['score_489',['score',['../structkomori_1_1_usi_info_1_1_p_v_info.html#a93c7b05ee5e617c2a6bb9c61a2537d4a',1,'komori::UsiInfo::PVInfo']]],
+  ['saturatedadd_484',['SaturatedAdd',['../namespacekomori.html#a7311d41d5455115265700ac2518036a7',1,'komori']]],
+  ['saturatedmultiply_485',['SaturatedMultiply',['../namespacekomori.html#aa65253422e6bdf5544f59a4937671cf1',1,'komori']]],
+  ['save_486',['Save',['../classkomori_1_1tt_1_1_regular_table.html#ad675f3ae1432dd82b49b1a39b7286766',1,'komori::tt::RegularTable::Save()'],['../classkomori_1_1tt_1_1detail_1_1_transposition_table_impl.html#a1e58a8adc4d1f758e77aa32caa4b34ba',1,'komori::tt::detail::TranspositionTableImpl::Save()']]],
+  ['score_487',['Score',['../classkomori_1_1_score.html',1,'komori']]],
+  ['score_488',['score',['../structkomori_1_1_usi_info_1_1_p_v_info.html#a93c7b05ee5e617c2a6bb9c61a2537d4a',1,'komori::UsiInfo::PVInfo']]],
+  ['score_489',['Score',['../classkomori_1_1_score.html#a4fae32ae77fb758765c6cacab6487e64',1,'komori::Score::Score(Kind kind, ScoreValue value)'],['../classkomori_1_1_score.html#a992a9272df730122ff52335e7ef339d1',1,'komori::Score::Score() noexcept=default']]],
   ['score_2ehpp_490',['score.hpp',['../score_8hpp.html',1,'']]],
   ['score_5f_491',['score_',['../classkomori_1_1_komoring_heights.html#a6802a2115e6b29d1cbf6d18c380b5f36',1,'komori::KomoringHeights']]],
   ['score_5fcaluclation_5foption_492',['score_caluclation_option',['../namespacekomori_1_1detail.html#af96273f392e89ff2fae85a958348299e',1,'komori::detail']]],
