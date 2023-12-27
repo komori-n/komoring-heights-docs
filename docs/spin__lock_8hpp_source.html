@@ -67,34 +67,35 @@ $(function() {
 <div class="title">spin_lock.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef KOMORI_SPIN_LOCK_HPP_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define KOMORI_SPIN_LOCK_HPP_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;atomic&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacekomori.html">komori</a> {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classkomori_1_1_spin_lock.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classkomori_1_1_spin_lock.html">SpinLock</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classkomori_1_1_spin_lock.html#ac258083e3a72616e1a55ec08eb9a734f">   16</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classkomori_1_1_spin_lock.html#ac258083e3a72616e1a55ec08eb9a734f">lock</a>() noexcept {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="classkomori_1_1_spin_lock.html#abe98a61d1384535d8c6e929324a0b785">flag_</a>.test_and_set(std::memory_order_acquire)) {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classkomori_1_1_spin_lock.html#a769dc92f94c6dd0cc0b38cab0fa1247e">   25</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classkomori_1_1_spin_lock.html#a769dc92f94c6dd0cc0b38cab0fa1247e">unlock</a>() noexcept { <a class="code" href="classkomori_1_1_spin_lock.html#abe98a61d1384535d8c6e929324a0b785">flag_</a>.clear(std::memory_order_release); }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classkomori_1_1_spin_lock.html#abe98a61d1384535d8c6e929324a0b785">   28</a></span>&#160;  std::atomic_flag <a class="code" href="classkomori_1_1_spin_lock.html#abe98a61d1384535d8c6e929324a0b785">flag_</a> = ATOMIC_FLAG_INIT;  </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;static_assert(<span class="keyword">sizeof</span>(<a class="code" href="classkomori_1_1_spin_lock.html">SpinLock</a>) &lt;= 1);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}  <span class="comment">// namespace komori</span></div>
+<a href="spin__lock_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef KOMORI_SPIN_LOCK_HPP_</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define KOMORI_SPIN_LOCK_HPP_</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;atomic&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacekomori.html">komori</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classkomori_1_1_spin_lock.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classkomori_1_1_spin_lock.html">SpinLock</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classkomori_1_1_spin_lock.html#ac258083e3a72616e1a55ec08eb9a734f">   19</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classkomori_1_1_spin_lock.html#ac258083e3a72616e1a55ec08eb9a734f">lock</a>() noexcept {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="classkomori_1_1_spin_lock.html#abe98a61d1384535d8c6e929324a0b785">flag_</a>.test_and_set(std::memory_order_acquire)) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classkomori_1_1_spin_lock.html#a769dc92f94c6dd0cc0b38cab0fa1247e">   28</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classkomori_1_1_spin_lock.html#a769dc92f94c6dd0cc0b38cab0fa1247e">unlock</a>() noexcept { <a class="code" href="classkomori_1_1_spin_lock.html#abe98a61d1384535d8c6e929324a0b785">flag_</a>.clear(std::memory_order_release); }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classkomori_1_1_spin_lock.html#abe98a61d1384535d8c6e929324a0b785">   31</a></span>&#160;  std::atomic_flag <a class="code" href="classkomori_1_1_spin_lock.html#abe98a61d1384535d8c6e929324a0b785">flag_</a> = ATOMIC_FLAG_INIT;  </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// KOMORI_SPIN_LOCK_HPP_</span></div>
-<div class="ttc" id="aclasskomori_1_1_spin_lock_html"><div class="ttname"><a href="classkomori_1_1_spin_lock.html">komori::SpinLock</a></div><div class="ttdoc">std::atomic_flag を用いたスピンロック</div><div class="ttdef"><b>Definition:</b> <a href="spin__lock_8hpp_source.html#l00011">spin_lock.hpp:11</a></div></div>
-<div class="ttc" id="aclasskomori_1_1_spin_lock_html_a769dc92f94c6dd0cc0b38cab0fa1247e"><div class="ttname"><a href="classkomori_1_1_spin_lock.html#a769dc92f94c6dd0cc0b38cab0fa1247e">komori::SpinLock::unlock</a></div><div class="ttdeci">void unlock() noexcept</div><div class="ttdoc">ロックを解放する</div><div class="ttdef"><b>Definition:</b> <a href="spin__lock_8hpp_source.html#l00025">spin_lock.hpp:25</a></div></div>
-<div class="ttc" id="aclasskomori_1_1_spin_lock_html_abe98a61d1384535d8c6e929324a0b785"><div class="ttname"><a href="classkomori_1_1_spin_lock.html#abe98a61d1384535d8c6e929324a0b785">komori::SpinLock::flag_</a></div><div class="ttdeci">std::atomic_flag flag_</div><div class="ttdoc">ロックフラグ</div><div class="ttdef"><b>Definition:</b> <a href="spin__lock_8hpp_source.html#l00028">spin_lock.hpp:28</a></div></div>
-<div class="ttc" id="aclasskomori_1_1_spin_lock_html_ac258083e3a72616e1a55ec08eb9a734f"><div class="ttname"><a href="classkomori_1_1_spin_lock.html#ac258083e3a72616e1a55ec08eb9a734f">komori::SpinLock::lock</a></div><div class="ttdeci">void lock() noexcept</div><div class="ttdoc">ロックを取得する</div><div class="ttdef"><b>Definition:</b> <a href="spin__lock_8hpp_source.html#l00016">spin_lock.hpp:16</a></div></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;static_assert(<span class="keyword">sizeof</span>(<a class="code" href="classkomori_1_1_spin_lock.html">SpinLock</a>) &lt;= 1);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}  <span class="comment">// namespace komori</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// KOMORI_SPIN_LOCK_HPP_</span></div>
+<div class="ttc" id="aclasskomori_1_1_spin_lock_html"><div class="ttname"><a href="classkomori_1_1_spin_lock.html">komori::SpinLock</a></div><div class="ttdoc">std::atomic_flag を用いたスピンロック</div><div class="ttdef"><b>Definition:</b> <a href="spin__lock_8hpp_source.html#l00014">spin_lock.hpp:14</a></div></div>
+<div class="ttc" id="aclasskomori_1_1_spin_lock_html_a769dc92f94c6dd0cc0b38cab0fa1247e"><div class="ttname"><a href="classkomori_1_1_spin_lock.html#a769dc92f94c6dd0cc0b38cab0fa1247e">komori::SpinLock::unlock</a></div><div class="ttdeci">void unlock() noexcept</div><div class="ttdoc">ロックを解放する</div><div class="ttdef"><b>Definition:</b> <a href="spin__lock_8hpp_source.html#l00028">spin_lock.hpp:28</a></div></div>
+<div class="ttc" id="aclasskomori_1_1_spin_lock_html_abe98a61d1384535d8c6e929324a0b785"><div class="ttname"><a href="classkomori_1_1_spin_lock.html#abe98a61d1384535d8c6e929324a0b785">komori::SpinLock::flag_</a></div><div class="ttdeci">std::atomic_flag flag_</div><div class="ttdoc">ロックフラグ</div><div class="ttdef"><b>Definition:</b> <a href="spin__lock_8hpp_source.html#l00031">spin_lock.hpp:31</a></div></div>
+<div class="ttc" id="aclasskomori_1_1_spin_lock_html_ac258083e3a72616e1a55ec08eb9a734f"><div class="ttname"><a href="classkomori_1_1_spin_lock.html#ac258083e3a72616e1a55ec08eb9a734f">komori::SpinLock::lock</a></div><div class="ttdeci">void lock() noexcept</div><div class="ttdoc">ロックを取得する</div><div class="ttdef"><b>Definition:</b> <a href="spin__lock_8hpp_source.html#l00019">spin_lock.hpp:19</a></div></div>
 <div class="ttc" id="anamespacekomori_html"><div class="ttname"><a href="namespacekomori.html">komori</a></div><div class="ttdoc">Komoring Heights.</div><div class="ttdef"><b>Definition:</b> <a href="bitset_8hpp_source.html#l00014">bitset.hpp:14</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
